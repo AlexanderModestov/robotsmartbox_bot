@@ -40,4 +40,29 @@ class Config:
         if missing_vars:
             raise ValueError(f"Missing required environment variables: {', '.join(missing_vars)}")
         
+        # Validate URL formats
+        import re
+        url_pattern = re.compile(
+            r'^https?://'  # http:// or https://
+            r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+[A-Z]{2,6}\.?|'  # domain...
+            r'localhost|'  # localhost...
+            r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'  # ...or ip
+            r'(?::\d+)?'  # optional port
+            r'(?:/?|[/?]\S+)$', re.IGNORECASE)
+        
+        # Validate SUPABASE_URL
+        if cls.SUPABASE_URL and not url_pattern.match(cls.SUPABASE_URL):
+            raise ValueError(f"Invalid SUPABASE_URL format: '{cls.SUPABASE_URL}'. Expected format: https://your-project.supabase.co")
+        
+        # Validate other URLs if they're not default placeholders
+        urls_to_check = [
+            ('WEBAPP_URL', cls.WEBAPP_URL),
+            ('CALENDLY_LINK', cls.CALENDLY_LINK),
+            ('STRIPE_PAYMENT_LINK', cls.STRIPE_PAYMENT_LINK)
+        ]
+        
+        for var_name, url_value in urls_to_check:
+            if url_value and 'your-' not in url_value and not url_pattern.match(url_value):
+                raise ValueError(f"Invalid {var_name} format: '{url_value}'")
+        
         return True
