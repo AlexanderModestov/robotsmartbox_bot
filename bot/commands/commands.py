@@ -44,179 +44,108 @@ async def about(message: types.Message):
         parse_mode="Markdown"
     )
 
-@content_router.message(Command('materials'))
-async def list_materials(message: types.Message):
-    """Open webapp with all materials and category buttons"""
+@content_router.message(Command('automatizations'))
+async def list_automatizations(message: types.Message, supabase_client):
+    """Show automatization examples with categories from Supabase"""
     try:
-        # Create inline keyboard with category buttons
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="📚 Все материалы", web_app=WebAppInfo(url=f"{Config.WEBAPP_URL}"))],
-            [InlineKeyboardButton(text="🎥 Видео эфиры", web_app=WebAppInfo(url=f"{Config.WEBAPP_URL}/videos"))],
-            #[InlineKeyboardButton(text="🎙️ Подкасты", web_app=WebAppInfo(url=f"{Config.WEBAPP_URL}/podcasts"))],
-            [InlineKeyboardButton(text="📄 Статьи", web_app=WebAppInfo(url=f"{Config.WEBAPP_URL}/texts"))]
+        # Fetch unique categories from documents table
+        response = supabase_client.client.table('documents').select('category').not_('category', 'is', 'null').execute()
+        
+        categories = []
+        if response.data:
+            # Get unique categories
+            unique_categories = set()
+            for doc in response.data:
+                if doc['category'] and doc['category'].strip():
+                    unique_categories.add(doc['category'].strip())
+            categories = sorted(list(unique_categories))
+        
+        # Create keyboard with categories
+        keyboard_buttons = []
+        
+        # Add "All automatizations" button first
+        keyboard_buttons.append([
+            InlineKeyboardButton(text="🤖 Все автоматизации", callback_data="automations_all")
         ])
         
-        # Log the webapp access
-        print(f"📚 Materials command: User {message.from_user.id} ({message.from_user.username}) accessing materials webapp")
-        logging.info(f"Materials command: User {message.from_user.id} accessing materials webapp")
+        # Add category buttons
+        for category in categories[:8]:  # Limit to 8 categories to avoid keyboard size issues
+            keyboard_buttons.append([
+                InlineKeyboardButton(text=f"⚙️ {category}", callback_data=f"automation_cat_{category}")
+            ])
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+        
+        # Log the command access
+        print(f"🤖 Automatizations command: User {message.from_user.id} ({message.from_user.username}) accessing automatization examples")
+        logging.info(f"Automatizations command: User {message.from_user.id} accessing automatization examples")
         
         await message.answer(
-            "📚 Здесь вы можете изучить все материалы. Выберите категорию:",
+            "🤖 *Примеры автоматизации*\n\n"
+            "Здесь вы найдете примеры различных автоматизаций для повышения эффективности.\n\n"
+            "Выберите категорию:",
             reply_markup=keyboard,
             parse_mode="Markdown"
         )
-    except Exception as e:
-        logging.error(f"Error in list_materials: {e}")
-        await message.answer("Ошибка при загрузке материалов.")
-
-@content_router.message(Command('quiz'))
-async def quiz_command(message: types.Message):
-    """Quiz command - show topic selection with pagination"""
-    try:
-        await show_quiz_topics(message, page=0)
-    except Exception as e:
-        logging.error(f"Error in quiz_command: {e}")
-        await message.answer("Ошибка при загрузке квиза.")
-
-async def show_quiz_topics(message: types.Message, page: int = 0, edit_message: bool = False):
-    """Show quiz topics with pagination"""
-    try:
-        # Load topics from video_descriptions.json
-        config_path = os.path.join(os.path.dirname(__file__), '..', 'configs', 'video_descriptions.json')
-        if not os.path.exists(config_path):
-            await message.answer("Ошибка: файл с темами не найден.")
-            return
-            
-        with open(config_path, 'r', encoding='utf-8') as f:
-            video_data = json.load(f)
-        
-        topics = video_data.get('videos', {})
-        if not topics:
-            await message.answer("Ошибка: темы не найдены.")
-            return
-        
-        # Exclude "Жить или выживать: разбор" from quiz list
-        filtered_topics = {k: v for k, v in topics.items() if v['name'] != "Жить или выживать: разбор"}
-        topic_items = list(filtered_topics.items())
-        topics_per_page = 5
-        total_pages = (len(topic_items) + topics_per_page - 1) // topics_per_page
-        
-        # Ensure page is within bounds
-        page = max(0, min(page, total_pages - 1))
-        
-        # Get topics for current page
-        start_idx = page * topics_per_page
-        end_idx = start_idx + topics_per_page
-        current_topics = topic_items[start_idx:end_idx]
-        
-        # Create inline buttons for topics (one per row)
-        buttons = []
-        for topic_key, topic_info in current_topics:
-            button = InlineKeyboardButton(
-                text=f"📝 {topic_info['name']}",
-                web_app=WebAppInfo(url=f"{Config.WEBAPP_URL}/api/quiz-html/{topic_info['file_id']}")
-            )
-            buttons.append([button])
-        
-        # Add navigation buttons if needed
-        nav_buttons = []
-        if page > 0:
-            nav_buttons.append(InlineKeyboardButton(
-                text="⬅️ Назад",
-                callback_data=f"quiz_page_{page-1}"
-            ))
-        
-        if page < total_pages - 1:
-            nav_buttons.append(InlineKeyboardButton(
-                text="Далее ➡️",
-                callback_data=f"quiz_page_{page+1}"
-            ))
-        
-        if nav_buttons:
-            buttons.append(nav_buttons)
-        
-        keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
-        
-        # Log quiz access
-        if not edit_message:
-            print(f"📝 Quiz command: User {message.from_user.id} ({message.from_user.username}) accessing quiz topics")
-            logging.info(f"Quiz command: User {message.from_user.id} accessing quiz topics")
-        
-        text = (
-            f"📝 *Выберите тему для квиза:*\n\n"
-            f"Пройдите тест по одной из психологических тем эфиров\n\n"
-            f"Страница {page + 1} из {total_pages}"
-        )
-        
-        if edit_message:
-            await message.edit_text(
-                text,
-                reply_markup=keyboard,
-                parse_mode="Markdown"
-            )
-        else:
-            await message.answer(
-                text,
-                reply_markup=keyboard,
-                parse_mode="Markdown"
-            )
         
     except Exception as e:
-        logging.error(f"Error in show_quiz_topics: {e}")
-        if edit_message:
-            await message.edit_text("Ошибка при загрузке квиза.")
-        else:
-            await message.answer("Ошибка при загрузке квиза.")
+        logging.error(f"Error in list_automatizations: {e}")
+        await message.answer("Ошибка при загрузке автоматизаций.")
 
 @content_router.message(Command('booking'))
 async def schedule_command(message: types.Message):
-    """Handle booking command"""
-    # Create available dates for next 7 days
-    dates = [(datetime.now() + timedelta(days=x)).strftime("%Y-%m-%d") for x in range(1, 8)]
-    
-    keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text=f"📅 {date}", callback_data=f"date_{date}")] 
-        for date in dates
-    ])
-    
-    await message.answer("Выберите дату сессии:", reply_markup=keyboard)
-
-@content_router.callback_query(lambda c: c.data.startswith('date_'))
-async def process_date_selection(callback_query: types.CallbackQuery):
-    """Handle date selection for booking"""
-    selected_date = callback_query.data.replace('date_', '')
-    time_slots = ["10:00", "14:00", "16:00"]
-    
-    keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text=f"🕐 {slot}", callback_data=f"slot_{selected_date}_{slot}")] 
-        for slot in time_slots
-    ])
-    
-    await callback_query.message.edit_text(
-        f"Дата: {selected_date}\nВыберите удобное время:",
-        reply_markup=keyboard
-    )
-
-@content_router.callback_query(lambda c: c.data.startswith('slot_'))
-async def process_slot_selection(callback_query: types.CallbackQuery, supabase_client):
-    """Handle time slot selection for booking"""
+    """Handle booking command with Calendly webapp"""
     try:
-        _, date, time = callback_query.data.split('_', 2)
+        # Create Calendly webapp button
+        calendly_button = InlineKeyboardButton(
+            text="📅 Забронировать сессию",
+            web_app=WebAppInfo(url=Config.CALENDLY_LINK)
+        )
         
-        user = await supabase_client.get_user_by_telegram_id(callback_query.from_user.id)
-        if user:
-            # Here you would save the booking to your database
-            # For now, just confirm the booking
-            await callback_query.message.edit_text(
-                f"✅ Ваша сессия на {date} в {time} подтверждена!\n\n"
-                "В назначенное время мы Вас ждем."
-            )
-        else:
-            await callback_query.message.edit_text("Ошибка: пользователь не найден.")
-            
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[[calendly_button]])
+        
+        # Log the booking access
+        print(f"📅 Booking command: User {message.from_user.id} ({message.from_user.username}) accessing booking webapp")
+        logging.info(f"Booking command: User {message.from_user.id} accessing booking webapp")
+        
+        await message.answer(
+            "📅 *Бронирование сессии*\n\n"
+            "Выберите удобное время для консультации через Calendly.\n"
+            "Нажмите кнопку ниже для открытия календаря:",
+            reply_markup=keyboard,
+            parse_mode="Markdown"
+        )
+        
     except Exception as e:
-        logging.error(f"Error processing slot selection: {e}")
-        await callback_query.message.edit_text("Произошла ошибка при бронировании.")
+        logging.error(f"Error in schedule_command: {e}")
+        await message.answer("Ошибка при загрузке календаря бронирования.")
+
+@content_router.message(Command('pay'))
+async def pay_command(message: types.Message):
+    """Handle payment command with Stripe webapp"""
+    try:
+        # Create Stripe payment webapp button
+        stripe_button = InlineKeyboardButton(
+            text="💳 Оплатить услугу",
+            web_app=WebAppInfo(url=Config.STRIPE_PAYMENT_LINK)
+        )
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[[stripe_button]])
+        
+        # Log the payment access
+        print(f"💳 Pay command: User {message.from_user.id} ({message.from_user.username}) accessing payment webapp")
+        logging.info(f"Pay command: User {message.from_user.id} accessing payment webapp")
+        
+        await message.answer(
+            "💳 *Оплата услуги*\n\n"
+            "Нажмите кнопку ниже для безопасной оплаты через Stripe:",
+            reply_markup=keyboard,
+            parse_mode="Markdown"
+        )
+        
+    except Exception as e:
+        logging.error(f"Error in pay_command: {e}")
+        await message.answer("Ошибка при загрузке страницы оплаты.")
 
 @content_router.message(Command('subscribe'))
 async def subscribe_command(message: types.Message):
@@ -533,6 +462,126 @@ async def handle_materials_podcasts(callback_query: types.CallbackQuery):
     except Exception as e:
         logging.error(f"Error in materials_podcasts: {e}")
         await callback_query.answer("Ошибка при загрузке подкастов")
+
+@content_router.callback_query(lambda c: c.data == 'automations_all')
+async def handle_automations_all(callback_query: types.CallbackQuery, supabase_client):
+    """Handle all automatizations selection"""
+    try:
+        # Fetch all automation documents
+        response = supabase_client.client.table('documents').select('id, metadata, url, category').not_('category', 'is', 'null').limit(10).execute()
+        
+        message_text = "🤖 <b>Все автоматизации</b>\n\n"
+        
+        if response.data:
+            for doc in response.data:
+                metadata = doc.get('metadata', {})
+                if isinstance(metadata, dict):
+                    file_name = metadata.get('file_name', 'Unnamed')
+                    url = doc.get('url') or metadata.get('url', '#')
+                    category = doc.get('category', 'Uncategorized')
+                    
+                    message_text += f"⚙️ <b>{file_name}</b>\n"
+                    message_text += f"📂 Категория: {category}\n"
+                    if url and url != '#':
+                        message_text += f"🔗 <a href='{url}'>Открыть</a>\n"
+                    message_text += "\n"
+        else:
+            message_text += "Примеры автоматизаций пока не найдены."
+        
+        back_button = InlineKeyboardButton(text="⬅️ Назад", callback_data="back_to_automations")
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[[back_button]])
+        
+        await callback_query.message.edit_text(
+            message_text,
+            reply_markup=keyboard,
+            parse_mode="HTML"
+        )
+        
+    except Exception as e:
+        logging.error(f"Error in handle_automations_all: {e}")
+        await callback_query.answer("Ошибка при загрузке автоматизаций")
+
+@content_router.callback_query(lambda c: c.data.startswith('automation_cat_'))
+async def handle_automation_category(callback_query: types.CallbackQuery, supabase_client):
+    """Handle specific automation category selection"""
+    try:
+        category = callback_query.data.replace('automation_cat_', '')
+        
+        # Fetch automation documents for this category
+        response = supabase_client.client.table('documents').select('id, metadata, url, category').eq('category', category).limit(10).execute()
+        
+        message_text = f"⚙️ <b>Автоматизации: {category}</b>\n\n"
+        
+        if response.data:
+            for doc in response.data:
+                metadata = doc.get('metadata', {})
+                if isinstance(metadata, dict):
+                    file_name = metadata.get('file_name', 'Unnamed')
+                    url = doc.get('url') or metadata.get('url', '#')
+                    
+                    message_text += f"🤖 <b>{file_name}</b>\n"
+                    if url and url != '#':
+                        message_text += f"🔗 <a href='{url}'>Открыть</a>\n"
+                    message_text += "\n"
+        else:
+            message_text += f"Примеры автоматизаций в категории '{category}' пока не найдены."
+        
+        back_button = InlineKeyboardButton(text="⬅️ Назад", callback_data="back_to_automations")
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[[back_button]])
+        
+        await callback_query.message.edit_text(
+            message_text,
+            reply_markup=keyboard,
+            parse_mode="HTML"
+        )
+        
+    except Exception as e:
+        logging.error(f"Error in handle_automation_category: {e}")
+        await callback_query.answer("Ошибка при загрузке категории автоматизаций")
+
+@content_router.callback_query(lambda c: c.data == 'back_to_automations')
+async def handle_back_to_automations(callback_query: types.CallbackQuery, supabase_client):
+    """Handle back to automatizations menu"""
+    try:
+        # Fetch unique categories from documents table
+        response = supabase_client.client.table('documents').select('category').not_('category', 'is', 'null').execute()
+        
+        categories = []
+        if response.data:
+            # Get unique categories
+            unique_categories = set()
+            for doc in response.data:
+                if doc['category'] and doc['category'].strip():
+                    unique_categories.add(doc['category'].strip())
+            categories = sorted(list(unique_categories))
+        
+        # Create keyboard with categories
+        keyboard_buttons = []
+        
+        # Add "All automatizations" button first
+        keyboard_buttons.append([
+            InlineKeyboardButton(text="🤖 Все автоматизации", callback_data="automations_all")
+        ])
+        
+        # Add category buttons
+        for category in categories[:8]:  # Limit to 8 categories to avoid keyboard size issues
+            keyboard_buttons.append([
+                InlineKeyboardButton(text=f"⚙️ {category}", callback_data=f"automation_cat_{category}")
+            ])
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+        
+        await callback_query.message.edit_text(
+            "🤖 *Примеры автоматизации*\n\n"
+            "Здесь вы найдете примеры различных автоматизаций для повышения эффективности.\n\n"
+            "Выберите категорию:",
+            reply_markup=keyboard,
+            parse_mode="Markdown"
+        )
+        
+    except Exception as e:
+        logging.error(f"Error in handle_back_to_automations: {e}")
+        await callback_query.answer("Ошибка при возврате к автоматизациям")
 
 
 @content_router.message(Command('help'))

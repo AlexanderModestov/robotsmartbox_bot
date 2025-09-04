@@ -6,7 +6,6 @@ import time
 from aiogram import Router, types, F
 from aiogram.enums import ChatAction
 from aiogram.fsm.context import FSMContext
-from bot.services.rag_pipeline import RAGPipeline
 from bot.services.elevenlabs import TextToSpeechService
 from bot.config import Config
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo, FSInputFile
@@ -120,127 +119,54 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
     )
     
     try:
-        # Initialize RAG pipeline
-        rag = RAGPipeline(supabase_client)
-        
         # Get user from database
         user = await supabase_client.get_user_by_telegram_id(message.from_user.id)
         if not user:
             await processing_message.edit_text("Ошибка: пользователь не найден. Попробуйте команду /start")
             return
         
-        # Process question through RAG
-        result = await rag.search_and_answer(
-            user_id=user.id,
-            question=user_text
+        # Create OpenAI client and call API with n8n automation expert prompt
+        client = openai.AsyncOpenAI()
+        
+        n8n_prompt = """Ты эксперт по автоматизации n8n. Отвечай ТОЛЬКО на вопросы об автоматизации задач и процессов.
+
+ВАЖНО: Если вопрос НЕ связан с автоматизацией задач, процессов или рабочих потоков, отвечай ТОЧНО: "Я не знаю ответ на Ваш вопрос. Я могу предложить только варианты по автоматизации."
+
+Для вопросов об автоматизации предоставь краткий ответ с этими 3 разделами:
+
+Формат ответа:
+🤖 Решение для автоматизации n8n (2-3 предложения)
+Опиши точно, как автоматизировать эту задачу, используя узлы и рабочие процессы n8n.
+
+✅ Преимущества (3 пункта)
+• Экономия времени: [конкретные часы/неделю сэкономлены]
+• Снижение ошибок: [% улучшение]
+• Масштабируемость: [потенциал роста]
+
+💰 Экономия средств (1-2 предложения)
+Рассчитай примерную месячную экономию в долларах на основе почасовых ставок и сэкономленного времени.
+
+Правила:
+- Не указывай конкретные названия узлов n8n, используй только описание
+- Используй числа и проценты
+- Общий ответ не более 150 слов
+- Сосредоточься только на самой эффективной автоматизации
+- Предполагай стоимость труда $25/час для расчетов"""
+
+        response = await client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": n8n_prompt},
+                {"role": "user", "content": f"Задача для автоматизации: {user_text}"}
+            ],
+            max_tokens=500,
+            temperature=0.7
         )
         
-        if result.get('error'):
-            await processing_message.edit_text(
-                f"Произошла ошибка: {result.get('error', 'Неизвестная ошибка')}"
-            )
-            return
+        response_text = response.choices[0].message.content
         
-        # Format response with sources
-        logging.info(f"📋 RAG Step 5: Response Formatting - Processing answer with {len(result.get('sources', []))} sources")
-        response_text = result['answer']
-        
-        # Create webapp buttons for sources
+        # No sources needed for this automation response
         keyboard = None
-
-        if result.get('sources'):
-            
-            buttons = []
-
-            # Map content types to emojis
-            source_type_icons = {
-                'video': '🎥',
-                'audio': '🎧', 
-                'text': '📄',
-                'podcast': '🎙️'
-            }
-            
-            # Remove duplicates based on title, keep first occurrence, exclude audio type
-            seen_titles = set()
-            unique_sources = []
-            for source in result['sources']:
-                title = source.get('title', '')
-                source_type = source.get('type', '')
-                if title not in seen_titles and source_type != 'audio':
-                    seen_titles.add(title)
-                    unique_sources.append(source)
-            
-            for i, source in enumerate(unique_sources[:3], 1):  # Limit to 3 sources
-                # Extract content type from metadata
-                content_type = source.get('type')  # Default to 'text' if no type specified
-                source_type = source_type_icons.get(content_type)  # Default to document icon
-                
-                # Get proper title from config files
-                original_title = source['title']
-                proper_title = get_proper_title(content_type, original_title)
-                
-                # Add source to text (removed duplicate logging)
-                
-                # Create webapp button for the source based on content type
-                if content_type == 'video':
-                    # For video: get file_id from config and use name as text
-                    config_path = os.path.join(os.path.dirname(__file__), '..', 'configs', 'video_descriptions.json')
-                    if os.path.exists(config_path):
-                        with open(config_path, 'r', encoding='utf-8') as f:
-                            video_config = json.load(f)
-                        # Find matching video by title (remove .txt if present)
-                        title_key = original_title.replace('.txt', '')
-                        if title_key in video_config.get('videos', {}):
-                            video_data = video_config['videos'][title_key]
-                            proper_title = video_data['name']
-                            webapp_url = f"{Config.WEBAPP_URL}/{video_data['file_id']}"
-                        else:
-                            webapp_url = f"{Config.WEBAPP_URL}/{content_type}s"
-                    else:
-                        webapp_url = f"{Config.WEBAPP_URL}/{content_type}s"
-                elif content_type == 'podcast' or content_type == 'audio':
-                    # For podcast: get file_id from config and use name as text
-                    config_path = os.path.join(os.path.dirname(__file__), '..', 'configs', 'podcast_descriptions.json')
-                    if os.path.exists(config_path):
-                        with open(config_path, 'r', encoding='utf-8') as f:
-                            podcast_config = json.load(f)
-                        # Find matching podcast by title (remove .txt if present)
-                        title_key = original_title.replace('.txt', '')
-                        if title_key in podcast_config.get('videos', {}):  # Note: podcast config uses 'videos' key
-                            podcast_data = podcast_config['videos'][title_key]
-                            proper_title = podcast_data['name']
-                            webapp_url = f"{Config.WEBAPP_URL}/{podcast_data['file_id']}"
-                        else:
-                            webapp_url = f"{Config.WEBAPP_URL}/{content_type}s"
-                    else:
-                        webapp_url = f"{Config.WEBAPP_URL}/{content_type}s"
-                elif content_type == 'text':
-                    # For text: get file_id from config and use name as text, URL format is different
-                    config_path = os.path.join(os.path.dirname(__file__), '..', 'configs', 'text_descriptions.json')
-                    if os.path.exists(config_path):
-                        with open(config_path, 'r', encoding='utf-8') as f:
-                            text_config = json.load(f)
-                        # Find matching text by title (remove .txt if present)
-                        title_key = original_title.replace('.txt', '')
-                        if title_key in text_config.get('texts', {}):
-                            text_data = text_config['texts'][title_key]
-                            proper_title = text_data['name']
-                            webapp_url = f"{Config.WEBAPP_URL}/texts/{text_data['file_id']}"
-                        else:
-                            webapp_url = f"{Config.WEBAPP_URL}/{content_type}s"
-                    else:
-                        webapp_url = f"{Config.WEBAPP_URL}/{content_type}s"
-                else:
-                    webapp_url = f"{Config.WEBAPP_URL}/{content_type}s"
-
-                button = InlineKeyboardButton(
-                    text=f"{source_type_icons[content_type]} {proper_title}",
-                    web_app=WebAppInfo(url=webapp_url)
-                )
-                buttons.append([button])
-            
-            keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
-            logging.info(f"✅ RAG Step 5: Response Formatting - Created {len(buttons)} webapp buttons")
         
         # Check if user prefers audio responses
         if user.isAudio:

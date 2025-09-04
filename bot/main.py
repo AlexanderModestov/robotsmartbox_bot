@@ -21,15 +21,32 @@ async def main():
         Config.validate()
         logger.info("Configuration validated successfully")
         
+        # Debug URL values
+        logger.info(f"SUPABASE_URL: {Config.SUPABASE_URL}")
+        logger.info(f"WEBAPP_URL: {Config.WEBAPP_URL}")
+        logger.info(f"CALENDLY_LINK: {Config.CALENDLY_LINK}")
+        logger.info(f"STRIPE_PAYMENT_LINK: {Config.STRIPE_PAYMENT_LINK}")
+        
         # Initialize bot and dispatcher
-        bot = Bot(token=Config.TELEGRAM_BOT_TOKEN)
+        try:
+            bot = Bot(token=Config.TELEGRAM_BOT_TOKEN)
+            logger.info("Bot initialized successfully")
+        except Exception as e:
+            logger.error(f"Error initializing Bot: {e}")
+            raise
+        
         dp = Dispatcher(storage=MemoryStorage())
         
         # Initialize Supabase client
-        supabase_client = SupabaseClient(
-            supabase_url=Config.SUPABASE_URL,
-            supabase_key=Config.SUPABASE_KEY
-        )
+        try:
+            supabase_client = SupabaseClient(
+                supabase_url=Config.SUPABASE_URL,
+                supabase_key=Config.SUPABASE_KEY
+            )
+            logger.info("Supabase client initialized successfully")
+        except Exception as e:
+            logger.error(f"Error initializing Supabase client with URL '{Config.SUPABASE_URL}': {e}")
+            raise
         
         # Add dependency injection for supabase client
         dp.workflow_data.update(supabase_client=supabase_client)

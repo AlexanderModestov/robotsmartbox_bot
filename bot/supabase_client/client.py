@@ -243,3 +243,61 @@ class SupabaseClient:
         except Exception as e:
             print(f"Error creating user: {e}")
             return None
+    
+    async def update_user_payment_status(self, telegram_id: int, payment_status: bool, payment_amount: float = None, payment_currency: str = None) -> bool:
+        """Update user payment status"""
+        try:
+            from datetime import datetime
+            
+            update_data = {
+                'payment_status': payment_status,
+                'payment_date': datetime.now().isoformat() if payment_status else None
+            }
+            
+            if payment_amount is not None:
+                update_data['payment_amount'] = payment_amount
+            if payment_currency is not None:
+                update_data['payment_currency'] = payment_currency
+            
+            response = self.client.table('users').update(update_data).eq('telegram_id', telegram_id).execute()
+            
+            if response.data:
+                print(f"✅ Updated payment status for user {telegram_id}: {payment_status}")
+                return True
+            else:
+                print(f"❌ Failed to update payment status for user {telegram_id}")
+                return False
+                
+        except Exception as e:
+            print(f"Error updating payment status: {e}")
+            return False
+    
+    async def update_user_payment_status_by_email(self, email: str, payment_status: bool, payment_amount: float = None, payment_currency: str = None) -> bool:
+        """Update user payment status by email (if email field exists)"""
+        try:
+            from datetime import datetime
+            
+            update_data = {
+                'payment_status': payment_status,
+                'payment_date': datetime.now().isoformat() if payment_status else None
+            }
+            
+            if payment_amount is not None:
+                update_data['payment_amount'] = payment_amount
+            if payment_currency is not None:
+                update_data['payment_currency'] = payment_currency
+            
+            # Note: This assumes you have an email field in users table
+            # You might need to add email field to users table first
+            response = self.client.table('users').update(update_data).eq('email', email).execute()
+            
+            if response.data:
+                print(f"✅ Updated payment status for user with email {email}: {payment_status}")
+                return True
+            else:
+                print(f"❌ Failed to update payment status for user with email {email}")
+                return False
+                
+        except Exception as e:
+            print(f"Error updating payment status by email: {e}")
+            return False
