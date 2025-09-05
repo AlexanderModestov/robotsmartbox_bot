@@ -11,8 +11,9 @@ class Config:
     SUPABASE_KEY = os.getenv('SUPABASE_KEY')
     
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+    ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY')
     EMBEDDING_MODEL = os.getenv('EMBEDDING_MODEL', 'text-embedding-3-large')
-    GPT_MODEL = os.getenv('GPT_MODEL', 'gpt-4.1-mini')
+    GPT_MODEL = os.getenv('GPT_MODEL', 'gpt-4o-mini')
     SEARCH_LIMIT = int(os.getenv('SEARCH_LIMIT', '5'))
     
     DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'

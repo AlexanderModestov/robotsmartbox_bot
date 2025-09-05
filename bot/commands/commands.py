@@ -9,11 +9,14 @@ from aiogram.fsm.state import State, StatesGroup
 from datetime import datetime, timedelta
 from bot.messages import Messages
 from bot.config import Config
+from bot.services.automation_handler import AutomationHandler
 
 # States for FSM
 class UserState(StatesGroup):
     help = State()
     waiting_for_question = State()
+    automation_query = State()
+    automation_category = State()
 
 # Create routers for commands
 start_router = Router()
@@ -608,3 +611,319 @@ async def help(message: types.Message, state: FSMContext):
             )
         except Exception as e:
             logging.error(f"Error sending message to admin: {e}")
+
+# ===============================
+# AUTOMATION COMMANDS
+# ===============================
+
+@content_router.message(Command('automate'))
+async def automate_command(message: types.Message, state: FSMContext, supabase_client):
+    """Handle /automate command"""
+    try:
+        automation_handler = AutomationHandler(supabase_client)
+        
+        # Check if user provided a query with the command
+        command_parts = message.text.split(' ', 1)
+        if len(command_parts) > 1:
+            # User provided query directly
+            query = command_parts[1].strip()
+            
+            await message.answer("🔍 Ищу подходящие автоматизации...")
+            
+            # Process the query
+            result = await automation_handler.handle_automation_query(
+                user_id=message.from_user.id,
+                query=query
+            )
+            
+            if result.get('success') and result.get('recommendations'):
+                # Format and send results
+                response = result.get('contextual_response', 'Найдены подходящие автоматизации:')
+                await message.answer(response, parse_mode="Markdown")
+                
+                # Send each automation as a separate message
+                for i, automation in enumerate(result['recommendations'][:3], 1):  # Limit to top 3
+                    automation_text = automation_handler.format_automation_for_telegram(automation)
+                    
+                    # Create inline keyboard for this automation
+                    keyboard_buttons = []
+                    
+                    # Add URL button if available
+                    if automation.get('url'):
+                        keyboard_buttons.append([
+                            InlineKeyboardButton(text="🔗 Открыть на n8n.io", url=automation['url'])
+                        ])
+                    
+                    # Add similar automations button
+                    keyboard_buttons.append([
+                        InlineKeyboardButton(text="🔍 Похожие автоматизации", callback_data=f"similar_{automation.get('title', '')[:20]}")
+                    ])
+                    
+                    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
+                    
+                    await message.answer(
+                        automation_text,
+                        reply_markup=keyboard,
+                        parse_mode="Markdown"
+                    )
+                
+                if len(result['recommendations']) > 3:
+                    await message.answer(f"И еще {len(result['recommendations']) - 3} автоматизаций. Уточните запрос для более точных результатов.")
+            
+            else:
+                # No results found
+                error_message = result.get('contextual_response', 'К сожалению, не удалось найти подходящие автоматизации.')
+                await message.answer(error_message)
+                
+                # Suggest categories
+                categories = automation_handler.get_available_categories()[:5]
+                suggestion_text = "\n📚 **Попробуйте поискать в категориях:**\n"
+                for cat in categories:
+                    suggestion_text += f"• {cat['name']}\n"
+                suggestion_text += "\nИспользуйте /knowledge для просмотра всех категорий."
+                
+                await message.answer(suggestion_text, parse_mode="Markdown")
+        
+        else:
+            # No query provided, ask for it
+            await message.answer(
+                "🤖 **Помощь в автоматизации**\n\n"
+                "Опишите задачу, которую хотите автоматизировать:\n\n"
+                "**Примеры:**\n"
+                "• Автоматически отправлять email уведомления\n"
+                "• Синхронизировать данные между Google Sheets и базой данных\n"
+                "• Создавать посты в социальных сетях из RSS\n"
+                "• Обрабатывать заказы в интернет-магазине\n\n"
+                "Просто опишите вашу задачу в следующем сообщении:",
+                parse_mode="Markdown"
+            )
+            await state.set_state(UserState.automation_query)
+    
+    except Exception as e:
+        logging.error(f"Error in automate command: {e}")
+        await message.answer("Произошла ошибка. Попробуйте еще раз позже.")
+
+@content_router.message(UserState.automation_query)
+async def handle_automation_query_state(message: types.Message, state: FSMContext, supabase_client):
+    """Handle automation query in FSM state"""
+    try:
+        automation_handler = AutomationHandler(supabase_client)
+        
+        await message.answer("🔍 Ищу подходящие автоматизации...")
+        
+        # Process the query
+        result = await automation_handler.handle_automation_query(
+            user_id=message.from_user.id,
+            query=message.text
+        )
+        
+        await state.clear()  # Clear the state
+        
+        if result.get('success') and result.get('recommendations'):
+            # Send contextual response
+            response = result.get('contextual_response', 'Найдены подходящие автоматизации:')
+            await message.answer(response, parse_mode="Markdown")
+            
+            # Send top 3 automations
+            for automation in result['recommendations'][:3]:
+                automation_text = automation_handler.format_automation_for_telegram(automation)
+                
+                # Create inline keyboard
+                keyboard_buttons = []
+                if automation.get('url'):
+                    keyboard_buttons.append([
+                        InlineKeyboardButton(text="🔗 Открыть на n8n.io", url=automation['url'])
+                    ])
+                
+                keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
+                
+                await message.answer(
+                    automation_text,
+                    reply_markup=keyboard,
+                    parse_mode="Markdown"
+                )
+        
+        else:
+            await message.answer("К сожалению, не удалось найти подходящие автоматизации для вашего запроса. Попробуйте использовать другие ключевые слова.")
+    
+    except Exception as e:
+        logging.error(f"Error handling automation query: {e}")
+        await message.answer("Произошла ошибка при обработке запроса.")
+        await state.clear()
+
+@content_router.message(Command('knowledge'))
+async def knowledge_command(message: types.Message, supabase_client):
+    """Handle /knowledge command - show automation knowledge base"""
+    try:
+        automation_handler = AutomationHandler(supabase_client)
+        
+        # Get available categories
+        categories = automation_handler.get_available_categories()
+        
+        # Create inline keyboard with categories
+        keyboard_buttons = []
+        
+        # Add trending button first
+        keyboard_buttons.append([
+            InlineKeyboardButton(text="🔥 Популярные автоматизации", callback_data="knowledge_trending")
+        ])
+        
+        # Add beginner button
+        keyboard_buttons.append([
+            InlineKeyboardButton(text="🚀 Для начинающих", callback_data="knowledge_beginner")
+        ])
+        
+        # Add categories (2 per row)
+        for i in range(0, len(categories), 2):
+            row = []
+            for j in range(2):
+                if i + j < len(categories):
+                    cat = categories[i + j]
+                    emoji_map = {
+                        'social-media': '📱',
+                        'ai-ml': '🧠', 
+                        'business-automation': '💼',
+                        'data-processing': '📊',
+                        'communication': '💬',
+                        'productivity': '⚡',
+                        'web-scraping': '🕷️',
+                        'marketing': '📈',
+                        'api-integration': '🔗',
+                        'e-commerce': '🛒'
+                    }
+                    emoji = emoji_map.get(cat['key'], '⚙️')
+                    row.append(InlineKeyboardButton(
+                        text=f"{emoji} {cat['name'][:15]}",
+                        callback_data=f"knowledge_cat_{cat['key']}"
+                    ))
+            if row:
+                keyboard_buttons.append(row)
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+        
+        # Send knowledge base overview
+        message_text = """📚 **База знаний по автоматизации**
+
+Добро пожаловать в базу знаний! Здесь вы найдете:
+
+🔥 **Популярные автоматизации** - самые востребованные решения
+🚀 **Для начинающих** - простые автоматизации для старта
+📂 **По категориям** - организованные по типам задач
+
+**Всего доступно:** более 150 готовых автоматизаций
+
+Выберите интересующую категорию:"""
+        
+        await message.answer(
+            message_text,
+            reply_markup=keyboard,
+            parse_mode="Markdown"
+        )
+    
+    except Exception as e:
+        logging.error(f"Error in knowledge command: {e}")
+        await message.answer("Ошибка при загрузке базы знаний.")
+
+# Knowledge base callback handlers
+@content_router.callback_query(lambda c: c.data.startswith('knowledge_'))
+async def handle_knowledge_callback(callback_query: types.CallbackQuery, supabase_client):
+    """Handle knowledge base callback queries"""
+    try:
+        automation_handler = AutomationHandler(supabase_client)
+        action = callback_query.data.replace('knowledge_', '')
+        
+        await callback_query.answer()
+        
+        if action == 'trending':
+            await callback_query.message.edit_text("🔍 Загружаю популярные автоматизации...")
+            
+            result = await automation_handler.get_trending_automations(callback_query.from_user.id)
+            
+            if result.get('success') and result.get('recommendations'):
+                response = "🔥 **Популярные автоматизации**\n\n"
+                response += result.get('contextual_response', '')
+                
+                await callback_query.message.edit_text(response, parse_mode="Markdown")
+                
+                # Send each automation
+                for automation in result['recommendations'][:4]:  # Top 4
+                    automation_text = automation_handler.format_automation_for_telegram(automation, include_details=False)
+                    
+                    keyboard_buttons = []
+                    if automation.get('url'):
+                        keyboard_buttons.append([
+                            InlineKeyboardButton(text="🔗 Открыть", url=automation['url'])
+                        ])
+                    
+                    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
+                    
+                    await callback_query.message.answer(
+                        automation_text,
+                        reply_markup=keyboard,
+                        parse_mode="Markdown"
+                    )
+        
+        elif action == 'beginner':
+            await callback_query.message.edit_text("🔍 Загружаю автоматизации для начинающих...")
+            
+            result = await automation_handler.get_beginner_automations(callback_query.from_user.id)
+            
+            if result.get('success') and result.get('recommendations'):
+                response = result.get('contextual_response', '🚀 Автоматизации для начинающих')
+                await callback_query.message.edit_text(response, parse_mode="Markdown")
+                
+                # Send automations
+                for automation in result['recommendations'][:4]:
+                    automation_text = automation_handler.format_automation_for_telegram(automation, include_details=False)
+                    
+                    keyboard_buttons = []
+                    if automation.get('url'):
+                        keyboard_buttons.append([
+                            InlineKeyboardButton(text="🔗 Открыть", url=automation['url'])
+                        ])
+                    
+                    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
+                    
+                    await callback_query.message.answer(
+                        automation_text,
+                        reply_markup=keyboard,
+                        parse_mode="Markdown"
+                    )
+        
+        elif action.startswith('cat_'):
+            category = action.replace('cat_', '')
+            await callback_query.message.edit_text(f"🔍 Загружаю автоматизации категории: {category}...")
+            
+            result = await automation_handler.handle_category_browse(callback_query.from_user.id, category)
+            
+            if result.get('success') and result.get('recommendations'):
+                category_info = result.get('category_info', {})
+                response = f"📂 **{category_info.get('name', category)}**\n\n"
+                response += category_info.get('description', '') + "\n\n"
+                response += f"Найдено {len(result['recommendations'])} автоматизаций:"
+                
+                await callback_query.message.edit_text(response, parse_mode="Markdown")
+                
+                # Send automations
+                for automation in result['recommendations'][:4]:
+                    automation_text = automation_handler.format_automation_for_telegram(automation, include_details=False)
+                    
+                    keyboard_buttons = []
+                    if automation.get('url'):
+                        keyboard_buttons.append([
+                            InlineKeyboardButton(text="🔗 Открыть", url=automation['url'])
+                        ])
+                    
+                    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
+                    
+                    await callback_query.message.answer(
+                        automation_text,
+                        reply_markup=keyboard,
+                        parse_mode="Markdown"
+                    )
+            else:
+                await callback_query.message.edit_text(f"В категории {category} пока нет доступных автоматизаций.")
+    
+    except Exception as e:
+        logging.error(f"Error handling knowledge callback: {e}")
+        await callback_query.answer("Произошла ошибка", show_alert=True)
