@@ -11,9 +11,8 @@ from bot.config import Config
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo, FSInputFile
 import openai
 
-# Create routers for question handling
+# Create router for question handling
 question_router = Router()
-query_router = Router()
 
 def get_proper_title(content_type, original_title):
     """Get proper title from config files based on content type and original title"""
@@ -125,48 +124,91 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
             await processing_message.edit_text("Ошибка: пользователь не найден. Попробуйте команду /start")
             return
         
-        # Create OpenAI client and call API with n8n automation expert prompt
+        # STEP 1: ChatGPT Recommendations
         client = openai.AsyncOpenAI()
         
-        n8n_prompt = """Ты эксперт по автоматизации n8n. Отвечай ТОЛЬКО на вопросы об автоматизации задач и процессов.
+        chatgpt_prompt = """You are an n8n automation expert. Answer ONLY automation-related questions.
 
-ВАЖНО: Если вопрос НЕ связан с автоматизацией задач, процессов или рабочих потоков, отвечай ТОЧНО: "Я не знаю ответ на Ваш вопрос. Я могу предложить только варианты по автоматизации."
+IMPORTANT: If the question is NOT related to task automation, processes, or workflows, respond EXACTLY: "I don't know the answer to your question. I can only offer automation solutions."
 
-Для вопросов об автоматизации предоставь краткий ответ с этими 3 разделами:
+For automation questions, provide a brief response with these 3 sections:
 
-Формат ответа:
-🤖 Решение для автоматизации n8n (2-3 предложения)
-Опиши точно, как автоматизировать эту задачу, используя узлы и рабочие процессы n8n.
+Response format:
+🤖 n8n Automation Solution (2-3 sentences)
+Describe exactly how to automate this task using n8n nodes and workflows.
 
-✅ Преимущества (3 пункта)
-• Экономия времени: [конкретные часы/неделю сэкономлены]
-• Снижение ошибок: [% улучшение]
-• Масштабируемость: [потенциал роста]
+✅ Benefits (3 points)
+• Time saving: [specific hours/week saved]
+• Error reduction: [% improvement]
+• Scalability: [growth potential]
 
-💰 Экономия средств (1-2 предложения)
-Рассчитай примерную месячную экономию в долларах на основе почасовых ставок и сэкономленного времени.
+💰 Cost Savings (1-2 sentences)
+Calculate approximate monthly savings in dollars based on hourly rates and time saved.
 
-Правила:
-- Не указывай конкретные названия узлов n8n, используй только описание
-- Используй числа и проценты
-- Общий ответ не более 150 слов
-- Сосредоточься только на самой эффективной автоматизации
-- Предполагай стоимость труда $25/час для расчетов"""
+Rules:
+- Don't specify exact n8n node names, use only descriptions
+- Use numbers and percentages
+- Maximum 150 words total
+- Focus on the most effective automation only
+- Assume $25/hour labor cost for calculations"""
 
-        response = await client.chat.completions.create(
+        chatgpt_response = await client.chat.completions.create(
             model="gpt-4",
             messages=[
-                {"role": "system", "content": n8n_prompt},
-                {"role": "user", "content": f"Задача для автоматизации: {user_text}"}
+                {"role": "system", "content": chatgpt_prompt},
+                {"role": "user", "content": f"Automation task: {user_text}"}
             ],
             max_tokens=500,
             temperature=0.7
         )
         
-        response_text = response.choices[0].message.content
+        chatgpt_text = chatgpt_response.choices[0].message.content
         
-        # No sources needed for this automation response
+        # STEP 2: Vector Similarity Search for Similar Automations
+        similar_automations = []
         keyboard = None
+        
+        try:
+            # Generate embedding for the user query
+            embedding_response = await client.embeddings.create(
+                input=user_text,
+                model="text-embedding-3-large"
+            )
+            query_embedding = embedding_response.data[0].embedding
+            
+            # Search for similar automations in the database
+            search_results = await supabase_client.search_automations_by_similarity(
+                query_embedding=query_embedding,
+                limit=3,
+                threshold=0.7
+            )
+            
+            if search_results:
+                similar_automations = search_results
+                
+                # Create inline keyboard with similar automations (no header button)
+                keyboard_buttons = []
+                
+                for i, automation in enumerate(similar_automations[:3]):
+                    button_text = f"⚙️ {automation.get('title', 'Automation')[:40]}..."
+                    keyboard_buttons.append([InlineKeyboardButton(
+                        text=button_text,
+                        callback_data=f"automation_detail_{automation.get('id')}"
+                    )])
+                
+                keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+                
+        except Exception as vector_error:
+            logger.error(f"Vector search failed: {vector_error}")
+            # Continue without similar automations if vector search fails
+        
+        # Combine responses
+        response_text = final_response = chatgpt_text
+        
+        if similar_automations:
+            final_response += f"\n\n🔍 **Found {len(similar_automations)} similar automations in our database**\n"
+            final_response += "Click the buttons below to explore specific examples:"
+            response_text = final_response
         
         # Check if user prefers audio responses
         if user.isAudio:
@@ -175,9 +217,9 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
                 logging.info(f"🎧 Generating audio response for user {message.from_user.id}")
                 tts_service = TextToSpeechService()
                 
-                # Generate audio file
+                # Generate audio file (use only ChatGPT response for audio, not buttons)
                 audio_path = tts_service.text_to_speech(
-                    text=response_text,
+                    text=chatgpt_text,  # Only ChatGPT text for audio
                     quality_preset="conversational",  # Good for bot responses
                     output_filename=f"response_{message.from_user.id}_{int(time.time())}.mp3"
                 )
@@ -229,5 +271,6 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
         await processing_message.edit_text(
             "Произошла ошибка при обработке вашего вопроса. Попробуйте еще раз или обратитесь к администратору."
         )
+
 
 

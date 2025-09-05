@@ -5,7 +5,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from bot.config import Config
 from bot.supabase_client import SupabaseClient
 from bot.commands.commands import start_router, content_router
-from bot.handlers.handlers import question_router, query_router
+from bot.handlers.handlers import question_router
 
 # Configure logging
 logging.basicConfig(
@@ -55,7 +55,6 @@ async def main():
         dp.include_router(start_router)
         dp.include_router(content_router)
         dp.include_router(question_router)
-        dp.include_router(query_router)
         
         # Add middleware to inject supabase client
         @dp.message.outer_middleware()

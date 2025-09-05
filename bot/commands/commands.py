@@ -8,15 +8,35 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from datetime import datetime, timedelta
 from bot.messages import Messages
+from bot.messages_en import Messages as MessagesEn
 from bot.config import Config
-from bot.services.automation_handler import AutomationHandler
+
+def get_user_language(message):
+    """Detect user language from message or user settings"""
+    # Check user's language code first
+    if hasattr(message.from_user, 'language_code') and message.from_user.language_code:
+        if message.from_user.language_code.startswith('en'):
+            return 'en'
+    
+    # Check message text for English keywords
+    if message.text:
+        english_keywords = ['start', 'help', 'about', 'settings', 'hello', 'hi']
+        text_lower = message.text.lower()
+        for keyword in english_keywords:
+            if keyword in text_lower:
+                return 'en'
+    
+    # Default to English
+    return 'en'
+
+def get_messages_class(language='en'):
+    """Get appropriate messages class based on language - defaults to English"""
+    return Messages if language == 'ru' else MessagesEn
 
 # States for FSM
 class UserState(StatesGroup):
     help = State()
     waiting_for_question = State()
-    automation_query = State()
-    automation_category = State()
 
 # Create routers for commands
 start_router = Router()
@@ -26,7 +46,12 @@ content_router = Router()
 async def cmd_start(message: types.Message, supabase_client):
     """Start command handler"""
     user_name = message.from_user.first_name
-    await message.answer(Messages.START_CMD["welcome"](user_name))
+    
+    # Detect user language and get appropriate messages
+    user_language = get_user_language(message)
+    messages_class = get_messages_class(user_language)
+    
+    await message.answer(messages_class.START_CMD["welcome"](user_name))
     
     try:
         # Register user in Supabase
@@ -42,8 +67,12 @@ async def cmd_start(message: types.Message, supabase_client):
 @start_router.message(Command("about"))
 async def about(message: types.Message):
     """About command handler"""
+    # Detect user language and get appropriate messages
+    user_language = get_user_language(message)
+    messages_class = get_messages_class(user_language)
+    
     await message.answer(
-        Messages.ABOUT_MESSAGE,
+        messages_class.ABOUT_MESSAGE,
         parse_mode="Markdown"
     )
 
@@ -51,30 +80,27 @@ async def about(message: types.Message):
 async def list_automatizations(message: types.Message, supabase_client):
     """Show automatization examples with categories from Supabase"""
     try:
-        # Fetch unique categories from documents table
-        response = supabase_client.client.table('documents').select('category').not_('category', 'is', 'null').execute()
+        # Fetch categories from categories table
+        response = supabase_client.client.table('categories').select('id, name').order('name').execute()
         
         categories = []
         if response.data:
-            # Get unique categories
-            unique_categories = set()
-            for doc in response.data:
-                if doc['category'] and doc['category'].strip():
-                    unique_categories.add(doc['category'].strip())
-            categories = sorted(list(unique_categories))
+            categories = response.data[:8]  # Limit to 8 categories to avoid keyboard size issues
         
         # Create keyboard with categories
         keyboard_buttons = []
         
         # Add "All automatizations" button first
+        user_language = get_user_language(message)
+        messages_class = get_messages_class(user_language)
         keyboard_buttons.append([
-            InlineKeyboardButton(text="🤖 Все автоматизации", callback_data="automations_all")
+            InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["all_automations_button"], callback_data="automations_all")
         ])
         
         # Add category buttons
-        for category in categories[:8]:  # Limit to 8 categories to avoid keyboard size issues
+        for category in categories:
             keyboard_buttons.append([
-                InlineKeyboardButton(text=f"⚙️ {category}", callback_data=f"automation_cat_{category}")
+                InlineKeyboardButton(text=f"⚙️ {category['name']}", callback_data=f"automation_cat_{category['id']}")
             ])
         
         keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
@@ -83,25 +109,32 @@ async def list_automatizations(message: types.Message, supabase_client):
         print(f"🤖 Automatizations command: User {message.from_user.id} ({message.from_user.username}) accessing automatization examples")
         logging.info(f"Automatizations command: User {message.from_user.id} accessing automatization examples")
         
+        # Get appropriate welcome text from messages
+        automation_text = messages_class.AUTOMATIONS_CMD["welcome"]
+        
         await message.answer(
-            "🤖 *Примеры автоматизации*\n\n"
-            "Здесь вы найдете примеры различных автоматизаций для повышения эффективности.\n\n"
-            "Выберите категорию:",
+            automation_text,
             reply_markup=keyboard,
             parse_mode="Markdown"
         )
         
     except Exception as e:
         logging.error(f"Error in list_automatizations: {e}")
-        await message.answer("Ошибка при загрузке автоматизаций.")
+        user_language = get_user_language(message)
+        messages_class = get_messages_class(user_language)
+        await message.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
 
 @content_router.message(Command('booking'))
 async def schedule_command(message: types.Message):
     """Handle booking command with Calendly webapp"""
     try:
+        # Get messages based on user language (defaults to English)
+        user_language = get_user_language(message)
+        messages_class = get_messages_class(user_language)
+        
         # Create Calendly webapp button
         calendly_button = InlineKeyboardButton(
-            text="📅 Забронировать сессию",
+            text=messages_class.BOOKING_CMD["button_text"],
             web_app=WebAppInfo(url=Config.CALENDLY_LINK)
         )
         
@@ -111,25 +144,31 @@ async def schedule_command(message: types.Message):
         print(f"📅 Booking command: User {message.from_user.id} ({message.from_user.username}) accessing booking webapp")
         logging.info(f"Booking command: User {message.from_user.id} accessing booking webapp")
         
+        message_text = messages_class.BOOKING_CMD["title"] + messages_class.BOOKING_CMD["description"]
+        
         await message.answer(
-            "📅 *Бронирование сессии*\n\n"
-            "Выберите удобное время для консультации через Calendly.\n"
-            "Нажмите кнопку ниже для открытия календаря:",
+            message_text,
             reply_markup=keyboard,
             parse_mode="Markdown"
         )
         
     except Exception as e:
         logging.error(f"Error in schedule_command: {e}")
-        await message.answer("Ошибка при загрузке календаря бронирования.")
+        user_language = get_user_language(message)
+        messages_class = get_messages_class(user_language)
+        await message.answer(messages_class.BOOKING_CMD["loading_error"])
 
 @content_router.message(Command('pay'))
 async def pay_command(message: types.Message):
     """Handle payment command with Stripe webapp"""
     try:
+        # Get messages based on user language (defaults to English)
+        user_language = get_user_language(message)
+        messages_class = get_messages_class(user_language)
+        
         # Create Stripe payment webapp button
         stripe_button = InlineKeyboardButton(
-            text="💳 Оплатить услугу",
+            text=messages_class.PAY_CMD["button_text"],
             web_app=WebAppInfo(url=Config.STRIPE_PAYMENT_LINK)
         )
         
@@ -139,16 +178,19 @@ async def pay_command(message: types.Message):
         print(f"💳 Pay command: User {message.from_user.id} ({message.from_user.username}) accessing payment webapp")
         logging.info(f"Pay command: User {message.from_user.id} accessing payment webapp")
         
+        message_text = messages_class.PAY_CMD["title"] + messages_class.PAY_CMD["description"]
+        
         await message.answer(
-            "💳 *Оплата услуги*\n\n"
-            "Нажмите кнопку ниже для безопасной оплаты через Stripe:",
+            message_text,
             reply_markup=keyboard,
             parse_mode="Markdown"
         )
         
     except Exception as e:
         logging.error(f"Error in pay_command: {e}")
-        await message.answer("Ошибка при загрузке страницы оплаты.")
+        user_language = get_user_language(message)
+        messages_class = get_messages_class(user_language)
+        await message.answer(messages_class.PAY_CMD["loading_error"])
 
 @content_router.message(Command('subscribe'))
 async def subscribe_command(message: types.Message):
@@ -470,29 +512,40 @@ async def handle_materials_podcasts(callback_query: types.CallbackQuery):
 async def handle_automations_all(callback_query: types.CallbackQuery, supabase_client):
     """Handle all automatizations selection"""
     try:
-        # Fetch all automation documents
-        response = supabase_client.client.table('documents').select('id, metadata, url, category').not_('category', 'is', 'null').limit(10).execute()
+        # Fetch all automation documents with their categories via proper joins
+        response = supabase_client.client.table('documents').select('''
+            id, url, short_description, filename,
+            automations!inner(
+                categories!inner(name)
+            )
+        ''').limit(10).execute()
         
-        message_text = "🤖 <b>Все автоматизации</b>\n\n"
+        # Default to English for callbacks
+        messages_class = get_messages_class('en')
+        message_text = messages_class.AUTOMATIONS_CMD["all_automations_header"]
         
+        # Create buttons for each automation using short_description as button text
+        keyboard_buttons = []
         if response.data:
             for doc in response.data:
-                metadata = doc.get('metadata', {})
-                if isinstance(metadata, dict):
-                    file_name = metadata.get('file_name', 'Unnamed')
-                    url = doc.get('url') or metadata.get('url', '#')
-                    category = doc.get('category', 'Uncategorized')
-                    
-                    message_text += f"⚙️ <b>{file_name}</b>\n"
-                    message_text += f"📂 Категория: {category}\n"
-                    if url and url != '#':
-                        message_text += f"🔗 <a href='{url}'>Открыть</a>\n"
-                    message_text += "\n"
-        else:
-            message_text += "Примеры автоматизаций пока не найдены."
+                doc_id = doc.get('id')
+                short_desc = doc.get('short_description', 'Automation')
+                
+                # Truncate button text if too long (Telegram limit)
+                button_text = short_desc[:60] + "..." if len(short_desc) > 60 else short_desc
+                
+                keyboard_buttons.append([
+                    InlineKeyboardButton(text=button_text, callback_data=f"automation_detail_{doc_id}")
+                ])
         
-        back_button = InlineKeyboardButton(text="⬅️ Назад", callback_data="back_to_automations")
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[[back_button]])
+        else:
+            message_text += messages_class.AUTOMATIONS_CMD["no_examples_found"]
+        
+        # Add back button
+        keyboard_buttons.append([
+            InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["back_button"], callback_data="back_to_automations")
+        ])
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
         
         await callback_query.message.edit_text(
             message_text,
@@ -502,35 +555,54 @@ async def handle_automations_all(callback_query: types.CallbackQuery, supabase_c
         
     except Exception as e:
         logging.error(f"Error in handle_automations_all: {e}")
-        await callback_query.answer("Ошибка при загрузке автоматизаций")
+        messages_class = get_messages_class('en')
+        await callback_query.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
 
 @content_router.callback_query(lambda c: c.data.startswith('automation_cat_'))
 async def handle_automation_category(callback_query: types.CallbackQuery, supabase_client):
     """Handle specific automation category selection"""
     try:
-        category = callback_query.data.replace('automation_cat_', '')
+        category_id = callback_query.data.replace('automation_cat_', '')
         
-        # Fetch automation documents for this category
-        response = supabase_client.client.table('documents').select('id, metadata, url, category').eq('category', category).limit(10).execute()
+        # First get the category name
+        category_response = supabase_client.client.table('categories').select('name').eq('id', category_id).execute()
+        category_name = 'Unknown'
+        if category_response.data:
+            category_name = category_response.data[0]['name']
         
-        message_text = f"⚙️ <b>Автоматизации: {category}</b>\n\n"
+        # Fetch automation documents for this category using proper joins
+        response = supabase_client.client.table('documents').select('''
+            id, url, short_description, filename,
+            automations!inner(
+                categories!inner(name)
+            )
+        ''').eq('automations.category', category_id).limit(10).execute()
         
+        # Default to English for callbacks
+        messages_class = get_messages_class('en')
+        message_text = messages_class.AUTOMATIONS_CMD["category_header"](category_name)
+        
+        # Create buttons for each automation using short_description as button text
+        keyboard_buttons = []
         if response.data:
             for doc in response.data:
-                metadata = doc.get('metadata', {})
-                if isinstance(metadata, dict):
-                    file_name = metadata.get('file_name', 'Unnamed')
-                    url = doc.get('url') or metadata.get('url', '#')
-                    
-                    message_text += f"🤖 <b>{file_name}</b>\n"
-                    if url and url != '#':
-                        message_text += f"🔗 <a href='{url}'>Открыть</a>\n"
-                    message_text += "\n"
+                doc_id = doc.get('id')
+                short_desc = doc.get('short_description', 'Automation')
+                
+                # Truncate button text if too long (Telegram limit)
+                button_text = short_desc[:60] + "..." if len(short_desc) > 60 else short_desc
+                
+                keyboard_buttons.append([
+                    InlineKeyboardButton(text=button_text, callback_data=f"automation_detail_{doc_id}")
+                ])
         else:
-            message_text += f"Примеры автоматизаций в категории '{category}' пока не найдены."
+            message_text += messages_class.AUTOMATIONS_CMD["no_examples_in_category"](category_name)
         
-        back_button = InlineKeyboardButton(text="⬅️ Назад", callback_data="back_to_automations")
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[[back_button]])
+        # Add back button
+        keyboard_buttons.append([
+            InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["back_button"], callback_data="back_to_automations")
+        ])
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
         
         await callback_query.message.edit_text(
             message_text,
@@ -540,51 +612,153 @@ async def handle_automation_category(callback_query: types.CallbackQuery, supaba
         
     except Exception as e:
         logging.error(f"Error in handle_automation_category: {e}")
-        await callback_query.answer("Ошибка при загрузке категории автоматизаций")
+        messages_class = get_messages_class('en')
+        await callback_query.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
 
 @content_router.callback_query(lambda c: c.data == 'back_to_automations')
 async def handle_back_to_automations(callback_query: types.CallbackQuery, supabase_client):
     """Handle back to automatizations menu"""
     try:
-        # Fetch unique categories from documents table
-        response = supabase_client.client.table('documents').select('category').not_('category', 'is', 'null').execute()
+        # Fetch categories from categories table
+        response = supabase_client.client.table('categories').select('id, name').order('name').execute()
         
         categories = []
         if response.data:
-            # Get unique categories
-            unique_categories = set()
-            for doc in response.data:
-                if doc['category'] and doc['category'].strip():
-                    unique_categories.add(doc['category'].strip())
-            categories = sorted(list(unique_categories))
+            categories = response.data[:8]  # Limit to 8 categories to avoid keyboard size issues
         
         # Create keyboard with categories
         keyboard_buttons = []
         
         # Add "All automatizations" button first
+        messages_class = get_messages_class('en')  # Default to English for callbacks
         keyboard_buttons.append([
-            InlineKeyboardButton(text="🤖 Все автоматизации", callback_data="automations_all")
+            InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["all_automations_button"], callback_data="automations_all")
         ])
         
         # Add category buttons
-        for category in categories[:8]:  # Limit to 8 categories to avoid keyboard size issues
+        for category in categories:
             keyboard_buttons.append([
-                InlineKeyboardButton(text=f"⚙️ {category}", callback_data=f"automation_cat_{category}")
+                InlineKeyboardButton(text=f"⚙️ {category['name']}", callback_data=f"automation_cat_{category['id']}")
             ])
         
         keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
         
+        # Use English messages for callback queries by default
+        automation_text = messages_class.AUTOMATIONS_CMD["welcome"]
+        
         await callback_query.message.edit_text(
-            "🤖 *Примеры автоматизации*\n\n"
-            "Здесь вы найдете примеры различных автоматизаций для повышения эффективности.\n\n"
-            "Выберите категорию:",
+            automation_text,
             reply_markup=keyboard,
             parse_mode="Markdown"
         )
         
     except Exception as e:
         logging.error(f"Error in handle_back_to_automations: {e}")
-        await callback_query.answer("Ошибка при возврате к автоматизациям")
+        messages_class = get_messages_class('en')
+        await callback_query.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
+
+@content_router.callback_query(lambda c: c.data.startswith('automation_detail_'))
+async def handle_automation_detail(callback_query: types.CallbackQuery, supabase_client):
+    """Handle automation detail view - Step 3 of the flow"""
+    try:
+        automation_id = callback_query.data.replace('automation_detail_', '')
+        
+        # Fetch specific automation document with full description
+        response = supabase_client.client.table('documents').select('''
+            id, url, short_description, description, filename,
+            automations!inner(
+                categories!inner(name)
+            )
+        ''').eq('id', automation_id).execute()
+        
+        # Default to English for callbacks
+        messages_class = get_messages_class('en')
+        
+        if response.data and len(response.data) > 0:
+            doc = response.data[0]
+            
+            # Get document details
+            filename = doc.get('filename', 'Unnamed').replace('.json', '').replace('-', ' ').title()
+            url = doc.get('url', '#')
+            description = doc.get('description', doc.get('short_description', 'No description available'))
+            
+            # Get category name for back navigation
+            category_name = 'Uncategorized'
+            category_id = None
+            if doc.get('automations') and len(doc['automations']) > 0:
+                automation_info = doc['automations'][0]
+                category_info = automation_info.get('categories')
+                if category_info:
+                    category_name = category_info.get('name', 'Uncategorized')
+                category_id = automation_info.get('category')
+            
+            # Build message - just show the description
+            message_text = messages_class.AUTOMATIONS_CMD["automation_description"](description)
+            
+            # Create keyboard with action button and navigation
+            keyboard_buttons = []
+            
+            # Get automation button
+            keyboard_buttons.append([
+                InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["get_automation_button"], 
+                                   callback_data=f"get_automation_{automation_id}")
+            ])
+            
+            # Back to category button (if we have category_id)
+            if category_id:
+                keyboard_buttons.append([
+                    InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["back_to_category"], 
+                                       callback_data=f"automation_cat_{category_id}")
+                ])
+            else:
+                # Back to main menu
+                keyboard_buttons.append([
+                    InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["back_button"], 
+                                       callback_data="back_to_automations")
+                ])
+            
+            keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+            
+            await callback_query.message.edit_text(
+                message_text,
+                reply_markup=keyboard,
+                parse_mode="HTML"
+            )
+            
+        else:
+            # Automation not found
+            await callback_query.answer("Automation not found")
+            
+    except Exception as e:
+        logging.error(f"Error in handle_automation_detail: {e}")
+        messages_class = get_messages_class('en')
+        await callback_query.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
+
+@content_router.callback_query(lambda c: c.data.startswith('get_automation_'))
+async def handle_get_automation(callback_query: types.CallbackQuery, supabase_client):
+    """Handle automation request - when user wants to get the automation"""
+    try:
+        automation_id = callback_query.data.replace('get_automation_', '')
+        
+        # Log the automation request
+        user_id = callback_query.from_user.id
+        username = callback_query.from_user.username or "Unknown"
+        
+        logging.info(f"User {user_id} ({username}) requested automation {automation_id}")
+        print(f"🎯 Automation Request: User {user_id} ({username}) wants automation {automation_id}")
+        
+        # You can add logic here to:
+        # 1. Save the request to database
+        # 2. Send notification to admin
+        # 3. Provide download link
+        # 4. Schedule follow-up
+        
+        # For now, just acknowledge the request
+        await callback_query.answer("✅ Request received! We'll contact you soon with automation details.", show_alert=True)
+        
+    except Exception as e:
+        logging.error(f"Error in handle_get_automation: {e}")
+        await callback_query.answer("❌ Error processing your request. Please try again.")
 
 
 @content_router.message(Command('help'))
@@ -616,314 +790,4 @@ async def help(message: types.Message, state: FSMContext):
 # AUTOMATION COMMANDS
 # ===============================
 
-@content_router.message(Command('automate'))
-async def automate_command(message: types.Message, state: FSMContext, supabase_client):
-    """Handle /automate command"""
-    try:
-        automation_handler = AutomationHandler(supabase_client)
-        
-        # Check if user provided a query with the command
-        command_parts = message.text.split(' ', 1)
-        if len(command_parts) > 1:
-            # User provided query directly
-            query = command_parts[1].strip()
-            
-            await message.answer("🔍 Ищу подходящие автоматизации...")
-            
-            # Process the query
-            result = await automation_handler.handle_automation_query(
-                user_id=message.from_user.id,
-                query=query
-            )
-            
-            if result.get('success') and result.get('recommendations'):
-                # Format and send results
-                response = result.get('contextual_response', 'Найдены подходящие автоматизации:')
-                await message.answer(response, parse_mode="Markdown")
-                
-                # Send each automation as a separate message
-                for i, automation in enumerate(result['recommendations'][:3], 1):  # Limit to top 3
-                    automation_text = automation_handler.format_automation_for_telegram(automation)
-                    
-                    # Create inline keyboard for this automation
-                    keyboard_buttons = []
-                    
-                    # Add URL button if available
-                    if automation.get('url'):
-                        keyboard_buttons.append([
-                            InlineKeyboardButton(text="🔗 Открыть на n8n.io", url=automation['url'])
-                        ])
-                    
-                    # Add similar automations button
-                    keyboard_buttons.append([
-                        InlineKeyboardButton(text="🔍 Похожие автоматизации", callback_data=f"similar_{automation.get('title', '')[:20]}")
-                    ])
-                    
-                    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
-                    
-                    await message.answer(
-                        automation_text,
-                        reply_markup=keyboard,
-                        parse_mode="Markdown"
-                    )
-                
-                if len(result['recommendations']) > 3:
-                    await message.answer(f"И еще {len(result['recommendations']) - 3} автоматизаций. Уточните запрос для более точных результатов.")
-            
-            else:
-                # No results found
-                error_message = result.get('contextual_response', 'К сожалению, не удалось найти подходящие автоматизации.')
-                await message.answer(error_message)
-                
-                # Suggest categories
-                categories = automation_handler.get_available_categories()[:5]
-                suggestion_text = "\n📚 **Попробуйте поискать в категориях:**\n"
-                for cat in categories:
-                    suggestion_text += f"• {cat['name']}\n"
-                suggestion_text += "\nИспользуйте /knowledge для просмотра всех категорий."
-                
-                await message.answer(suggestion_text, parse_mode="Markdown")
-        
-        else:
-            # No query provided, ask for it
-            await message.answer(
-                "🤖 **Помощь в автоматизации**\n\n"
-                "Опишите задачу, которую хотите автоматизировать:\n\n"
-                "**Примеры:**\n"
-                "• Автоматически отправлять email уведомления\n"
-                "• Синхронизировать данные между Google Sheets и базой данных\n"
-                "• Создавать посты в социальных сетях из RSS\n"
-                "• Обрабатывать заказы в интернет-магазине\n\n"
-                "Просто опишите вашу задачу в следующем сообщении:",
-                parse_mode="Markdown"
-            )
-            await state.set_state(UserState.automation_query)
-    
-    except Exception as e:
-        logging.error(f"Error in automate command: {e}")
-        await message.answer("Произошла ошибка. Попробуйте еще раз позже.")
 
-@content_router.message(UserState.automation_query)
-async def handle_automation_query_state(message: types.Message, state: FSMContext, supabase_client):
-    """Handle automation query in FSM state"""
-    try:
-        automation_handler = AutomationHandler(supabase_client)
-        
-        await message.answer("🔍 Ищу подходящие автоматизации...")
-        
-        # Process the query
-        result = await automation_handler.handle_automation_query(
-            user_id=message.from_user.id,
-            query=message.text
-        )
-        
-        await state.clear()  # Clear the state
-        
-        if result.get('success') and result.get('recommendations'):
-            # Send contextual response
-            response = result.get('contextual_response', 'Найдены подходящие автоматизации:')
-            await message.answer(response, parse_mode="Markdown")
-            
-            # Send top 3 automations
-            for automation in result['recommendations'][:3]:
-                automation_text = automation_handler.format_automation_for_telegram(automation)
-                
-                # Create inline keyboard
-                keyboard_buttons = []
-                if automation.get('url'):
-                    keyboard_buttons.append([
-                        InlineKeyboardButton(text="🔗 Открыть на n8n.io", url=automation['url'])
-                    ])
-                
-                keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
-                
-                await message.answer(
-                    automation_text,
-                    reply_markup=keyboard,
-                    parse_mode="Markdown"
-                )
-        
-        else:
-            await message.answer("К сожалению, не удалось найти подходящие автоматизации для вашего запроса. Попробуйте использовать другие ключевые слова.")
-    
-    except Exception as e:
-        logging.error(f"Error handling automation query: {e}")
-        await message.answer("Произошла ошибка при обработке запроса.")
-        await state.clear()
-
-@content_router.message(Command('knowledge'))
-async def knowledge_command(message: types.Message, supabase_client):
-    """Handle /knowledge command - show automation knowledge base"""
-    try:
-        automation_handler = AutomationHandler(supabase_client)
-        
-        # Get available categories
-        categories = automation_handler.get_available_categories()
-        
-        # Create inline keyboard with categories
-        keyboard_buttons = []
-        
-        # Add trending button first
-        keyboard_buttons.append([
-            InlineKeyboardButton(text="🔥 Популярные автоматизации", callback_data="knowledge_trending")
-        ])
-        
-        # Add beginner button
-        keyboard_buttons.append([
-            InlineKeyboardButton(text="🚀 Для начинающих", callback_data="knowledge_beginner")
-        ])
-        
-        # Add categories (2 per row)
-        for i in range(0, len(categories), 2):
-            row = []
-            for j in range(2):
-                if i + j < len(categories):
-                    cat = categories[i + j]
-                    emoji_map = {
-                        'social-media': '📱',
-                        'ai-ml': '🧠', 
-                        'business-automation': '💼',
-                        'data-processing': '📊',
-                        'communication': '💬',
-                        'productivity': '⚡',
-                        'web-scraping': '🕷️',
-                        'marketing': '📈',
-                        'api-integration': '🔗',
-                        'e-commerce': '🛒'
-                    }
-                    emoji = emoji_map.get(cat['key'], '⚙️')
-                    row.append(InlineKeyboardButton(
-                        text=f"{emoji} {cat['name'][:15]}",
-                        callback_data=f"knowledge_cat_{cat['key']}"
-                    ))
-            if row:
-                keyboard_buttons.append(row)
-        
-        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
-        
-        # Send knowledge base overview
-        message_text = """📚 **База знаний по автоматизации**
-
-Добро пожаловать в базу знаний! Здесь вы найдете:
-
-🔥 **Популярные автоматизации** - самые востребованные решения
-🚀 **Для начинающих** - простые автоматизации для старта
-📂 **По категориям** - организованные по типам задач
-
-**Всего доступно:** более 150 готовых автоматизаций
-
-Выберите интересующую категорию:"""
-        
-        await message.answer(
-            message_text,
-            reply_markup=keyboard,
-            parse_mode="Markdown"
-        )
-    
-    except Exception as e:
-        logging.error(f"Error in knowledge command: {e}")
-        await message.answer("Ошибка при загрузке базы знаний.")
-
-# Knowledge base callback handlers
-@content_router.callback_query(lambda c: c.data.startswith('knowledge_'))
-async def handle_knowledge_callback(callback_query: types.CallbackQuery, supabase_client):
-    """Handle knowledge base callback queries"""
-    try:
-        automation_handler = AutomationHandler(supabase_client)
-        action = callback_query.data.replace('knowledge_', '')
-        
-        await callback_query.answer()
-        
-        if action == 'trending':
-            await callback_query.message.edit_text("🔍 Загружаю популярные автоматизации...")
-            
-            result = await automation_handler.get_trending_automations(callback_query.from_user.id)
-            
-            if result.get('success') and result.get('recommendations'):
-                response = "🔥 **Популярные автоматизации**\n\n"
-                response += result.get('contextual_response', '')
-                
-                await callback_query.message.edit_text(response, parse_mode="Markdown")
-                
-                # Send each automation
-                for automation in result['recommendations'][:4]:  # Top 4
-                    automation_text = automation_handler.format_automation_for_telegram(automation, include_details=False)
-                    
-                    keyboard_buttons = []
-                    if automation.get('url'):
-                        keyboard_buttons.append([
-                            InlineKeyboardButton(text="🔗 Открыть", url=automation['url'])
-                        ])
-                    
-                    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
-                    
-                    await callback_query.message.answer(
-                        automation_text,
-                        reply_markup=keyboard,
-                        parse_mode="Markdown"
-                    )
-        
-        elif action == 'beginner':
-            await callback_query.message.edit_text("🔍 Загружаю автоматизации для начинающих...")
-            
-            result = await automation_handler.get_beginner_automations(callback_query.from_user.id)
-            
-            if result.get('success') and result.get('recommendations'):
-                response = result.get('contextual_response', '🚀 Автоматизации для начинающих')
-                await callback_query.message.edit_text(response, parse_mode="Markdown")
-                
-                # Send automations
-                for automation in result['recommendations'][:4]:
-                    automation_text = automation_handler.format_automation_for_telegram(automation, include_details=False)
-                    
-                    keyboard_buttons = []
-                    if automation.get('url'):
-                        keyboard_buttons.append([
-                            InlineKeyboardButton(text="🔗 Открыть", url=automation['url'])
-                        ])
-                    
-                    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
-                    
-                    await callback_query.message.answer(
-                        automation_text,
-                        reply_markup=keyboard,
-                        parse_mode="Markdown"
-                    )
-        
-        elif action.startswith('cat_'):
-            category = action.replace('cat_', '')
-            await callback_query.message.edit_text(f"🔍 Загружаю автоматизации категории: {category}...")
-            
-            result = await automation_handler.handle_category_browse(callback_query.from_user.id, category)
-            
-            if result.get('success') and result.get('recommendations'):
-                category_info = result.get('category_info', {})
-                response = f"📂 **{category_info.get('name', category)}**\n\n"
-                response += category_info.get('description', '') + "\n\n"
-                response += f"Найдено {len(result['recommendations'])} автоматизаций:"
-                
-                await callback_query.message.edit_text(response, parse_mode="Markdown")
-                
-                # Send automations
-                for automation in result['recommendations'][:4]:
-                    automation_text = automation_handler.format_automation_for_telegram(automation, include_details=False)
-                    
-                    keyboard_buttons = []
-                    if automation.get('url'):
-                        keyboard_buttons.append([
-                            InlineKeyboardButton(text="🔗 Открыть", url=automation['url'])
-                        ])
-                    
-                    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons) if keyboard_buttons else None
-                    
-                    await callback_query.message.answer(
-                        automation_text,
-                        reply_markup=keyboard,
-                        parse_mode="Markdown"
-                    )
-            else:
-                await callback_query.message.edit_text(f"В категории {category} пока нет доступных автоматизаций.")
-    
-    except Exception as e:
-        logging.error(f"Error handling knowledge callback: {e}")
-        await callback_query.answer("Произошла ошибка", show_alert=True)

@@ -2,18 +2,21 @@ class Messages:
     START_CMD = {
         "welcome": lambda user_name: (
             f"👋 Hello, {user_name}!\n\n"
-            "I'm Vlada's assistant bot. \n"
-            "Feel free to ask me any questions! Just type your question, and I'll do my best to help you 💬\nI use the knowledge from Vlada's videos. \n\n"
-            "As well I can suggest to you next options:\n"
-            "• 🎥 Watching Vlada's educational videos\n"
-            "• 🔍 Finding specific topics discussed in the videos\n"
-            "• 📝 Getting video summaries\n"
-            "• ❓ Answering your questions about any topic\n\n"
-            "Extra available commands:\n"
-            "/help - Show help message\n"
-            "/videos - List available videos\n"
-            "/info - Get video summaries\n"
-            "Let's start! Write your questions or choose the option from the list."
+            "I'm an automation assistant bot! My goal is to help you understand how to automate daily tasks and solve your problems using modern technologies.\n\n"
+            "What I can do:\n"
+            "• 🤖 Analyze your problems and suggest automation solutions\n"
+            "• 💼 Optimize work and business processes\n"
+            "• 📱 Recommend digital automation tools\n"
+            "• 🎯 Improve your personal efficiency\n\n"
+            "Available commands:\n"
+            "/automatizations - Browse automation examples by category\n"
+            "/booking - Schedule a consultation\n"
+            "/pay - Make a payment for services\n"
+            "/settings - Bot settings and preferences\n"
+            "/help - Ask a question directly\n"
+            "/about - Learn more about this bot\n\n"
+            "💬 You can also just send me any message describing a task you want to automate, and I'll provide expert advice plus similar automation examples from our database!\n\n"
+            "Where shall we start? 🚀"
         )
     }
 
@@ -40,14 +43,16 @@ class Messages:
     }
 
     ABOUT_MESSAGE = (
-        "🤖 *AI Video Assistant*\n\n"
-        "I am your personal AI assistant for managing and interacting with video content. "
+        "🤖 *Automation Assistant Bot*\n\n"
+        "I am your personal AI assistant for automating daily tasks and improving efficiency. "
         "I can help you:\n\n"
-        "• 🎥 List available videos\n"
-        "• 🔍 Search through video content\n"
-        "• 📝 Show video summaries\n"
-        "• 📊 Track your requests\n\n"
-        "Use /help to see all available commands."
+        "• 🤖 Analyze problems and suggest automation solutions\n"
+        "• 💼 Optimize work and business processes\n"
+        "• 📱 Recommend digital automation tools\n"
+        "• 🎯 Improve personal productivity\n"
+        "• 📚 Provide automation knowledge base\n"
+        "• 📅 Schedule automation consultations\n\n"
+        "Use /help to ask questions directly."
     )
 
     HELP_MESSAGE = (
@@ -86,4 +91,39 @@ class Messages:
         "no_speech_detected": "❌ Sorry, I couldn't detect any speech in this audio.",
         "transcription_error": "❌ Sorry, I had trouble understanding the audio. Please try again.",
         "processing_error": "❌ An error occurred while processing your audio message. Please try again.",
+    }
+
+    AUTOMATIONS_CMD = {
+        "welcome": (
+            "🤖 *Automation Examples*\n\n"
+            "Here you will find examples of various automations to improve efficiency.\n\n"
+            "Choose a category:"
+        ),
+        "all_automations_button": "🤖 All Automations",
+        "all_automations_header": "🤖 <b>All Automations</b>\n\nChoose an automation:",
+        "category_header": lambda category_name: f"⚙️ <b>Automations: {category_name}</b>\n\nChoose an automation:",
+        "category_label": lambda category_name: f"📂 Category: {category_name}\n",
+        "open_link": lambda url: f"🔗 <a href='{url}'>Open on n8n.io</a>\n",
+        "no_examples_found": "No automation examples found yet.",
+        "no_examples_in_category": lambda category_name: f"No automation examples found in '{category_name}' category yet.",
+        "automation_detail_header": lambda filename: f"🤖 <b>{filename}</b>\n\n",
+        "automation_description": lambda description: f"📝 <b>Description:</b>\n{description}\n\n",
+        "get_automation_button": "✅ Get this automation",
+        "back_button": "⬅️ Back",
+        "back_to_category": "⬅️ Back to category",
+        "loading_error": "Error loading automations."
+    }
+
+    BOOKING_CMD = {
+        "title": "📅 *Session Booking*\n\n",
+        "description": "Choose a convenient time for consultation through Calendly.\nClick the button below to open the calendar:",
+        "button_text": "📅 Book a session",
+        "loading_error": "Error loading booking calendar."
+    }
+
+    PAY_CMD = {
+        "title": "💳 *Service Payment*\n\n",
+        "description": "Click the button below for secure payment through Stripe:",
+        "button_text": "💳 Pay for service",
+        "loading_error": "Error loading payment page."
     }
