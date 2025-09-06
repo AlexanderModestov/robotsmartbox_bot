@@ -90,26 +90,27 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
         user_text = message.text
     elif message.voice or message.audio:
         # Show processing message for voice
-        processing_voice_message = await message.answer("🎤 Распознаю голосовое сообщение...")
+        from bot.messages_en import MessagesEn
+        processing_voice_message = await message.answer(MessagesEn.QUESTION_CMD["voice_processing"])
         
         try:
             user_text = await transcribe_voice_cloud(message)
             await processing_voice_message.delete()
             
             if not user_text or user_text.strip() == "":
-                await message.answer("Не удалось распознать речь. Попробуйте еще раз или отправьте текстовое сообщение.")
+                await message.answer("Could not recognize speech. Please try again or send a text message.")
                 return
                 
         except Exception as e:
             logging.error(f"Error transcribing voice: {e}")
-            await processing_voice_message.edit_text("Ошибка при распознавании голосового сообщения. Попробуйте еще раз.")
+            await processing_voice_message.edit_text("Error transcribing voice message. Please try again.")
             return
     else:
-        await message.answer("Пожалуйста, отправьте текстовое или голосовое сообщение с вашим запросом.")
+        await message.answer("Please send a text or voice message with your request.")
         return
     
     # Show processing message
-    processing_message = await message.answer("🤔 Обрабатываю ваш вопрос...")
+    processing_message = await message.answer(MessagesEn.QUESTION_CMD["processing"])
 
         # Send typing action
     await message.bot.send_chat_action(
@@ -129,28 +130,30 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
         
         chatgpt_prompt = """You are an n8n automation expert. Answer ONLY automation-related questions.
 
-IMPORTANT: If the question is NOT related to task automation, processes, or workflows, respond EXACTLY: "I don't know the answer to your question. I can only offer automation solutions."
+IMPORTANT: If the question is NOT related to task automation, processes, or workflows, respond EXACTLY:
+"I can only answer automation-related questions. Maybe you’d like to know how automation could support this?"
 
 For automation questions, provide a brief response with these 3 sections:
 
 Response format:
-🤖 n8n Automation Solution (2-3 sentences)
-Describe exactly how to automate this task using n8n nodes and workflows.
+🤖 n8n Automation Solution (2–3 sentences)
+Describe how to automate this task using n8n workflows. Mention node types or logic if helpful, but avoid deep technical detail.
 
 ✅ Benefits (3 points)
-• Time saving: [specific hours/week saved]
-• Error reduction: [% improvement]
+• Time saving: [estimated hours/week saved]
+• Error reduction: [approx. % improvement]
 • Scalability: [growth potential]
 
-💰 Cost Savings (1-2 sentences)
-Calculate approximate monthly savings in dollars based on hourly rates and time saved.
+💰 Cost Savings (1–2 sentences)
+Estimate monthly savings in dollars based on hours saved × $25/hour (adjustable if needed).
 
 Rules:
-- Don't specify exact n8n node names, use only descriptions
-- Use numbers and percentages
-- Maximum 150 words total
-- Focus on the most effective automation only
-- Assume $25/hour labor cost for calculations"""
+
+Focus on the most effective automation only
+
+Use realistic numbers and percentages (avoid random placeholders)
+
+Maximum 150 words total"""
 
         chatgpt_response = await client.chat.completions.create(
             model="gpt-4",
@@ -179,8 +182,7 @@ Rules:
             # Search for similar automations in the database
             search_results = await supabase_client.search_automations_by_similarity(
                 query_embedding=query_embedding,
-                limit=3,
-                threshold=0.7
+                limit=3
             )
             
             if search_results:
@@ -268,9 +270,7 @@ Rules:
         
     except Exception as e:
         logging.error(f"❌ RAG Pipeline: Fatal error processing question for user {message.from_user.id}: {e}")
-        await processing_message.edit_text(
-            "Произошла ошибка при обработке вашего вопроса. Попробуйте еще раз или обратитесь к администратору."
-        )
+        await processing_message.edit_text(MessagesEn.QUESTION_CMD["error"])
 
 
 

@@ -747,11 +747,27 @@ async def handle_get_automation(callback_query: types.CallbackQuery, supabase_cl
         logging.info(f"User {user_id} ({username}) requested automation {automation_id}")
         print(f"🎯 Automation Request: User {user_id} ({username}) wants automation {automation_id}")
         
-        # You can add logic here to:
-        # 1. Save the request to database
-        # 2. Send notification to admin
-        # 3. Provide download link
-        # 4. Schedule follow-up
+        # Send notification to admin
+        try:
+            from bot.config import Config
+            admin_id = Config.TELEGRAM_ADMIN_ID
+            
+            admin_message = f"""🎯 **New Automation Request**
+            
+👤 **User:** @{username} ({user_id})
+⚙️ **Automation ID:** {automation_id}
+📅 **Time:** {callback_query.message.date}
+
+Please contact this user to provide the automation."""
+            
+            await callback_query.bot.send_message(
+                chat_id=admin_id,
+                text=admin_message,
+                parse_mode="Markdown"
+            )
+            
+        except Exception as admin_error:
+            logging.error(f"Failed to notify admin: {admin_error}")
         
         # For now, just acknowledge the request
         await callback_query.answer("✅ Request received! We'll contact you soon with automation details.", show_alert=True)

@@ -93,6 +93,12 @@ class Messages:
         "processing_error": "❌ An error occurred while processing your audio message. Please try again.",
     }
 
+    QUESTION_CMD = {
+        "processing": "🤔 Processing your question...",
+        "voice_processing": "🎤 Transcribing voice message...",
+        "error": "An error occurred while processing your question. Please try again or contact the administrator."
+    }
+
     AUTOMATIONS_CMD = {
         "welcome": (
             "🤖 *Automation Examples*\n\n"
