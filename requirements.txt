@@ -25,3 +25,6 @@ numpy>=1.24.0
 nltk>=3.8
 spacy>=3.5.0
 sentence-transformers>=2.2.0
+stripe>=5.0.0
+fastapi>=0.68.0
+uvicorn>=0.15.0
