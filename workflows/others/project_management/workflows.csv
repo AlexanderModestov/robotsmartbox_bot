@@ -1,0 +1,143 @@
+id,title,url
+8231,Create Mondaycom Board Items From Jotform Submissions With Field Mapping,https://n8n.io/workflows/8231-create-mondaycom-board-items-from-jotform-submissions-with-field-mapping/
+8156,Create Jira Tickets From Streamlit Forms With Webhook And Rest Api,https://n8n.io/workflows/8156-create-jira-tickets-from-streamlit-forms-with-webhook-and-rest-api/
+7871,Bidirectional Clickup Task And Google Calendar Sync With Multi Calendar Routing,https://n8n.io/workflows/7871-bidirectional-clickup-task-and-google-calendar-sync-with-multi-calendar-routing/
+7739,Create Daily Task Status Snapshots From Mondaycom To Google Sheets,https://n8n.io/workflows/7739-create-daily-task-status-snapshots-from-mondaycom-to-google-sheets/
+7737,Monitor Stuck Tasks In Mondaycom With Automated Slack Alerts,https://n8n.io/workflows/7737-monitor-stuck-tasks-in-mondaycom-with-automated-slack-alerts/
+7736,Automated Task Creation From Google Sheets To Mondaycom With Status Updates,https://n8n.io/workflows/7736-automated-task-creation-from-google-sheets-to-mondaycom-with-status-updates/
+7700,Send Preventive Maintenance Schedules With Google Sheets And Gmail Ics Invites,https://n8n.io/workflows/7700-send-preventive-maintenance-schedules-with-google-sheets-and-gmail-ics-invites/
+7673,Daily Trello Task Tracker With Google Sheets History Log,https://n8n.io/workflows/7673-daily-trello-task-tracker-with-google-sheets-history-log/
+7619,Automatic Trello Board Cleanup By Removing Cards With Specific Labels,https://n8n.io/workflows/7619-automatic-trello-board-cleanup-by-removing-cards-with-specific-labels/
+7613,Daily Trello Task Deadline Digests To Slack,https://n8n.io/workflows/7613-daily-trello-task-deadline-digests-to-slack/
+7573,Generate Clickup Weekly Assignment And Performance Reports With Gmail,https://n8n.io/workflows/7573-generate-clickup-weekly-assignment-and-performance-reports-with-gmail/
+7572,Daily Overdue Tasks Report From Clickup To Gmail For Team Accountability,https://n8n.io/workflows/7572-daily-overdue-tasks-report-from-clickup-to-gmail-for-team-accountability/
+7570,Automated Clickup Time Tracking Reports And Task Performance Analytics Via Gmail,https://n8n.io/workflows/7570-automated-clickup-time-tracking-reports-and-task-performance-analytics-via-gmail/
+7383,Automated Task Tracking And Notifications With Motion And Airtable,https://n8n.io/workflows/7383-automated-task-tracking-and-notifications-with-motion-and-airtable/
+7300,Automate Client Onboarding With Gpt 4 Google Drive Clickup And Slack,https://n8n.io/workflows/7300-automate-client-onboarding-with-gpt-4-google-drive-clickup-and-slack/
+7293,Easy Redmine And Microsoft Teams Workflow Template,https://n8n.io/workflows/7293-easy-redmine-and-microsoft-teams-workflow-template/
+7249,Monitor Medical Equipment With Google Sheets And Send Whatsapp And Email Alerts,https://n8n.io/workflows/7249-monitor-medical-equipment-with-google-sheets-and-send-whatsapp-and-email-alerts/
+6903,Build Products With Cpo Led Ai Team Using Openai O3 And Gpt 41 Mini Agents,https://n8n.io/workflows/6903-build-products-with-cpo-led-ai-team-using-openai-o3-and-gpt-41-mini-agents/
+6831,Real Time Clickup Time Tracking To Hubspot Project Sync,https://n8n.io/workflows/6831-real-time-clickup-time-tracking-to-hubspot-project-sync/
+6742,Track Construction Site Progress With Google Gemini Ai Drive Photos And Sheets,https://n8n.io/workflows/6742-track-construction-site-progress-with-google-gemini-ai-drive-photos-and-sheets/
+6701,Ai Powered Bug Tracking With Github Issues And Telegram Alerts Using Gemini,https://n8n.io/workflows/6701-ai-powered-bug-tracking-with-github-issues-and-telegram-alerts-using-gemini/
+6694,Send Daily Real Estate Construction Updates Via Gmail And Whatsapp With Google Sheets,https://n8n.io/workflows/6694-send-daily-real-estate-construction-updates-via-gmail-and-whatsapp-with-google-sheets/
+6675,Manage Construction Projects With Tasks Photo Reports Telegram And Google Sheets,https://n8n.io/workflows/6675-manage-construction-projects-with-tasks-photo-reports-telegram-and-google-sheets/
+6546,Manage Clickup Tasks With Natural Language Via Telegram Bot And Gpt 41,https://n8n.io/workflows/6546-manage-clickup-tasks-with-natural-language-via-telegram-bot-and-gpt-41/
+6528,Automated Whatsapp Group Weekly Team Reports With Gemini Ai Summarization,https://n8n.io/workflows/6528-automated-whatsapp-group-weekly-team-reports-with-gemini-ai-summarization/
+6365,Automated Daily Task Reminder Emails With Google Sheets And Smtp,https://n8n.io/workflows/6365-automated-daily-task-reminder-emails-with-google-sheets-and-smtp/
+6338,Schedule Daily Email Reminders From Google Sheets With Gmail,https://n8n.io/workflows/6338-schedule-daily-email-reminders-from-google-sheets-with-gmail/
+6335,Task Deadline Reminders With Google Sheets Chatgpt And Gmail,https://n8n.io/workflows/6335-task-deadline-reminders-with-google-sheets-chatgpt-and-gmail/
+5904,Transform Meeting Notes Into Action Items With Gemini And Google Workspace,https://n8n.io/workflows/5904-transform-meeting-notes-into-action-items-with-gemini-and-google-workspace/
+5889,Automation Flow From Notion To Github With Email Notifications,https://n8n.io/workflows/5889-automation-flow-from-notion-to-github-with-email-notifications/
+5742,Manage Jira Issues With Natural Language Via Telegram And Gpt 4O,https://n8n.io/workflows/5742-manage-jira-issues-with-natural-language-via-telegram-and-gpt-4o/
+5696,Transform Meeting Notes Into Tasks Using Gpt 41 Mini Notion And Ticktick Via Telegram,https://n8n.io/workflows/5696-transform-meeting-notes-into-tasks-using-gpt-41-mini-notion-and-ticktick-via-telegram/
+5672,Daily Task Reminder System Airtable To Slack Automated Notifications,https://n8n.io/workflows/5672-daily-task-reminder-system-airtable-to-slack-automated-notifications/
+5648,Sync Linear Issues To Todoist Tasks Automatically Create Update Close,https://n8n.io/workflows/5648-sync-linear-issues-to-todoist-tasks-automatically-create-update-close/
+5478,Ai Powered Scrum Master Assistant With Openai Slack And Asana Integration,https://n8n.io/workflows/5478-ai-powered-scrum-master-assistant-with-openai-slack-and-asana-integration/
+5473,Ai Powered Email To Jira Ticket Creation With Llama 32,https://n8n.io/workflows/5473-ai-powered-email-to-jira-ticket-creation-with-llama-32/
+5332,Asana Tool Mcp Server All 22 Operations,https://n8n.io/workflows/5332-asana-tool-mcp-server-all-22-operations/
+5320,Let Ai Agents Manage Clients Tasks Clockify Tool Mcp Server All Operations,https://n8n.io/workflows/5320-let-ai-agents-manage-clients-tasks-clockify-tool-mcp-server-all-operations/
+5293,Audio To Trello Task Bot,https://n8n.io/workflows/5293-audio-to-trello-task-bot/
+5242,Harvest Tool Mcp Server All 51 Operations,https://n8n.io/workflows/5242-harvest-tool-mcp-server-all-51-operations/
+5237,Let Ai Agents Handle Issues With The Jira Mcp Server All 20 Operations,https://n8n.io/workflows/5237-let-ai-agents-handle-issues-with-the-jira-mcp-server-all-20-operations/
+5236,Allow Ai Agents To Access User And Workitem Operations Kitemaker Tool Mcp Server,https://n8n.io/workflows/5236-allow-ai-agents-to-access-user-and-workitem-operations-kitemaker-tool-mcp-server/
+5227,Give Ai Agents Power To Get Create Update Issues With Linear Tool Mcp Server,https://n8n.io/workflows/5227-give-ai-agents-power-to-get-create-update-issues-with-linear-tool-mcp-server/
+5120,Mondaycom Tool Mcp Server All 18 Operations,https://n8n.io/workflows/5120-mondaycom-tool-mcp-server-all-18-operations/
+5079,Trello Tool Mcp Server All 41 Operations,https://n8n.io/workflows/5079-trello-tool-mcp-server-all-41-operations/
+5049,Interactive Slack Approval And Data Submission System With Webhooks,https://n8n.io/workflows/5049-interactive-slack-approval-and-data-submission-system-with-webhooks/
+5004,Automate Github Issue Assignments Via Comment Commands,https://n8n.io/workflows/5004-automate-github-issue-assignments-via-comment-commands/
+4805,Automate Time Tracking Enforcement And Cleanup For Awork Tasks,https://n8n.io/workflows/4805-automate-time-tracking-enforcement-and-cleanup-for-awork-tasks/
+4719,Discord Channel Creation From Google Sheets With Member Notifications,https://n8n.io/workflows/4719-discord-channel-creation-from-google-sheets-with-member-notifications/
+4578,Ai Powered Asana Task Prioritization With Gpt 4 And Pinecone Memory,https://n8n.io/workflows/4578-ai-powered-asana-task-prioritization-with-gpt-4-and-pinecone-memory/
+4510,Sprint Cycle Announcements With Form Input Gpt 4 And Slack,https://n8n.io/workflows/4510-sprint-cycle-announcements-with-form-input-gpt-4-and-slack/
+4386,Notion Status Based Alert Messages Slack Telegram Whatsapp Discord Email,https://n8n.io/workflows/4386-notion-status-based-alert-messages-slack-telegram-whatsapp-discord-email/
+4350,Check Dependencies Before Completing Awork Tasks Workaround,https://n8n.io/workflows/4350-check-dependencies-before-completing-awork-tasks-workaround/
+4153,Auto Ticket Maker Convert Slack Conversations Into Structured Project Tickets,https://n8n.io/workflows/4153-auto-ticket-maker-convert-slack-conversations-into-structured-project-tickets/
+4038,Automate Sprint Planning With Openai Google Calendar And Gmail For Agile Teams,https://n8n.io/workflows/4038-automate-sprint-planning-with-openai-google-calendar-and-gmail-for-agile-teams/
+4019,Automate Daily Youtrack Task Summaries To Discord By Assignee,https://n8n.io/workflows/4019-automate-daily-youtrack-task-summaries-to-discord-by-assignee/
+3971,Summarise Ms Teams Channel Activity For Weekly Reports With Ai,https://n8n.io/workflows/3971-summarise-ms-teams-channel-activity-for-weekly-reports-with-ai/
+3939,Jira Mcp Server,https://n8n.io/workflows/3939-jira-mcp-server/
+3934,Generate Lessons Learned Reports From Jira Epics With Ai And Google Docs,https://n8n.io/workflows/3934-generate-lessons-learned-reports-from-jira-epics-with-ai-and-google-docs/
+3909,Automate Agile Refinement Prep With Gmail Openai And Google Sheets,https://n8n.io/workflows/3909-automate-agile-refinement-prep-with-gmail-openai-and-google-sheets/
+3635,Build Your Own Github Mcp Server,https://n8n.io/workflows/3635-build-your-own-github-mcp-server/
+3177,Sync Notion To Clockify Including Clients Projects And Tasks,https://n8n.io/workflows/3177-sync-notion-to-clockify-including-clients-projects-and-tasks/
+3021,Get Github Issue Updates And Send Notifications To Telegram,https://n8n.io/workflows/3021-get-github-issue-updates-and-send-notifications-to-telegram/
+2991,Automate Figma Versioning And Jira Updates With N8N Webhook Integration,https://n8n.io/workflows/2991-automate-figma-versioning-and-jira-updates-with-n8n-webhook-integration/
+2974,Bitrix24 Task Form Widget Application Workflow With Webhook Integration,https://n8n.io/workflows/2974-bitrix24-task-form-widget-application-workflow-with-webhook-integration/
+2938,Googleform Submission To Create A Github Issue Bug Report,https://n8n.io/workflows/2938-googleform-submission-to-create-a-github-issue-bug-report/
+2800,Zoom Ai Meeting Assistant Creates Mail Summary Clickup Tasks And Follow Up Call,https://n8n.io/workflows/2800-zoom-ai-meeting-assistant-creates-mail-summary-clickup-tasks-and-follow-up-call/
+2785,Rss Feed News Processing And Distribution Workflow,https://n8n.io/workflows/2785-rss-feed-news-processing-and-distribution-workflow/
+2708,Send Jira Task Notifications To Telegram User Via Bot,https://n8n.io/workflows/2708-send-jira-task-notifications-to-telegram-user-via-bot/
+2701,Reschedule Overdue Asana Tasks And Clean Up Completed Tasks,https://n8n.io/workflows/2701-reschedule-overdue-asana-tasks-and-clean-up-completed-tasks/
+2683,Ai Agent For Project Management And Meetings With Airtable And Fireflies,https://n8n.io/workflows/2683-ai-agent-for-project-management-and-meetings-with-airtable-and-fireflies/
+2604,Time Logging On Clockify Using Slack,https://n8n.io/workflows/2604-time-logging-on-clockify-using-slack/
+2578,Linear To Productboard Feature Sync,https://n8n.io/workflows/2578-linear-to-productboard-feature-sync/
+2551,Add New Clients From Notion To Clockify,https://n8n.io/workflows/2551-add-new-clients-from-notion-to-clockify/
+2488,Automated Notion Task Reminders Via Slack,https://n8n.io/workflows/2488-automated-notion-task-reminders-via-slack/
+2478,Send A Message Via A Lark Bot,https://n8n.io/workflows/2478-send-a-message-via-a-lark-bot/
+2377,Turn Emails Into Ai Enhanced Tasks In Notion Multi User Support With Gmail Airtable And Softr,https://n8n.io/workflows/2377-turn-emails-into-ai-enhanced-tasks-in-notion-multi-user-support-with-gmail-airtable-and-softr/
+2190,Create New Clickup Tasks From Slack Commands,https://n8n.io/workflows/2190-create-new-clickup-tasks-from-slack-commands/
+2153,Add A Bug To Linear Via Slack Command,https://n8n.io/workflows/2153-add-a-bug-to-linear-via-slack-command/
+2148,Write All Linear Tickets To Google Sheets,https://n8n.io/workflows/2148-write-all-linear-tickets-to-google-sheets/
+2140,Add Product Ideas To Notion Via A Slack Command,https://n8n.io/workflows/2140-add-product-ideas-to-notion-via-a-slack-command/
+2138,Create Linear Tickets From Notion Content,https://n8n.io/workflows/2138-create-linear-tickets-from-notion-content/
+2086,Retrieve A Mondaycom Row And All Data In A Single Node,https://n8n.io/workflows/2086-retrieve-a-mondaycom-row-and-all-data-in-a-single-node/
+2073,Mondaycom Useful Utilities,https://n8n.io/workflows/2073-mondaycom-useful-utilities/
+2070,Airtable Automate Recurring Tasks,https://n8n.io/workflows/2070-airtable-automate-recurring-tasks/
+1954,Ai Agent Chat,https://n8n.io/workflows/1954-ai-agent-chat/
+1951,Scrape And Summarize Webpages With Ai,https://n8n.io/workflows/1951-scrape-and-summarize-webpages-with-ai/
+1934,Telegram Ai Chatbot,https://n8n.io/workflows/1934-telegram-ai-chatbot/
+1932,Send Alert When Data Is Created In Appdatabase,https://n8n.io/workflows/1932-send-alert-when-data-is-created-in-appdatabase/
+1931,Report Number Of Weekly Created Records In An App,https://n8n.io/workflows/1931-report-number-of-weekly-created-records-in-an-app/
+1862,Openai Gpt 3 Company Enrichment From Website Content,https://n8n.io/workflows/1862-openai-gpt-3-company-enrichment-from-website-content/
+1835,Sync Notion Database Pages As Clickup Tasks,https://n8n.io/workflows/1835-sync-notion-database-pages-as-clickup-tasks/
+1831,Sync Jira Issues With Subsequent Comments To Notion Database,https://n8n.io/workflows/1831-sync-jira-issues-with-subsequent-comments-to-notion-database/
+1821,Sync Zendesk Tickets With Subsequent Comments To Asana Tasks,https://n8n.io/workflows/1821-sync-zendesk-tickets-with-subsequent-comments-to-asana-tasks/
+1804,Sync Your Github Issues To Your Notion Database,https://n8n.io/workflows/1804-sync-your-github-issues-to-your-notion-database/
+1769,Sync Tasks Data Between Notion And Asana,https://n8n.io/workflows/1769-sync-tasks-data-between-notion-and-asana/
+1750,Creating An Api Endpoint,https://n8n.io/workflows/1750-creating-an-api-endpoint/
+1748,Pulling Data From Services That N8N Doesnt Have A Pre Built Integration For,https://n8n.io/workflows/1748-pulling-data-from-services-that-n8n-doesnt-have-a-pre-built-integration-for/
+1747,Joining Different Datasets,https://n8n.io/workflows/1747-joining-different-datasets/
+1700,Very Quick Quickstart,https://n8n.io/workflows/1700-very-quick-quickstart/
+1534,Back Up Your N8N Workflows To Github,https://n8n.io/workflows/1534-back-up-your-n8n-workflows-to-github/
+1530,Create Onfleet Tasks From Local Spreadsheets,https://n8n.io/workflows/1530-create-onfleet-tasks-from-local-spreadsheets/
+1492,Update Time Tracking Projects Based On Syncro Status Changes,https://n8n.io/workflows/1492-update-time-tracking-projects-based-on-syncro-status-changes/
+1488,Sync Timer Entries From Clockify To Syncro,https://n8n.io/workflows/1488-sync-timer-entries-from-clockify-to-syncro/
+1487,Creates A Time Tracking Project From Syncro To Clockify,https://n8n.io/workflows/1487-creates-a-time-tracking-project-from-syncro-to-clockify/
+1475,Standup Bot 44 Worker,https://n8n.io/workflows/1475-standup-bot-44-worker/
+1474,Standup Bot 34 Override Config,https://n8n.io/workflows/1474-standup-bot-34-override-config/
+1473,Standup Bot 24 Read Config,https://n8n.io/workflows/1473-standup-bot-24-read-config/
+1472,Standup Bot 14 Initialize,https://n8n.io/workflows/1472-standup-bot-14-initialize/
+1442,Automate Assigning Github Issues,https://n8n.io/workflows/1442-automate-assigning-github-issues/
+1435,Convert Json To An Excel File,https://n8n.io/workflows/1435-convert-json-to-an-excel-file/
+1374,Create A New Team For A Project In Notion,https://n8n.io/workflows/1374-create-a-new-team-for-a-project-in-notion/
+1349,Create An Issue On Gitlab On Every Github Release,https://n8n.io/workflows/1349-create-an-issue-on-gitlab-on-every-github-release/
+1319,Create Nextcloud Deck Card From Imap Email,https://n8n.io/workflows/1319-create-nextcloud-deck-card-from-imap-email/
+1274,Assign Issues To Interested Contributors,https://n8n.io/workflows/1274-assign-issues-to-interested-contributors/
+1105,Check To Do On Notion And Send Message On Slack,https://n8n.io/workflows/1105-check-to-do-on-notion-and-send-message-on-slack/
+1089,Receive A Mattermost Message When New Record Gets Added To Notion,https://n8n.io/workflows/1089-receive-a-mattermost-message-when-new-record-gets-added-to-notion/
+987,Create Asana Ticket From Terminal Bash Dash,https://n8n.io/workflows/987-create-asana-ticket-from-terminal-bash-dash/
+865,Gathering Tasks In Typeform And Send To Clickup,https://n8n.io/workflows/865-gathering-tasks-in-typeform-and-send-to-clickup/
+826,Create And Update A Channel And Send A Message On Twist,https://n8n.io/workflows/826-create-and-update-a-channel-and-send-a-message-on-twist/
+811,Manage Slack Channel And Users Automatically,https://n8n.io/workflows/811-manage-slack-channel-and-users-automatically/
+791,Get Product Feedback And Create Ticket On Trello,https://n8n.io/workflows/791-get-product-feedback-and-create-ticket-on-trello/
+728,Create A Board Lists And A Card In Wekan,https://n8n.io/workflows/728-create-a-board-lists-and-a-card-in-wekan/
+701,Manage Projects In Clockify,https://n8n.io/workflows/701-manage-projects-in-clockify/
+686,Receive Updates When An Event Occurs In Taiga,https://n8n.io/workflows/686-receive-updates-when-an-event-occurs-in-taiga/
+685,Create Update And Get An Issue On Taiga,https://n8n.io/workflows/685-create-update-and-get-an-issue-on-taiga/
+680,Create Update And Send A Message To A Channel In Microsoft Teams,https://n8n.io/workflows/680-create-update-and-send-a-message-to-a-channel-in-microsoft-teams/
+654,Receive Updates When An Event Occurs In Asana,https://n8n.io/workflows/654-receive-updates-when-an-event-occurs-in-asana/
+569,Receive Updates For Events In Jira,https://n8n.io/workflows/569-receive-updates-for-events-in-jira/
+556,Get A Board From Mondaycom,https://n8n.io/workflows/556-get-a-board-from-mondaycom/
+536,Receive Updates For New Events In Clockify,https://n8n.io/workflows/536-receive-updates-for-new-events-in-clockify/
+517,Get New Time Entries From Toggl,https://n8n.io/workflows/517-get-new-time-entries-from-toggl/
+508,Receive Updates For Specified Tasks In Flow,https://n8n.io/workflows/508-receive-updates-for-specified-tasks-in-flow/
+506,Get All The Tasks In Flow,https://n8n.io/workflows/506-get-all-the-tasks-in-flow/
+494,Create A Client In Harvest,https://n8n.io/workflows/494-create-a-client-in-harvest/
+491,Receive Updates For Changes In The Specified List In Trello,https://n8n.io/workflows/491-receive-updates-for-changes-in-the-specified-list-in-trello/
+487,Receive Updates For Events In Clickup,https://n8n.io/workflows/487-receive-updates-for-events-in-clickup/
+485,Create A Task In Clickup,https://n8n.io/workflows/485-create-a-task-in-clickup/
+478,Create A New Task In Asana,https://n8n.io/workflows/478-create-a-new-task-in-asana/
+461,Create A New Card In Trello,https://n8n.io/workflows/461-create-a-new-card-in-trello/
+459,Create A New Issue In Jira,https://n8n.io/workflows/459-create-a-new-issue-in-jira/
+385,Send Airtable Data As Tasks To Trello,https://n8n.io/workflows/385-send-airtable-data-as-tasks-to-trello/

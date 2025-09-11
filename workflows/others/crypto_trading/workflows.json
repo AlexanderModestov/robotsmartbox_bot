@@ -1,0 +1,712 @@
+[
+  {
+    "id": "8389",
+    "title": "Create A Btceth Price And Usd Exchange Rate Api With Coingecko And Exchangerate Api",
+    "url": "https://n8n.io/workflows/8389-create-a-btceth-price-and-usd-exchange-rate-api-with-coingecko-and-exchangerate-api/"
+  },
+  {
+    "id": "8386",
+    "title": "Cryptocurrency Dip Alerts For Bitcoin And Ethereum Via Telegram Slack And Sms",
+    "url": "https://n8n.io/workflows/8386-cryptocurrency-dip-alerts-for-bitcoin-and-ethereum-via-telegram-slack-and-sms/"
+  },
+  {
+    "id": "8382",
+    "title": "Monitor Bitcoin And Ethereum Prices With Coingecko Alerts Via Emailsms",
+    "url": "https://n8n.io/workflows/8382-monitor-bitcoin-and-ethereum-prices-with-coingecko-alerts-via-emailsms/"
+  },
+  {
+    "id": "8340",
+    "title": "Automated Forex News Alert System With Forex Factory And Telegram",
+    "url": "https://n8n.io/workflows/8340-automated-forex-news-alert-system-with-forex-factory-and-telegram/"
+  },
+  {
+    "id": "8327",
+    "title": "Selective Forex Factory Calendar Import And Cleanup For Google Calendar",
+    "url": "https://n8n.io/workflows/8327-selective-forex-factory-calendar-import-and-cleanup-for-google-calendar/"
+  },
+  {
+    "id": "8271",
+    "title": "Automated Trending Cryptocurrency Updates From Coingecko To Telegram",
+    "url": "https://n8n.io/workflows/8271-automated-trending-cryptocurrency-updates-from-coingecko-to-telegram/"
+  },
+  {
+    "id": "8236",
+    "title": "Crypto Exchange Listing And Delisting Alerts To Telegram X And Discord",
+    "url": "https://n8n.io/workflows/8236-crypto-exchange-listing-and-delisting-alerts-to-telegram-x-and-discord/"
+  },
+  {
+    "id": "8094",
+    "title": "Generate Stock Market Insights With Technical Analysis Ai And Telegram Publishing",
+    "url": "https://n8n.io/workflows/8094-generate-stock-market-insights-with-technical-analysis-ai-and-telegram-publishing/"
+  },
+  {
+    "id": "8044",
+    "title": "Automate Token Purchases With Dollar Cost Averaging On Uniswap V3 And 1Shot Api",
+    "url": "https://n8n.io/workflows/8044-automate-token-purchases-with-dollar-cost-averaging-on-uniswap-v3-and-1shot-api/"
+  },
+  {
+    "id": "7997",
+    "title": "Crypto Rsi Alert System With Eodhd Telegram And Tradingview Charts",
+    "url": "https://n8n.io/workflows/7997-crypto-rsi-alert-system-with-eodhd-telegram-and-tradingview-charts/"
+  },
+  {
+    "id": "7836",
+    "title": "Generate Daily Bitcoin On Chain Metrics Pdf Report With Nasdaq Data",
+    "url": "https://n8n.io/workflows/7836-generate-daily-bitcoin-on-chain-metrics-pdf-report-with-nasdaq-data/"
+  },
+  {
+    "id": "7729",
+    "title": "Daily Crypto Market Report With Coingecko Whatsapp And Email Alerts",
+    "url": "https://n8n.io/workflows/7729-daily-crypto-market-report-with-coingecko-whatsapp-and-email-alerts/"
+  },
+  {
+    "id": "7726",
+    "title": "Daily Stock Market Report With Twelve Data Api Sent Via Whatsapp And Email",
+    "url": "https://n8n.io/workflows/7726-daily-stock-market-report-with-twelve-data-api-sent-via-whatsapp-and-email/"
+  },
+  {
+    "id": "7705",
+    "title": "Real Time Cryptocurrency Price Monitor With Coingecko And Multi Channel Alerts",
+    "url": "https://n8n.io/workflows/7705-real-time-cryptocurrency-price-monitor-with-coingecko-and-multi-channel-alerts/"
+  },
+  {
+    "id": "7701",
+    "title": "Real Time Stock Monitor With Smart Alerts For Indian And Us Markets",
+    "url": "https://n8n.io/workflows/7701-real-time-stock-monitor-with-smart-alerts-for-indian-and-us-markets/"
+  },
+  {
+    "id": "7364",
+    "title": "Create A Self Hosted Blockchain Payment Processor With X402 And 1Shot Api",
+    "url": "https://n8n.io/workflows/7364-create-a-self-hosted-blockchain-payment-processor-with-x402-and-1shot-api/"
+  },
+  {
+    "id": "7261",
+    "title": "Ai Powered Stock Analysis With Danelfin Twelvedata And Alpha Vantage",
+    "url": "https://n8n.io/workflows/7261-ai-powered-stock-analysis-with-danelfin-twelvedata-and-alpha-vantage/"
+  },
+  {
+    "id": "7240",
+    "title": "Automate Stock Trades With Ai Driven Technical Analysis And Alpaca Trading",
+    "url": "https://n8n.io/workflows/7240-automate-stock-trades-with-ai-driven-technical-analysis-and-alpaca-trading/"
+  },
+  {
+    "id": "7206",
+    "title": "Multi Chain Token Swap Relayer With Lifi",
+    "url": "https://n8n.io/workflows/7206-multi-chain-token-swap-relayer-with-lifi/"
+  },
+  {
+    "id": "6929",
+    "title": "Blockchain Monitor With Scrapegraphai Risk Detection Instant Alerts And Slack",
+    "url": "https://n8n.io/workflows/6929-blockchain-monitor-with-scrapegraphai-risk-detection-instant-alerts-and-slack/"
+  },
+  {
+    "id": "6823",
+    "title": "Ai Powered Stock Analysis With Ai Scoring And Gmail Report Delivery",
+    "url": "https://n8n.io/workflows/6823-ai-powered-stock-analysis-with-ai-scoring-and-gmail-report-delivery/"
+  },
+  {
+    "id": "6755",
+    "title": "Automated Sec Form D Filings Tracker With Google Sheets Integration",
+    "url": "https://n8n.io/workflows/6755-automated-sec-form-d-filings-tracker-with-google-sheets-integration/"
+  },
+  {
+    "id": "6692",
+    "title": "Stock Market Technical Analysis Alerts With Alpha Vantage And Discord",
+    "url": "https://n8n.io/workflows/6692-stock-market-technical-analysis-alerts-with-alpha-vantage-and-discord/"
+  },
+  {
+    "id": "6551",
+    "title": "Automate Cryptocurrency Analysis And Reports With Google Gemini And Coingecko Email Alerts",
+    "url": "https://n8n.io/workflows/6551-automate-cryptocurrency-analysis-and-reports-with-google-gemini-and-coingecko-email-alerts/"
+  },
+  {
+    "id": "6541",
+    "title": "Get Real Time Stock Analysis And Rankings With Danelfins Ai Analytics Api",
+    "url": "https://n8n.io/workflows/6541-get-real-time-stock-analysis-and-rankings-with-danelfins-ai-analytics-api/"
+  },
+  {
+    "id": "6520",
+    "title": "Monitor Egyptian Gold And Currency Prices With Telegram Notifications",
+    "url": "https://n8n.io/workflows/6520-monitor-egyptian-gold-and-currency-prices-with-telegram-notifications/"
+  },
+  {
+    "id": "6489",
+    "title": "Extract Market Cap Data From Yahoo Finance With Bright Data And Visualize In Telegram",
+    "url": "https://n8n.io/workflows/6489-extract-market-cap-data-from-yahoo-finance-with-bright-data-and-visualize-in-telegram/"
+  },
+  {
+    "id": "6473",
+    "title": "Track Crypto Prices New Listings And Transactions With Coingecko And Google Sheets",
+    "url": "https://n8n.io/workflows/6473-track-crypto-prices-new-listings-and-transactions-with-coingecko-and-google-sheets/"
+  },
+  {
+    "id": "6434",
+    "title": "Automated 247 Crypto News Alerts To X Telegram And Discord Gemini Powered",
+    "url": "https://n8n.io/workflows/6434-automated-247-crypto-news-alerts-to-x-telegram-and-discord-gemini-powered/"
+  },
+  {
+    "id": "6317",
+    "title": "Track Multi Broker Investment Portfolio With Google Sheets And Telegram Alerts",
+    "url": "https://n8n.io/workflows/6317-track-multi-broker-investment-portfolio-with-google-sheets-and-telegram-alerts/"
+  },
+  {
+    "id": "6313",
+    "title": "Track Real Time Stock Prices With Yahoo Finance Scrapegraphai And Google Sheets",
+    "url": "https://n8n.io/workflows/6313-track-real-time-stock-prices-with-yahoo-finance-scrapegraphai-and-google-sheets/"
+  },
+  {
+    "id": "6303",
+    "title": "Get Blockchain Insights From Chat Using Gpt 4 And Nansen Mcp",
+    "url": "https://n8n.io/workflows/6303-get-blockchain-insights-from-chat-using-gpt-4-and-nansen-mcp/"
+  },
+  {
+    "id": "6265",
+    "title": "Automated Gold Price Threshold Alerts Via Line With Web Scraping",
+    "url": "https://n8n.io/workflows/6265-automated-gold-price-threshold-alerts-via-line-with-web-scraping/"
+  },
+  {
+    "id": "6185",
+    "title": "Scheduled Currency Exchange Rate Updates To Telegram With Exchange Rate Api",
+    "url": "https://n8n.io/workflows/6185-scheduled-currency-exchange-rate-updates-to-telegram-with-exchange-rate-api/"
+  },
+  {
+    "id": "6178",
+    "title": "Automated Gold Price Tracker With Multiple Currency Conversion For Telegram",
+    "url": "https://n8n.io/workflows/6178-automated-gold-price-tracker-with-multiple-currency-conversion-for-telegram/"
+  },
+  {
+    "id": "6160",
+    "title": "Real Time Crypto Market Analysis With Gpt 4O Mini And Coinmarketcap Apis Via Telegram",
+    "url": "https://n8n.io/workflows/6160-real-time-crypto-market-analysis-with-gpt-4o-mini-and-coinmarketcap-apis-via-telegram/"
+  },
+  {
+    "id": "6123",
+    "title": "Real Time Currency Conversion Via Webhook And Google Search Parsing",
+    "url": "https://n8n.io/workflows/6123-real-time-currency-conversion-via-webhook-and-google-search-parsing/"
+  },
+  {
+    "id": "6120",
+    "title": "Deliver Daily Currency Exchange Rates From Currencyfreaks Api To Email And Whatsapp",
+    "url": "https://n8n.io/workflows/6120-deliver-daily-currency-exchange-rates-from-currencyfreaks-api-to-email-and-whatsapp/"
+  },
+  {
+    "id": "6090",
+    "title": "Weekly Financial Markets Report Generate With Gemini Ai For Telegram And Discord",
+    "url": "https://n8n.io/workflows/6090-weekly-financial-markets-report-generate-with-gemini-ai-for-telegram-and-discord/"
+  },
+  {
+    "id": "5994",
+    "title": "Personalized Stock Portfolio Analysis And Recommendations With Grok 4 And Perplexity",
+    "url": "https://n8n.io/workflows/5994-personalized-stock-portfolio-analysis-and-recommendations-with-grok-4-and-perplexity/"
+  },
+  {
+    "id": "5793",
+    "title": "Trading Journal Log Trades Into Google Sheets Via Telegram And Gemini Ai",
+    "url": "https://n8n.io/workflows/5793-trading-journal-log-trades-into-google-sheets-via-telegram-and-gemini-ai/"
+  },
+  {
+    "id": "5783",
+    "title": "Stock Portfolio Analysis With Perplexity Ai Gpt 4 And Google Sheets",
+    "url": "https://n8n.io/workflows/5783-stock-portfolio-analysis-with-perplexity-ai-gpt-4-and-google-sheets/"
+  },
+  {
+    "id": "5772",
+    "title": "Extract And Analyze Truth Social Posts For Stock Market Impact With Airtop And Slack",
+    "url": "https://n8n.io/workflows/5772-extract-and-analyze-truth-social-posts-for-stock-market-impact-with-airtop-and-slack/"
+  },
+  {
+    "id": "5712",
+    "title": "Automated Stock News Alerts With Google Rss Gemini And Telegram Notifications",
+    "url": "https://n8n.io/workflows/5712-automated-stock-news-alerts-with-google-rss-gemini-and-telegram-notifications/"
+  },
+  {
+    "id": "5711",
+    "title": "Automated Stock Trading With Ai Integrating Alpaca And Google Sheets",
+    "url": "https://n8n.io/workflows/5711-automated-stock-trading-with-ai-integrating-alpaca-and-google-sheets/"
+  },
+  {
+    "id": "5710",
+    "title": "Stock Fundamental Analysis And Ai Powered Reports With Mistral And Alphavantage",
+    "url": "https://n8n.io/workflows/5710-stock-fundamental-analysis-and-ai-powered-reports-with-mistral-and-alphavantage/"
+  },
+  {
+    "id": "5706",
+    "title": "Automated Btc And Eth Market Analysis Alerts For Discord And Telegram With Gemini Ai",
+    "url": "https://n8n.io/workflows/5706-automated-btc-and-eth-market-analysis-alerts-for-discord-and-telegram-with-gemini-ai/"
+  },
+  {
+    "id": "5703",
+    "title": "Real Time Forex Sentiment Analysis And Alerts With Gemini Ai To Discord",
+    "url": "https://n8n.io/workflows/5703-real-time-forex-sentiment-analysis-and-alerts-with-gemini-ai-to-discord/"
+  },
+  {
+    "id": "5687",
+    "title": "Automated Us Stock Portfolio Analysis With Telegram Perplexity Ai And Pdf Reports",
+    "url": "https://n8n.io/workflows/5687-automated-us-stock-portfolio-analysis-with-telegram-perplexity-ai-and-pdf-reports/"
+  },
+  {
+    "id": "5634",
+    "title": "Track Top Meme Coin Prices With Telegram Bot And Coingecko Api",
+    "url": "https://n8n.io/workflows/5634-track-top-meme-coin-prices-with-telegram-bot-and-coingecko-api/"
+  },
+  {
+    "id": "5632",
+    "title": "Crypto Alpha Scanner With Openai On Chain And Social Alerts To Telegram",
+    "url": "https://n8n.io/workflows/5632-crypto-alpha-scanner-with-openai-on-chain-and-social-alerts-to-telegram/"
+  },
+  {
+    "id": "5512",
+    "title": "Send Daily Currency Exchange Rate Updates Via Currencyfreaks Api And Gmail",
+    "url": "https://n8n.io/workflows/5512-send-daily-currency-exchange-rate-updates-via-currencyfreaks-api-and-gmail/"
+  },
+  {
+    "id": "5450",
+    "title": "Send Ai Enhanced Economic Calendar Alerts To Telegram With Gemini 20 Flash",
+    "url": "https://n8n.io/workflows/5450-send-ai-enhanced-economic-calendar-alerts-to-telegram-with-gemini-20-flash/"
+  },
+  {
+    "id": "5439",
+    "title": "Get Ipo Calendar Alerts Via Telegram With Finnhub Api And Gemini Ai",
+    "url": "https://n8n.io/workflows/5439-get-ipo-calendar-alerts-via-telegram-with-finnhub-api-and-gemini-ai/"
+  },
+  {
+    "id": "5418",
+    "title": "Finnhub Api And Slack Template",
+    "url": "https://n8n.io/workflows/5418-finnhub-api-and-slack-template/"
+  },
+  {
+    "id": "5389",
+    "title": "Monetize Workflows With X402 Payment Protocol And 1Shot Api",
+    "url": "https://n8n.io/workflows/5389-monetize-workflows-with-x402-payment-protocol-and-1shot-api/"
+  },
+  {
+    "id": "5373",
+    "title": "Us Stocks Earnings Calendar Ai Updates To Telegram Finnhub Gemini",
+    "url": "https://n8n.io/workflows/5373-us-stocks-earnings-calendar-ai-updates-to-telegram-finnhub-gemini/"
+  },
+  {
+    "id": "5369",
+    "title": "Automated Stock Sentiment Analysis With Google Gemini And Eodhd News Api",
+    "url": "https://n8n.io/workflows/5369-automated-stock-sentiment-analysis-with-google-gemini-and-eodhd-news-api/"
+  },
+  {
+    "id": "5318",
+    "title": "Coingecko Tool Mcp Server All 9 Operations",
+    "url": "https://n8n.io/workflows/5318-coingecko-tool-mcp-server-all-9-operations/"
+  },
+  {
+    "id": "5305",
+    "title": "Stock Market Daily Digest With Bright Data Scraping And Gemini Ai Email Reports",
+    "url": "https://n8n.io/workflows/5305-stock-market-daily-digest-with-bright-data-scraping-and-gemini-ai-email-reports/"
+  },
+  {
+    "id": "5217",
+    "title": "Real Time Bitcoin Price Alerts With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5217-real-time-bitcoin-price-alerts-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5205",
+    "title": "Ai Agents Can Get End Of Day Market Data With This Marketstack Tool Mcp Server",
+    "url": "https://n8n.io/workflows/5205-ai-agents-can-get-end-of-day-market-data-with-this-marketstack-tool-mcp-server/"
+  },
+  {
+    "id": "5163",
+    "title": "Ai Powered Stock Analysis Assistant With Telegram Claude And Gpt 4O Vision",
+    "url": "https://n8n.io/workflows/5163-ai-powered-stock-analysis-assistant-with-telegram-claude-and-gpt-4o-vision/"
+  },
+  {
+    "id": "5109",
+    "title": "Forex Crypto Mergers And Financial Markets Ai Analyst Updates To Telegram",
+    "url": "https://n8n.io/workflows/5109-forex-crypto-mergers-and-financial-markets-ai-analyst-updates-to-telegram/"
+  },
+  {
+    "id": "5039",
+    "title": "Stock Market Information Assistant With Telegram Yahoo Finance And Gpt 4 Nano",
+    "url": "https://n8n.io/workflows/5039-stock-market-information-assistant-with-telegram-yahoo-finance-and-gpt-4-nano/"
+  },
+  {
+    "id": "5036",
+    "title": "Binance Spot Trader Limit And Market Orders Via Api",
+    "url": "https://n8n.io/workflows/5036-binance-spot-trader-limit-and-market-orders-via-api/"
+  },
+  {
+    "id": "4906",
+    "title": "Hourly Monitoring Of Crypto Rates With Alpha Vantage Api And Google Sheets",
+    "url": "https://n8n.io/workflows/4906-hourly-monitoring-of-crypto-rates-with-alpha-vantage-api-and-google-sheets/"
+  },
+  {
+    "id": "4892",
+    "title": "Analyze Stock Charts With Gpt 4 Vision And Send Results Via Telegram",
+    "url": "https://n8n.io/workflows/4892-analyze-stock-charts-with-gpt-4-vision-and-send-results-via-telegram/"
+  },
+  {
+    "id": "4867",
+    "title": "Ai Powered Stock Market Summary Bot",
+    "url": "https://n8n.io/workflows/4867-ai-powered-stock-market-summary-bot/"
+  },
+  {
+    "id": "4759",
+    "title": "Send Cryptocurrency Price Threshold Alerts From Coingecko To Discord",
+    "url": "https://n8n.io/workflows/4759-send-cryptocurrency-price-threshold-alerts-from-coingecko-to-discord/"
+  },
+  {
+    "id": "4747",
+    "title": "Binance Sm Indicators Webhook Tool",
+    "url": "https://n8n.io/workflows/4747-binance-sm-indicators-webhook-tool/"
+  },
+  {
+    "id": "4746",
+    "title": "Binance Sm 1Day Indicators Tool",
+    "url": "https://n8n.io/workflows/4746-binance-sm-1day-indicators-tool/"
+  },
+  {
+    "id": "4745",
+    "title": "Binance Sm 4Hour Indicators Tool",
+    "url": "https://n8n.io/workflows/4745-binance-sm-4hour-indicators-tool/"
+  },
+  {
+    "id": "4744",
+    "title": "Binance Sm 1Hour Indicators Tool",
+    "url": "https://n8n.io/workflows/4744-binance-sm-1hour-indicators-tool/"
+  },
+  {
+    "id": "4743",
+    "title": "Binance Sm 15Min Indicators Tool",
+    "url": "https://n8n.io/workflows/4743-binance-sm-15min-indicators-tool/"
+  },
+  {
+    "id": "4742",
+    "title": "Binance Sm Price 24Hrstats Orderbook Kline Tool",
+    "url": "https://n8n.io/workflows/4742-binance-sm-price-24hrstats-orderbook-kline-tool/"
+  },
+  {
+    "id": "4741",
+    "title": "Get Binance Spot Market Financial Analysis Via Telegram With Gpt 4O",
+    "url": "https://n8n.io/workflows/4741-get-binance-spot-market-financial-analysis-via-telegram-with-gpt-4o/"
+  },
+  {
+    "id": "4740",
+    "title": "Analyze Crypto News Sentiment For Any Token With Gpt 4O And Telegram Alerts",
+    "url": "https://n8n.io/workflows/4740-analyze-crypto-news-sentiment-for-any-token-with-gpt-4o-and-telegram-alerts/"
+  },
+  {
+    "id": "4739",
+    "title": "Binance Spot Market Quant Ai Agent Or Gpt 4O Telegram Main Interface",
+    "url": "https://n8n.io/workflows/4739-binance-spot-market-quant-ai-agent-or-gpt-4o-telegram-main-interface/"
+  },
+  {
+    "id": "4659",
+    "title": "Forex News And Sentiment Telegram Alerts",
+    "url": "https://n8n.io/workflows/4659-forex-news-and-sentiment-telegram-alerts/"
+  },
+  {
+    "id": "4617",
+    "title": "Daily Ai Stock Briefing Right To Your Email Openai Tavily Gmail",
+    "url": "https://n8n.io/workflows/4617-daily-ai-stock-briefing-right-to-your-email-openai-tavily-gmail/"
+  },
+  {
+    "id": "4602",
+    "title": "Currency Converter Via Webhook Using Exchangeratehost",
+    "url": "https://n8n.io/workflows/4602-currency-converter-via-webhook-using-exchangeratehost/"
+  },
+  {
+    "id": "4509",
+    "title": "Daily Us Congress Members Stock Trades Report Via Firecrawl Openai Gmail",
+    "url": "https://n8n.io/workflows/4509-daily-us-congress-members-stock-trades-report-via-firecrawl-openai-gmail/"
+  },
+  {
+    "id": "4334",
+    "title": "Tradingview Signal Extractor With Gmail Google Sheets And Telegram Notifications",
+    "url": "https://n8n.io/workflows/4334-tradingview-signal-extractor-with-gmail-google-sheets-and-telegram-notifications/"
+  },
+  {
+    "id": "4267",
+    "title": "Aave Portfolio Professional Ai Agent Or Telegram Email Gpt 4O Moralis",
+    "url": "https://n8n.io/workflows/4267-aave-portfolio-professional-ai-agent-or-telegram-email-gpt-4o-moralis/"
+  },
+  {
+    "id": "4246",
+    "title": "Get Colombian Peso To Usd Exchange Rate With Telegram Bot And Ai Date Recognition",
+    "url": "https://n8n.io/workflows/4246-get-colombian-peso-to-usd-exchange-rate-with-telegram-bot-and-ai-date-recognition/"
+  },
+  {
+    "id": "4244",
+    "title": "Receive Bitcoin Etherium Solana Binance Data With Gecko Coin And Gmail",
+    "url": "https://n8n.io/workflows/4244-receive-bitcoin-etherium-solana-binance-data-with-gecko-coin-and-gmail/"
+  },
+  {
+    "id": "4225",
+    "title": "Automate Cryptocurrency Funding Fee Tracking With Binance Api And Airtable",
+    "url": "https://n8n.io/workflows/4225-automate-cryptocurrency-funding-fee-tracking-with-binance-api-and-airtable/"
+  },
+  {
+    "id": "4115",
+    "title": "Analyze Crypto Market With Coingecko Volatility Metrics And Investment Signals",
+    "url": "https://n8n.io/workflows/4115-analyze-crypto-market-with-coingecko-volatility-metrics-and-investment-signals/"
+  },
+  {
+    "id": "4099",
+    "title": "Tesla 1Hour And 1Day Klines Tool Candlestick And Volume Ai Pattern Detector",
+    "url": "https://n8n.io/workflows/4099-tesla-1hour-and-1day-klines-tool-candlestick-and-volume-ai-pattern-detector/"
+  },
+  {
+    "id": "4098",
+    "title": "Tesla 1Day Indicators Tool Macro Level Technical Ai",
+    "url": "https://n8n.io/workflows/4098-tesla-1day-indicators-tool-macro-level-technical-ai/"
+  },
+  {
+    "id": "4097",
+    "title": "Tesla 1Hour Indicators Tool Mid Term Technical Analysis Ai",
+    "url": "https://n8n.io/workflows/4097-tesla-1hour-indicators-tool-mid-term-technical-analysis-ai/"
+  },
+  {
+    "id": "4096",
+    "title": "Tesla 15Min Indicators Tool Short Term Ai Technical Analysis",
+    "url": "https://n8n.io/workflows/4096-tesla-15min-indicators-tool-short-term-ai-technical-analysis/"
+  },
+  {
+    "id": "4095",
+    "title": "Tesla Quant Technical Indicators Webhooks Tool",
+    "url": "https://n8n.io/workflows/4095-tesla-quant-technical-indicators-webhooks-tool/"
+  },
+  {
+    "id": "4094",
+    "title": "Tesla Financial Market Data Analyst Tool Multi Timeframe Technical Ai Agent",
+    "url": "https://n8n.io/workflows/4094-tesla-financial-market-data-analyst-tool-multi-timeframe-technical-ai-agent/"
+  },
+  {
+    "id": "4093",
+    "title": "Tesla News And Sentiment Analyst Tool Powered By Deepseek Chat",
+    "url": "https://n8n.io/workflows/4093-tesla-news-and-sentiment-analyst-tool-powered-by-deepseek-chat/"
+  },
+  {
+    "id": "4092",
+    "title": "Tesla Quant Trading Ai Agent Using Telegram Gpt 41 Main Interface",
+    "url": "https://n8n.io/workflows/4092-tesla-quant-trading-ai-agent-using-telegram-gpt-41-main-interface/"
+  },
+  {
+    "id": "4074",
+    "title": "Financial News Digest With Google Gemini Ai To Outlook Email",
+    "url": "https://n8n.io/workflows/4074-financial-news-digest-with-google-gemini-ai-to-outlook-email/"
+  },
+  {
+    "id": "3797",
+    "title": "Check Tron Wallet Usdt Blacklist Status Via Telegram",
+    "url": "https://n8n.io/workflows/3797-check-tron-wallet-usdt-blacklist-status-via-telegram/"
+  },
+  {
+    "id": "3790",
+    "title": "Automated Stock Analysis Reports With Technical And News Sentiment Using Gpt 4O",
+    "url": "https://n8n.io/workflows/3790-automated-stock-analysis-reports-with-technical-and-news-sentiment-using-gpt-4o/"
+  },
+  {
+    "id": "3751",
+    "title": "Real Time Crypto News And Sentiment Analysis Via Telegram With Gpt 4O",
+    "url": "https://n8n.io/workflows/3751-real-time-crypto-news-and-sentiment-analysis-via-telegram-with-gpt-4o/"
+  },
+  {
+    "id": "3621",
+    "title": "Send Hourly Crypto Market Analysis From Binance To Telegram",
+    "url": "https://n8n.io/workflows/3621-send-hourly-crypto-market-analysis-from-binance-to-telegram/"
+  },
+  {
+    "id": "3425",
+    "title": "Analyze Crypto Markets With The Ai Powered Coinmarketcap Data Analyst",
+    "url": "https://n8n.io/workflows/3425-analyze-crypto-markets-with-the-ai-powered-coinmarketcap-data-analyst/"
+  },
+  {
+    "id": "3424",
+    "title": "Analyze Dex Liquidity Trades And Spot Pairs With Coinmarketcap Ai Agent",
+    "url": "https://n8n.io/workflows/3424-analyze-dex-liquidity-trades-and-spot-pairs-with-coinmarketcap-ai-agent/"
+  },
+  {
+    "id": "3423",
+    "title": "Get Exchange And Sentiment Insights With Coinmarketcap Ai Agent",
+    "url": "https://n8n.io/workflows/3423-get-exchange-and-sentiment-insights-with-coinmarketcap-ai-agent/"
+  },
+  {
+    "id": "3422",
+    "title": "Get Live Crypto Market Data With Ai Powered Coinmarketcap Agent",
+    "url": "https://n8n.io/workflows/3422-get-live-crypto-market-data-with-ai-powered-coinmarketcap-agent/"
+  },
+  {
+    "id": "3330",
+    "title": "Monitor Usdt Erc 20 Wallet Balance With Etherscan And Telegram Notifications",
+    "url": "https://n8n.io/workflows/3330-monitor-usdt-erc-20-wallet-balance-with-etherscan-and-telegram-notifications/"
+  },
+  {
+    "id": "3239",
+    "title": "Get Real Time Nft Marketplace Insights With Opensea Marketplace Agent Tool",
+    "url": "https://n8n.io/workflows/3239-get-real-time-nft-marketplace-insights-with-opensea-marketplace-agent-tool/"
+  },
+  {
+    "id": "3238",
+    "title": "Get Real Time Nft Insights With Opensea Ai Powered Nft Agent Tool",
+    "url": "https://n8n.io/workflows/3238-get-real-time-nft-insights-with-opensea-ai-powered-nft-agent-tool/"
+  },
+  {
+    "id": "3237",
+    "title": "Analyze Nft Market Trends With Ai Powered Opensea Analytics Agent Tool",
+    "url": "https://n8n.io/workflows/3237-analyze-nft-market-trends-with-ai-powered-opensea-analytics-agent-tool/"
+  },
+  {
+    "id": "3236",
+    "title": "Get Real Time Nft Insights Via Telegram With Opensea And Ai Main Interface",
+    "url": "https://n8n.io/workflows/3236-get-real-time-nft-insights-via-telegram-with-opensea-and-ai-main-interface/"
+  },
+  {
+    "id": "3202",
+    "title": "Stock Market Technical Analysis With Gpt 4O And Tradingview For Telegram",
+    "url": "https://n8n.io/workflows/3202-stock-market-technical-analysis-with-gpt-4o-and-tradingview-for-telegram/"
+  },
+  {
+    "id": "3178",
+    "title": "Get Real Time Crypto Token Insights Via Telegram With Dexscreener And Gpt 4O",
+    "url": "https://n8n.io/workflows/3178-get-real-time-crypto-token-insights-via-telegram-with-dexscreener-and-gpt-4o/"
+  },
+  {
+    "id": "3160",
+    "title": "Ai Powered Technical Analyst With Perplexity R1 Research",
+    "url": "https://n8n.io/workflows/3160-ai-powered-technical-analyst-with-perplexity-r1-research/"
+  },
+  {
+    "id": "3158",
+    "title": "Coinmarketcap Telegram Price Bot",
+    "url": "https://n8n.io/workflows/3158-coinmarketcap-telegram-price-bot/"
+  },
+  {
+    "id": "3053",
+    "title": "Technical Stock Analysis With Telegram Airtable And A Gpt Powered Ai Agent",
+    "url": "https://n8n.io/workflows/3053-technical-stock-analysis-with-telegram-airtable-and-a-gpt-powered-ai-agent/"
+  },
+  {
+    "id": "2970",
+    "title": "Ai Powered Financial Chart Analyzer Or Openrouter Marketstack Macos Shortcuts",
+    "url": "https://n8n.io/workflows/2970-ai-powered-financial-chart-analyzer-or-openrouter-marketstack-macos-shortcuts/"
+  },
+  {
+    "id": "2906",
+    "title": "Ai Powered Crypto Analysis Using Openrouter Gemini And Serpapi",
+    "url": "https://n8n.io/workflows/2906-ai-powered-crypto-analysis-using-openrouter-gemini-and-serpapi/"
+  },
+  {
+    "id": "2746",
+    "title": "Post Hourly Crypto Market Summaries Via Coingecko To X And To Email",
+    "url": "https://n8n.io/workflows/2746-post-hourly-crypto-market-summaries-via-coingecko-to-x-and-to-email/"
+  },
+  {
+    "id": "2741",
+    "title": "Ai Powered Rag Workflow For Stock Earnings Report Analysis",
+    "url": "https://n8n.io/workflows/2741-ai-powered-rag-workflow-for-stock-earnings-report-analysis/"
+  },
+  {
+    "id": "2735",
+    "title": "Stock Technical Analysis With Google Gemini",
+    "url": "https://n8n.io/workflows/2735-stock-technical-analysis-with-google-gemini/"
+  },
+  {
+    "id": "2691",
+    "title": "Currency Conversion Workflow",
+    "url": "https://n8n.io/workflows/2691-currency-conversion-workflow/"
+  },
+  {
+    "id": "2642",
+    "title": "Analyze Tradingviewcom Charts With Chrome Extension N8N And Openai",
+    "url": "https://n8n.io/workflows/2642-analyze-tradingviewcom-charts-with-chrome-extension-n8n-and-openai/"
+  },
+  {
+    "id": "2516",
+    "title": "Receive Daily Market News From Ftcom To Your Microsoft Outlook Inbox",
+    "url": "https://n8n.io/workflows/2516-receive-daily-market-news-from-ftcom-to-your-microsoft-outlook-inbox/"
+  },
+  {
+    "id": "2209",
+    "title": "Ai Powered Automated Stock Analysis",
+    "url": "https://n8n.io/workflows/2209-ai-powered-automated-stock-analysis/"
+  },
+  {
+    "id": "2183",
+    "title": "Ai Crew To Automate Fundamental Stock Analysis Qanda Workflow",
+    "url": "https://n8n.io/workflows/2183-ai-crew-to-automate-fundamental-stock-analysis-qanda-workflow/"
+  },
+  {
+    "id": "2133",
+    "title": "Provide Latest Euro Exchange Rates From European Central Bank Via Webhook",
+    "url": "https://n8n.io/workflows/2133-provide-latest-euro-exchange-rates-from-european-central-bank-via-webhook/"
+  },
+  {
+    "id": "2053",
+    "title": "Usdt And Trc20 Wallet Tracker Api Workflow For N8N",
+    "url": "https://n8n.io/workflows/2053-usdt-and-trc20-wallet-tracker-api-workflow-for-n8n/"
+  },
+  {
+    "id": "2043",
+    "title": "Crypto Market Alert System With Binance And Telegram Integration",
+    "url": "https://n8n.io/workflows/2043-crypto-market-alert-system-with-binance-and-telegram-integration/"
+  },
+  {
+    "id": "1954",
+    "title": "Ai Agent Chat",
+    "url": "https://n8n.io/workflows/1954-ai-agent-chat/"
+  },
+  {
+    "id": "1951",
+    "title": "Scrape And Summarize Webpages With Ai",
+    "url": "https://n8n.io/workflows/1951-scrape-and-summarize-webpages-with-ai/"
+  },
+  {
+    "id": "1934",
+    "title": "Telegram Ai Chatbot",
+    "url": "https://n8n.io/workflows/1934-telegram-ai-chatbot/"
+  },
+  {
+    "id": "1862",
+    "title": "Openai Gpt 3 Company Enrichment From Website Content",
+    "url": "https://n8n.io/workflows/1862-openai-gpt-3-company-enrichment-from-website-content/"
+  },
+  {
+    "id": "1785",
+    "title": "Track Investments Using Baserow And N8N",
+    "url": "https://n8n.io/workflows/1785-track-investments-using-baserow-and-n8n/"
+  },
+  {
+    "id": "1750",
+    "title": "Creating An Api Endpoint",
+    "url": "https://n8n.io/workflows/1750-creating-an-api-endpoint/"
+  },
+  {
+    "id": "1748",
+    "title": "Pulling Data From Services That N8N Doesnt Have A Pre Built Integration For",
+    "url": "https://n8n.io/workflows/1748-pulling-data-from-services-that-n8n-doesnt-have-a-pre-built-integration-for/"
+  },
+  {
+    "id": "1747",
+    "title": "Joining Different Datasets",
+    "url": "https://n8n.io/workflows/1747-joining-different-datasets/"
+  },
+  {
+    "id": "1700",
+    "title": "Very Quick Quickstart",
+    "url": "https://n8n.io/workflows/1700-very-quick-quickstart/"
+  },
+  {
+    "id": "1534",
+    "title": "Back Up Your N8N Workflows To Github",
+    "url": "https://n8n.io/workflows/1534-back-up-your-n8n-workflows-to-github/"
+  },
+  {
+    "id": "1435",
+    "title": "Convert Json To An Excel File",
+    "url": "https://n8n.io/workflows/1435-convert-json-to-an-excel-file/"
+  },
+  {
+    "id": "859",
+    "title": "Tracking Your Crypto Portfolio In Airtable",
+    "url": "https://n8n.io/workflows/859-tracking-your-crypto-portfolio-in-airtable/"
+  },
+  {
+    "id": "704",
+    "title": "Get The Price Of Btc In Eur And Send An Sms",
+    "url": "https://n8n.io/workflows/704-get-the-price-of-btc-in-eur-and-send-an-sms/"
+  }
+]

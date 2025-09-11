@@ -1,0 +1,2507 @@
+[
+  {
+    "id": "8371",
+    "title": "Google Maps Reviews To Google Sheets Sync Using Serpapi",
+    "url": "https://n8n.io/workflows/8371-google-maps-reviews-to-google-sheets-sync-using-serpapi/"
+  },
+  {
+    "id": "8291",
+    "title": "Automated Tech News And Trend Report With Apiflash Gemini Vision And Google Sheets To Telegram",
+    "url": "https://n8n.io/workflows/8291-automated-tech-news-and-trend-report-with-apiflash-gemini-vision-and-google-sheets-to-telegram/"
+  },
+  {
+    "id": "8286",
+    "title": "Serp Keyword Ranking Checker With Rapidapi And Google Sheets",
+    "url": "https://n8n.io/workflows/8286-serp-keyword-ranking-checker-with-rapidapi-and-google-sheets/"
+  },
+  {
+    "id": "8250",
+    "title": "Scrape Jobs From Indeed Linkedin And More With Rapidapi To Google Sheets",
+    "url": "https://n8n.io/workflows/8250-scrape-jobs-from-indeed-linkedin-and-more-with-rapidapi-to-google-sheets/"
+  },
+  {
+    "id": "8249",
+    "title": "Check Domain Authority Metrics In Bulk And Log To Google Sheets With Rapidapi",
+    "url": "https://n8n.io/workflows/8249-check-domain-authority-metrics-in-bulk-and-log-to-google-sheets-with-rapidapi/"
+  },
+  {
+    "id": "8242",
+    "title": "Seo Competitor Analysis With Rapidapi And Google Sheets Logging",
+    "url": "https://n8n.io/workflows/8242-seo-competitor-analysis-with-rapidapi-and-google-sheets-logging/"
+  },
+  {
+    "id": "8211",
+    "title": "Extract Youtube Transcripts Via Google Sheets Or Api Webhook",
+    "url": "https://n8n.io/workflows/8211-extract-youtube-transcripts-via-google-sheets-or-api-webhook/"
+  },
+  {
+    "id": "8195",
+    "title": "Crawl Website Blog Content And Save To Google Sheets With Dumpling Ai",
+    "url": "https://n8n.io/workflows/8195-crawl-website-blog-content-and-save-to-google-sheets-with-dumpling-ai/"
+  },
+  {
+    "id": "8146",
+    "title": "Automatically Collect Bug Bounty Tips From Twitter To Google Sheets",
+    "url": "https://n8n.io/workflows/8146-automatically-collect-bug-bounty-tips-from-twitter-to-google-sheets/"
+  },
+  {
+    "id": "8144",
+    "title": "Scrape Linkedin Job Listings With Phantombuster And Save To Google Sheets",
+    "url": "https://n8n.io/workflows/8144-scrape-linkedin-job-listings-with-phantombuster-and-save-to-google-sheets/"
+  },
+  {
+    "id": "8091",
+    "title": "Extract High Engagement Youtube Keyword Trends For Content Strategy",
+    "url": "https://n8n.io/workflows/8091-extract-high-engagement-youtube-keyword-trends-for-content-strategy/"
+  },
+  {
+    "id": "8068",
+    "title": "Instagram Visual Analysis With Apify Scraping Openai Gpt 5 And Google Sheets",
+    "url": "https://n8n.io/workflows/8068-instagram-visual-analysis-with-apify-scraping-openai-gpt-5-and-google-sheets/"
+  },
+  {
+    "id": "8049",
+    "title": "Scrape Shopify Store Data With Rapidapi And Save To Google Sheets",
+    "url": "https://n8n.io/workflows/8049-scrape-shopify-store-data-with-rapidapi-and-save-to-google-sheets/"
+  },
+  {
+    "id": "8036",
+    "title": "Track Play Store App Rankings With Serpapi Baserow And Slack Alerts",
+    "url": "https://n8n.io/workflows/8036-track-play-store-app-rankings-with-serpapi-baserow-and-slack-alerts/"
+  },
+  {
+    "id": "8023",
+    "title": "Analyze Trending Youtube Videos With Apify Openai And Google Sheets",
+    "url": "https://n8n.io/workflows/8023-analyze-trending-youtube-videos-with-apify-openai-and-google-sheets/"
+  },
+  {
+    "id": "7989",
+    "title": "Website Seo Health Analytics With Google Sheets Pdf Reports And Gmail Alerts",
+    "url": "https://n8n.io/workflows/7989-website-seo-health-analytics-with-google-sheets-pdf-reports-and-gmail-alerts/"
+  },
+  {
+    "id": "7927",
+    "title": "Scrapingbee And Google Sheets Integration Template",
+    "url": "https://n8n.io/workflows/7927-scrapingbee-and-google-sheets-integration-template/"
+  },
+  {
+    "id": "7912",
+    "title": "Ga4 Anomaly Detection With Automated Slack And Email Alerts",
+    "url": "https://n8n.io/workflows/7912-ga4-anomaly-detection-with-automated-slack-and-email-alerts/"
+  },
+  {
+    "id": "7888",
+    "title": "Youtube Trends Finding Agent",
+    "url": "https://n8n.io/workflows/7888-youtube-trends-finding-agent/"
+  },
+  {
+    "id": "7758",
+    "title": "Sitemap Page Extractor Discover Clean And Save Website Urls To Google Sheets",
+    "url": "https://n8n.io/workflows/7758-sitemap-page-extractor-discover-clean-and-save-website-urls-to-google-sheets/"
+  },
+  {
+    "id": "7724",
+    "title": "Seo Keyword Difficulty And Serp Analysis With Rapidapi And Google Sheets",
+    "url": "https://n8n.io/workflows/7724-seo-keyword-difficulty-and-serp-analysis-with-rapidapi-and-google-sheets/"
+  },
+  {
+    "id": "7723",
+    "title": "Automatic Backlink Data Export From Semrush To Google Sheets Via Rapidapi",
+    "url": "https://n8n.io/workflows/7723-automatic-backlink-data-export-from-semrush-to-google-sheets-via-rapidapi/"
+  },
+  {
+    "id": "7686",
+    "title": "Analyze Competitor Keywords With Rapidapi And Google Sheets Reporting",
+    "url": "https://n8n.io/workflows/7686-analyze-competitor-keywords-with-rapidapi-and-google-sheets-reporting/"
+  },
+  {
+    "id": "7646",
+    "title": "Reliable Reddit Subreddit Search With Oauth2 Api Authentication",
+    "url": "https://n8n.io/workflows/7646-reliable-reddit-subreddit-search-with-oauth2-api-authentication/"
+  },
+  {
+    "id": "7645",
+    "title": "Track New Search Queries With Zero Click Analysis In Google Search Console",
+    "url": "https://n8n.io/workflows/7645-track-new-search-queries-with-zero-click-analysis-in-google-search-console/"
+  },
+  {
+    "id": "7640",
+    "title": "Automate Real Time Seo Keyword Research With Dataforseo And Google Sheets",
+    "url": "https://n8n.io/workflows/7640-automate-real-time-seo-keyword-research-with-dataforseo-and-google-sheets/"
+  },
+  {
+    "id": "7629",
+    "title": "Extract Youtube Channel Metadata To Google Docs Using Rapidapi",
+    "url": "https://n8n.io/workflows/7629-extract-youtube-channel-metadata-to-google-docs-using-rapidapi/"
+  },
+  {
+    "id": "7623",
+    "title": "Enrich Domains With Similarweb Traffic Analytics In Google Sheets And Airtable",
+    "url": "https://n8n.io/workflows/7623-enrich-domains-with-similarweb-traffic-analytics-in-google-sheets-and-airtable/"
+  },
+  {
+    "id": "7603",
+    "title": "Send Daily Mailchimp Subscriber Reports To Slack",
+    "url": "https://n8n.io/workflows/7603-send-daily-mailchimp-subscriber-reports-to-slack/"
+  },
+  {
+    "id": "7539",
+    "title": "Extract Citation Sources From Google Ai Overview To Google Sheets With Dataforseo",
+    "url": "https://n8n.io/workflows/7539-extract-citation-sources-from-google-ai-overview-to-google-sheets-with-dataforseo/"
+  },
+  {
+    "id": "7484",
+    "title": "Automate Seo Keyword Analysis With Rapidapi And Log To Google Sheets",
+    "url": "https://n8n.io/workflows/7484-automate-seo-keyword-analysis-with-rapidapi-and-log-to-google-sheets/"
+  },
+  {
+    "id": "7483",
+    "title": "Daily News Aggregation With Perplexity Ai And Mongodb Storage",
+    "url": "https://n8n.io/workflows/7483-daily-news-aggregation-with-perplexity-ai-and-mongodb-storage/"
+  },
+  {
+    "id": "7480",
+    "title": "Generate Personalized Startup Ideas With Claude Analysis And Gmail Reports",
+    "url": "https://n8n.io/workflows/7480-generate-personalized-startup-ideas-with-claude-analysis-and-gmail-reports/"
+  },
+  {
+    "id": "7463",
+    "title": "Seo Competitor Analysis And Data Logging With Semrush Api And Google Sheets",
+    "url": "https://n8n.io/workflows/7463-seo-competitor-analysis-and-data-logging-with-semrush-api-and-google-sheets/"
+  },
+  {
+    "id": "7461",
+    "title": "Analyze Website Backlinks With Top Backlink Checker Api And Google Sheets Logging",
+    "url": "https://n8n.io/workflows/7461-analyze-website-backlinks-with-top-backlink-checker-api-and-google-sheets-logging/"
+  },
+  {
+    "id": "7460",
+    "title": "Generate Aso Reports From Google Play Apps With Gemini Ai And Google Docs",
+    "url": "https://n8n.io/workflows/7460-generate-aso-reports-from-google-play-apps-with-gemini-ai-and-google-docs/"
+  },
+  {
+    "id": "7459",
+    "title": "Track Website Traffic With Semrush Api And Log Results To Google Sheets",
+    "url": "https://n8n.io/workflows/7459-track-website-traffic-with-semrush-api-and-log-results-to-google-sheets/"
+  },
+  {
+    "id": "7454",
+    "title": "Monitor Competitors And Generate Content Ideas With Gpt4 And Gemini To Google Sheets",
+    "url": "https://n8n.io/workflows/7454-monitor-competitors-and-generate-content-ideas-with-gpt4-and-gemini-to-google-sheets/"
+  },
+  {
+    "id": "7434",
+    "title": "Analyze Youtube Comments Sentiment And Keywords With Gemini Ai And Telegram Reporting",
+    "url": "https://n8n.io/workflows/7434-analyze-youtube-comments-sentiment-and-keywords-with-gemini-ai-and-telegram-reporting/"
+  },
+  {
+    "id": "7379",
+    "title": "Generate Website Sitemaps And Visual Trees With Firecrawl And Google Sheets",
+    "url": "https://n8n.io/workflows/7379-generate-website-sitemaps-and-visual-trees-with-firecrawl-and-google-sheets/"
+  },
+  {
+    "id": "7378",
+    "title": "Track Youtube Trends By Country And Language With Rapidapi And Google Sheets",
+    "url": "https://n8n.io/workflows/7378-track-youtube-trends-by-country-and-language-with-rapidapi-and-google-sheets/"
+  },
+  {
+    "id": "7372",
+    "title": "Automated Content Strategy With Google Trends News Firecrawl And Claude Ai",
+    "url": "https://n8n.io/workflows/7372-automated-content-strategy-with-google-trends-news-firecrawl-and-claude-ai/"
+  },
+  {
+    "id": "7368",
+    "title": "Crawl Websites And Answer Questions With Gpt 5 Nano And Google Sheets",
+    "url": "https://n8n.io/workflows/7368-crawl-websites-and-answer-questions-with-gpt-5-nano-and-google-sheets/"
+  },
+  {
+    "id": "7367",
+    "title": "Automated On Page Seo Analysis And Logging With Rapidapi And Google Sheets",
+    "url": "https://n8n.io/workflows/7367-automated-on-page-seo-analysis-and-logging-with-rapidapi-and-google-sheets/"
+  },
+  {
+    "id": "7366",
+    "title": "Automated Seo Keyword Analysis With Rapidapi And Google Sheets",
+    "url": "https://n8n.io/workflows/7366-automated-seo-keyword-analysis-with-rapidapi-and-google-sheets/"
+  },
+  {
+    "id": "7346",
+    "title": "Filter And Summarize Ai News From Techcrunch To Slack Using Openai",
+    "url": "https://n8n.io/workflows/7346-filter-and-summarize-ai-news-from-techcrunch-to-slack-using-openai/"
+  },
+  {
+    "id": "7316",
+    "title": "Monitor Twitter Accounts And Generate Intelligence Summaries With Gemini Ai And Telegram",
+    "url": "https://n8n.io/workflows/7316-monitor-twitter-accounts-and-generate-intelligence-summaries-with-gemini-ai-and-telegram/"
+  },
+  {
+    "id": "7313",
+    "title": "Daily Competitor Research Automation Using Serpapi Google Sheets And Airtable",
+    "url": "https://n8n.io/workflows/7313-daily-competitor-research-automation-using-serpapi-google-sheets-and-airtable/"
+  },
+  {
+    "id": "7303",
+    "title": "Analyze Meta Ads Creatives With Google Vision And Video Intelligence Apis",
+    "url": "https://n8n.io/workflows/7303-analyze-meta-ads-creatives-with-google-vision-and-video-intelligence-apis/"
+  },
+  {
+    "id": "7272",
+    "title": "Weekly Competitor Facebook Ads Intelligence Report With Airtop And Gmail",
+    "url": "https://n8n.io/workflows/7272-weekly-competitor-facebook-ads-intelligence-report-with-airtop-and-gmail/"
+  },
+  {
+    "id": "7238",
+    "title": "Flight Data Visualization With Chartjs Quickchart Api And Telegram Bot",
+    "url": "https://n8n.io/workflows/7238-flight-data-visualization-with-chartjs-quickchart-api-and-telegram-bot/"
+  },
+  {
+    "id": "7237",
+    "title": "Detect Cannibalized Keywords And Competing Pages With Google Search Console",
+    "url": "https://n8n.io/workflows/7237-detect-cannibalized-keywords-and-competing-pages-with-google-search-console/"
+  },
+  {
+    "id": "7214",
+    "title": "Daily Indiehackers Reddit Trend Analysis To Slack With Gemini Ai",
+    "url": "https://n8n.io/workflows/7214-daily-indiehackers-reddit-trend-analysis-to-slack-with-gemini-ai/"
+  },
+  {
+    "id": "7213",
+    "title": "Track Website Seo Metrics With Moz Api And Google Sheets Integration",
+    "url": "https://n8n.io/workflows/7213-track-website-seo-metrics-with-moz-api-and-google-sheets-integration/"
+  },
+  {
+    "id": "7203",
+    "title": "Weekly Google Search Console Seo Pulse Organic And Brand Vs Non Brand Performance",
+    "url": "https://n8n.io/workflows/7203-weekly-google-search-console-seo-pulse-organic-and-brand-vs-non-brand-performance/"
+  },
+  {
+    "id": "7186",
+    "title": "Web Scraper Extract Website Content From Sitemaps To Google Drive",
+    "url": "https://n8n.io/workflows/7186-web-scraper-extract-website-content-from-sitemaps-to-google-drive/"
+  },
+  {
+    "id": "7183",
+    "title": "Auto Analyze Google Analytics Data With Gemini Ai And Smart Gmailtelegram Routing",
+    "url": "https://n8n.io/workflows/7183-auto-analyze-google-analytics-data-with-gemini-ai-and-smart-gmailtelegram-routing/"
+  },
+  {
+    "id": "7162",
+    "title": "Flow From Reddit To Gmail With Key Features And Gpt 4O Mini Usage",
+    "url": "https://n8n.io/workflows/7162-flow-from-reddit-to-gmail-with-key-features-and-gpt-4o-mini-usage/"
+  },
+  {
+    "id": "7160",
+    "title": "Deep Research Agent Automated Research And Notion Report Builder",
+    "url": "https://n8n.io/workflows/7160-deep-research-agent-automated-research-and-notion-report-builder/"
+  },
+  {
+    "id": "7148",
+    "title": "Ai Powered Automatic Analysis Of Youtube Product Reviews With Apify Gpt",
+    "url": "https://n8n.io/workflows/7148-ai-powered-automatic-analysis-of-youtube-product-reviews-with-apify-gpt/"
+  },
+  {
+    "id": "7147",
+    "title": "Audience Problem Keyword Research Workflow With Openai Ahrefs And Google Sheets",
+    "url": "https://n8n.io/workflows/7147-audience-problem-keyword-research-workflow-with-openai-ahrefs-and-google-sheets/"
+  },
+  {
+    "id": "7133",
+    "title": "Daily Google Ads Performance To Notion And Google Sheets",
+    "url": "https://n8n.io/workflows/7133-daily-google-ads-performance-to-notion-and-google-sheets/"
+  },
+  {
+    "id": "7126",
+    "title": "Ux Interview Analysis With Openai Transcribe And Export To Google Sheets",
+    "url": "https://n8n.io/workflows/7126-ux-interview-analysis-with-openai-transcribe-and-export-to-google-sheets/"
+  },
+  {
+    "id": "7074",
+    "title": "Multi Platform Source Discovery With Serpapi Duckduckgo Github Reddit And Bluesky",
+    "url": "https://n8n.io/workflows/7074-multi-platform-source-discovery-with-serpapi-duckduckgo-github-reddit-and-bluesky/"
+  },
+  {
+    "id": "7070",
+    "title": "Automate Zillow Property Search With Budget Filtering To Google Sheets",
+    "url": "https://n8n.io/workflows/7070-automate-zillow-property-search-with-budget-filtering-to-google-sheets/"
+  },
+  {
+    "id": "7050",
+    "title": "Export Amazon Product Reviews In Bulk To Google Sheets Via Rapidapi",
+    "url": "https://n8n.io/workflows/7050-export-amazon-product-reviews-in-bulk-to-google-sheets-via-rapidapi/"
+  },
+  {
+    "id": "7033",
+    "title": "Automate Competitor Research And Intelligence With Browser Use Cloud Ai And Slack",
+    "url": "https://n8n.io/workflows/7033-automate-competitor-research-and-intelligence-with-browser-use-cloud-ai-and-slack/"
+  },
+  {
+    "id": "7024",
+    "title": "Automate Weekly Us Trademark Reports With Uspto Api And Google Drive Csv Export",
+    "url": "https://n8n.io/workflows/7024-automate-weekly-us-trademark-reports-with-uspto-api-and-google-drive-csv-export/"
+  },
+  {
+    "id": "7010",
+    "title": "Automate Seo Analysis For Multiple Domains With Ahrefs And Google Sheets",
+    "url": "https://n8n.io/workflows/7010-automate-seo-analysis-for-multiple-domains-with-ahrefs-and-google-sheets/"
+  },
+  {
+    "id": "6974",
+    "title": "Monitor Amazon Market Intelligence With Scrapegraphai To Google Docs",
+    "url": "https://n8n.io/workflows/6974-monitor-amazon-market-intelligence-with-scrapegraphai-to-google-docs/"
+  },
+  {
+    "id": "6969",
+    "title": "Automate Real Estate Construction Site Discovery With 99Acres Email Scraper",
+    "url": "https://n8n.io/workflows/6969-automate-real-estate-construction-site-discovery-with-99acres-email-scraper/"
+  },
+  {
+    "id": "6963",
+    "title": "Automated Construction Project Alerts With Email Notifications And Data Apis",
+    "url": "https://n8n.io/workflows/6963-automated-construction-project-alerts-with-email-notifications-and-data-apis/"
+  },
+  {
+    "id": "6962",
+    "title": "Landing Page Conversion Optimizer With Gemini 25 Pro And Telegram",
+    "url": "https://n8n.io/workflows/6962-landing-page-conversion-optimizer-with-gemini-25-pro-and-telegram/"
+  },
+  {
+    "id": "6950",
+    "title": "Scrape Product Info From Website Urls In Google Sheets Using Dumpling Ai",
+    "url": "https://n8n.io/workflows/6950-scrape-product-info-from-website-urls-in-google-sheets-using-dumpling-ai/"
+  },
+  {
+    "id": "6931",
+    "title": "Comprehensive Seo Keyword Research And Analysis With Dataforseo And Google Sheets",
+    "url": "https://n8n.io/workflows/6931-comprehensive-seo-keyword-research-and-analysis-with-dataforseo-and-google-sheets/"
+  },
+  {
+    "id": "6928",
+    "title": "Generate Market Research Reports From Google Maps Reviews With Gemini Ai",
+    "url": "https://n8n.io/workflows/6928-generate-market-research-reports-from-google-maps-reviews-with-gemini-ai/"
+  },
+  {
+    "id": "6908",
+    "title": "Comprehensive Seo Strategy With O3 Director And Gpt 4 Specialist Team",
+    "url": "https://n8n.io/workflows/6908-comprehensive-seo-strategy-with-o3-director-and-gpt-4-specialist-team/"
+  },
+  {
+    "id": "6888",
+    "title": "Automatically Search Facebook Ad Products On Amazon Using Apify Scrapers",
+    "url": "https://n8n.io/workflows/6888-automatically-search-facebook-ad-products-on-amazon-using-apify-scrapers/"
+  },
+  {
+    "id": "6830",
+    "title": "Send Daily 4K Bluray Preorder Updates From Blu Raycom To Discord",
+    "url": "https://n8n.io/workflows/6830-send-daily-4k-bluray-preorder-updates-from-blu-raycom-to-discord/"
+  },
+  {
+    "id": "6824",
+    "title": "Automate Seo Tasks With Google Search Console And Ai Via Mcp Server",
+    "url": "https://n8n.io/workflows/6824-automate-seo-tasks-with-google-search-console-and-ai-via-mcp-server/"
+  },
+  {
+    "id": "6822",
+    "title": "Automate Web Research With Gpt 4 Claude And Apify For Content Analysis And Insights",
+    "url": "https://n8n.io/workflows/6822-automate-web-research-with-gpt-4-claude-and-apify-for-content-analysis-and-insights/"
+  },
+  {
+    "id": "6741",
+    "title": "Ai Powered Content Gap Analysis Using Scrapegraphai And Strategic Planning",
+    "url": "https://n8n.io/workflows/6741-ai-powered-content-gap-analysis-using-scrapegraphai-and-strategic-planning/"
+  },
+  {
+    "id": "6740",
+    "title": "Discover And Analyze Seo Backlinks With Scrapegraphai And Google Sheets",
+    "url": "https://n8n.io/workflows/6740-discover-and-analyze-seo-backlinks-with-scrapegraphai-and-google-sheets/"
+  },
+  {
+    "id": "6739",
+    "title": "Sentiment Analysis Of Product Reviews Using Google Sheets And Openai",
+    "url": "https://n8n.io/workflows/6739-sentiment-analysis-of-product-reviews-using-google-sheets-and-openai/"
+  },
+  {
+    "id": "6730",
+    "title": "Audit And Monitor Seo Performance With Gpt 4 Advisor Pagespeed Insights And Slack Alerts",
+    "url": "https://n8n.io/workflows/6730-audit-and-monitor-seo-performance-with-gpt-4-advisor-pagespeed-insights-and-slack-alerts/"
+  },
+  {
+    "id": "6698",
+    "title": "Daily Seo Audit Workflow With Html Reports Via Gmailslack",
+    "url": "https://n8n.io/workflows/6698-daily-seo-audit-workflow-with-html-reports-via-gmailslack/"
+  },
+  {
+    "id": "6685",
+    "title": "Track Real Estate Competitor Prices And Features With Google Sheets And Email Alerts",
+    "url": "https://n8n.io/workflows/6685-track-real-estate-competitor-prices-and-features-with-google-sheets-and-email-alerts/"
+  },
+  {
+    "id": "6676",
+    "title": "Monitor Seo Keyword Rankings With Serp Api And Send Drop Alerts Via Slack",
+    "url": "https://n8n.io/workflows/6676-monitor-seo-keyword-rankings-with-serp-api-and-send-drop-alerts-via-slack/"
+  },
+  {
+    "id": "6672",
+    "title": "Ai Driven Competitor And Market Intelligence With Gpt 4 And Apify",
+    "url": "https://n8n.io/workflows/6672-ai-driven-competitor-and-market-intelligence-with-gpt-4-and-apify/"
+  },
+  {
+    "id": "6668",
+    "title": "Daily Company Online Presence Monitor With Ai Sentiment Analysis And Multi Platform Tracking",
+    "url": "https://n8n.io/workflows/6668-daily-company-online-presence-monitor-with-ai-sentiment-analysis-and-multi-platform-tracking/"
+  },
+  {
+    "id": "6664",
+    "title": "Ai Powered Product Research And Price Comparison With Google Search And Openai",
+    "url": "https://n8n.io/workflows/6664-ai-powered-product-research-and-price-comparison-with-google-search-and-openai/"
+  },
+  {
+    "id": "6663",
+    "title": "Automated Web Scraper Niche Jobproduct Monitor With Telegram Alert",
+    "url": "https://n8n.io/workflows/6663-automated-web-scraper-niche-jobproduct-monitor-with-telegram-alert/"
+  },
+  {
+    "id": "6641",
+    "title": "Instagram Influencer Content Monitor With Scrapegraphai Analysis And Roi Tracking",
+    "url": "https://n8n.io/workflows/6641-instagram-influencer-content-monitor-with-scrapegraphai-analysis-and-roi-tracking/"
+  },
+  {
+    "id": "6637",
+    "title": "Weekly Competitor Content Digest With Gemini And Openai Google Sheets And Firecrawl",
+    "url": "https://n8n.io/workflows/6637-weekly-competitor-content-digest-with-gemini-and-openai-google-sheets-and-firecrawl/"
+  },
+  {
+    "id": "6627",
+    "title": "Analyze Real Estate Market Sentiment With Scrapegraphai And Telegram",
+    "url": "https://n8n.io/workflows/6627-analyze-real-estate-market-sentiment-with-scrapegraphai-and-telegram/"
+  },
+  {
+    "id": "6626",
+    "title": "Analyze Property Maintenance Costs With Scrapegraphai And Budget Planning",
+    "url": "https://n8n.io/workflows/6626-analyze-property-maintenance-costs-with-scrapegraphai-and-budget-planning/"
+  },
+  {
+    "id": "6625",
+    "title": "Monitor Commercial Real Estate Opportunities From Loopnet With Scrapegraphai And Telegram",
+    "url": "https://n8n.io/workflows/6625-monitor-commercial-real-estate-opportunities-from-loopnet-with-scrapegraphai-and-telegram/"
+  },
+  {
+    "id": "6620",
+    "title": "Reddit Comment Sentiment Analysis With Bright Data And Gemini Ai To Google Sheets",
+    "url": "https://n8n.io/workflows/6620-reddit-comment-sentiment-analysis-with-bright-data-and-gemini-ai-to-google-sheets/"
+  },
+  {
+    "id": "6619",
+    "title": "Analyze Competitor Linkedin Posts With Bright Data Google Gemini To Google Sheets",
+    "url": "https://n8n.io/workflows/6619-analyze-competitor-linkedin-posts-with-bright-data-google-gemini-to-google-sheets/"
+  },
+  {
+    "id": "6616",
+    "title": "Automate Weekly Tech Research With Perplexity Ai Notion And Gmail",
+    "url": "https://n8n.io/workflows/6616-automate-weekly-tech-research-with-perplexity-ai-notion-and-gmail/"
+  },
+  {
+    "id": "6592",
+    "title": "Community Questions Monitor With Openrouter Ai Reddit And Forum Scraping",
+    "url": "https://n8n.io/workflows/6592-community-questions-monitor-with-openrouter-ai-reddit-and-forum-scraping/"
+  },
+  {
+    "id": "6591",
+    "title": "Display Youtube Subscriber Count On Ulanzi Awtrix Smart Clock",
+    "url": "https://n8n.io/workflows/6591-display-youtube-subscriber-count-on-ulanzi-awtrix-smart-clock/"
+  },
+  {
+    "id": "6580",
+    "title": "Generate Ai Powered Competitor Analysis Reports With Gpt 4 Apify And Google Docs",
+    "url": "https://n8n.io/workflows/6580-generate-ai-powered-competitor-analysis-reports-with-gpt-4-apify-and-google-docs/"
+  },
+  {
+    "id": "6571",
+    "title": "Generate Property Investment Reports With Gpt 4 Serpapi Google Docs And Airtable",
+    "url": "https://n8n.io/workflows/6571-generate-property-investment-reports-with-gpt-4-serpapi-google-docs-and-airtable/"
+  },
+  {
+    "id": "6545",
+    "title": "Meta Ads Performance Analysis With Gpt 4 And Gemini Ai Comparisons",
+    "url": "https://n8n.io/workflows/6545-meta-ads-performance-analysis-with-gpt-4-and-gemini-ai-comparisons/"
+  },
+  {
+    "id": "6540",
+    "title": "Comprehensive Seo Audit With Gpt 4 Specialists Using Analytics Search Console And Pagespeed",
+    "url": "https://n8n.io/workflows/6540-comprehensive-seo-audit-with-gpt-4-specialists-using-analytics-search-console-and-pagespeed/"
+  },
+  {
+    "id": "6536",
+    "title": "Archive Trending Tiktok Hashtags Using Tiktok Airtable And Apify",
+    "url": "https://n8n.io/workflows/6536-archive-trending-tiktok-hashtags-using-tiktok-airtable-and-apify/"
+  },
+  {
+    "id": "6516",
+    "title": "Template For Tiktok Rapidapi And Google Sheets Services",
+    "url": "https://n8n.io/workflows/6516-template-for-tiktok-rapidapi-and-google-sheets-services/"
+  },
+  {
+    "id": "6483",
+    "title": "Ai Powered Corporate Research System For Animal Advocacy Campaigns With Claude And Gemini",
+    "url": "https://n8n.io/workflows/6483-ai-powered-corporate-research-system-for-animal-advocacy-campaigns-with-claude-and-gemini/"
+  },
+  {
+    "id": "6477",
+    "title": "Analyze Reddit Content And Comments For Sentiment With Deepseek Ai",
+    "url": "https://n8n.io/workflows/6477-analyze-reddit-content-and-comments-for-sentiment-with-deepseek-ai/"
+  },
+  {
+    "id": "6476",
+    "title": "Generate Business Ideas From Reddit Posts With Deepseek Ai And Google Sheets",
+    "url": "https://n8n.io/workflows/6476-generate-business-ideas-from-reddit-posts-with-deepseek-ai-and-google-sheets/"
+  },
+  {
+    "id": "6468",
+    "title": "Analyze Customer Review Sentiment Automatically With Google Sheets",
+    "url": "https://n8n.io/workflows/6468-analyze-customer-review-sentiment-automatically-with-google-sheets/"
+  },
+  {
+    "id": "6448",
+    "title": "Automated Dynamic Pricing With Ai Competitor Monitoring And Revenue Optimization",
+    "url": "https://n8n.io/workflows/6448-automated-dynamic-pricing-with-ai-competitor-monitoring-and-revenue-optimization/"
+  },
+  {
+    "id": "6441",
+    "title": "Monitor Content Trends Across Social Media With Ai Slack And Google Sheets",
+    "url": "https://n8n.io/workflows/6441-monitor-content-trends-across-social-media-with-ai-slack-and-google-sheets/"
+  },
+  {
+    "id": "6437",
+    "title": "Automate Deep Research With Scrapegraphai Gpt 4 And Google Sheets",
+    "url": "https://n8n.io/workflows/6437-automate-deep-research-with-scrapegraphai-gpt-4-and-google-sheets/"
+  },
+  {
+    "id": "6430",
+    "title": "Social Media Sentiment Analysis Dashboard With Custom Ai For Twitter Reddit And Linkedin",
+    "url": "https://n8n.io/workflows/6430-social-media-sentiment-analysis-dashboard-with-custom-ai-for-twitter-reddit-and-linkedin/"
+  },
+  {
+    "id": "6429",
+    "title": "Generate And Distribute Market Reports With Google Docs Sheets And Gmail",
+    "url": "https://n8n.io/workflows/6429-generate-and-distribute-market-reports-with-google-docs-sheets-and-gmail/"
+  },
+  {
+    "id": "6428",
+    "title": "Price Monitoring Dashboard With Ai Component And Alerts",
+    "url": "https://n8n.io/workflows/6428-price-monitoring-dashboard-with-ai-component-and-alerts/"
+  },
+  {
+    "id": "6427",
+    "title": "Analyze Youtube Videos For Viral Content With Engagement Scoring And Google Sheets",
+    "url": "https://n8n.io/workflows/6427-analyze-youtube-videos-for-viral-content-with-engagement-scoring-and-google-sheets/"
+  },
+  {
+    "id": "6420",
+    "title": "Automate Weekly Marketing Reports With Gomarble Mcp Claude Ai And Gmail",
+    "url": "https://n8n.io/workflows/6420-automate-weekly-marketing-reports-with-gomarble-mcp-claude-ai-and-gmail/"
+  },
+  {
+    "id": "6417",
+    "title": "Analyze Company Sustainability And Animal Welfare With Openrouter Ai And Multi Source Research",
+    "url": "https://n8n.io/workflows/6417-analyze-company-sustainability-and-animal-welfare-with-openrouter-ai-and-multi-source-research/"
+  },
+  {
+    "id": "6409",
+    "title": "Analyze Blog Seo With Ai Complete Assessment Using Gpt 4 And Ethical Scraping",
+    "url": "https://n8n.io/workflows/6409-analyze-blog-seo-with-ai-complete-assessment-using-gpt-4-and-ethical-scraping/"
+  },
+  {
+    "id": "6408",
+    "title": "Multi Platform Price Finder Scraping Prices With Bright Data Claude Ai And Telegram",
+    "url": "https://n8n.io/workflows/6408-multi-platform-price-finder-scraping-prices-with-bright-data-claude-ai-and-telegram/"
+  },
+  {
+    "id": "6405",
+    "title": "Scrape Twitter Profiles With Bright Data Api And Export To Google Sheets",
+    "url": "https://n8n.io/workflows/6405-scrape-twitter-profiles-with-bright-data-api-and-export-to-google-sheets/"
+  },
+  {
+    "id": "6403",
+    "title": "Generate Complete Seo Audits With Apify Claude Sonnet 4 And Gmail Delivery",
+    "url": "https://n8n.io/workflows/6403-generate-complete-seo-audits-with-apify-claude-sonnet-4-and-gmail-delivery/"
+  },
+  {
+    "id": "6395",
+    "title": "Automate News Article Scraping With Scrapegraphai And Store In Google Sheets",
+    "url": "https://n8n.io/workflows/6395-automate-news-article-scraping-with-scrapegraphai-and-store-in-google-sheets/"
+  },
+  {
+    "id": "6394",
+    "title": "Scrape Amazon Keyboard Products With Scrapegraphai To Google Sheets",
+    "url": "https://n8n.io/workflows/6394-scrape-amazon-keyboard-products-with-scrapegraphai-to-google-sheets/"
+  },
+  {
+    "id": "6389",
+    "title": "Smart Rss Feed Monitoring With Ai Filtering Baserow Storage And Slack Alerts",
+    "url": "https://n8n.io/workflows/6389-smart-rss-feed-monitoring-with-ai-filtering-baserow-storage-and-slack-alerts/"
+  },
+  {
+    "id": "6373",
+    "title": "Yelp Business Scraper By Url With Bright Data Api And Google Sheets",
+    "url": "https://n8n.io/workflows/6373-yelp-business-scraper-by-url-with-bright-data-api-and-google-sheets/"
+  },
+  {
+    "id": "6343",
+    "title": "Web Scraping And Screenshot Automation With Gpt 41 Mini And Firecrawl",
+    "url": "https://n8n.io/workflows/6343-web-scraping-and-screenshot-automation-with-gpt-41-mini-and-firecrawl/"
+  },
+  {
+    "id": "6328",
+    "title": "Facebook Ads Reporting Automation With Facebook Graph Api And Google Sheets",
+    "url": "https://n8n.io/workflows/6328-facebook-ads-reporting-automation-with-facebook-graph-api-and-google-sheets/"
+  },
+  {
+    "id": "6319",
+    "title": "Telegram Shopping Assistant Amazon Product Search With Apify And Openrouter Ai",
+    "url": "https://n8n.io/workflows/6319-telegram-shopping-assistant-amazon-product-search-with-apify-and-openrouter-ai/"
+  },
+  {
+    "id": "6310",
+    "title": "Auto Send Zillow Real Estate Listings To Telegram Using Scrapegraphai",
+    "url": "https://n8n.io/workflows/6310-auto-send-zillow-real-estate-listings-to-telegram-using-scrapegraphai/"
+  },
+  {
+    "id": "6282",
+    "title": "Generate Data Driven Ux Personas With Perplexity Dalle 3 And Google Doc",
+    "url": "https://n8n.io/workflows/6282-generate-data-driven-ux-personas-with-perplexity-dalle-3-and-google-doc/"
+  },
+  {
+    "id": "6276",
+    "title": "Automated Meta Ads Analysis With Gemini Ai Scrapingflash And Google Sheets",
+    "url": "https://n8n.io/workflows/6276-automated-meta-ads-analysis-with-gemini-ai-scrapingflash-and-google-sheets/"
+  },
+  {
+    "id": "6274",
+    "title": "Automated Real Time Web Research With Gemini Ai And Serpapi Search",
+    "url": "https://n8n.io/workflows/6274-automated-real-time-web-research-with-gemini-ai-and-serpapi-search/"
+  },
+  {
+    "id": "6273",
+    "title": "Daily Business News Briefings With Newsapi And Gpt 4 Insights To Slack",
+    "url": "https://n8n.io/workflows/6273-daily-business-news-briefings-with-newsapi-and-gpt-4-insights-to-slack/"
+  },
+  {
+    "id": "6272",
+    "title": "Track Top Social Media Trends With Reddit Twitter And Gpt 4O To Spdrive",
+    "url": "https://n8n.io/workflows/6272-track-top-social-media-trends-with-reddit-twitter-and-gpt-4o-to-spdrive/"
+  },
+  {
+    "id": "6258",
+    "title": "Automate Multi Website Google Analytics Reports With Gpt Processing To Email And Slack",
+    "url": "https://n8n.io/workflows/6258-automate-multi-website-google-analytics-reports-with-gpt-processing-to-email-and-slack/"
+  },
+  {
+    "id": "6256",
+    "title": "Scrape And Analyze Google Ads With Bright Data Api And Ai For Email Reports",
+    "url": "https://n8n.io/workflows/6256-scrape-and-analyze-google-ads-with-bright-data-api-and-ai-for-email-reports/"
+  },
+  {
+    "id": "6245",
+    "title": "Analyze And Optimize Top Website Content Using Google Analytics Firecrawl And Infranodus",
+    "url": "https://n8n.io/workflows/6245-analyze-and-optimize-top-website-content-using-google-analytics-firecrawl-and-infranodus/"
+  },
+  {
+    "id": "6241",
+    "title": "Ai Powered News Monitoring With Linkup Airtable And Slack Notifications",
+    "url": "https://n8n.io/workflows/6241-ai-powered-news-monitoring-with-linkup-airtable-and-slack-notifications/"
+  },
+  {
+    "id": "6233",
+    "title": "Track Flight Fares With Amadeus And Skyscanner Alerts Refunds And Trends",
+    "url": "https://n8n.io/workflows/6233-track-flight-fares-with-amadeus-and-skyscanner-alerts-refunds-and-trends/"
+  },
+  {
+    "id": "6220",
+    "title": "Ai Powered Research Assistant With Linear Scrapeless And Claude",
+    "url": "https://n8n.io/workflows/6220-ai-powered-research-assistant-with-linear-scrapeless-and-claude/"
+  },
+  {
+    "id": "6187",
+    "title": "Instagram Full Profile Scraper With Apify And Google Sheets",
+    "url": "https://n8n.io/workflows/6187-instagram-full-profile-scraper-with-apify-and-google-sheets/"
+  },
+  {
+    "id": "6179",
+    "title": "Competitor Price Monitoring With Web Scraping Google Sheets And Discord Alerts",
+    "url": "https://n8n.io/workflows/6179-competitor-price-monitoring-with-web-scraping-google-sheets-and-discord-alerts/"
+  },
+  {
+    "id": "6155",
+    "title": "Extract Marketing Insights From Google Reviews Using Dumpling Ai Gpt 4",
+    "url": "https://n8n.io/workflows/6155-extract-marketing-insights-from-google-reviews-using-dumpling-ai-gpt-4/"
+  },
+  {
+    "id": "6154",
+    "title": "Extract Marketing Insights And Generate Content From Tiktok Videos With Dumpling Ai And Gpt 4",
+    "url": "https://n8n.io/workflows/6154-extract-marketing-insights-and-generate-content-from-tiktok-videos-with-dumpling-ai-and-gpt-4/"
+  },
+  {
+    "id": "6119",
+    "title": "Automate Twitter Sentiment Analysis With Openai Google Sheets And Slack Alerts",
+    "url": "https://n8n.io/workflows/6119-automate-twitter-sentiment-analysis-with-openai-google-sheets-and-slack-alerts/"
+  },
+  {
+    "id": "6115",
+    "title": "Generate Seo Optimized Titles And Meta Descriptions With Bright Data And Gemini Ai",
+    "url": "https://n8n.io/workflows/6115-generate-seo-optimized-titles-and-meta-descriptions-with-bright-data-and-gemini-ai/"
+  },
+  {
+    "id": "6112",
+    "title": "Shopify Review Aggregator Trustpilot Google Facebook To Google Sheets",
+    "url": "https://n8n.io/workflows/6112-shopify-review-aggregator-trustpilot-google-facebook-to-google-sheets/"
+  },
+  {
+    "id": "6108",
+    "title": "Fetch Country Specific Google Trends Reports Via Telegram Bot",
+    "url": "https://n8n.io/workflows/6108-fetch-country-specific-google-trends-reports-via-telegram-bot/"
+  },
+  {
+    "id": "6105",
+    "title": "Scrape Google Events Data To Google Sheets Via Serpapi",
+    "url": "https://n8n.io/workflows/6105-scrape-google-events-data-to-google-sheets-via-serpapi/"
+  },
+  {
+    "id": "6094",
+    "title": "Generate Startup Ideas From Reddit Posts Using Gemini Ai And Google Sheets",
+    "url": "https://n8n.io/workflows/6094-generate-startup-ideas-from-reddit-posts-using-gemini-ai-and-google-sheets/"
+  },
+  {
+    "id": "6086",
+    "title": "Analyze Youtube Comments Sentiment With Gemini Ai And Google Sheets",
+    "url": "https://n8n.io/workflows/6086-analyze-youtube-comments-sentiment-with-gemini-ai-and-google-sheets/"
+  },
+  {
+    "id": "6066",
+    "title": "Analyze And Summarize Google Reviews With Serpapi Gpt 4 And Google Sheets",
+    "url": "https://n8n.io/workflows/6066-analyze-and-summarize-google-reviews-with-serpapi-gpt-4-and-google-sheets/"
+  },
+  {
+    "id": "6054",
+    "title": "Compare Flight Fares From Skyscanner Air India And More With Email Alerts",
+    "url": "https://n8n.io/workflows/6054-compare-flight-fares-from-skyscanner-air-india-and-more-with-email-alerts/"
+  },
+  {
+    "id": "6050",
+    "title": "Collect And Process Trip Feedback With Google Sheets And Email Notifications",
+    "url": "https://n8n.io/workflows/6050-collect-and-process-trip-feedback-with-google-sheets-and-email-notifications/"
+  },
+  {
+    "id": "6043",
+    "title": "Analyze Search Intent For Keywords With Google Scraping Bright Data And Gemini Ai",
+    "url": "https://n8n.io/workflows/6043-analyze-search-intent-for-keywords-with-google-scraping-bright-data-and-gemini-ai/"
+  },
+  {
+    "id": "6042",
+    "title": "Find And Compare Online Tools With Gpt 4O And Serpapi Research",
+    "url": "https://n8n.io/workflows/6042-find-and-compare-online-tools-with-gpt-4o-and-serpapi-research/"
+  },
+  {
+    "id": "6028",
+    "title": "Scrape Upwork Job Listings And Generate Daily Email Reports With Apify And Google Sheets",
+    "url": "https://n8n.io/workflows/6028-scrape-upwork-job-listings-and-generate-daily-email-reports-with-apify-and-google-sheets/"
+  },
+  {
+    "id": "6006",
+    "title": "Weekly Google Search Console Seo Pulse Catch Top Movers Across Keyword Segments",
+    "url": "https://n8n.io/workflows/6006-weekly-google-search-console-seo-pulse-catch-top-movers-across-keyword-segments/"
+  },
+  {
+    "id": "6004",
+    "title": "Daily Google Search Console Seo Pulse Catch Top Movers Across Keyword Segments",
+    "url": "https://n8n.io/workflows/6004-daily-google-search-console-seo-pulse-catch-top-movers-across-keyword-segments/"
+  },
+  {
+    "id": "5987",
+    "title": "Ingredient Price Trend Analysis And Buying Recommendations With Postgresql Api And Slack",
+    "url": "https://n8n.io/workflows/5987-ingredient-price-trend-analysis-and-buying-recommendations-with-postgresql-api-and-slack/"
+  },
+  {
+    "id": "5984",
+    "title": "Track Real Estate Market Pain Points With Apify Gpt 4O And Telegram Alerts",
+    "url": "https://n8n.io/workflows/5984-track-real-estate-market-pain-points-with-apify-gpt-4o-and-telegram-alerts/"
+  },
+  {
+    "id": "5981",
+    "title": "Scrape Airbnb Listings With Pagination And Store In Google Sheets",
+    "url": "https://n8n.io/workflows/5981-scrape-airbnb-listings-with-pagination-and-store-in-google-sheets/"
+  },
+  {
+    "id": "5979",
+    "title": "Automated Content Marketing Intelligence With Openai Ahrefs And Multi Platform Integration",
+    "url": "https://n8n.io/workflows/5979-automated-content-marketing-intelligence-with-openai-ahrefs-and-multi-platform-integration/"
+  },
+  {
+    "id": "5978",
+    "title": "Monitor Competitor Financial Performance With Bright Data Mcp Openai And Google Sheets",
+    "url": "https://n8n.io/workflows/5978-monitor-competitor-financial-performance-with-bright-data-mcp-openai-and-google-sheets/"
+  },
+  {
+    "id": "5977",
+    "title": "Scrape And Summarize Industry News With Bright Data And Openai",
+    "url": "https://n8n.io/workflows/5977-scrape-and-summarize-industry-news-with-bright-data-and-openai/"
+  },
+  {
+    "id": "5973",
+    "title": "Track Regional Sentiment From Social Media With Bright Data And Openai",
+    "url": "https://n8n.io/workflows/5973-track-regional-sentiment-from-social-media-with-bright-data-and-openai/"
+  },
+  {
+    "id": "5972",
+    "title": "Automated Local Event Monitor With Bright Data Mcp And Openai Analysis",
+    "url": "https://n8n.io/workflows/5972-automated-local-event-monitor-with-bright-data-mcp-and-openai-analysis/"
+  },
+  {
+    "id": "5970",
+    "title": "Generate Saas Product Ideas From Market Gaps With Openai And Bright Data",
+    "url": "https://n8n.io/workflows/5970-generate-saas-product-ideas-from-market-gaps-with-openai-and-bright-data/"
+  },
+  {
+    "id": "5969",
+    "title": "Instant Competitor Product Launch Monitor With Bright Data And Openai To Emailsheets",
+    "url": "https://n8n.io/workflows/5969-instant-competitor-product-launch-monitor-with-bright-data-and-openai-to-emailsheets/"
+  },
+  {
+    "id": "5968",
+    "title": "Automate Feature Request Collection And Analysis From Reviews To Jira With Ai",
+    "url": "https://n8n.io/workflows/5968-automate-feature-request-collection-and-analysis-from-reviews-to-jira-with-ai/"
+  },
+  {
+    "id": "5967",
+    "title": "Track Customer Nps Scores Across Platforms With Bright Data And Openai",
+    "url": "https://n8n.io/workflows/5967-track-customer-nps-scores-across-platforms-with-bright-data-and-openai/"
+  },
+  {
+    "id": "5966",
+    "title": "Analyze And Target High Value Customers With Gpt 4 And Bright Data Mcp",
+    "url": "https://n8n.io/workflows/5966-analyze-and-target-high-value-customers-with-gpt-4-and-bright-data-mcp/"
+  },
+  {
+    "id": "5964",
+    "title": "Track Google Trends Search Data Locally With Bright Data Mcp And Ai Analysis",
+    "url": "https://n8n.io/workflows/5964-track-google-trends-search-data-locally-with-bright-data-mcp-and-ai-analysis/"
+  },
+  {
+    "id": "5963",
+    "title": "Extract And Analyze Competitor Backlink Data With Bright Data Mcp And Gpt",
+    "url": "https://n8n.io/workflows/5963-extract-and-analyze-competitor-backlink-data-with-bright-data-mcp-and-gpt/"
+  },
+  {
+    "id": "5962",
+    "title": "Track Seo Keyword Rankings With Bright Data Mcp And Gpt 4O Ai Analysis",
+    "url": "https://n8n.io/workflows/5962-track-seo-keyword-rankings-with-bright-data-mcp-and-gpt-4o-ai-analysis/"
+  },
+  {
+    "id": "5961",
+    "title": "Analyze Amazon Purchase Trends With Bright Data Openai And Google Sheets",
+    "url": "https://n8n.io/workflows/5961-analyze-amazon-purchase-trends-with-bright-data-openai-and-google-sheets/"
+  },
+  {
+    "id": "5959",
+    "title": "Automatically Monitor Competitor Pricing With Bright Data Mcp And Google Sheets",
+    "url": "https://n8n.io/workflows/5959-automatically-monitor-competitor-pricing-with-bright-data-mcp-and-google-sheets/"
+  },
+  {
+    "id": "5958",
+    "title": "Track And Analyze Backlink Opportunities With Bright Data Mcp And Gpt 4O",
+    "url": "https://n8n.io/workflows/5958-track-and-analyze-backlink-opportunities-with-bright-data-mcp-and-gpt-4o/"
+  },
+  {
+    "id": "5957",
+    "title": "Analyze Competitor Content Performance With Bright Data Mcp And Gpt 4O",
+    "url": "https://n8n.io/workflows/5957-analyze-competitor-content-performance-with-bright-data-mcp-and-gpt-4o/"
+  },
+  {
+    "id": "5956",
+    "title": "Discover Trending Topics With Bright Data Mcp Gpt Analysis And Trello Integration",
+    "url": "https://n8n.io/workflows/5956-discover-trending-topics-with-bright-data-mcp-gpt-analysis-and-trello-integration/"
+  },
+  {
+    "id": "5955",
+    "title": "Analyze Website Conversion Funnels With Gpt 4O Bright Data And Google Sheets",
+    "url": "https://n8n.io/workflows/5955-analyze-website-conversion-funnels-with-gpt-4o-bright-data-and-google-sheets/"
+  },
+  {
+    "id": "5954",
+    "title": "Monitor And Alert On Social Media Ad Performance With Bright Data Mcp",
+    "url": "https://n8n.io/workflows/5954-monitor-and-alert-on-social-media-ad-performance-with-bright-data-mcp/"
+  },
+  {
+    "id": "5952",
+    "title": "Extract Customer Pain Points From Support Forums With Bright Data And Gpt 4",
+    "url": "https://n8n.io/workflows/5952-extract-customer-pain-points-from-support-forums-with-bright-data-and-gpt-4/"
+  },
+  {
+    "id": "5951",
+    "title": "Track Brand Mentions With Sentiment Analysis Using Bright Data And Openai",
+    "url": "https://n8n.io/workflows/5951-track-brand-mentions-with-sentiment-analysis-using-bright-data-and-openai/"
+  },
+  {
+    "id": "5950",
+    "title": "Trustpilot Review Sentiment Analysis With Openai And Bright Data To Google Sheets",
+    "url": "https://n8n.io/workflows/5950-trustpilot-review-sentiment-analysis-with-openai-and-bright-data-to-google-sheets/"
+  },
+  {
+    "id": "5949",
+    "title": "Monitor Linkedin Competitor Engagement And Analysis With Bright Data And Ai",
+    "url": "https://n8n.io/workflows/5949-monitor-linkedin-competitor-engagement-and-analysis-with-bright-data-and-ai/"
+  },
+  {
+    "id": "5948",
+    "title": "Automated Competitor Pricing Monitor With Bright Data Mcp And Openai",
+    "url": "https://n8n.io/workflows/5948-automated-competitor-pricing-monitor-with-bright-data-mcp-and-openai/"
+  },
+  {
+    "id": "5947",
+    "title": "Scrape Event Data From 10Times With Bright Data Mcp Ai And Google Sheets",
+    "url": "https://n8n.io/workflows/5947-scrape-event-data-from-10times-with-bright-data-mcp-ai-and-google-sheets/"
+  },
+  {
+    "id": "5945",
+    "title": "Weekly Seo Keyword Research And Competitor Analysis With Gpt 4 And Bright Data",
+    "url": "https://n8n.io/workflows/5945-weekly-seo-keyword-research-and-competitor-analysis-with-gpt-4-and-bright-data/"
+  },
+  {
+    "id": "5933",
+    "title": "Classify And Summarize Wechat Articles With Gpt 4 Nano To Google Sheets And Notion",
+    "url": "https://n8n.io/workflows/5933-classify-and-summarize-wechat-articles-with-gpt-4-nano-to-google-sheets-and-notion/"
+  },
+  {
+    "id": "5914",
+    "title": "Techcrunch Ai Article Scraper And Classifier With Gpt 41 Nano To Sheets And Telegram",
+    "url": "https://n8n.io/workflows/5914-techcrunch-ai-article-scraper-and-classifier-with-gpt-41-nano-to-sheets-and-telegram/"
+  },
+  {
+    "id": "5897",
+    "title": "Generate Comprehensive Research Reports With Gemini Ai And Tavily Search For Japanese Users",
+    "url": "https://n8n.io/workflows/5897-generate-comprehensive-research-reports-with-gemini-ai-and-tavily-search-for-japanese-users/"
+  },
+  {
+    "id": "5891",
+    "title": "Automate Weekly Seo Report With Gpt 4 Insights And Slack Delivery",
+    "url": "https://n8n.io/workflows/5891-automate-weekly-seo-report-with-gpt-4-insights-and-slack-delivery/"
+  },
+  {
+    "id": "5878",
+    "title": "Automate Real Estate Listing Scraper With Scrapeless And Google Sheets",
+    "url": "https://n8n.io/workflows/5878-automate-real-estate-listing-scraper-with-scrapeless-and-google-sheets/"
+  },
+  {
+    "id": "5848",
+    "title": "Collect And Store Restaurant Customer Feedback With Google Sheets And Email Forms",
+    "url": "https://n8n.io/workflows/5848-collect-and-store-restaurant-customer-feedback-with-google-sheets-and-email-forms/"
+  },
+  {
+    "id": "5825",
+    "title": "Generate Startup Ideas And Business Plans With Gpt 41 Perplexity Sonar And Claude Sonnet",
+    "url": "https://n8n.io/workflows/5825-generate-startup-ideas-and-business-plans-with-gpt-41-perplexity-sonar-and-claude-sonnet/"
+  },
+  {
+    "id": "5797",
+    "title": "Find Quality Youtube Videos With Automated Filtering And Relevance Scoring To Google Sheets",
+    "url": "https://n8n.io/workflows/5797-find-quality-youtube-videos-with-automated-filtering-and-relevance-scoring-to-google-sheets/"
+  },
+  {
+    "id": "5795",
+    "title": "Find Top Performing Instagram Reels And Save Insights To Notion With Gemini And Apify",
+    "url": "https://n8n.io/workflows/5795-find-top-performing-instagram-reels-and-save-insights-to-notion-with-gemini-and-apify/"
+  },
+  {
+    "id": "5778",
+    "title": "Automated Rss Monitoring With Gemini Ai Summaries And Deduplication To Google Sheets",
+    "url": "https://n8n.io/workflows/5778-automated-rss-monitoring-with-gemini-ai-summaries-and-deduplication-to-google-sheets/"
+  },
+  {
+    "id": "5767",
+    "title": "Extract Youtube Channel Videos To Google Sheets With Metadata Tracking",
+    "url": "https://n8n.io/workflows/5767-extract-youtube-channel-videos-to-google-sheets-with-metadata-tracking/"
+  },
+  {
+    "id": "5766",
+    "title": "Extract Youtube Video Statistics And Save To Google Sheets",
+    "url": "https://n8n.io/workflows/5766-extract-youtube-video-statistics-and-save-to-google-sheets/"
+  },
+  {
+    "id": "5728",
+    "title": "Gather Complete Youtube Channel Data To Google Sheets",
+    "url": "https://n8n.io/workflows/5728-gather-complete-youtube-channel-data-to-google-sheets/"
+  },
+  {
+    "id": "5699",
+    "title": "Automate Daily Keyword Research With Google Sheets Suggest Api And Custom Search",
+    "url": "https://n8n.io/workflows/5699-automate-daily-keyword-research-with-google-sheets-suggest-api-and-custom-search/"
+  },
+  {
+    "id": "5695",
+    "title": "Extract And Analyze Competitor Reviews With Firecrawl And Gpt 4O Mini For Intelligence Reports",
+    "url": "https://n8n.io/workflows/5695-extract-and-analyze-competitor-reviews-with-firecrawl-and-gpt-4o-mini-for-intelligence-reports/"
+  },
+  {
+    "id": "5690",
+    "title": "Extract And Store Youtube Video Comments In Google Sheets",
+    "url": "https://n8n.io/workflows/5690-extract-and-store-youtube-video-comments-in-google-sheets/"
+  },
+  {
+    "id": "5689",
+    "title": "Advanced Medium Api Mcp Server",
+    "url": "https://n8n.io/workflows/5689-advanced-medium-api-mcp-server/"
+  },
+  {
+    "id": "5677",
+    "title": "Extract And Transform Hackernews Data To Google Docs Using Gemini 20 Flash",
+    "url": "https://n8n.io/workflows/5677-extract-and-transform-hackernews-data-to-google-docs-using-gemini-20-flash/"
+  },
+  {
+    "id": "5668",
+    "title": "Track Top Youtube Videos By View Count With Google Sheets",
+    "url": "https://n8n.io/workflows/5668-track-top-youtube-videos-by-view-count-with-google-sheets/"
+  },
+  {
+    "id": "5657",
+    "title": "Website Content Scraper And Seo Keyword Extractor With Gpt 4O Mini And Airtable",
+    "url": "https://n8n.io/workflows/5657-website-content-scraper-and-seo-keyword-extractor-with-gpt-4o-mini-and-airtable/"
+  },
+  {
+    "id": "5637",
+    "title": "Youtube Analytics Data Reporting Api Integration For Ai Agents",
+    "url": "https://n8n.io/workflows/5637-youtube-analytics-data-reporting-api-integration-for-ai-agents/"
+  },
+  {
+    "id": "5622",
+    "title": "Generate Swot Analysis Reports With Openai Google Sheets And Apitemplate Pdf Export",
+    "url": "https://n8n.io/workflows/5622-generate-swot-analysis-reports-with-openai-google-sheets-and-apitemplate-pdf-export/"
+  },
+  {
+    "id": "5605",
+    "title": "Search Manage And Analyze Podcasts With Listen Api For Ai Agents",
+    "url": "https://n8n.io/workflows/5605-search-manage-and-analyze-podcasts-with-listen-api-for-ai-agents/"
+  },
+  {
+    "id": "5591",
+    "title": "Daily Website Data Extraction With Firecrawl And Telegram Alerts",
+    "url": "https://n8n.io/workflows/5591-daily-website-data-extraction-with-firecrawl-and-telegram-alerts/"
+  },
+  {
+    "id": "5587",
+    "title": "Evaluate Animal Advocacy Text With Hugging Face Open Paws Ai Models",
+    "url": "https://n8n.io/workflows/5587-evaluate-animal-advocacy-text-with-hugging-face-open-paws-ai-models/"
+  },
+  {
+    "id": "5528",
+    "title": "Create A Whois Api Interface For Ai Agents With 8 Domain Management Operations",
+    "url": "https://n8n.io/workflows/5528-create-a-whois-api-interface-for-ai-agents-with-8-domain-management-operations/"
+  },
+  {
+    "id": "5510",
+    "title": "Monitor Dynamic Website Changes With Firecrawl Sheets And Gmail Alerts",
+    "url": "https://n8n.io/workflows/5510-monitor-dynamic-website-changes-with-firecrawl-sheets-and-gmail-alerts/"
+  },
+  {
+    "id": "5470",
+    "title": "Discord Daily Digest For Multiple Google Analytics Accounts",
+    "url": "https://n8n.io/workflows/5470-discord-daily-digest-for-multiple-google-analytics-accounts/"
+  },
+  {
+    "id": "5469",
+    "title": "Daily Ai News Digest With Perplexity Pro Gpt Format And Gmail Delivery",
+    "url": "https://n8n.io/workflows/5469-daily-ai-news-digest-with-perplexity-pro-gpt-format-and-gmail-delivery/"
+  },
+  {
+    "id": "5434",
+    "title": "Scrape Tiktok Influencer Profiles With Bright Data Api To Google Sheets",
+    "url": "https://n8n.io/workflows/5434-scrape-tiktok-influencer-profiles-with-bright-data-api-to-google-sheets/"
+  },
+  {
+    "id": "5431",
+    "title": "Scrape Reuters News And Send Ai Summaries With Brightdata Claude 4 And Telegram",
+    "url": "https://n8n.io/workflows/5431-scrape-reuters-news-and-send-ai-summaries-with-brightdata-claude-4-and-telegram/"
+  },
+  {
+    "id": "5430",
+    "title": "Market Research And Business Case Generator With Gpt 4O Perplexity And Claude",
+    "url": "https://n8n.io/workflows/5430-market-research-and-business-case-generator-with-gpt-4o-perplexity-and-claude/"
+  },
+  {
+    "id": "5417",
+    "title": "Ai Facebook Ad Spy Tool With Apify Openai Gemini And Google Sheets",
+    "url": "https://n8n.io/workflows/5417-ai-facebook-ad-spy-tool-with-apify-openai-gemini-and-google-sheets/"
+  },
+  {
+    "id": "5416",
+    "title": "Scrape Ai News From Multiple Sources To Markdown And Google Drive With Rssapp",
+    "url": "https://n8n.io/workflows/5416-scrape-ai-news-from-multiple-sources-to-markdown-and-google-drive-with-rssapp/"
+  },
+  {
+    "id": "5405",
+    "title": "Daily Financial News Summary With Ollama Llm Automated Email Report",
+    "url": "https://n8n.io/workflows/5405-daily-financial-news-summary-with-ollama-llm-automated-email-report/"
+  },
+  {
+    "id": "5386",
+    "title": "Generate Weekly Meta Ads Report With Gpt 4 Insights And Slack Delivery",
+    "url": "https://n8n.io/workflows/5386-generate-weekly-meta-ads-report-with-gpt-4-insights-and-slack-delivery/"
+  },
+  {
+    "id": "5381",
+    "title": "Automate Startup Research And Profiling With Extruct Ai To Google Sheets",
+    "url": "https://n8n.io/workflows/5381-automate-startup-research-and-profiling-with-extruct-ai-to-google-sheets/"
+  },
+  {
+    "id": "5375",
+    "title": "Generate Content Strategy Reports Analyzing Reddit Youtube And X With Gemini",
+    "url": "https://n8n.io/workflows/5375-generate-content-strategy-reports-analyzing-reddit-youtube-and-x-with-gemini/"
+  },
+  {
+    "id": "5352",
+    "title": "Posthog Tool Mcp Server 5 Operations",
+    "url": "https://n8n.io/workflows/5352-posthog-tool-mcp-server-5-operations/"
+  },
+  {
+    "id": "5303",
+    "title": "Google Search Console And Analytics Analysis With Ai Optimizations",
+    "url": "https://n8n.io/workflows/5303-google-search-console-and-analytics-analysis-with-ai-optimizations/"
+  },
+  {
+    "id": "5296",
+    "title": "Ai Youtube Trend Explorer N8N Automation Workflow With Geminichatgpt",
+    "url": "https://n8n.io/workflows/5296-ai-youtube-trend-explorer-n8n-automation-workflow-with-geminichatgpt/"
+  },
+  {
+    "id": "5286",
+    "title": "News Research And Sentiment Analysis Ai Agent With Gemini And Searxng",
+    "url": "https://n8n.io/workflows/5286-news-research-and-sentiment-analysis-ai-agent-with-gemini-and-searxng/"
+  },
+  {
+    "id": "5262",
+    "title": "Let Ai Agents Get Campaigns With Google Ads Tool Mcp Server",
+    "url": "https://n8n.io/workflows/5262-let-ai-agents-get-campaigns-with-google-ads-tool-mcp-server/"
+  },
+  {
+    "id": "5234",
+    "title": "Narrative Threat Opportunity Detection Askrally",
+    "url": "https://n8n.io/workflows/5234-narrative-threat-opportunity-detection-askrally/"
+  },
+  {
+    "id": "5225",
+    "title": "Automated Trend Tracking With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5225-automated-trend-tracking-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5224",
+    "title": "Find The Best Airbnb Deals Automatically With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5224-find-the-best-airbnb-deals-automatically-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5223",
+    "title": "Sneaker Price Drop Alerts With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5223-sneaker-price-drop-alerts-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5222",
+    "title": "Automated Event Discovery With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5222-automated-event-discovery-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5220",
+    "title": "Automated Property Market Reports With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5220-automated-property-market-reports-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5219",
+    "title": "Automated Competitor Price Monitoring With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5219-automated-competitor-price-monitoring-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5218",
+    "title": "Find The Cheapest Flights Automatically With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5218-find-the-cheapest-flights-automatically-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5213",
+    "title": "Forum Monitoring Automation With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5213-forum-monitoring-automation-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5212",
+    "title": "Find The Best Food Deals Automatically With Bright Data And N8N",
+    "url": "https://n8n.io/workflows/5212-find-the-best-food-deals-automatically-with-bright-data-and-n8n/"
+  },
+  {
+    "id": "5204",
+    "title": "Sentiment Analytics Visualizer",
+    "url": "https://n8n.io/workflows/5204-sentiment-analytics-visualizer/"
+  },
+  {
+    "id": "5193",
+    "title": "Pinterest Keyword Based Content Scraper With Ai Agent And Brightdata Automation",
+    "url": "https://n8n.io/workflows/5193-pinterest-keyword-based-content-scraper-with-ai-agent-and-brightdata-automation/"
+  },
+  {
+    "id": "5169",
+    "title": "Extract Product Info From Website Screenshots With Dumpling Ai Sheets",
+    "url": "https://n8n.io/workflows/5169-extract-product-info-from-website-screenshots-with-dumpling-ai-sheets/"
+  },
+  {
+    "id": "5167",
+    "title": "Competitor Linkedin Monitor With Airtop",
+    "url": "https://n8n.io/workflows/5167-competitor-linkedin-monitor-with-airtop/"
+  },
+  {
+    "id": "5153",
+    "title": "Tiktok Post Scraper Via Keywords Or Bright Data Sheets Integration",
+    "url": "https://n8n.io/workflows/5153-tiktok-post-scraper-via-keywords-or-bright-data-sheets-integration/"
+  },
+  {
+    "id": "5145",
+    "title": "Trustpilot Insights Scraper Auto Reviews Via Bright Data Google Sheets Sync",
+    "url": "https://n8n.io/workflows/5145-trustpilot-insights-scraper-auto-reviews-via-bright-data-google-sheets-sync/"
+  },
+  {
+    "id": "5138",
+    "title": "Extract Facebook Group Posts With Airtop",
+    "url": "https://n8n.io/workflows/5138-extract-facebook-group-posts-with-airtop/"
+  },
+  {
+    "id": "5106",
+    "title": "Seo On Site Audit",
+    "url": "https://n8n.io/workflows/5106-seo-on-site-audit/"
+  },
+  {
+    "id": "5093",
+    "title": "Twitterx Content Analysis And Insights With Grok Ai And Telegram Delivery",
+    "url": "https://n8n.io/workflows/5093-twitterx-content-analysis-and-insights-with-grok-ai-and-telegram-delivery/"
+  },
+  {
+    "id": "5071",
+    "title": "Google Play Review Intelligence With Bright Data And Telegram Alerts",
+    "url": "https://n8n.io/workflows/5071-google-play-review-intelligence-with-bright-data-and-telegram-alerts/"
+  },
+  {
+    "id": "5047",
+    "title": "Ideal Customer Profile Icp Generation Ai Firecrawl Gemini Telegram",
+    "url": "https://n8n.io/workflows/5047-ideal-customer-profile-icp-generation-ai-firecrawl-gemini-telegram/"
+  },
+  {
+    "id": "5006",
+    "title": "Twitter Keyword And Public Figure Monitor With Automated Airtable Archiving",
+    "url": "https://n8n.io/workflows/5006-twitter-keyword-and-public-figure-monitor-with-automated-airtable-archiving/"
+  },
+  {
+    "id": "4980",
+    "title": "Reddit Sentiment Analysis For Apple Wwdc25 With Gemini Ai And Google Sheets",
+    "url": "https://n8n.io/workflows/4980-reddit-sentiment-analysis-for-apple-wwdc25-with-gemini-ai-and-google-sheets/"
+  },
+  {
+    "id": "4942",
+    "title": "Run Complete Technical Seo Audits With Ai Analysis And Multi Format Reporting",
+    "url": "https://n8n.io/workflows/4942-run-complete-technical-seo-audits-with-ai-analysis-and-multi-format-reporting/"
+  },
+  {
+    "id": "4901",
+    "title": "Daily Business Idea Insights Aggregator From Ideabrowser To Google Docs",
+    "url": "https://n8n.io/workflows/4901-daily-business-idea-insights-aggregator-from-ideabrowser-to-google-docs/"
+  },
+  {
+    "id": "4895",
+    "title": "Youtube Comment Analysis With Gpt 4O And Automated Email Reports Via Gmail",
+    "url": "https://n8n.io/workflows/4895-youtube-comment-analysis-with-gpt-4o-and-automated-email-reports-via-gmail/"
+  },
+  {
+    "id": "4880",
+    "title": "Segment Woocommerce Customers For Targeted Marketing With Rfm Analysis",
+    "url": "https://n8n.io/workflows/4880-segment-woocommerce-customers-for-targeted-marketing-with-rfm-analysis/"
+  },
+  {
+    "id": "4863",
+    "title": "Youtube Comment Scraper And Analyzer With Gpt 4O Email Summary Report",
+    "url": "https://n8n.io/workflows/4863-youtube-comment-scraper-and-analyzer-with-gpt-4o-email-summary-report/"
+  },
+  {
+    "id": "4861",
+    "title": "Google Serp Trends And Recommendations With Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/4861-google-serp-trends-and-recommendations-with-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "4843",
+    "title": "Automate Glassdoor Job Search With Bright Data Scraping And Google Sheets Storage",
+    "url": "https://n8n.io/workflows/4843-automate-glassdoor-job-search-with-bright-data-scraping-and-google-sheets-storage/"
+  },
+  {
+    "id": "4829",
+    "title": "Real Time Extract Of Job Company Salary Details Via Bright Data Mcp And Openai",
+    "url": "https://n8n.io/workflows/4829-real-time-extract-of-job-company-salary-details-via-bright-data-mcp-and-openai/"
+  },
+  {
+    "id": "4823",
+    "title": "Extract And Search Producthunt Data With Bright Data Mcp And Google Gemini Ai",
+    "url": "https://n8n.io/workflows/4823-extract-and-search-producthunt-data-with-bright-data-mcp-and-google-gemini-ai/"
+  },
+  {
+    "id": "4822",
+    "title": "Extract And Analyze Google Ai Overviews With Llm For Seo Recommendations",
+    "url": "https://n8n.io/workflows/4822-extract-and-analyze-google-ai-overviews-with-llm-for-seo-recommendations/"
+  },
+  {
+    "id": "4820",
+    "title": "Search Google Bing Yandex And Extract Structured Results With Bright Data Mcp And Google Gemini",
+    "url": "https://n8n.io/workflows/4820-search-google-bing-yandex-and-extract-structured-results-with-bright-data-mcp-and-google-gemini/"
+  },
+  {
+    "id": "4802",
+    "title": "Blog Image Seo And Size Auditor With Ghost And Google Sheets",
+    "url": "https://n8n.io/workflows/4802-blog-image-seo-and-size-auditor-with-ghost-and-google-sheets/"
+  },
+  {
+    "id": "4796",
+    "title": "Track Us Fintech And Healthtech Funding Rounds Crunchbase To Google Sheets",
+    "url": "https://n8n.io/workflows/4796-track-us-fintech-and-healthtech-funding-rounds-crunchbase-to-google-sheets/"
+  },
+  {
+    "id": "4792",
+    "title": "Real Time Startup Intelligence Crunchbase Monitoring With Ai Summaries And Email Alerts",
+    "url": "https://n8n.io/workflows/4792-real-time-startup-intelligence-crunchbase-monitoring-with-ai-summaries-and-email-alerts/"
+  },
+  {
+    "id": "4789",
+    "title": "Crunchbase Competitor Intelligence Tracker",
+    "url": "https://n8n.io/workflows/4789-crunchbase-competitor-intelligence-tracker/"
+  },
+  {
+    "id": "4788",
+    "title": "Automated Weekly Tech Stack Reports With Builtwith Gpt 4O And Gmail",
+    "url": "https://n8n.io/workflows/4788-automated-weekly-tech-stack-reports-with-builtwith-gpt-4o-and-gmail/"
+  },
+  {
+    "id": "4787",
+    "title": "Track Technology Changes With Builtwith And Log To Google Sheets",
+    "url": "https://n8n.io/workflows/4787-track-technology-changes-with-builtwith-and-log-to-google-sheets/"
+  },
+  {
+    "id": "4785",
+    "title": "Export And Organize Technology Stack Data From Builtwith To Google Sheets",
+    "url": "https://n8n.io/workflows/4785-export-and-organize-technology-stack-data-from-builtwith-to-google-sheets/"
+  },
+  {
+    "id": "4764",
+    "title": "Firecrawl Website Content Extractor",
+    "url": "https://n8n.io/workflows/4764-firecrawl-website-content-extractor/"
+  },
+  {
+    "id": "4758",
+    "title": "Perplexity Style Iterative Research With Gemini And Google Search",
+    "url": "https://n8n.io/workflows/4758-perplexity-style-iterative-research-with-gemini-and-google-search/"
+  },
+  {
+    "id": "4734",
+    "title": "Automated Job Market Tracker Upwork Scraper To Google Sheets Workflow",
+    "url": "https://n8n.io/workflows/4734-automated-job-market-tracker-upwork-scraper-to-google-sheets-workflow/"
+  },
+  {
+    "id": "4732",
+    "title": "Daily Startup Intelligence Crunchbase Updates To Email Digest With Gpt",
+    "url": "https://n8n.io/workflows/4732-daily-startup-intelligence-crunchbase-updates-to-email-digest-with-gpt/"
+  },
+  {
+    "id": "4731",
+    "title": "Automated Investor Intelligence Crunchbase To Google Sheets Data Harvester",
+    "url": "https://n8n.io/workflows/4731-automated-investor-intelligence-crunchbase-to-google-sheets-data-harvester/"
+  },
+  {
+    "id": "4730",
+    "title": "Automated Funding Intelligence Crunchbase To Google Sheets Tracking Workflow",
+    "url": "https://n8n.io/workflows/4730-automated-funding-intelligence-crunchbase-to-google-sheets-tracking-workflow/"
+  },
+  {
+    "id": "4728",
+    "title": "Automated Competitor Intelligence Crunchbase To Clickup Tracking Workflow",
+    "url": "https://n8n.io/workflows/4728-automated-competitor-intelligence-crunchbase-to-clickup-tracking-workflow/"
+  },
+  {
+    "id": "4724",
+    "title": "Track Website Visibility In Googles Ai Overview With Serpapi And Google Sheets",
+    "url": "https://n8n.io/workflows/4724-track-website-visibility-in-googles-ai-overview-with-serpapi-and-google-sheets/"
+  },
+  {
+    "id": "4716",
+    "title": "Facebook Ads Competitive Analysis Using Gemini And Open Ai",
+    "url": "https://n8n.io/workflows/4716-facebook-ads-competitive-analysis-using-gemini-and-open-ai/"
+  },
+  {
+    "id": "4715",
+    "title": "Daily Validated Business Ideas Using N8N And Upwork",
+    "url": "https://n8n.io/workflows/4715-daily-validated-business-ideas-using-n8n-and-upwork/"
+  },
+  {
+    "id": "4686",
+    "title": "Automate Customer Feedback Analysis With Forms Ai Google Sheets And Whatsapp",
+    "url": "https://n8n.io/workflows/4686-automate-customer-feedback-analysis-with-forms-ai-google-sheets-and-whatsapp/"
+  },
+  {
+    "id": "4671",
+    "title": "Extract Website Urls From Sitemapxml For Seo Analysis",
+    "url": "https://n8n.io/workflows/4671-extract-website-urls-from-sitemapxml-for-seo-analysis/"
+  },
+  {
+    "id": "4654",
+    "title": "Daily Insight Email From Structured Web Data With Firecrawl",
+    "url": "https://n8n.io/workflows/4654-daily-insight-email-from-structured-web-data-with-firecrawl/"
+  },
+  {
+    "id": "4640",
+    "title": "Competitor Price Monitoring With Web Scrapinggoogle Sheets And Telegram",
+    "url": "https://n8n.io/workflows/4640-competitor-price-monitoring-with-web-scrapinggoogle-sheets-and-telegram/"
+  },
+  {
+    "id": "4625",
+    "title": "Extract Competitor Serp Rankings From Google Search To Sheets With Bright Data",
+    "url": "https://n8n.io/workflows/4625-extract-competitor-serp-rankings-from-google-search-to-sheets-with-bright-data/"
+  },
+  {
+    "id": "4616",
+    "title": "Extract Google Ads Creatives By Domain With Serpapi And Export To Csv",
+    "url": "https://n8n.io/workflows/4616-extract-google-ads-creatives-by-domain-with-serpapi-and-export-to-csv/"
+  },
+  {
+    "id": "4611",
+    "title": "Extract Summarize And Analyze Amazon Price Drops With Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/4611-extract-summarize-and-analyze-amazon-price-drops-with-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "4588",
+    "title": "Firecrawl Ai Powered Market Intelligence Bot Automated News Insights Delivery",
+    "url": "https://n8n.io/workflows/4588-firecrawl-ai-powered-market-intelligence-bot-automated-news-insights-delivery/"
+  },
+  {
+    "id": "4587",
+    "title": "Extract Instagram Profile Data With Apify And Store In Google Sheets",
+    "url": "https://n8n.io/workflows/4587-extract-instagram-profile-data-with-apify-and-store-in-google-sheets/"
+  },
+  {
+    "id": "4583",
+    "title": "Automated Fiverr Ugc Market Research Track Gigs With Google Sheets",
+    "url": "https://n8n.io/workflows/4583-automated-fiverr-ugc-market-research-track-gigs-with-google-sheets/"
+  },
+  {
+    "id": "4579",
+    "title": "Automated Youtube Channel Lead Generation And Email Outreach With Apify And Zerobounce",
+    "url": "https://n8n.io/workflows/4579-automated-youtube-channel-lead-generation-and-email-outreach-with-apify-and-zerobounce/"
+  },
+  {
+    "id": "4570",
+    "title": "Email News Briefing By Keyword From Bright Data With Ai Summary",
+    "url": "https://n8n.io/workflows/4570-email-news-briefing-by-keyword-from-bright-data-with-ai-summary/"
+  },
+  {
+    "id": "4565",
+    "title": "Analyze Crunchbase Startups By Keyword With Bright Data Gemini Ai And Google Sheets",
+    "url": "https://n8n.io/workflows/4565-analyze-crunchbase-startups-by-keyword-with-bright-data-gemini-ai-and-google-sheets/"
+  },
+  {
+    "id": "4561",
+    "title": "Scrapping Of European Union Events With Google Sheets",
+    "url": "https://n8n.io/workflows/4561-scrapping-of-european-union-events-with-google-sheets/"
+  },
+  {
+    "id": "4554",
+    "title": "Monitor Google Shopping Prices With Bright Data And Email Alerts",
+    "url": "https://n8n.io/workflows/4554-monitor-google-shopping-prices-with-bright-data-and-email-alerts/"
+  },
+  {
+    "id": "4531",
+    "title": "Automated Disqus Forum Reports With Gmail Html Tables",
+    "url": "https://n8n.io/workflows/4531-automated-disqus-forum-reports-with-gmail-html-tables/"
+  },
+  {
+    "id": "4497",
+    "title": "Extract Structured Data From Brave Search With Bright Data Mcp And Google Gemini",
+    "url": "https://n8n.io/workflows/4497-extract-structured-data-from-brave-search-with-bright-data-mcp-and-google-gemini/"
+  },
+  {
+    "id": "4459",
+    "title": "Ai Youtube Analytics Agent Comment Analyzer And Insights Reporter",
+    "url": "https://n8n.io/workflows/4459-ai-youtube-analytics-agent-comment-analyzer-and-insights-reporter/"
+  },
+  {
+    "id": "4443",
+    "title": "Automated Brand Mentions Tracker With Gpt 4O Google Sheets And Email",
+    "url": "https://n8n.io/workflows/4443-automated-brand-mentions-tracker-with-gpt-4o-google-sheets-and-email/"
+  },
+  {
+    "id": "4403",
+    "title": "Find Content Gaps In Competitors Websites With Infranodus Graphrag For Seo",
+    "url": "https://n8n.io/workflows/4403-find-content-gaps-in-competitors-websites-with-infranodus-graphrag-for-seo/"
+  },
+  {
+    "id": "4389",
+    "title": "Collect Conference Feedback With Forms And Log To Excel Onedrive With Outlook Notifications",
+    "url": "https://n8n.io/workflows/4389-collect-conference-feedback-with-forms-and-log-to-excel-onedrive-with-outlook-notifications/"
+  },
+  {
+    "id": "4382",
+    "title": "Automated Website Change Monitoring With Bright Data Gpt 41 And Google Workspace",
+    "url": "https://n8n.io/workflows/4382-automated-website-change-monitoring-with-bright-data-gpt-41-and-google-workspace/"
+  },
+  {
+    "id": "4373",
+    "title": "Automate Reddit Trend Analysis With Gpt 4 And Slackgmail Distribution",
+    "url": "https://n8n.io/workflows/4373-automate-reddit-trend-analysis-with-gpt-4-and-slackgmail-distribution/"
+  },
+  {
+    "id": "4348",
+    "title": "Bright Data Powered Competitive Price Lookup And Report Generator",
+    "url": "https://n8n.io/workflows/4348-bright-data-powered-competitive-price-lookup-and-report-generator/"
+  },
+  {
+    "id": "4329",
+    "title": "Extract Product Info From Webpage Screenshots Using Dumpling Ai And Gpt 4O",
+    "url": "https://n8n.io/workflows/4329-extract-product-info-from-webpage-screenshots-using-dumpling-ai-and-gpt-4o/"
+  },
+  {
+    "id": "4328",
+    "title": "Scrape Tiktok Profile And Transcript With Dumpling Ai And Save To Google Sheets",
+    "url": "https://n8n.io/workflows/4328-scrape-tiktok-profile-and-transcript-with-dumpling-ai-and-save-to-google-sheets/"
+  },
+  {
+    "id": "4325",
+    "title": "Find Scrape And Analyze Twitter Posts By Name With Bright Data And Gemini",
+    "url": "https://n8n.io/workflows/4325-find-scrape-and-analyze-twitter-posts-by-name-with-bright-data-and-gemini/"
+  },
+  {
+    "id": "4310",
+    "title": "Track Google Search Rankings With Bright Data Google Sheets And Gmail",
+    "url": "https://n8n.io/workflows/4310-track-google-search-rankings-with-bright-data-google-sheets-and-gmail/"
+  },
+  {
+    "id": "4301",
+    "title": "Monitor Seo Keyword Rankings With Llama Ai And Apify Google Serp Scraping",
+    "url": "https://n8n.io/workflows/4301-monitor-seo-keyword-rankings-with-llama-ai-and-apify-google-serp-scraping/"
+  },
+  {
+    "id": "4281",
+    "title": "Real Estate Intelligence Tracker With Bright Data And Openai",
+    "url": "https://n8n.io/workflows/4281-real-estate-intelligence-tracker-with-bright-data-and-openai/"
+  },
+  {
+    "id": "4280",
+    "title": "Trustpilot Saas Product Review Tracker With Bright Data And Openai",
+    "url": "https://n8n.io/workflows/4280-trustpilot-saas-product-review-tracker-with-bright-data-and-openai/"
+  },
+  {
+    "id": "4277",
+    "title": "Automated Seo Keyword And Serp Analysis With Dataforseo For High Converting Content",
+    "url": "https://n8n.io/workflows/4277-automated-seo-keyword-and-serp-analysis-with-dataforseo-for-high-converting-content/"
+  },
+  {
+    "id": "4251",
+    "title": "Extract Linkedin Post Engagement Data With Airtop",
+    "url": "https://n8n.io/workflows/4251-extract-linkedin-post-engagement-data-with-airtop/"
+  },
+  {
+    "id": "4235",
+    "title": "Monitor And Track Brand Sentiment On Facebook Groups With Bright Data",
+    "url": "https://n8n.io/workflows/4235-monitor-and-track-brand-sentiment-on-facebook-groups-with-bright-data/"
+  },
+  {
+    "id": "4208",
+    "title": "Extract And Structure X Post Comments With Airtop Browser Automation",
+    "url": "https://n8n.io/workflows/4208-extract-and-structure-x-post-comments-with-airtop-browser-automation/"
+  },
+  {
+    "id": "4206",
+    "title": "Real Time X Post Monitoring And Auto Categorization With Airtop",
+    "url": "https://n8n.io/workflows/4206-real-time-x-post-monitoring-and-auto-categorization-with-airtop/"
+  },
+  {
+    "id": "4187",
+    "title": "Discover Hidden Youtube Trends Outlier Videos In Your Niche Apify Airtable",
+    "url": "https://n8n.io/workflows/4187-discover-hidden-youtube-trends-outlier-videos-in-your-niche-apify-airtable/"
+  },
+  {
+    "id": "4151",
+    "title": "Ai Seo Readability Audit Check Website Friendliness For Llms",
+    "url": "https://n8n.io/workflows/4151-ai-seo-readability-audit-check-website-friendliness-for-llms/"
+  },
+  {
+    "id": "4116",
+    "title": "Ai Powered Telegram Bot For Data Extraction With Bright Data Mcp",
+    "url": "https://n8n.io/workflows/4116-ai-powered-telegram-bot-for-data-extraction-with-bright-data-mcp/"
+  },
+  {
+    "id": "4089",
+    "title": "Track Seo Keyword Rankings In Google Search With Scrapingbee Api",
+    "url": "https://n8n.io/workflows/4089-track-seo-keyword-rankings-in-google-search-with-scrapingbee-api/"
+  },
+  {
+    "id": "4088",
+    "title": "Extract And Merge Twitter X Threads Using Twitterapiio",
+    "url": "https://n8n.io/workflows/4088-extract-and-merge-twitter-x-threads-using-twitterapiio/"
+  },
+  {
+    "id": "4032",
+    "title": "Ai Competitor Review Analyzer With Dumpling Ai Gpt 4O Google Sheets",
+    "url": "https://n8n.io/workflows/4032-ai-competitor-review-analyzer-with-dumpling-ai-gpt-4o-google-sheets/"
+  },
+  {
+    "id": "4003",
+    "title": "Scrape And Analyse Meta Ad Library Image Ads With Apify And Openai",
+    "url": "https://n8n.io/workflows/4003-scrape-and-analyse-meta-ad-library-image-ads-with-apify-and-openai/"
+  },
+  {
+    "id": "3980",
+    "title": "Audit And Generate Json Ld Schema Markup For Seo With Gpt 41 Mini Gmail",
+    "url": "https://n8n.io/workflows/3980-audit-and-generate-json-ld-schema-markup-for-seo-with-gpt-41-mini-gmail/"
+  },
+  {
+    "id": "3950",
+    "title": "Extract Named Entities From Web Pages With Google Natural Language Api",
+    "url": "https://n8n.io/workflows/3950-extract-named-entities-from-web-pages-with-google-natural-language-api/"
+  },
+  {
+    "id": "3936",
+    "title": "Youtube Comment Sentiment Analysis With Google Gemini Ai And Google Sheets",
+    "url": "https://n8n.io/workflows/3936-youtube-comment-sentiment-analysis-with-google-gemini-ai-and-google-sheets/"
+  },
+  {
+    "id": "3910",
+    "title": "Client Feedback Collector And Analyzer Form Ai Summary Email Social Draft",
+    "url": "https://n8n.io/workflows/3910-client-feedback-collector-and-analyzer-form-ai-summary-email-social-draft/"
+  },
+  {
+    "id": "3908",
+    "title": "Comprehensive Seo Keyword Research With Openai And Dataforseo Analytics To Nocodb",
+    "url": "https://n8n.io/workflows/3908-comprehensive-seo-keyword-research-with-openai-and-dataforseo-analytics-to-nocodb/"
+  },
+  {
+    "id": "3901",
+    "title": "Amazon Product Search Scraper With Brightdata Gpt 4 And Google Sheets",
+    "url": "https://n8n.io/workflows/3901-amazon-product-search-scraper-with-brightdata-gpt-4-and-google-sheets/"
+  },
+  {
+    "id": "3897",
+    "title": "Sync Youtube Video Urls With Google Sheets",
+    "url": "https://n8n.io/workflows/3897-sync-youtube-video-urls-with-google-sheets/"
+  },
+  {
+    "id": "3878",
+    "title": "Monitor Amazon Product Prices With Bright Data And Google Sheets",
+    "url": "https://n8n.io/workflows/3878-monitor-amazon-product-prices-with-bright-data-and-google-sheets/"
+  },
+  {
+    "id": "3877",
+    "title": "Discover Business Ideas From Hackernews Posts With Gpt 41 Analysis And Google Sheets",
+    "url": "https://n8n.io/workflows/3877-discover-business-ideas-from-hackernews-posts-with-gpt-41-analysis-and-google-sheets/"
+  },
+  {
+    "id": "3866",
+    "title": "Asynchronous Bulk Web Scraping With Bright Data And Webhook Notifications",
+    "url": "https://n8n.io/workflows/3866-asynchronous-bulk-web-scraping-with-bright-data-and-webhook-notifications/"
+  },
+  {
+    "id": "3855",
+    "title": "Youtube Comment Sentiment Analyzer With Google Sheets And Openai",
+    "url": "https://n8n.io/workflows/3855-youtube-comment-sentiment-analyzer-with-google-sheets-and-openai/"
+  },
+  {
+    "id": "3854",
+    "title": "Google Trend Data Extract And Summarization With Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/3854-google-trend-data-extract-and-summarization-with-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "3853",
+    "title": "Structured Data Extract And Data Mining With Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/3853-structured-data-extract-and-data-mining-with-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "3851",
+    "title": "Automate Etsy Data Mining With Bright Data Scrape And Google Gemini",
+    "url": "https://n8n.io/workflows/3851-automate-etsy-data-mining-with-bright-data-scrape-and-google-gemini/"
+  },
+  {
+    "id": "3846",
+    "title": "Extract And Analyze Brand Content With Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/3846-extract-and-analyze-brand-content-with-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "3839",
+    "title": "Analyze Competitor Facebook Ads With Ai Gpt 4 And Gemini And Email Reports",
+    "url": "https://n8n.io/workflows/3839-analyze-competitor-facebook-ads-with-ai-gpt-4-and-gemini-and-email-reports/"
+  },
+  {
+    "id": "3836",
+    "title": "Google Autocomplete Keyword Scraper",
+    "url": "https://n8n.io/workflows/3836-google-autocomplete-keyword-scraper/"
+  },
+  {
+    "id": "3824",
+    "title": "Auto Generate Mvp Startup Ideas From Reddit With Ai And Excel Storage",
+    "url": "https://n8n.io/workflows/3824-auto-generate-mvp-startup-ideas-from-reddit-with-ai-and-excel-storage/"
+  },
+  {
+    "id": "3809",
+    "title": "Generate Seo Content Audit Reports With Dataforseo And Google Search Console",
+    "url": "https://n8n.io/workflows/3809-generate-seo-content-audit-reports-with-dataforseo-and-google-search-console/"
+  },
+  {
+    "id": "3806",
+    "title": "Track Amazon Product Prices With Scrapeops Api And Google Sheets Alerts",
+    "url": "https://n8n.io/workflows/3806-track-amazon-product-prices-with-scrapeops-api-and-google-sheets-alerts/"
+  },
+  {
+    "id": "3793",
+    "title": "Optimize Amazon Ads With Gpt 4O For Bid Budget And Keyword Recommendations",
+    "url": "https://n8n.io/workflows/3793-optimize-amazon-ads-with-gpt-4o-for-bid-budget-and-keyword-recommendations/"
+  },
+  {
+    "id": "3792",
+    "title": "Track Seo Keyword Position In Google Serp Google Sheets Serpapi Integration",
+    "url": "https://n8n.io/workflows/3792-track-seo-keyword-position-in-google-serp-google-sheets-serpapi-integration/"
+  },
+  {
+    "id": "3778",
+    "title": "Scrape Web Data With Bright Data Google Gemini And Mcp Automated Ai Agent",
+    "url": "https://n8n.io/workflows/3778-scrape-web-data-with-bright-data-google-gemini-and-mcp-automated-ai-agent/"
+  },
+  {
+    "id": "3769",
+    "title": "Perform Seo Keyword Research And Insights With Ahrefs Api And Gemini 15 Flash",
+    "url": "https://n8n.io/workflows/3769-perform-seo-keyword-research-and-insights-with-ahrefs-api-and-gemini-15-flash/"
+  },
+  {
+    "id": "3721",
+    "title": "Automated Seo Performance Collection From Google Search Console To Nocodb",
+    "url": "https://n8n.io/workflows/3721-automated-seo-performance-collection-from-google-search-console-to-nocodb/"
+  },
+  {
+    "id": "3712",
+    "title": "Automate Weekly Seo Reports From Google Search Console To Email",
+    "url": "https://n8n.io/workflows/3712-automate-weekly-seo-reports-from-google-search-console-to-email/"
+  },
+  {
+    "id": "3703",
+    "title": "Indeed Data Scraper And Summarization With Airtable Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/3703-indeed-data-scraper-and-summarization-with-airtable-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "3702",
+    "title": "Extract And Summarize Indeed Company Info With Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/3702-extract-and-summarize-indeed-company-info-with-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "3701",
+    "title": "Scrape Books From Url With Dumpling Ai Clean Html Save To Sheets Email As Csv",
+    "url": "https://n8n.io/workflows/3701-scrape-books-from-url-with-dumpling-ai-clean-html-save-to-sheets-email-as-csv/"
+  },
+  {
+    "id": "3689",
+    "title": "Analyze And Tag User Feedback In Notion With Gpt 4 Sentiment Analysis",
+    "url": "https://n8n.io/workflows/3689-analyze-and-tag-user-feedback-in-notion-with-gpt-4-sentiment-analysis/"
+  },
+  {
+    "id": "3685",
+    "title": "Backlink Monitoring Automation With Google Sheets Dataforseo",
+    "url": "https://n8n.io/workflows/3685-backlink-monitoring-automation-with-google-sheets-dataforseo/"
+  },
+  {
+    "id": "3682",
+    "title": "Extract And Summarize Yelp Business Review With Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/3682-extract-and-summarize-yelp-business-review-with-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "3681",
+    "title": "Extract Amazon Best Seller Electronic Info With Bright Data And Google Gemini",
+    "url": "https://n8n.io/workflows/3681-extract-amazon-best-seller-electronic-info-with-bright-data-and-google-gemini/"
+  },
+  {
+    "id": "3673",
+    "title": "Ai Powered Research Assistant With Perplexity Sonar Api",
+    "url": "https://n8n.io/workflows/3673-ai-powered-research-assistant-with-perplexity-sonar-api/"
+  },
+  {
+    "id": "3653",
+    "title": "Collect Whatsapp Questionnaire Responses In Postgres Module Anketa",
+    "url": "https://n8n.io/workflows/3653-collect-whatsapp-questionnaire-responses-in-postgres-module-anketa/"
+  },
+  {
+    "id": "3642",
+    "title": "Customer Feedback Analysis With Ai Quickchart And Html Report Generator",
+    "url": "https://n8n.io/workflows/3642-customer-feedback-analysis-with-ai-quickchart-and-html-report-generator/"
+  },
+  {
+    "id": "3624",
+    "title": "Scrape Competitor Reviews And Generate Ad Creatives With Bright Data And Openai",
+    "url": "https://n8n.io/workflows/3624-scrape-competitor-reviews-and-generate-ad-creatives-with-bright-data-and-openai/"
+  },
+  {
+    "id": "3591",
+    "title": "Meta Ads Campaign Report By Period Auto Send Via Whatsapp And Email",
+    "url": "https://n8n.io/workflows/3591-meta-ads-campaign-report-by-period-auto-send-via-whatsapp-and-email/"
+  },
+  {
+    "id": "3588",
+    "title": "Track Daily Product Hunt Launches With Website Verification In Google Sheets",
+    "url": "https://n8n.io/workflows/3588-track-daily-product-hunt-launches-with-website-verification-in-google-sheets/"
+  },
+  {
+    "id": "3583",
+    "title": "High Level Service Page Seo Blueprint Report Generator",
+    "url": "https://n8n.io/workflows/3583-high-level-service-page-seo-blueprint-report-generator/"
+  },
+  {
+    "id": "3544",
+    "title": "Generate Seo Keywords With Ai Topic To Keyword List In Seconds",
+    "url": "https://n8n.io/workflows/3544-generate-seo-keywords-with-ai-topic-to-keyword-list-in-seconds/"
+  },
+  {
+    "id": "3539",
+    "title": "Extract And Summarize Wikipedia Data With Bright Data And Gemini Ai",
+    "url": "https://n8n.io/workflows/3539-extract-and-summarize-wikipedia-data-with-bright-data-and-gemini-ai/"
+  },
+  {
+    "id": "3536",
+    "title": "Extract And Summarize Bing Copilot Search Results With Gemini Ai And Bright Data",
+    "url": "https://n8n.io/workflows/3536-extract-and-summarize-bing-copilot-search-results-with-gemini-ai-and-bright-data/"
+  },
+  {
+    "id": "3534",
+    "title": "Search And Summarize Web Data With Perplexity Gemini Ai And Bright Data To Webhooks",
+    "url": "https://n8n.io/workflows/3534-search-and-summarize-web-data-with-perplexity-gemini-ai-and-bright-data-to-webhooks/"
+  },
+  {
+    "id": "3533",
+    "title": "Google Search Engine Results Page Extraction And Summarization With Bright Data",
+    "url": "https://n8n.io/workflows/3533-google-search-engine-results-page-extraction-and-summarization-with-bright-data/"
+  },
+  {
+    "id": "3532",
+    "title": "Summarize Glassdoor Company Info With Google Gemini And Bright Data Web Scraper",
+    "url": "https://n8n.io/workflows/3532-summarize-glassdoor-company-info-with-google-gemini-and-bright-data-web-scraper/"
+  },
+  {
+    "id": "3520",
+    "title": "Turn Your Linkedin Insights Into Content Ideas With Airtable And Real Time Linkedin Scraper",
+    "url": "https://n8n.io/workflows/3520-turn-your-linkedin-insights-into-content-ideas-with-airtable-and-real-time-linkedin-scraper/"
+  },
+  {
+    "id": "3483",
+    "title": "Sell A Used Car With An Ai Agent In Airtop",
+    "url": "https://n8n.io/workflows/3483-sell-a-used-car-with-an-ai-agent-in-airtop/"
+  },
+  {
+    "id": "3481",
+    "title": "Automate Product Hunt Discovery With Airtop And Slack",
+    "url": "https://n8n.io/workflows/3481-automate-product-hunt-discovery-with-airtop-and-slack/"
+  },
+  {
+    "id": "3480",
+    "title": "Get Notified When Your Competitors Change Their Pricing With Airtop And Slack",
+    "url": "https://n8n.io/workflows/3480-get-notified-when-your-competitors-change-their-pricing-with-airtop-and-slack/"
+  },
+  {
+    "id": "3408",
+    "title": "Ai Youtube Playlist And Video Analyst Chatbot",
+    "url": "https://n8n.io/workflows/3408-ai-youtube-playlist-and-video-analyst-chatbot/"
+  },
+  {
+    "id": "3366",
+    "title": "Webpage Change Detection And Alerts With Google Suite And Hash Tracking",
+    "url": "https://n8n.io/workflows/3366-webpage-change-detection-and-alerts-with-google-suite-and-hash-tracking/"
+  },
+  {
+    "id": "3315",
+    "title": "Ai Powered Product Research And Comparison With Gpt 4O And Serpapi",
+    "url": "https://n8n.io/workflows/3315-ai-powered-product-research-and-comparison-with-gpt-4o-and-serpapi/"
+  },
+  {
+    "id": "3288",
+    "title": "Youtube Rag Search With Frontend Using Apify Qdrant And Ai",
+    "url": "https://n8n.io/workflows/3288-youtube-rag-search-with-frontend-using-apify-qdrant-and-ai/"
+  },
+  {
+    "id": "3244",
+    "title": "Analyze Brand Mentions On Reddit With Gpt 4O Mini And Notion Integration",
+    "url": "https://n8n.io/workflows/3244-analyze-brand-mentions-on-reddit-with-gpt-4o-mini-and-notion-integration/"
+  },
+  {
+    "id": "3224",
+    "title": "Analyze Any Website With Openai And Get On Page Seo Audit",
+    "url": "https://n8n.io/workflows/3224-analyze-any-website-with-openai-and-get-on-page-seo-audit/"
+  },
+  {
+    "id": "3179",
+    "title": "Generate Ai Powered Investment Reports With Gpt 4O And Financialdatasetsai",
+    "url": "https://n8n.io/workflows/3179-generate-ai-powered-investment-reports-with-gpt-4o-and-financialdatasetsai/"
+  },
+  {
+    "id": "3168",
+    "title": "Scrape Trustpilot Reviews To Google Sheets Helpfulcrowd Compatible Csv",
+    "url": "https://n8n.io/workflows/3168-scrape-trustpilot-reviews-to-google-sheets-helpfulcrowd-compatible-csv/"
+  },
+  {
+    "id": "3167",
+    "title": "Extract Internal Links From A Webpage",
+    "url": "https://n8n.io/workflows/3167-extract-internal-links-from-a-webpage/"
+  },
+  {
+    "id": "3155",
+    "title": "Automatic Weekly Digital Pr Stories Suggestions With Reddit And Anthropic",
+    "url": "https://n8n.io/workflows/3155-automatic-weekly-digital-pr-stories-suggestions-with-reddit-and-anthropic/"
+  },
+  {
+    "id": "3152",
+    "title": "Track N8N Community Topics With Keywords And Save To Google Sheets",
+    "url": "https://n8n.io/workflows/3152-track-n8n-community-topics-with-keywords-and-save-to-google-sheets/"
+  },
+  {
+    "id": "3133",
+    "title": "Extract And Process Specific Links From Sitemapxml",
+    "url": "https://n8n.io/workflows/3133-extract-and-process-specific-links-from-sitemapxml/"
+  },
+  {
+    "id": "3132",
+    "title": "Extract Google Trends Keywords And Summarize Articles In Google Sheets",
+    "url": "https://n8n.io/workflows/3132-extract-google-trends-keywords-and-summarize-articles-in-google-sheets/"
+  },
+  {
+    "id": "3115",
+    "title": "Create Product Satisfaction Surveys With Telegram Google Sheets And Ai",
+    "url": "https://n8n.io/workflows/3115-create-product-satisfaction-surveys-with-telegram-google-sheets-and-ai/"
+  },
+  {
+    "id": "3107",
+    "title": "Startup Funding Research Automation With Claude Perplexity Ai And Airtable",
+    "url": "https://n8n.io/workflows/3107-startup-funding-research-automation-with-claude-perplexity-ai-and-airtable/"
+  },
+  {
+    "id": "3101",
+    "title": "Monitor Competitors Websites For Changes With Openai And Firecrawl",
+    "url": "https://n8n.io/workflows/3101-monitor-competitors-websites-for-changes-with-openai-and-firecrawl/"
+  },
+  {
+    "id": "3100",
+    "title": "Analyze Landing Page With Openai And Get Optimization Tips",
+    "url": "https://n8n.io/workflows/3100-analyze-landing-page-with-openai-and-get-optimization-tips/"
+  },
+  {
+    "id": "3069",
+    "title": "Analyze Meta Ad Library Video Ads With Gemini And Store Results In Google Sheets",
+    "url": "https://n8n.io/workflows/3069-analyze-meta-ad-library-video-ads-with-gemini-and-store-results-in-google-sheets/"
+  },
+  {
+    "id": "3047",
+    "title": "Namesilo Bulk Domain Availability Checker",
+    "url": "https://n8n.io/workflows/3047-namesilo-bulk-domain-availability-checker/"
+  },
+  {
+    "id": "3039",
+    "title": "Callforge 08 Ai Product Insights From Sales Calls With Notion",
+    "url": "https://n8n.io/workflows/3039-callforge-08-ai-product-insights-from-sales-calls-with-notion/"
+  },
+  {
+    "id": "3037",
+    "title": "Callforge 07 Ai Marketing Data Processing With Gong And Notion",
+    "url": "https://n8n.io/workflows/3037-callforge-07-ai-marketing-data-processing-with-gong-and-notion/"
+  },
+  {
+    "id": "3030",
+    "title": "Real Estate Daily Deals Automation With Zillow Api Google Sheets And Gmail",
+    "url": "https://n8n.io/workflows/3030-real-estate-daily-deals-automation-with-zillow-api-google-sheets-and-gmail/"
+  },
+  {
+    "id": "2993",
+    "title": "Copy Viral Reels With Gemini Ai",
+    "url": "https://n8n.io/workflows/2993-copy-viral-reels-with-gemini-ai/"
+  },
+  {
+    "id": "2978",
+    "title": "Analyze Reddit Posts With Ai To Identify Business Opportunities",
+    "url": "https://n8n.io/workflows/2978-analyze-reddit-posts-with-ai-to-identify-business-opportunities/"
+  },
+  {
+    "id": "2965",
+    "title": "Youtube Video Comment Analysis Agent",
+    "url": "https://n8n.io/workflows/2965-youtube-video-comment-analysis-agent/"
+  },
+  {
+    "id": "2964",
+    "title": "Free Youtube Video Analyzer With Ai Powered Summaries And Email Alerts",
+    "url": "https://n8n.io/workflows/2964-free-youtube-video-analyzer-with-ai-powered-summaries-and-email-alerts/"
+  },
+  {
+    "id": "2957",
+    "title": "Essential Multipage Website Scraper With Jinaai",
+    "url": "https://n8n.io/workflows/2957-essential-multipage-website-scraper-with-jinaai/"
+  },
+  {
+    "id": "2956",
+    "title": "Ultimate Ai Powered Chatbot For Youtube Summarization And Analysis",
+    "url": "https://n8n.io/workflows/2956-ultimate-ai-powered-chatbot-for-youtube-summarization-and-analysis/"
+  },
+  {
+    "id": "2945",
+    "title": "Fetch Keyword From Google Sheet And Classify Them Using Ai",
+    "url": "https://n8n.io/workflows/2945-fetch-keyword-from-google-sheet-and-classify-them-using-ai/"
+  },
+  {
+    "id": "2921",
+    "title": "Utm Link Creator And Qr Code Generator With Scheduled Google Analytics Reports",
+    "url": "https://n8n.io/workflows/2921-utm-link-creator-and-qr-code-generator-with-scheduled-google-analytics-reports/"
+  },
+  {
+    "id": "2903",
+    "title": "Youtube Outlier Detector Find Trending Content Based On Your Competitors",
+    "url": "https://n8n.io/workflows/2903-youtube-outlier-detector-find-trending-content-based-on-your-competitors/"
+  },
+  {
+    "id": "2884",
+    "title": "Find Top Keywords For Youtube And Google And Store Them In Nocodb",
+    "url": "https://n8n.io/workflows/2884-find-top-keywords-for-youtube-and-google-and-store-them-in-nocodb/"
+  },
+  {
+    "id": "2883",
+    "title": "Open Deep Research Ai Powered Autonomous Research Workflow",
+    "url": "https://n8n.io/workflows/2883-open-deep-research-ai-powered-autonomous-research-workflow/"
+  },
+  {
+    "id": "2878",
+    "title": "Host Your Own Ai Deep Research Agent With N8N Apify And Openai O3",
+    "url": "https://n8n.io/workflows/2878-host-your-own-ai-deep-research-agent-with-n8n-apify-and-openai-o3/"
+  },
+  {
+    "id": "2870",
+    "title": "Ask Ai About Your Meta Ads Ask Questions About Your Facebook Ads Insights",
+    "url": "https://n8n.io/workflows/2870-ask-ai-about-your-meta-ads-ask-questions-about-your-facebook-ads-insights/"
+  },
+  {
+    "id": "2866",
+    "title": "Scrape Latest Github Trending Repositories",
+    "url": "https://n8n.io/workflows/2866-scrape-latest-github-trending-repositories/"
+  },
+  {
+    "id": "2865",
+    "title": "Automate Pinterest Analysis And Ai Powered Content Suggestions With Pinterest Api",
+    "url": "https://n8n.io/workflows/2865-automate-pinterest-analysis-and-ai-powered-content-suggestions-with-pinterest-api/"
+  },
+  {
+    "id": "2836",
+    "title": "Automate Rank Math Seo Field Updates For Wordpress Or Woocommerce",
+    "url": "https://n8n.io/workflows/2836-automate-rank-math-seo-field-updates-for-wordpress-or-woocommerce/"
+  },
+  {
+    "id": "2832",
+    "title": "Scrape Latest 20 Techcrunch Articles",
+    "url": "https://n8n.io/workflows/2832-scrape-latest-20-techcrunch-articles/"
+  },
+  {
+    "id": "2825",
+    "title": "Spot Workplace Discrimination Patterns With Ai",
+    "url": "https://n8n.io/workflows/2825-spot-workplace-discrimination-patterns-with-ai/"
+  },
+  {
+    "id": "2799",
+    "title": "Ai Powered Information Monitoring With Openai Google Sheets Jina Ai And Slack",
+    "url": "https://n8n.io/workflows/2799-ai-powered-information-monitoring-with-openai-google-sheets-jina-ai-and-slack/"
+  },
+  {
+    "id": "2792",
+    "title": "Scrape Trustpilot Reviews With Deepseek Analyze Sentiment With Openai",
+    "url": "https://n8n.io/workflows/2792-scrape-trustpilot-reviews-with-deepseek-analyze-sentiment-with-openai/"
+  },
+  {
+    "id": "2783",
+    "title": "Ai Marketing Report Google Analytics And Ads Meta Ads Sent Via Emailtelegram",
+    "url": "https://n8n.io/workflows/2783-ai-marketing-report-google-analytics-and-ads-meta-ads-sent-via-emailtelegram/"
+  },
+  {
+    "id": "2768",
+    "title": "The Ultimate Free Ai Powered Researcher With Tavily Web Search And Extract",
+    "url": "https://n8n.io/workflows/2768-the-ultimate-free-ai-powered-researcher-with-tavily-web-search-and-extract/"
+  },
+  {
+    "id": "2714",
+    "title": "Get Meta Ads Insights And Save Them Into Google Sheets",
+    "url": "https://n8n.io/workflows/2714-get-meta-ads-insights-and-save-them-into-google-sheets/"
+  },
+  {
+    "id": "2698",
+    "title": "Scrape Producthunt Using Google Gemini",
+    "url": "https://n8n.io/workflows/2698-scrape-producthunt-using-google-gemini/"
+  },
+  {
+    "id": "2695",
+    "title": "Generating New Keywords And Their Search Volumes Using The Google Ads Api",
+    "url": "https://n8n.io/workflows/2695-generating-new-keywords-and-their-search-volumes-using-the-google-ads-api/"
+  },
+  {
+    "id": "2687",
+    "title": "Tw Request Agri Data Open Platform Daily Market Sheep Pricing",
+    "url": "https://n8n.io/workflows/2687-tw-request-agri-data-open-platform-daily-market-sheep-pricing/"
+  },
+  {
+    "id": "2679",
+    "title": "Ai Powered Youtube Video Summarization And Analysis",
+    "url": "https://n8n.io/workflows/2679-ai-powered-youtube-video-summarization-and-analysis/"
+  },
+  {
+    "id": "2673",
+    "title": "Create A Google Analytics Data Report With Ai And Sent It To E Mail And Telegram",
+    "url": "https://n8n.io/workflows/2673-create-a-google-analytics-data-report-with-ai-and-sent-it-to-e-mail-and-telegram/"
+  },
+  {
+    "id": "2663",
+    "title": "Youtube Report Generator",
+    "url": "https://n8n.io/workflows/2663-youtube-report-generator/"
+  },
+  {
+    "id": "2643",
+    "title": "Intelligent Web Query And Semantic Re Ranking Flow Using Brave And Google Gemini",
+    "url": "https://n8n.io/workflows/2643-intelligent-web-query-and-semantic-re-ranking-flow-using-brave-and-google-gemini/"
+  },
+  {
+    "id": "2636",
+    "title": "Extract Insights And Analyse Youtube Comments Via Ai Agent Chat",
+    "url": "https://n8n.io/workflows/2636-extract-insights-and-analyse-youtube-comments-via-ai-agent-chat/"
+  },
+  {
+    "id": "2629",
+    "title": "Generate Amazon Fba Keywords Using Amazon Completion Api",
+    "url": "https://n8n.io/workflows/2629-generate-amazon-fba-keywords-using-amazon-completion-api/"
+  },
+  {
+    "id": "2613",
+    "title": "Export Search Console Results To Google Sheets",
+    "url": "https://n8n.io/workflows/2613-export-search-console-results-to-google-sheets/"
+  },
+  {
+    "id": "2606",
+    "title": "Ai Youtube Trend Finder Based On Niche",
+    "url": "https://n8n.io/workflows/2606-ai-youtube-trend-finder-based-on-niche/"
+  },
+  {
+    "id": "2566",
+    "title": "Conversational Interviews With Ai Agents And N8N Forms",
+    "url": "https://n8n.io/workflows/2566-conversational-interviews-with-ai-agents-and-n8n-forms/"
+  },
+  {
+    "id": "2565",
+    "title": "Summarize Serpbear Data With Ai Via Openrouter And Save It To Baserow",
+    "url": "https://n8n.io/workflows/2565-summarize-serpbear-data-with-ai-via-openrouter-and-save-it-to-baserow/"
+  },
+  {
+    "id": "2563",
+    "title": "Vision Based Ai Agent Scraper With Google Sheets Scrapingbee And Gemini",
+    "url": "https://n8n.io/workflows/2563-vision-based-ai-agent-scraper-with-google-sheets-scrapingbee-and-gemini/"
+  },
+  {
+    "id": "2561",
+    "title": "Send Matomo Analytics Data To Ai To Analyze Then Save Results In Baserow",
+    "url": "https://n8n.io/workflows/2561-send-matomo-analytics-data-to-ai-to-analyze-then-save-results-in-baserow/"
+  },
+  {
+    "id": "2552",
+    "title": "Ai Powered Web Scraping With Jina Google Sheets And Openai The Easy Way",
+    "url": "https://n8n.io/workflows/2552-ai-powered-web-scraping-with-jina-google-sheets-and-openai-the-easy-way/"
+  },
+  {
+    "id": "2539",
+    "title": "Ai Powered Multi Stage Web Search And Research Suite",
+    "url": "https://n8n.io/workflows/2539-ai-powered-multi-stage-web-search-and-research-suite/"
+  },
+  {
+    "id": "2533",
+    "title": "Get Comments From Facebook Page",
+    "url": "https://n8n.io/workflows/2533-get-comments-from-facebook-page/"
+  },
+  {
+    "id": "2520",
+    "title": "Summarize Umami Data With Ai Via Openrouter And Save It To Baserow",
+    "url": "https://n8n.io/workflows/2520-summarize-umami-data-with-ai-via-openrouter-and-save-it-to-baserow/"
+  },
+  {
+    "id": "2517",
+    "title": "Send Google Analytics Data To Ai To Analyze Then Save Results In Baserow",
+    "url": "https://n8n.io/workflows/2517-send-google-analytics-data-to-ai-to-analyze-then-save-results-in-baserow/"
+  },
+  {
+    "id": "2494",
+    "title": "Generate Seo Keyword Search Volume Data Using Google Api",
+    "url": "https://n8n.io/workflows/2494-generate-seo-keyword-search-volume-data-using-google-api/"
+  },
+  {
+    "id": "2475",
+    "title": "Get Google Search Results Serps For Seo Research",
+    "url": "https://n8n.io/workflows/2475-get-google-search-results-serps-for-seo-research/"
+  },
+  {
+    "id": "2473",
+    "title": "Generate Seo Seed Keywords Using Ai",
+    "url": "https://n8n.io/workflows/2473-generate-seo-seed-keywords-using-ai/"
+  },
+  {
+    "id": "2458",
+    "title": "Automated Agentic News Event Monitoring With Perplexityai",
+    "url": "https://n8n.io/workflows/2458-automated-agentic-news-event-monitoring-with-perplexityai/"
+  },
+  {
+    "id": "2438",
+    "title": "Find Out Which Chrome Extensions Are Tracked By Linkedin",
+    "url": "https://n8n.io/workflows/2438-find-out-which-chrome-extensions-are-tracked-by-linkedin/"
+  },
+  {
+    "id": "2431",
+    "title": "Ultimate Scraper Workflow For N8N",
+    "url": "https://n8n.io/workflows/2431-ultimate-scraper-workflow-for-n8n/"
+  },
+  {
+    "id": "2390",
+    "title": "Automate Company Research Using Prospectlens And Google Sheets",
+    "url": "https://n8n.io/workflows/2390-automate-company-research-using-prospectlens-and-google-sheets/"
+  },
+  {
+    "id": "2374",
+    "title": "Community Insights Using Qdrant Python And Information Extractor",
+    "url": "https://n8n.io/workflows/2374-community-insights-using-qdrant-python-and-information-extractor/"
+  },
+  {
+    "id": "2373",
+    "title": "Customer Insights With Qdrant Python And Information Extractor",
+    "url": "https://n8n.io/workflows/2373-customer-insights-with-qdrant-python-and-information-extractor/"
+  },
+  {
+    "id": "2372",
+    "title": "Survey Insights With Qdrant Python And Information Extractor",
+    "url": "https://n8n.io/workflows/2372-survey-insights-with-qdrant-python-and-information-extractor/"
+  },
+  {
+    "id": "2354",
+    "title": "Automate Competitor Research With Exaai Notion And Ai Agents",
+    "url": "https://n8n.io/workflows/2354-automate-competitor-research-with-exaai-notion-and-ai-agents/"
+  },
+  {
+    "id": "2299",
+    "title": "Scrape Every Url On The Web Without Getting Blocked By Anti Bot Technologies With Scrappey",
+    "url": "https://n8n.io/workflows/2299-scrape-every-url-on-the-web-without-getting-blocked-by-anti-bot-technologies-with-scrappey/"
+  },
+  {
+    "id": "2275",
+    "title": "Automated Web Scraping Email A Csv Save To Google Sheets And Microsoft Excel",
+    "url": "https://n8n.io/workflows/2275-automated-web-scraping-email-a-csv-save-to-google-sheets-and-microsoft-excel/"
+  },
+  {
+    "id": "2267",
+    "title": "Extract Title Tag And Meta Description From Url For Seo Analysis With Airtable",
+    "url": "https://n8n.io/workflows/2267-extract-title-tag-and-meta-description-from-url-for-seo-analysis-with-airtable/"
+  },
+  {
+    "id": "2212",
+    "title": "Zalando Price Patrol Monitor Price Evolution With Email Notification",
+    "url": "https://n8n.io/workflows/2212-zalando-price-patrol-monitor-price-evolution-with-email-notification/"
+  },
+  {
+    "id": "2210",
+    "title": "Get Your Website Indexed By Google Automatically",
+    "url": "https://n8n.io/workflows/2210-get-your-website-indexed-by-google-automatically/"
+  },
+  {
+    "id": "2180",
+    "title": "Scrape And Summarize Posts Of A News Site Without Rss Feed Using Ai And Save Them To A Nocodb",
+    "url": "https://n8n.io/workflows/2180-scrape-and-summarize-posts-of-a-news-site-without-rss-feed-using-ai-and-save-them-to-a-nocodb/"
+  },
+  {
+    "id": "2164",
+    "title": "Summarize Google Sheets Form Feedback Via Openais Gpt 4",
+    "url": "https://n8n.io/workflows/2164-summarize-google-sheets-form-feedback-via-openais-gpt-4/"
+  },
+  {
+    "id": "2155",
+    "title": "Generating Keywords Using Google Autosuggest",
+    "url": "https://n8n.io/workflows/2155-generating-keywords-using-google-autosuggest/"
+  },
+  {
+    "id": "2141",
+    "title": "Add Product Ideas To Google Sheets Via A Slack",
+    "url": "https://n8n.io/workflows/2141-add-product-ideas-to-google-sheets-via-a-slack/"
+  },
+  {
+    "id": "2126",
+    "title": "Automate Your Utm Campaign Tracking Shopify N8N To Baserow",
+    "url": "https://n8n.io/workflows/2126-automate-your-utm-campaign-tracking-shopify-n8n-to-baserow/"
+  },
+  {
+    "id": "2123",
+    "title": "Simple Google Indexing Workflow In N8N",
+    "url": "https://n8n.io/workflows/2123-simple-google-indexing-workflow-in-n8n/"
+  },
+  {
+    "id": "2105",
+    "title": "Get All Members Of A Discord Server With A Specific Role",
+    "url": "https://n8n.io/workflows/2105-get-all-members-of-a-discord-server-with-a-specific-role/"
+  },
+  {
+    "id": "2058",
+    "title": "Find Facebook Hidden Interests Via Telegram",
+    "url": "https://n8n.io/workflows/2058-find-facebook-hidden-interests-via-telegram/"
+  },
+  {
+    "id": "2023",
+    "title": "Monitor G2 Competitors Reviews Google Sheets Scrapingbee Slack",
+    "url": "https://n8n.io/workflows/2023-monitor-g2-competitors-reviews-google-sheets-scrapingbee-slack/"
+  },
+  {
+    "id": "2017",
+    "title": "Listen And Process Search Results From Icypeas In Real Time",
+    "url": "https://n8n.io/workflows/2017-listen-and-process-search-results-from-icypeas-in-real-time/"
+  },
+  {
+    "id": "1954",
+    "title": "Ai Agent Chat",
+    "url": "https://n8n.io/workflows/1954-ai-agent-chat/"
+  },
+  {
+    "id": "1951",
+    "title": "Scrape And Summarize Webpages With Ai",
+    "url": "https://n8n.io/workflows/1951-scrape-and-summarize-webpages-with-ai/"
+  },
+  {
+    "id": "1934",
+    "title": "Telegram Ai Chatbot",
+    "url": "https://n8n.io/workflows/1934-telegram-ai-chatbot/"
+  },
+  {
+    "id": "1895",
+    "title": "Reddit Ai Digest",
+    "url": "https://n8n.io/workflows/1895-reddit-ai-digest/"
+  },
+  {
+    "id": "1862",
+    "title": "Openai Gpt 3 Company Enrichment From Website Content",
+    "url": "https://n8n.io/workflows/1862-openai-gpt-3-company-enrichment-from-website-content/"
+  },
+  {
+    "id": "1750",
+    "title": "Creating An Api Endpoint",
+    "url": "https://n8n.io/workflows/1750-creating-an-api-endpoint/"
+  },
+  {
+    "id": "1748",
+    "title": "Pulling Data From Services That N8N Doesnt Have A Pre Built Integration For",
+    "url": "https://n8n.io/workflows/1748-pulling-data-from-services-that-n8n-doesnt-have-a-pre-built-integration-for/"
+  },
+  {
+    "id": "1747",
+    "title": "Joining Different Datasets",
+    "url": "https://n8n.io/workflows/1747-joining-different-datasets/"
+  },
+  {
+    "id": "1700",
+    "title": "Very Quick Quickstart",
+    "url": "https://n8n.io/workflows/1700-very-quick-quickstart/"
+  },
+  {
+    "id": "1535",
+    "title": "Automate Testimonials In Strapi With N8N",
+    "url": "https://n8n.io/workflows/1535-automate-testimonials-in-strapi-with-n8n/"
+  },
+  {
+    "id": "1534",
+    "title": "Back Up Your N8N Workflows To Github",
+    "url": "https://n8n.io/workflows/1534-back-up-your-n8n-workflows-to-github/"
+  },
+  {
+    "id": "1471",
+    "title": "Message On Website Content Changed In Telegram",
+    "url": "https://n8n.io/workflows/1471-message-on-website-content-changed-in-telegram/"
+  },
+  {
+    "id": "1464",
+    "title": "Find And Share Mentions From Twitter And Slack",
+    "url": "https://n8n.io/workflows/1464-find-and-share-mentions-from-twitter-and-slack/"
+  },
+  {
+    "id": "1435",
+    "title": "Convert Json To An Excel File",
+    "url": "https://n8n.io/workflows/1435-convert-json-to-an-excel-file/"
+  },
+  {
+    "id": "1403",
+    "title": "Collect Posts From Twitter And Send To Airtable",
+    "url": "https://n8n.io/workflows/1403-collect-posts-from-twitter-and-send-to-airtable/"
+  },
+  {
+    "id": "1250",
+    "title": "Parse Ycombinator News Page",
+    "url": "https://n8n.io/workflows/1250-parse-ycombinator-news-page/"
+  },
+  {
+    "id": "1045",
+    "title": "Etl Pipeline For Text Processing",
+    "url": "https://n8n.io/workflows/1045-etl-pipeline-for-text-processing/"
+  },
+  {
+    "id": "968",
+    "title": "Create An Event In Posthog When A Request Is Made To A Webhook Url",
+    "url": "https://n8n.io/workflows/968-create-an-event-in-posthog-when-a-request-is-made-to-a-webhook-url/"
+  },
+  {
+    "id": "965",
+    "title": "Analyze Feedback Using Aws Comprehend And Send It To A Mattermost Channel",
+    "url": "https://n8n.io/workflows/965-analyze-feedback-using-aws-comprehend-and-send-it-to-a-mattermost-channel/"
+  },
+  {
+    "id": "892",
+    "title": "Transfer Google Analytics Data To Airtable Database",
+    "url": "https://n8n.io/workflows/892-transfer-google-analytics-data-to-airtable-database/"
+  },
+  {
+    "id": "875",
+    "title": "Send Tweets Every Minute To Mattermost",
+    "url": "https://n8n.io/workflows/875-send-tweets-every-minute-to-mattermost/"
+  },
+  {
+    "id": "837",
+    "title": "Track Changes Of Product Prices",
+    "url": "https://n8n.io/workflows/837-track-changes-of-product-prices/"
+  },
+  {
+    "id": "829",
+    "title": "Move Metrics From Google Sheets To Orbit",
+    "url": "https://n8n.io/workflows/829-move-metrics-from-google-sheets-to-orbit/"
+  },
+  {
+    "id": "812",
+    "title": "Send Instagram Statistics To Mattermost",
+    "url": "https://n8n.io/workflows/812-send-instagram-statistics-to-mattermost/"
+  },
+  {
+    "id": "786",
+    "title": "Analyze Feedback And Send A Message On Mattermost",
+    "url": "https://n8n.io/workflows/786-analyze-feedback-and-send-a-message-on-mattermost/"
+  },
+  {
+    "id": "693",
+    "title": "Display Project Data On A Smashing Dashboard",
+    "url": "https://n8n.io/workflows/693-display-project-data-on-a-smashing-dashboard/"
+  },
+  {
+    "id": "551",
+    "title": "Get Updates When A Response Is Created In Surveymonkey",
+    "url": "https://n8n.io/workflows/551-get-updates-when-a-response-is-created-in-surveymonkey/"
+  },
+  {
+    "id": "525",
+    "title": "Get Articles From Hacker News",
+    "url": "https://n8n.io/workflows/525-get-articles-from-hacker-news/"
+  },
+  {
+    "id": "514",
+    "title": "Get First And Last Names From Facebook Graph Api",
+    "url": "https://n8n.io/workflows/514-get-first-and-last-names-from-facebook-graph-api/"
+  },
+  {
+    "id": "434",
+    "title": "Extract Post Titles From A Blog",
+    "url": "https://n8n.io/workflows/434-extract-post-titles-from-a-blog/"
+  }
+]

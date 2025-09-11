@@ -9,7 +9,7 @@ class Messages:
             "• 📱 Recommend digital automation tools\n"
             "• 🎯 Improve your personal efficiency\n\n"
             "Available commands:\n"
-            "/automatizations - Browse automation examples by category\n"
+            "/marketplace - Browse automation examples by category\n"
             "/booking - Schedule a consultation\n"
             "/pay - Make a payment for services\n"
             "/settings - Bot settings and preferences\n"
@@ -101,8 +101,8 @@ class Messages:
 
     AUTOMATIONS_CMD = {
         "welcome": (
-            "🤖 *Automation Examples*\n\n"
-            "Here you will find examples of various automations to improve efficiency.\n\n"
+            "🛒 *Marketplace*\n\n"
+            "You can find here real workflows for automate the routine that you can use immediately\n\n"
             "Choose a category:"
         ),
         "all_automations_button": "🤖 All Automations",

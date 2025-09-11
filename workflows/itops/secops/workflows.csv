@@ -1,0 +1,132 @@
+id,title,url
+7926,Check Suspicious Links Via Telegram With Gpt 4 Analysis Of Virustotal And Urlscanio Results,https://n8n.io/workflows/7926-check-suspicious-links-via-telegram-with-gpt-4-analysis-of-virustotal-and-urlscanio-results/
+7864,Track Policy Expiry Dates And Ownership With Google Sheets And Gmail Notifications,https://n8n.io/workflows/7864-track-policy-expiry-dates-and-ownership-with-google-sheets-and-gmail-notifications/
+7858,Automate Risk Treatment Tasks With Google Sheets For Grc Compliance,https://n8n.io/workflows/7858-automate-risk-treatment-tasks-with-google-sheets-for-grc-compliance/
+7598,Iam Compliance Automation Enforce Mfa And Clean Up Access Keys In Aws,https://n8n.io/workflows/7598-iam-compliance-automation-enforce-mfa-and-clean-up-access-keys-in-aws/
+7501,Send Slack Alerts For Aws Iam Access Keys Older Than 365 Days,https://n8n.io/workflows/7501-send-slack-alerts-for-aws-iam-access-keys-older-than-365-days/
+7500,Monitor And Alert On Inactive Aws Iam Users With Slack Notifications,https://n8n.io/workflows/7500-monitor-and-alert-on-inactive-aws-iam-users-with-slack-notifications/
+7490,Auto Renew Aws Certificates With Slack Approval Workflow,https://n8n.io/workflows/7490-auto-renew-aws-certificates-with-slack-approval-workflow/
+7453,Prevent Prompt Injection Attacks With A Gpt 4O Security Defense System,https://n8n.io/workflows/7453-prevent-prompt-injection-attacks-with-a-gpt-4o-security-defense-system/
+7349,Cyberpulse Ai Grc Automate Security Questionnaire Responses,https://n8n.io/workflows/7349-cyberpulse-ai-grc-automate-security-questionnaire-responses/
+7226,Automated Wazuh Rule Deployment Pipeline With Github Xml Validation And Telegram Alerts,https://n8n.io/workflows/7226-automated-wazuh-rule-deployment-pipeline-with-github-xml-validation-and-telegram-alerts/
+7225,Automate Ai Vulnerability Monitoring With Gpt 4 And Servicenow Incident Creation,https://n8n.io/workflows/7225-automate-ai-vulnerability-monitoring-with-gpt-4-and-servicenow-incident-creation/
+7224,Automate Cve Monitoring With Openai Processing For Servicenow Security Incidents,https://n8n.io/workflows/7224-automate-cve-monitoring-with-openai-processing-for-servicenow-security-incidents/
+7202,Triage Aws Security Misconfigurations With Gpt 41 Mini And Send Alerts To Gmail,https://n8n.io/workflows/7202-triage-aws-security-misconfigurations-with-gpt-41-mini-and-send-alerts-to-gmail/
+7189,Ai Powered Domain And Ip Security Check Automation,https://n8n.io/workflows/7189-ai-powered-domain-and-ip-security-check-automation/
+7159,Scan Urls For Security Threats With Urlscanio And Gpt 4O Mini,https://n8n.io/workflows/7159-scan-urls-for-security-threats-with-urlscanio-and-gpt-4o-mini/
+7077,Cyberpulse Ai Grc Automate Pci Dss Control Evaluation And Compliance Tracking,https://n8n.io/workflows/7077-cyberpulse-ai-grc-automate-pci-dss-control-evaluation-and-compliance-tracking/
+7023,Cybersecurity Assistant With Gpt 4 Telegram Bot And Command Execution,https://n8n.io/workflows/7023-cybersecurity-assistant-with-gpt-4-telegram-bot-and-command-execution/
+7022,Auto Remediate Endpoint Infections With Wazuh Clamav And Gpt 4,https://n8n.io/workflows/7022-auto-remediate-endpoint-infections-with-wazuh-clamav-and-gpt-4/
+7017,Filter Cybersecurity News For Your Tech Stack Openai Pinecone Rag,https://n8n.io/workflows/7017-filter-cybersecurity-news-for-your-tech-stack-openai-pinecone-rag/
+6978,Automate Wazuh Alert Triage And Reporting With Gpt 4O Mini And Telegram,https://n8n.io/workflows/6978-automate-wazuh-alert-triage-and-reporting-with-gpt-4o-mini-and-telegram/
+6957,Ssltls Certificate Expiry Monitor With Slack Alert,https://n8n.io/workflows/6957-ssltls-certificate-expiry-monitor-with-slack-alert/
+6946,Scan Urls With Urlscanio And Send Results Via Gmail,https://n8n.io/workflows/6946-scan-urls-with-urlscanio-and-send-results-via-gmail/
+6922,Monitor Security Logs For Failed Login Attempts With Slack Alerts,https://n8n.io/workflows/6922-monitor-security-logs-for-failed-login-attempts-with-slack-alerts/
+6838,Monitor Email Data Breaches With Hibp Api And Send Slack Alerts,https://n8n.io/workflows/6838-monitor-email-data-breaches-with-hibp-api-and-send-slack-alerts/
+6836,Monitor Domains And Ips On Abuseipdb Blacklist With Slack Alerts,https://n8n.io/workflows/6836-monitor-domains-and-ips-on-abuseipdb-blacklist-with-slack-alerts/
+6814,Monitor Remote Server File Integrity With Ssh And Slack Alerts,https://n8n.io/workflows/6814-monitor-remote-server-file-integrity-with-ssh-and-slack-alerts/
+6724,Monitor Cisa Critical Vulnerability Alerts With Rss Feed And Slack Notifications,https://n8n.io/workflows/6724-monitor-cisa-critical-vulnerability-alerts-with-rss-feed-and-slack-notifications/
+6721,Monitor Cybersecurity Brand Mentions On X And Send Alerts To Slack,https://n8n.io/workflows/6721-monitor-cybersecurity-brand-mentions-on-x-and-send-alerts-to-slack/
+6511,Cyberpulse Ai Redops Generate Daily Redops Security Simulation Reports,https://n8n.io/workflows/6511-cyberpulse-ai-redops-generate-daily-redops-security-simulation-reports/
+6510,Cyberpulse Ai Redops Credential Trap Sim Fake Login Page Simulation,https://n8n.io/workflows/6510-cyberpulse-ai-redops-credential-trap-sim-fake-login-page-simulation/
+6509,Cyberpulse Ai Redops Phishing Simulation With Redirect Tracking,https://n8n.io/workflows/6509-cyberpulse-ai-redops-phishing-simulation-with-redirect-tracking/
+6507,Cyberpulse Ai Redops Validate Email Security Gateways Generated Payloads,https://n8n.io/workflows/6507-cyberpulse-ai-redops-validate-email-security-gateways-generated-payloads/
+6506,Cyberpulse Ai Redops Internal Phishing Simulation For Security Training,https://n8n.io/workflows/6506-cyberpulse-ai-redops-internal-phishing-simulation-for-security-training/
+6440,Export Jamf Policies To Slack As Csv For Instant Auditing,https://n8n.io/workflows/6440-export-jamf-policies-to-slack-as-csv-for-instant-auditing/
+6415,Real Time Security Threat Dashboard With Google Sheets Ai Risk Analysis And Email Alerts,https://n8n.io/workflows/6415-real-time-security-threat-dashboard-with-google-sheets-ai-risk-analysis-and-email-alerts/
+6413,Automate Security Incident Response With Google Sheets Email Alerts And Edr Isolation,https://n8n.io/workflows/6413-automate-security-incident-response-with-google-sheets-email-alerts-and-edr-isolation/
+6412,Auto Classify Security Incidents With Gpt 4 And Google Sheets For Soc Teams,https://n8n.io/workflows/6412-auto-classify-security-incidents-with-gpt-4-and-google-sheets-for-soc-teams/
+6411,Aggregate Endpoint Security Risk Scores With Edr Vulnerability Data And Google Sheets,https://n8n.io/workflows/6411-aggregate-endpoint-security-risk-scores-with-edr-vulnerability-data-and-google-sheets/
+6410,Cyberpulse Ai Blueops Asset Enrichment Engine,https://n8n.io/workflows/6410-cyberpulse-ai-blueops-asset-enrichment-engine/
+6356,Auto Cve And Ioc Feed Ingestor With Openai Risk Triage And Email Alerts,https://n8n.io/workflows/6356-auto-cve-and-ioc-feed-ingestor-with-openai-risk-triage-and-email-alerts/
+6355,Automated Dns Records Lookup For Subdomains With Hackertarget Api Reports,https://n8n.io/workflows/6355-automated-dns-records-lookup-for-subdomains-with-hackertarget-api-reports/
+6301,Extract Actionable Security Insights From Hackerone Reports With Google Gemini,https://n8n.io/workflows/6301-extract-actionable-security-insights-from-hackerone-reports-with-google-gemini/
+6296,Automated Security Alert Analysis With Sophos Gemini Ai And Virustotal,https://n8n.io/workflows/6296-automated-security-alert-analysis-with-sophos-gemini-ai-and-virustotal/
+6293,Ai Powered Vulnerability Scanner With Nessus Risk Triage And Google Sheets Reporting,https://n8n.io/workflows/6293-ai-powered-vulnerability-scanner-with-nessus-risk-triage-and-google-sheets-reporting/
+6266,Fraudulent Booking Detector Identify Suspicious Travel Transactions With Google Gemini,https://n8n.io/workflows/6266-fraudulent-booking-detector-identify-suspicious-travel-transactions-with-google-gemini/
+6037,Ip Reputation Check And Soc Alerts With Splunk Virustotal And Alienvault,https://n8n.io/workflows/6037-ip-reputation-check-and-soc-alerts-with-splunk-virustotal-and-alienvault/
+5997,Malicious File Detection And Response Wazuh To Virustotal With Slack Alerts,https://n8n.io/workflows/5997-malicious-file-detection-and-response-wazuh-to-virustotal-with-slack-alerts/
+5980,Security Reconnaissance With Google Dorks Parsera Scraping And Gmail Reports,https://n8n.io/workflows/5980-security-reconnaissance-with-google-dorks-parsera-scraping-and-gmail-reports/
+5937,Automated Url Phishing And Threat Analysis With Nixguard Ai,https://n8n.io/workflows/5937-automated-url-phishing-and-threat-analysis-with-nixguard-ai/
+5928,Automate Free Ip Analysis Nixguard Ai Summaries And Wazuh Integration,https://n8n.io/workflows/5928-automate-free-ip-analysis-nixguard-ai-summaries-and-wazuh-integration/
+5896,Automate Security Alert Triage With Nixguard Ai And Route To Slack Or Jira,https://n8n.io/workflows/5896-automate-security-alert-triage-with-nixguard-ai-and-route-to-slack-or-jira/
+5895,Create Executive Security Briefings With Nixguard Ai And Wazuh Alerts,https://n8n.io/workflows/5895-create-executive-security-briefings-with-nixguard-ai-and-wazuh-alerts/
+5874,Ai Privacy Minded Router Pii Detection For Privacy Security And Compliance,https://n8n.io/workflows/5874-ai-privacy-minded-router-pii-detection-for-privacy-security-and-compliance/
+5768,Monitor Ssl Certificate Expiry With Google Sheets And Email Alerts,https://n8n.io/workflows/5768-monitor-ssl-certificate-expiry-with-google-sheets-and-email-alerts/
+5733,Secure User Emails With Aes 256 Encryption And Verification System,https://n8n.io/workflows/5733-secure-user-emails-with-aes-256-encryption-and-verification-system/
+5673,Comprehensive Ssl Certificate Monitoring With Discord Alerts And Notion Integration,https://n8n.io/workflows/5673-comprehensive-ssl-certificate-monitoring-with-discord-alerts-and-notion-integration/
+5614,Website Scam Risk Detector With Gpt 4O And Serpapi,https://n8n.io/workflows/5614-website-scam-risk-detector-with-gpt-4o-and-serpapi/
+5582,Proxy Detection By Ip2Proxy Mcp Server,https://n8n.io/workflows/5582-proxy-detection-by-ip2proxy-mcp-server/
+5554,File Hash Verification For Ai Agents With Hashlookup Circl Api,https://n8n.io/workflows/5554-file-hash-verification-for-ai-agents-with-hashlookup-circl-api/
+5529,Monitor Software Compliance With Jamf Patch Summaries In Slack,https://n8n.io/workflows/5529-monitor-software-compliance-with-jamf-patch-summaries-in-slack/
+5497,Javascriptsentry Detect Sensitive Information In Javascript,https://n8n.io/workflows/5497-javascriptsentry-detect-sensitive-information-in-javascript/
+5365,Thehive Tool Mcp Server,https://n8n.io/workflows/5365-thehive-tool-mcp-server/
+5357,Securityscorecard Tool Mcp Server All 19 Operations,https://n8n.io/workflows/5357-securityscorecard-tool-mcp-server-all-19-operations/
+5342,Okta Tool Mcp Server All 5 Operations,https://n8n.io/workflows/5342-okta-tool-mcp-server-all-5-operations/
+5326,Bitwarden Tool Mcp Server All 19 Operations,https://n8n.io/workflows/5326-bitwarden-tool-mcp-server-all-19-operations/
+5273,Elastic Security Tool Mcp Server All 14 Operations,https://n8n.io/workflows/5273-elastic-security-tool-mcp-server-all-14-operations/
+5181,Microsoft Entra Id Tool Mcp Server All 12 Operations,https://n8n.io/workflows/5181-microsoft-entra-id-tool-mcp-server-all-12-operations/
+5180,Microsoft Graph Security Tool Mcp Server All 5 Operations,https://n8n.io/workflows/5180-microsoft-graph-security-tool-mcp-server-all-5-operations/
+5175,Otx And Openai Web Security Check,https://n8n.io/workflows/5175-otx-and-openai-web-security-check/
+5174,Creating A Secure Webhook Must Have,https://n8n.io/workflows/5174-creating-a-secure-webhook-must-have/
+5123,Automated Aws Iam Key Compromise Response With Slack And Claude Ai,https://n8n.io/workflows/5123-automated-aws-iam-key-compromise-response-with-slack-and-claude-ai/
+5122,Misp Tool Mcp Server All 44 Operations,https://n8n.io/workflows/5122-misp-tool-mcp-server-all-44-operations/
+5103,Ai Powered Vendor Policy And Rss Feed Analysis With Integrated Risk Scoring,https://n8n.io/workflows/5103-ai-powered-vendor-policy-and-rss-feed-analysis-with-integrated-risk-scoring/
+5021,Automated Github Scanner For Exposed Aws Iam Keys,https://n8n.io/workflows/5021-automated-github-scanner-for-exposed-aws-iam-keys/
+4973,Automated Ssl Certificate Monitoring And Renewal With Notion And Telegram,https://n8n.io/workflows/4973-automated-ssl-certificate-monitoring-and-renewal-with-notion-and-telegram/
+4824,Automated Lead Generation And Qualification With Google Maps Gpt 4 And Hubspot,https://n8n.io/workflows/4824-automated-lead-generation-and-qualification-with-google-maps-gpt-4-and-hubspot/
+4797,Track Cve Vulnerability Details And History With Nvd Api And Google Sheets,https://n8n.io/workflows/4797-track-cve-vulnerability-details-and-history-with-nvd-api-and-google-sheets/
+4693,Get Real Time Security Insights With Nixguard Rag And Wazuh Integration,https://n8n.io/workflows/4693-get-real-time-security-insights-with-nixguard-rag-and-wazuh-integration/
+4678,Intelligent Ai Digest For Security Privacy And Compliance Feeds,https://n8n.io/workflows/4678-intelligent-ai-digest-for-security-privacy-and-compliance-feeds/
+4643,Ssl Certificate Expiry Notifier No Paid Apis,https://n8n.io/workflows/4643-ssl-certificate-expiry-notifier-no-paid-apis/
+3549,Audit Google Drive File Permissions For Access Control Management,https://n8n.io/workflows/3549-audit-google-drive-file-permissions-for-access-control-management/
+3493,Monitor Ssl Certificate Expiry With Google Sheets And Multi Channel Alert,https://n8n.io/workflows/3493-monitor-ssl-certificate-expiry-with-google-sheets-and-multi-channel-alert/
+3314,Websecscan Ai Powered Website Security Auditor,https://n8n.io/workflows/3314-websecscan-ai-powered-website-security-auditor/
+3205,Monitor Data Breaches In Real Time With Have I Been Pwned,https://n8n.io/workflows/3205-monitor-data-breaches-in-real-time-with-have-i-been-pwned/
+3142,Mfa Multi Factor Authentication Voice Call And Email With Clicksend And Smtp,https://n8n.io/workflows/3142-mfa-multi-factor-authentication-voice-call-and-email-with-clicksend-and-smtp/
+3126,Monitor Authentication Ips From Saas Alerts And Email Reports Via Smtp2Go,https://n8n.io/workflows/3126-monitor-authentication-ips-from-saas-alerts-and-email-reports-via-smtp2go/
+2840,Automate Siem Alert Enrichment With Mitre Attandck Qdrant And Zendesk In N8N,https://n8n.io/workflows/2840-automate-siem-alert-enrichment-with-mitre-attandck-qdrant-and-zendesk-in-n8n/
+2696,Complete Guide To Setting Up And Generating Totp Codes In N8N,https://n8n.io/workflows/2696-complete-guide-to-setting-up-and-generating-totp-codes-in-n8n/
+2694,Ssl Expiry Alert With Ssl Checkerio,https://n8n.io/workflows/2694-ssl-expiry-alert-with-ssl-checkerio/
+2677,Analyze Email Headers For Ip Reputation And Spoofing Detection Gmail,https://n8n.io/workflows/2677-analyze-email-headers-for-ip-reputation-and-spoofing-detection-gmail/
+2676,Analyze Email Headers For Ip Reputation And Spoofing Detection Outlook,https://n8n.io/workflows/2676-analyze-email-headers-for-ip-reputation-and-spoofing-detection-outlook/
+2666,Analyze And Sort Suspicious Email Contents With Chatgpt,https://n8n.io/workflows/2666-analyze-and-sort-suspicious-email-contents-with-chatgpt/
+2665,Analyze Suspicious Email Contents With Chatgpt Vision,https://n8n.io/workflows/2665-analyze-suspicious-email-contents-with-chatgpt-vision/
+2577,New Thehive Case Slack Notification Bot,https://n8n.io/workflows/2577-new-thehive-case-slack-notification-bot/
+2531,Save Qualys Reports To Thehive,https://n8n.io/workflows/2531-save-qualys-reports-to-thehive/
+2512,Qualys Scan Slack Report Subworkflow,https://n8n.io/workflows/2512-qualys-scan-slack-report-subworkflow/
+2511,Qualys Vulnerability Trigger Scan Subworkflow,https://n8n.io/workflows/2511-qualys-vulnerability-trigger-scan-subworkflow/
+2510,Enhance Security Operations With The Qualys Slack Shortcut Bot,https://n8n.io/workflows/2510-enhance-security-operations-with-the-qualys-slack-shortcut-bot/
+2422,Venafi Cloud Slack Cert Bot,https://n8n.io/workflows/2422-venafi-cloud-slack-cert-bot/
+2379,Validate Totp Token Without Creating A Credential,https://n8n.io/workflows/2379-validate-totp-token-without-creating-a-credential/
+2369,Parse Dmarc Reports Save Them In Database And Notify On Dkim Or Spf Error,https://n8n.io/workflows/2369-parse-dmarc-reports-save-them-in-database-and-notify-on-dkim-or-spf-error/
+2009,Slack Webhook Verify Signature,https://n8n.io/workflows/2009-slack-webhook-verify-signature/
+1993,Suspicious Login Detection,https://n8n.io/workflows/1993-suspicious-login-detection/
+1992,Phishing Analysis Urlscanio And Virustotal,https://n8n.io/workflows/1992-phishing-analysis-urlscanio-and-virustotal/
+1991,Analyze Email Headers For Ips And Spoofing,https://n8n.io/workflows/1991-analyze-email-headers-for-ips-and-spoofing/
+1977,Weekly Shodan Query Report Accidents,https://n8n.io/workflows/1977-weekly-shodan-query-report-accidents/
+1976,Receive And Analyze Emails With Rules In Sublime Security,https://n8n.io/workflows/1976-receive-and-analyze-emails-with-rules-in-sublime-security/
+1975,Notify User In Slack Of Quarantined Email And Create Jira Ticket If Opened,https://n8n.io/workflows/1975-notify-user-in-slack-of-quarantined-email-and-create-jira-ticket-if-opened/
+1974,Monitor Security Advisories,https://n8n.io/workflows/1974-monitor-security-advisories/
+1973,Analyze Crowdstrike Detections Search For Iocs In Virustotal Create A Ticket In Jira And Post A Message In Slack,https://n8n.io/workflows/1973-analyze-crowdstrike-detections-search-for-iocs-in-virustotal-create-a-ticket-in-jira-and-post-a-message-in-slack/
+1971,Url And Ip Lookups Through Greynoise And Virustotal,https://n8n.io/workflows/1971-url-and-ip-lookups-through-greynoise-and-virustotal/
+1954,Ai Agent Chat,https://n8n.io/workflows/1954-ai-agent-chat/
+1951,Scrape And Summarize Webpages With Ai,https://n8n.io/workflows/1951-scrape-and-summarize-webpages-with-ai/
+1934,Telegram Ai Chatbot,https://n8n.io/workflows/1934-telegram-ai-chatbot/
+1862,Openai Gpt 3 Company Enrichment From Website Content,https://n8n.io/workflows/1862-openai-gpt-3-company-enrichment-from-website-content/
+1750,Creating An Api Endpoint,https://n8n.io/workflows/1750-creating-an-api-endpoint/
+1748,Pulling Data From Services That N8N Doesnt Have A Pre Built Integration For,https://n8n.io/workflows/1748-pulling-data-from-services-that-n8n-doesnt-have-a-pre-built-integration-for/
+1747,Joining Different Datasets,https://n8n.io/workflows/1747-joining-different-datasets/
+1700,Very Quick Quickstart,https://n8n.io/workflows/1700-very-quick-quickstart/
+1630,Send Thehive Alerts Using Signl4,https://n8n.io/workflows/1630-send-thehive-alerts-using-signl4/
+1602,Analyze Emails With S1Em,https://n8n.io/workflows/1602-analyze-emails-with-s1em/
+1534,Back Up Your N8N Workflows To Github,https://n8n.io/workflows/1534-back-up-your-n8n-workflows-to-github/
+1435,Convert Json To An Excel File,https://n8n.io/workflows/1435-convert-json-to-an-excel-file/
+1001,Manage Group Members In Bitwarden Automatically,https://n8n.io/workflows/1001-manage-group-members-in-bitwarden-automatically/
+920,Generate Retrieve And Download A Report Using The Securityscorecard,https://n8n.io/workflows/920-generate-retrieve-and-download-a-report-using-the-securityscorecard/
+861,Monitor Ssl Certificate Of Any Domain With Uproc,https://n8n.io/workflows/861-monitor-ssl-certificate-of-any-domain-with-uproc/
+810,Receive Updates When An Event Occurs In Thehive,https://n8n.io/workflows/810-receive-updates-when-an-event-occurs-in-thehive/
+809,Get The Job Details Using The Cortex Node,https://n8n.io/workflows/809-get-the-job-details-using-the-cortex-node/
+808,Create Update And Get A Case In Thehive,https://n8n.io/workflows/808-create-update-and-get-a-case-in-thehive/
+574,Encrypt Some Data Using The Crypto Node,https://n8n.io/workflows/574-encrypt-some-data-using-the-crypto-node/
+122,Report Phishing Websites To Steam And Cloudflare,https://n8n.io/workflows/122-report-phishing-websites-to-steam-and-cloudflare/

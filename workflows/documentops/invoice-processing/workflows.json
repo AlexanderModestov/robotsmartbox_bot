@@ -1,0 +1,562 @@
+[
+  {
+    "id": "8046",
+    "title": "Automate Sales Tax Calculation With Sales Tax Calculator Api And Google Sheets",
+    "url": "https://n8n.io/workflows/8046-automate-sales-tax-calculation-with-sales-tax-calculator-api-and-google-sheets/"
+  },
+  {
+    "id": "8030",
+    "title": "Auto Send Pdf Invoices With Stripe Payment Triggers And Gmail",
+    "url": "https://n8n.io/workflows/8030-auto-send-pdf-invoices-with-stripe-payment-triggers-and-gmail/"
+  },
+  {
+    "id": "7982",
+    "title": "Generate And Email Pdf Invoices From Tally Forms With Google Docs",
+    "url": "https://n8n.io/workflows/7982-generate-and-email-pdf-invoices-from-tally-forms-with-google-docs/"
+  },
+  {
+    "id": "7905",
+    "title": "Ai Invoice Agent",
+    "url": "https://n8n.io/workflows/7905-ai-invoice-agent/"
+  },
+  {
+    "id": "7870",
+    "title": "Google Sheets And Quickbooks Expenses Automation Template",
+    "url": "https://n8n.io/workflows/7870-google-sheets-and-quickbooks-expenses-automation-template/"
+  },
+  {
+    "id": "7840",
+    "title": "Automated Invoice Creation Google Sheets To Quickbooks Online",
+    "url": "https://n8n.io/workflows/7840-automated-invoice-creation-google-sheets-to-quickbooks-online/"
+  },
+  {
+    "id": "7704",
+    "title": "Extract Transactions From Images Using Unlidev Vision Api And Telegram",
+    "url": "https://n8n.io/workflows/7704-extract-transactions-from-images-using-unlidev-vision-api-and-telegram/"
+  },
+  {
+    "id": "7324",
+    "title": "Automate Expense Reporting From Airtable To Quickbooks",
+    "url": "https://n8n.io/workflows/7324-automate-expense-reporting-from-airtable-to-quickbooks/"
+  },
+  {
+    "id": "7321",
+    "title": "Process Scanned Invoices With Google Drive Ocr And Openai To Google Sheets",
+    "url": "https://n8n.io/workflows/7321-process-scanned-invoices-with-google-drive-ocr-and-openai-to-google-sheets/"
+  },
+  {
+    "id": "7302",
+    "title": "Extract And Structure Invoice Data With Google Vision Ocr Gemini Llm And Google Sheets",
+    "url": "https://n8n.io/workflows/7302-extract-and-structure-invoice-data-with-google-vision-ocr-gemini-llm-and-google-sheets/"
+  },
+  {
+    "id": "7291",
+    "title": "Full Cycle Invoice Automation Airtable Quickbooks And Stripe",
+    "url": "https://n8n.io/workflows/7291-full-cycle-invoice-automation-airtable-quickbooks-and-stripe/"
+  },
+  {
+    "id": "7271",
+    "title": "Automate Employee Reimbursement Workflow With Gmail Google Drive And Ai Validation",
+    "url": "https://n8n.io/workflows/7271-automate-employee-reimbursement-workflow-with-gmail-google-drive-and-ai-validation/"
+  },
+  {
+    "id": "7269",
+    "title": "Gmail And Quickbooks Online Workflow",
+    "url": "https://n8n.io/workflows/7269-gmail-and-quickbooks-online-workflow/"
+  },
+  {
+    "id": "7239",
+    "title": "Parse Invoices And Documents With Gemini Ai Ocr And Google Sheets Integration",
+    "url": "https://n8n.io/workflows/7239-parse-invoices-and-documents-with-gemini-ai-ocr-and-google-sheets-integration/"
+  },
+  {
+    "id": "7232",
+    "title": "Automatically Save Quickbooks Invoice Pdfs To Google Drive",
+    "url": "https://n8n.io/workflows/7232-automatically-save-quickbooks-invoice-pdfs-to-google-drive/"
+  },
+  {
+    "id": "7230",
+    "title": "Automate Real Time Quickbooks Invoice Alerts In Slack",
+    "url": "https://n8n.io/workflows/7230-automate-real-time-quickbooks-invoice-alerts-in-slack/"
+  },
+  {
+    "id": "7229",
+    "title": "Automate Real Time Quickbooks Invoice Sync To Google Sheets",
+    "url": "https://n8n.io/workflows/7229-automate-real-time-quickbooks-invoice-sync-to-google-sheets/"
+  },
+  {
+    "id": "7143",
+    "title": "Expense Organizer With Google Drive Routing And Gemini Ai Entity Detection",
+    "url": "https://n8n.io/workflows/7143-expense-organizer-with-google-drive-routing-and-gemini-ai-entity-detection/"
+  },
+  {
+    "id": "7086",
+    "title": "Automate Client Billing Detail Collection And Invoicing With Outlook And Quickbooks",
+    "url": "https://n8n.io/workflows/7086-automate-client-billing-detail-collection-and-invoicing-with-outlook-and-quickbooks/"
+  },
+  {
+    "id": "7051",
+    "title": "Custom Branded Quickbooks Invoices To Pdf And Email",
+    "url": "https://n8n.io/workflows/7051-custom-branded-quickbooks-invoices-to-pdf-and-email/"
+  },
+  {
+    "id": "7039",
+    "title": "Send School Fee Reminders With Payment Links Via Email And Whatsapp",
+    "url": "https://n8n.io/workflows/7039-send-school-fee-reminders-with-payment-links-via-email-and-whatsapp/"
+  },
+  {
+    "id": "6959",
+    "title": "Automated Payment Reminders With Grouped Quickbooks Invoices Via Email",
+    "url": "https://n8n.io/workflows/6959-automated-payment-reminders-with-grouped-quickbooks-invoices-via-email/"
+  },
+  {
+    "id": "6896",
+    "title": "Extract Data From Trip Receipts With Gpt 41 Mini Google Sheets And Email Notifications",
+    "url": "https://n8n.io/workflows/6896-extract-data-from-trip-receipts-with-gpt-41-mini-google-sheets-and-email-notifications/"
+  },
+  {
+    "id": "6770",
+    "title": "Automate Quickbooks Customers And Sales Receipts Generation From A Google Sheet",
+    "url": "https://n8n.io/workflows/6770-automate-quickbooks-customers-and-sales-receipts-generation-from-a-google-sheet/"
+  },
+  {
+    "id": "6744",
+    "title": "Invoice Creator With Google Sheets And Automated Email Payment Reminder System",
+    "url": "https://n8n.io/workflows/6744-invoice-creator-with-google-sheets-and-automated-email-payment-reminder-system/"
+  },
+  {
+    "id": "6709",
+    "title": "Process Invoices And Engineering Emails With Gmail Ai Analysis And Telegram Alerts",
+    "url": "https://n8n.io/workflows/6709-process-invoices-and-engineering-emails-with-gmail-ai-analysis-and-telegram-alerts/"
+  },
+  {
+    "id": "6686",
+    "title": "Track Expenses From Receipt Photos With Telegram And Google Sheets Using Ocrspace",
+    "url": "https://n8n.io/workflows/6686-track-expenses-from-receipt-photos-with-telegram-and-google-sheets-using-ocrspace/"
+  },
+  {
+    "id": "6682",
+    "title": "Classify And Auto Sort Invoices In Google Drive With Gpt 4O",
+    "url": "https://n8n.io/workflows/6682-classify-and-auto-sort-invoices-in-google-drive-with-gpt-4o/"
+  },
+  {
+    "id": "6628",
+    "title": "Ai Powered Invoice Data Extraction And Approval Workflow With Scrapegraphai And Telegram",
+    "url": "https://n8n.io/workflows/6628-ai-powered-invoice-data-extraction-and-approval-workflow-with-scrapegraphai-and-telegram/"
+  },
+  {
+    "id": "6558",
+    "title": "Invoice Processing Email To Postgresql Database With Gpt 4O And Discord Alerts",
+    "url": "https://n8n.io/workflows/6558-invoice-processing-email-to-postgresql-database-with-gpt-4o-and-discord-alerts/"
+  },
+  {
+    "id": "6515",
+    "title": "Automated Invoice Workflow With Smart Reminders Using Gpt 4 Stripe And Google Workspace",
+    "url": "https://n8n.io/workflows/6515-automated-invoice-workflow-with-smart-reminders-using-gpt-4-stripe-and-google-workspace/"
+  },
+  {
+    "id": "6505",
+    "title": "Client Billing Detail Collection And Invoice Generation With Gmail And Quickbooks",
+    "url": "https://n8n.io/workflows/6505-client-billing-detail-collection-and-invoice-generation-with-gmail-and-quickbooks/"
+  },
+  {
+    "id": "6504",
+    "title": "Automatically Create Invoices From Gmail Labels With Gpt 4O Quickbooks",
+    "url": "https://n8n.io/workflows/6504-automatically-create-invoices-from-gmail-labels-with-gpt-4o-quickbooks/"
+  },
+  {
+    "id": "6480",
+    "title": "Pdf Invoice Data Extraction And Tracking With Google Drive Claude Ai And Telegram",
+    "url": "https://n8n.io/workflows/6480-pdf-invoice-data-extraction-and-tracking-with-google-drive-claude-ai-and-telegram/"
+  },
+  {
+    "id": "6447",
+    "title": "Automate Invoice Creation And Delivery With Google Sheets Invoice Ninja And Gmail",
+    "url": "https://n8n.io/workflows/6447-automate-invoice-creation-and-delivery-with-google-sheets-invoice-ninja-and-gmail/"
+  },
+  {
+    "id": "6359",
+    "title": "Process Receipts With Google Vision Ocr Ai And Telegram To Google Sheets",
+    "url": "https://n8n.io/workflows/6359-process-receipts-with-google-vision-ocr-ai-and-telegram-to-google-sheets/"
+  },
+  {
+    "id": "6316",
+    "title": "Automated Invoice Payment Reminders With Google Sheets And Gmail",
+    "url": "https://n8n.io/workflows/6316-automated-invoice-payment-reminders-with-google-sheets-and-gmail/"
+  },
+  {
+    "id": "6195",
+    "title": "Extract And Structure Invoice Data With Docsumo And Export To Excel",
+    "url": "https://n8n.io/workflows/6195-extract-and-structure-invoice-data-with-docsumo-and-export-to-excel/"
+  },
+  {
+    "id": "6194",
+    "title": "Parse And Extract Invoice Data With Nanonets Ocr And Export To Excel",
+    "url": "https://n8n.io/workflows/6194-parse-and-extract-invoice-data-with-nanonets-ocr-and-export-to-excel/"
+  },
+  {
+    "id": "6192",
+    "title": "Automated Invoice Follow Ups With Smart Response Tones Via Google Sheets And Email",
+    "url": "https://n8n.io/workflows/6192-automated-invoice-follow-ups-with-smart-response-tones-via-google-sheets-and-email/"
+  },
+  {
+    "id": "6062",
+    "title": "Automate Invoice Processing From Gmail With Azure Gpt 41 And Human Verification",
+    "url": "https://n8n.io/workflows/6062-automate-invoice-processing-from-gmail-with-azure-gpt-41-and-human-verification/"
+  },
+  {
+    "id": "5863",
+    "title": "Automatic Invoice Detection And Reminder Creation With Gmail And Google Tasks",
+    "url": "https://n8n.io/workflows/5863-automatic-invoice-detection-and-reminder-creation-with-gmail-and-google-tasks/"
+  },
+  {
+    "id": "5739",
+    "title": "Automated Invoice Data Extraction With Llamaparse Gemini 25 And Google Sheets",
+    "url": "https://n8n.io/workflows/5739-automated-invoice-data-extraction-with-llamaparse-gemini-25-and-google-sheets/"
+  },
+  {
+    "id": "5702",
+    "title": "Automated Stripe Payment Recovery Track Failures And Follow Up Emails",
+    "url": "https://n8n.io/workflows/5702-automated-stripe-payment-recovery-track-failures-and-follow-up-emails/"
+  },
+  {
+    "id": "5451",
+    "title": "Ai Auto Save Gmail Receipts To Google Sheets Google Drive",
+    "url": "https://n8n.io/workflows/5451-ai-auto-save-gmail-receipts-to-google-sheets-google-drive/"
+  },
+  {
+    "id": "5442",
+    "title": "Automated Expense Tracking With Ai Receipt Analysis And Google Sheets",
+    "url": "https://n8n.io/workflows/5442-automated-expense-tracking-with-ai-receipt-analysis-and-google-sheets/"
+  },
+  {
+    "id": "5391",
+    "title": "Smart Invoice Collection System With Gpt 41 Gmail And Google Sheets",
+    "url": "https://n8n.io/workflows/5391-smart-invoice-collection-system-with-gpt-41-gmail-and-google-sheets/"
+  },
+  {
+    "id": "5051",
+    "title": "Extract And Organize Receipt Data For Expense Tracking With Vlm Run And Google",
+    "url": "https://n8n.io/workflows/5051-extract-and-organize-receipt-data-for-expense-tracking-with-vlm-run-and-google/"
+  },
+  {
+    "id": "4868",
+    "title": "Extract Invoice Data From Google Drive To Sheets With Mistral Ocr And Gemini",
+    "url": "https://n8n.io/workflows/4868-extract-invoice-data-from-google-drive-to-sheets-with-mistral-ocr-and-gemini/"
+  },
+  {
+    "id": "4860",
+    "title": "Invoice Verification And Validation With Gmail Drive Sheets And Ocr Ai",
+    "url": "https://n8n.io/workflows/4860-invoice-verification-and-validation-with-gmail-drive-sheets-and-ocr-ai/"
+  },
+  {
+    "id": "4849",
+    "title": "Automated Invoice Processing With Telegram Gpt 4O Ocr And Sap Integration",
+    "url": "https://n8n.io/workflows/4849-automated-invoice-processing-with-telegram-gpt-4o-ocr-and-sap-integration/"
+  },
+  {
+    "id": "4763",
+    "title": "Extract Invoice Data From Pdfs With Ai Google Sheets Email Alerts",
+    "url": "https://n8n.io/workflows/4763-extract-invoice-data-from-pdfs-with-ai-google-sheets-email-alerts/"
+  },
+  {
+    "id": "4655",
+    "title": "Automated Invoice Management With Nextcloud Email And Telegram Notifications",
+    "url": "https://n8n.io/workflows/4655-automated-invoice-management-with-nextcloud-email-and-telegram-notifications/"
+  },
+  {
+    "id": "4452",
+    "title": "Automated Pdf Invoice Processing And Approval Flow Using Openai And Google Sheets",
+    "url": "https://n8n.io/workflows/4452-automated-pdf-invoice-processing-and-approval-flow-using-openai-and-google-sheets/"
+  },
+  {
+    "id": "4451",
+    "title": "Ai Powered Pdf Invoice Parser With Google Drive Google Sheets And Openai",
+    "url": "https://n8n.io/workflows/4451-ai-powered-pdf-invoice-parser-with-google-drive-google-sheets-and-openai/"
+  },
+  {
+    "id": "4434",
+    "title": "Automated Invoice Processing System With Ocr And Ai Ap Automation With Airtable",
+    "url": "https://n8n.io/workflows/4434-automated-invoice-processing-system-with-ocr-and-ai-ap-automation-with-airtable/"
+  },
+  {
+    "id": "4376",
+    "title": "Extract Invoice Data From Email To Google Sheets Using Gpt 4O Ai Automation",
+    "url": "https://n8n.io/workflows/4376-extract-invoice-data-from-email-to-google-sheets-using-gpt-4o-ai-automation/"
+  },
+  {
+    "id": "4361",
+    "title": "Extract Details From Receipts Via Telegram With Tesseract And Llama",
+    "url": "https://n8n.io/workflows/4361-extract-details-from-receipts-via-telegram-with-tesseract-and-llama/"
+  },
+  {
+    "id": "4331",
+    "title": "Automated Invoice Processing With Mistral Ocr Gpt 4O Mini",
+    "url": "https://n8n.io/workflows/4331-automated-invoice-processing-with-mistral-ocr-gpt-4o-mini/"
+  },
+  {
+    "id": "4247",
+    "title": "Invoice Processor And Validator With Ocr Ai And Google Sheets",
+    "url": "https://n8n.io/workflows/4247-invoice-processor-and-validator-with-ocr-ai-and-google-sheets/"
+  },
+  {
+    "id": "4224",
+    "title": "Sync Ovh Invoices To Google Sheets And Save Pdfs To Google Drive",
+    "url": "https://n8n.io/workflows/4224-sync-ovh-invoices-to-google-sheets-and-save-pdfs-to-google-drive/"
+  },
+  {
+    "id": "4105",
+    "title": "Generate Invoices Save To Drive And Send Email To Customer With Js G Sheets",
+    "url": "https://n8n.io/workflows/4105-generate-invoices-save-to-drive-and-send-email-to-customer-with-js-g-sheets/"
+  },
+  {
+    "id": "4059",
+    "title": "Extract And Save Invoice Data From Google Drive To Sheets With Dumpling Ai",
+    "url": "https://n8n.io/workflows/4059-extract-and-save-invoice-data-from-google-drive-to-sheets-with-dumpling-ai/"
+  },
+  {
+    "id": "4020",
+    "title": "Extract And Categorize Receipt Data With Google Ocr Openrouter Ai And Telegram",
+    "url": "https://n8n.io/workflows/4020-extract-and-categorize-receipt-data-with-google-ocr-openrouter-ai-and-telegram/"
+  },
+  {
+    "id": "3998",
+    "title": "Automate Medical Billing With Google Sheets And Gmail",
+    "url": "https://n8n.io/workflows/3998-automate-medical-billing-with-google-sheets-and-gmail/"
+  },
+  {
+    "id": "3960",
+    "title": "Automated Financial Tracker Telegram Invoices To Notion With Gemini Ai Reports",
+    "url": "https://n8n.io/workflows/3960-automated-financial-tracker-telegram-invoices-to-notion-with-gemini-ai-reports/"
+  },
+  {
+    "id": "3951",
+    "title": "Extract And Organize Colombian Invoices With Gmail Gpt 4O And Google Workspace",
+    "url": "https://n8n.io/workflows/3951-extract-and-organize-colombian-invoices-with-gmail-gpt-4o-and-google-workspace/"
+  },
+  {
+    "id": "3811",
+    "title": "Create And Send Multi Item Paypal Invoices Via Email",
+    "url": "https://n8n.io/workflows/3811-create-and-send-multi-item-paypal-invoices-via-email/"
+  },
+  {
+    "id": "3723",
+    "title": "Create Or Find Stripe Customers And Automatically Generate Invoices",
+    "url": "https://n8n.io/workflows/3723-create-or-find-stripe-customers-and-automatically-generate-invoices/"
+  },
+  {
+    "id": "3719",
+    "title": "Extract And Classify Invoices And Receipts With Gmail Openai And Google Drive",
+    "url": "https://n8n.io/workflows/3719-extract-and-classify-invoices-and-receipts-with-gmail-openai-and-google-drive/"
+  },
+  {
+    "id": "3618",
+    "title": "Auto Invoice And Receipt Ocr To Google Sheets Drive Gmail And Telegram Triggers",
+    "url": "https://n8n.io/workflows/3618-auto-invoice-and-receipt-ocr-to-google-sheets-drive-gmail-and-telegram-triggers/"
+  },
+  {
+    "id": "3545",
+    "title": "Automate Purchase Order Form Submissions From Outlook Excel Attachments With Ai",
+    "url": "https://n8n.io/workflows/3545-automate-purchase-order-form-submissions-from-outlook-excel-attachments-with-ai/"
+  },
+  {
+    "id": "3396",
+    "title": "Parse Incoming Invoices From Outlook Using Ai Document Understanding",
+    "url": "https://n8n.io/workflows/3396-parse-incoming-invoices-from-outlook-using-ai-document-understanding/"
+  },
+  {
+    "id": "3333",
+    "title": "Generate Pdf Invoices With Customjs Api",
+    "url": "https://n8n.io/workflows/3333-generate-pdf-invoices-with-customjs-api/"
+  },
+  {
+    "id": "3073",
+    "title": "Extract Data From Yape Receipts Via Telegram Ocr And Store In Google Sheets",
+    "url": "https://n8n.io/workflows/3073-extract-data-from-yape-receipts-via-telegram-ocr-and-store-in-google-sheets/"
+  },
+  {
+    "id": "3016",
+    "title": "Invoices From Gmail To Drive And Google Sheets",
+    "url": "https://n8n.io/workflows/3016-invoices-from-gmail-to-drive-and-google-sheets/"
+  },
+  {
+    "id": "2887",
+    "title": "Export Pdf Invoices From Smartbill To Google Drive",
+    "url": "https://n8n.io/workflows/2887-export-pdf-invoices-from-smartbill-to-google-drive/"
+  },
+  {
+    "id": "2867",
+    "title": "Credit Card Payment Reminder And Tracking For Taiwan Banks",
+    "url": "https://n8n.io/workflows/2867-credit-card-payment-reminder-and-tracking-for-taiwan-banks/"
+  },
+  {
+    "id": "2807",
+    "title": "Create Quickbooks Online Customers With Sales Receipts For New Stripe Payments",
+    "url": "https://n8n.io/workflows/2807-create-quickbooks-online-customers-with-sales-receipts-for-new-stripe-payments/"
+  },
+  {
+    "id": "2707",
+    "title": "Food Delivery Notifications And Easy Expense Tracking",
+    "url": "https://n8n.io/workflows/2707-food-delivery-notifications-and-easy-expense-tracking/"
+  },
+  {
+    "id": "2675",
+    "title": "Generate Stripe Invoice And Send It By Email",
+    "url": "https://n8n.io/workflows/2675-generate-stripe-invoice-and-send-it-by-email/"
+  },
+  {
+    "id": "2661",
+    "title": "Parse Pdf With Llamaparse And Save To Airtable",
+    "url": "https://n8n.io/workflows/2661-parse-pdf-with-llamaparse-and-save-to-airtable/"
+  },
+  {
+    "id": "2461",
+    "title": "Telegram Payment Invoicing And Refund Workflow For Stars",
+    "url": "https://n8n.io/workflows/2461-telegram-payment-invoicing-and-refund-workflow-for-stars/"
+  },
+  {
+    "id": "2450",
+    "title": "One Way Sync Stripe Invoice Pdfs To A S3 Bucket",
+    "url": "https://n8n.io/workflows/2450-one-way-sync-stripe-invoice-pdfs-to-a-s3-bucket/"
+  },
+  {
+    "id": "2393",
+    "title": "Save N8N Cloud Invoices Received In Gmail In Google Drive",
+    "url": "https://n8n.io/workflows/2393-save-n8n-cloud-invoices-received-in-gmail-in-google-drive/"
+  },
+  {
+    "id": "2389",
+    "title": "Recognize Invoices Receipts From Google Drive And Put Them Into Google Sheets",
+    "url": "https://n8n.io/workflows/2389-recognize-invoices-receipts-from-google-drive-and-put-them-into-google-sheets/"
+  },
+  {
+    "id": "2359",
+    "title": "Get Customfields From The Stripe Api",
+    "url": "https://n8n.io/workflows/2359-get-customfields-from-the-stripe-api/"
+  },
+  {
+    "id": "2320",
+    "title": "Invoice Data Extraction With Llamaparse And Openai",
+    "url": "https://n8n.io/workflows/2320-invoice-data-extraction-with-llamaparse-and-openai/"
+  },
+  {
+    "id": "1954",
+    "title": "Ai Agent Chat",
+    "url": "https://n8n.io/workflows/1954-ai-agent-chat/"
+  },
+  {
+    "id": "1951",
+    "title": "Scrape And Summarize Webpages With Ai",
+    "url": "https://n8n.io/workflows/1951-scrape-and-summarize-webpages-with-ai/"
+  },
+  {
+    "id": "1934",
+    "title": "Telegram Ai Chatbot",
+    "url": "https://n8n.io/workflows/1934-telegram-ai-chatbot/"
+  },
+  {
+    "id": "1862",
+    "title": "Openai Gpt 3 Company Enrichment From Website Content",
+    "url": "https://n8n.io/workflows/1862-openai-gpt-3-company-enrichment-from-website-content/"
+  },
+  {
+    "id": "1834",
+    "title": "Send New Clockify Invoice To Notion Database",
+    "url": "https://n8n.io/workflows/1834-send-new-clockify-invoice-to-notion-database/"
+  },
+  {
+    "id": "1750",
+    "title": "Creating An Api Endpoint",
+    "url": "https://n8n.io/workflows/1750-creating-an-api-endpoint/"
+  },
+  {
+    "id": "1748",
+    "title": "Pulling Data From Services That N8N Doesnt Have A Pre Built Integration For",
+    "url": "https://n8n.io/workflows/1748-pulling-data-from-services-that-n8n-doesnt-have-a-pre-built-integration-for/"
+  },
+  {
+    "id": "1747",
+    "title": "Joining Different Datasets",
+    "url": "https://n8n.io/workflows/1747-joining-different-datasets/"
+  },
+  {
+    "id": "1700",
+    "title": "Very Quick Quickstart",
+    "url": "https://n8n.io/workflows/1700-very-quick-quickstart/"
+  },
+  {
+    "id": "1590",
+    "title": "Upload Invoices From Gmail To Google Drive",
+    "url": "https://n8n.io/workflows/1590-upload-invoices-from-gmail-to-google-drive/"
+  },
+  {
+    "id": "1546",
+    "title": "Create A Quickbooks Invoice On A New Onfleet Task Creation",
+    "url": "https://n8n.io/workflows/1546-create-a-quickbooks-invoice-on-a-new-onfleet-task-creation/"
+  },
+  {
+    "id": "1534",
+    "title": "Back Up Your N8N Workflows To Github",
+    "url": "https://n8n.io/workflows/1534-back-up-your-n8n-workflows-to-github/"
+  },
+  {
+    "id": "1467",
+    "title": "Notify On New Emails With Invoices In Slack",
+    "url": "https://n8n.io/workflows/1467-notify-on-new-emails-with-invoices-in-slack/"
+  },
+  {
+    "id": "1466",
+    "title": "Extract Expenses From Emails And Add To Google Sheets",
+    "url": "https://n8n.io/workflows/1466-extract-expenses-from-emails-and-add-to-google-sheets/"
+  },
+  {
+    "id": "1435",
+    "title": "Convert Json To An Excel File",
+    "url": "https://n8n.io/workflows/1435-convert-json-to-an-excel-file/"
+  },
+  {
+    "id": "989",
+    "title": "Create An Invoice Based On The Typeform Submission",
+    "url": "https://n8n.io/workflows/989-create-an-invoice-based-on-the-typeform-submission/"
+  },
+  {
+    "id": "949",
+    "title": "Create A Customer And Send The Invoice Automatically",
+    "url": "https://n8n.io/workflows/949-create-a-customer-and-send-the-invoice-automatically/"
+  },
+  {
+    "id": "741",
+    "title": "Extract Infromation From A Receipt And Store It In Airtable",
+    "url": "https://n8n.io/workflows/741-extract-infromation-from-a-receipt-and-store-it-in-airtable/"
+  },
+  {
+    "id": "739",
+    "title": "Detect And Store The Information About A Purchase Using The Image Of A Receipt",
+    "url": "https://n8n.io/workflows/739-detect-and-store-the-information-about-a-purchase-using-the-image-of-a-receipt/"
+  },
+  {
+    "id": "702",
+    "title": "Extract Information From An Image Of A Receipt",
+    "url": "https://n8n.io/workflows/702-extract-information-from-an-image-of-a-receipt/"
+  },
+  {
+    "id": "684",
+    "title": "Add Data From A Photo To Google Sheets",
+    "url": "https://n8n.io/workflows/684-add-data-from-a-photo-to-google-sheets/"
+  },
+  {
+    "id": "543",
+    "title": "Get Invoices From Xero",
+    "url": "https://n8n.io/workflows/543-get-invoices-from-xero/"
+  },
+  {
+    "id": "535",
+    "title": "Receive Updates On A New Invoice Via Invoice Ninja",
+    "url": "https://n8n.io/workflows/535-receive-updates-on-a-new-invoice-via-invoice-ninja/"
+  },
+  {
+    "id": "398",
+    "title": "Create An Invoice In Google Sheets Based On Typeform Submission",
+    "url": "https://n8n.io/workflows/398-create-an-invoice-in-google-sheets-based-on-typeform-submission/"
+  }
+]

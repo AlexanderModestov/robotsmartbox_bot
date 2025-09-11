@@ -1,0 +1,1452 @@
+[
+  {
+    "id": "8390",
+    "title": "Automate Job Post Expiry Reminders With Google Sheets Http Checks And Gmail",
+    "url": "https://n8n.io/workflows/8390-automate-job-post-expiry-reminders-with-google-sheets-http-checks-and-gmail/"
+  },
+  {
+    "id": "8389",
+    "title": "Create A Btceth Price And Usd Exchange Rate Api With Coingecko And Exchangerate Api",
+    "url": "https://n8n.io/workflows/8389-create-a-btceth-price-and-usd-exchange-rate-api-with-coingecko-and-exchangerate-api/"
+  },
+  {
+    "id": "8388",
+    "title": "Automate Pdf Purchase Orders To Sales Orders In Adobe Commerce With Ai",
+    "url": "https://n8n.io/workflows/8388-automate-pdf-purchase-orders-to-sales-orders-in-adobe-commerce-with-ai/"
+  },
+  {
+    "id": "8386",
+    "title": "Cryptocurrency Dip Alerts For Bitcoin And Ethereum Via Telegram Slack And Sms",
+    "url": "https://n8n.io/workflows/8386-cryptocurrency-dip-alerts-for-bitcoin-and-ethereum-via-telegram-slack-and-sms/"
+  },
+  {
+    "id": "8382",
+    "title": "Monitor Bitcoin And Ethereum Prices With Coingecko Alerts Via Emailsms",
+    "url": "https://n8n.io/workflows/8382-monitor-bitcoin-and-ethereum-prices-with-coingecko-alerts-via-emailsms/"
+  },
+  {
+    "id": "8378",
+    "title": "Create Talking Avatar Videos With Elevenlabs And Infinitalk And Auto Post To Tiktok",
+    "url": "https://n8n.io/workflows/8378-create-talking-avatar-videos-with-elevenlabs-and-infinitalk-and-auto-post-to-tiktok/"
+  },
+  {
+    "id": "8377",
+    "title": "Capture And Organize Ideas Via Telegram With Gpt 4 And Google Sheets",
+    "url": "https://n8n.io/workflows/8377-capture-and-organize-ideas-via-telegram-with-gpt-4-and-google-sheets/"
+  },
+  {
+    "id": "8376",
+    "title": "Customer Support Ticket System For Smes With Google Sheets And Auto Emails",
+    "url": "https://n8n.io/workflows/8376-customer-support-ticket-system-for-smes-with-google-sheets-and-auto-emails/"
+  },
+  {
+    "id": "8375",
+    "title": "Generate Ai Images With Text Prompts Using Bananaapi And Nano Banana Engine",
+    "url": "https://n8n.io/workflows/8375-generate-ai-images-with-text-prompts-using-bananaapi-and-nano-banana-engine/"
+  },
+  {
+    "id": "8371",
+    "title": "Google Maps Reviews To Google Sheets Sync Using Serpapi",
+    "url": "https://n8n.io/workflows/8371-google-maps-reviews-to-google-sheets-sync-using-serpapi/"
+  },
+  {
+    "id": "8369",
+    "title": "Task Time Analysis Automated Overspend Time Insights For Clickup And More",
+    "url": "https://n8n.io/workflows/8369-task-time-analysis-automated-overspend-time-insights-for-clickup-and-more/"
+  },
+  {
+    "id": "8368",
+    "title": "Detect Viral Youtube Videos With Ai Analysis And Email Reports",
+    "url": "https://n8n.io/workflows/8368-detect-viral-youtube-videos-with-ai-analysis-and-email-reports/"
+  },
+  {
+    "id": "8367",
+    "title": "Extract Business Card Data From Slack To Google Sheets With Gpt 4O Ocr",
+    "url": "https://n8n.io/workflows/8367-extract-business-card-data-from-slack-to-google-sheets-with-gpt-4o-ocr/"
+  },
+  {
+    "id": "8363",
+    "title": "Generate Seo Optimized Blog Content With Google Gemini Rss Feeds And Telegram",
+    "url": "https://n8n.io/workflows/8363-generate-seo-optimized-blog-content-with-google-gemini-rss-feeds-and-telegram/"
+  },
+  {
+    "id": "8362",
+    "title": "Automate Daily Signup Stats From Postgresql To Slack Teams And Telegram",
+    "url": "https://n8n.io/workflows/8362-automate-daily-signup-stats-from-postgresql-to-slack-teams-and-telegram/"
+  },
+  {
+    "id": "8358",
+    "title": "Daily Gmail Inbox Digest To Discord With Gpt 41 Mini And Pdf Conversion",
+    "url": "https://n8n.io/workflows/8358-daily-gmail-inbox-digest-to-discord-with-gpt-41-mini-and-pdf-conversion/"
+  },
+  {
+    "id": "8356",
+    "title": "Generate Seo Optimized Wordpress Blogs With Gemini Tavily And Human Review",
+    "url": "https://n8n.io/workflows/8356-generate-seo-optimized-wordpress-blogs-with-gemini-tavily-and-human-review/"
+  },
+  {
+    "id": "8355",
+    "title": "Monitor Brand Mentions On X With Gemini Ai Visual Analysis And Telegram Alerts",
+    "url": "https://n8n.io/workflows/8355-monitor-brand-mentions-on-x-with-gemini-ai-visual-analysis-and-telegram-alerts/"
+  },
+  {
+    "id": "8354",
+    "title": "Daily Google Tasks Briefing In Slack With Ollama Powered Summaries",
+    "url": "https://n8n.io/workflows/8354-daily-google-tasks-briefing-in-slack-with-ollama-powered-summaries/"
+  },
+  {
+    "id": "8351",
+    "title": "Create Research Backed Articles With Ai Planning Linkup Search And Gpt 5",
+    "url": "https://n8n.io/workflows/8351-create-research-backed-articles-with-ai-planning-linkup-search-and-gpt-5/"
+  },
+  {
+    "id": "8350",
+    "title": "Create A Two Way Whatsapp Telegram Integration For 10K Customer Support Chats",
+    "url": "https://n8n.io/workflows/8350-create-a-two-way-whatsapp-telegram-integration-for-10k-customer-support-chats/"
+  },
+  {
+    "id": "8344",
+    "title": "Analyze Bakery Sales And Inventory With Google Sheets And Azure Gpt Chat Assistant",
+    "url": "https://n8n.io/workflows/8344-analyze-bakery-sales-and-inventory-with-google-sheets-and-azure-gpt-chat-assistant/"
+  },
+  {
+    "id": "8341",
+    "title": "Weekly Okr Alignment Report With Gmail Google Calendar Notion And Gpt 41",
+    "url": "https://n8n.io/workflows/8341-weekly-okr-alignment-report-with-gmail-google-calendar-notion-and-gpt-41/"
+  },
+  {
+    "id": "8340",
+    "title": "Automated Forex News Alert System With Forex Factory And Telegram",
+    "url": "https://n8n.io/workflows/8340-automated-forex-news-alert-system-with-forex-factory-and-telegram/"
+  },
+  {
+    "id": "8339",
+    "title": "Replace Your Call Center With An Ai Agent Using Gohighlevel Ghl Vapi And Twilio",
+    "url": "https://n8n.io/workflows/8339-replace-your-call-center-with-an-ai-agent-using-gohighlevel-ghl-vapi-and-twilio/"
+  },
+  {
+    "id": "8338",
+    "title": "Repurpose Youtube Videos Across Social Media With Gemini Ai And Contentdrips",
+    "url": "https://n8n.io/workflows/8338-repurpose-youtube-videos-across-social-media-with-gemini-ai-and-contentdrips/"
+  },
+  {
+    "id": "8336",
+    "title": "Automatic Email Categorization And Organization With Outlook And Gpt 4O",
+    "url": "https://n8n.io/workflows/8336-automatic-email-categorization-and-organization-with-outlook-and-gpt-4o/"
+  },
+  {
+    "id": "8335",
+    "title": "Employee Attendance Tracker With Telegram Bot And Google Sheets",
+    "url": "https://n8n.io/workflows/8335-employee-attendance-tracker-with-telegram-bot-and-google-sheets/"
+  },
+  {
+    "id": "8333",
+    "title": "Gmail Email Auto Organizer With Google Sheets Rules",
+    "url": "https://n8n.io/workflows/8333-gmail-email-auto-organizer-with-google-sheets-rules/"
+  },
+  {
+    "id": "8331",
+    "title": "Convert Markdown To Formatted Notion Pages With Mark2Notion",
+    "url": "https://n8n.io/workflows/8331-convert-markdown-to-formatted-notion-pages-with-mark2notion/"
+  },
+  {
+    "id": "8328",
+    "title": "Monitor Website Performance With Pagespeed Insights And Send Alerts To Google Sheets",
+    "url": "https://n8n.io/workflows/8328-monitor-website-performance-with-pagespeed-insights-and-send-alerts-to-google-sheets/"
+  },
+  {
+    "id": "8327",
+    "title": "Selective Forex Factory Calendar Import And Cleanup For Google Calendar",
+    "url": "https://n8n.io/workflows/8327-selective-forex-factory-calendar-import-and-cleanup-for-google-calendar/"
+  },
+  {
+    "id": "8323",
+    "title": "Ai Powered Whatsapp Customer Support For Shopify Brands With Llm Agents",
+    "url": "https://n8n.io/workflows/8323-ai-powered-whatsapp-customer-support-for-shopify-brands-with-llm-agents/"
+  },
+  {
+    "id": "8322",
+    "title": "Ai Powered Sales Assistant With Airtable Crm Gmail And Web Research",
+    "url": "https://n8n.io/workflows/8322-ai-powered-sales-assistant-with-airtable-crm-gmail-and-web-research/"
+  },
+  {
+    "id": "8321",
+    "title": "Convert Gif To Mp4 With Ffmpegapi",
+    "url": "https://n8n.io/workflows/8321-convert-gif-to-mp4-with-ffmpegapi/"
+  },
+  {
+    "id": "8318",
+    "title": "Transform Product Photos Into Social Media Videos With Gemini Ai Kling And Late",
+    "url": "https://n8n.io/workflows/8318-transform-product-photos-into-social-media-videos-with-gemini-ai-kling-and-late/"
+  },
+  {
+    "id": "8314",
+    "title": "Telegram Chatbot With Voice Recognition And Message Batching Using Openai",
+    "url": "https://n8n.io/workflows/8314-telegram-chatbot-with-voice-recognition-and-message-batching-using-openai/"
+  },
+  {
+    "id": "8313",
+    "title": "Financial Reporting Ai Concise Sec 10 K10 Q Briefs Via Openrouter Perplexity",
+    "url": "https://n8n.io/workflows/8313-financial-reporting-ai-concise-sec-10-k10-q-briefs-via-openrouter-perplexity/"
+  },
+  {
+    "id": "8312",
+    "title": "Automate Document Ingestion And Rag System With Google Drive Sheets And Openai",
+    "url": "https://n8n.io/workflows/8312-automate-document-ingestion-and-rag-system-with-google-drive-sheets-and-openai/"
+  },
+  {
+    "id": "8309",
+    "title": "Answer Real Estate Questions With Ai Using Propertyfinderae Openrouter And Serpapi",
+    "url": "https://n8n.io/workflows/8309-answer-real-estate-questions-with-ai-using-propertyfinderae-openrouter-and-serpapi/"
+  },
+  {
+    "id": "8308",
+    "title": "Generate And Auto Post Tech News Ai Avatar Videos To Social Media With Heygen And Blotato",
+    "url": "https://n8n.io/workflows/8308-generate-and-auto-post-tech-news-ai-avatar-videos-to-social-media-with-heygen-and-blotato/"
+  },
+  {
+    "id": "8305",
+    "title": "Automate Everhour Time Off Sync To Google Calendar With All Day Events",
+    "url": "https://n8n.io/workflows/8305-automate-everhour-time-off-sync-to-google-calendar-with-all-day-events/"
+  },
+  {
+    "id": "8297",
+    "title": "Build A Whatsapp Customer Support Bot With Langchain Openai And Crm Integration",
+    "url": "https://n8n.io/workflows/8297-build-a-whatsapp-customer-support-bot-with-langchain-openai-and-crm-integration/"
+  },
+  {
+    "id": "8296",
+    "title": "Automated Blog Publishing With Google Trends Gpt 4 Pexels And Wordpress",
+    "url": "https://n8n.io/workflows/8296-automated-blog-publishing-with-google-trends-gpt-4-pexels-and-wordpress/"
+  },
+  {
+    "id": "8294",
+    "title": "Generate Viral Baby Celebrity Podcasts With Ai Hedra And Elevenlabs",
+    "url": "https://n8n.io/workflows/8294-generate-viral-baby-celebrity-podcasts-with-ai-hedra-and-elevenlabs/"
+  },
+  {
+    "id": "8291",
+    "title": "Automated Tech News And Trend Report With Apiflash Gemini Vision And Google Sheets To Telegram",
+    "url": "https://n8n.io/workflows/8291-automated-tech-news-and-trend-report-with-apiflash-gemini-vision-and-google-sheets-to-telegram/"
+  },
+  {
+    "id": "8290",
+    "title": "Automate Faceless Shorts With Openai Runwayml And Elevenlabs Script To Social Media",
+    "url": "https://n8n.io/workflows/8290-automate-faceless-shorts-with-openai-runwayml-and-elevenlabs-script-to-social-media/"
+  },
+  {
+    "id": "8289",
+    "title": "Generate Research Backed Seo Content Briefs With Openai And Firecrawl To Google Docs",
+    "url": "https://n8n.io/workflows/8289-generate-research-backed-seo-content-briefs-with-openai-and-firecrawl-to-google-docs/"
+  },
+  {
+    "id": "8287",
+    "title": "Create A Whatsapp Customer Support Bot With Openai Calendar And Email Integration",
+    "url": "https://n8n.io/workflows/8287-create-a-whatsapp-customer-support-bot-with-openai-calendar-and-email-integration/"
+  },
+  {
+    "id": "8286",
+    "title": "Serp Keyword Ranking Checker With Rapidapi And Google Sheets",
+    "url": "https://n8n.io/workflows/8286-serp-keyword-ranking-checker-with-rapidapi-and-google-sheets/"
+  },
+  {
+    "id": "8285",
+    "title": "Download Watermark Free Tiktok Videos To Google Drive With Automated Sheets Logging",
+    "url": "https://n8n.io/workflows/8285-download-watermark-free-tiktok-videos-to-google-drive-with-automated-sheets-logging/"
+  },
+  {
+    "id": "8284",
+    "title": "Create A Whatsapp Voice Assistant With Twilio Vapi Google Calendar And Openai",
+    "url": "https://n8n.io/workflows/8284-create-a-whatsapp-voice-assistant-with-twilio-vapi-google-calendar-and-openai/"
+  },
+  {
+    "id": "8283",
+    "title": "Monitor New Cves For Bug Bounty Hunting With Gemini Ai And Slack Alerts",
+    "url": "https://n8n.io/workflows/8283-monitor-new-cves-for-bug-bounty-hunting-with-gemini-ai-and-slack-alerts/"
+  },
+  {
+    "id": "8281",
+    "title": "Deduplicate Lead Data With Google Sheets Automated Email Alerts And Log Management",
+    "url": "https://n8n.io/workflows/8281-deduplicate-lead-data-with-google-sheets-automated-email-alerts-and-log-management/"
+  },
+  {
+    "id": "8278",
+    "title": "Qualify Leads With Ai Review Analysis Using Azure Gpt 4O Mini And Google Sheets",
+    "url": "https://n8n.io/workflows/8278-qualify-leads-with-ai-review-analysis-using-azure-gpt-4o-mini-and-google-sheets/"
+  },
+  {
+    "id": "8276",
+    "title": "Meta Ads Bulk Launcher With Google Drive Integration And Slack Notifications",
+    "url": "https://n8n.io/workflows/8276-meta-ads-bulk-launcher-with-google-drive-integration-and-slack-notifications/"
+  },
+  {
+    "id": "8275",
+    "title": "Find Jobs Via Telegram Bot Ai Powered Linkedin Indeed And Monster Scraper",
+    "url": "https://n8n.io/workflows/8275-find-jobs-via-telegram-bot-ai-powered-linkedin-indeed-and-monster-scraper/"
+  },
+  {
+    "id": "8272",
+    "title": "Dynamic Mcp Server Selection With Openai Gpt 41 And Contextual Ai Reranker",
+    "url": "https://n8n.io/workflows/8272-dynamic-mcp-server-selection-with-openai-gpt-41-and-contextual-ai-reranker/"
+  },
+  {
+    "id": "8271",
+    "title": "Automated Trending Cryptocurrency Updates From Coingecko To Telegram",
+    "url": "https://n8n.io/workflows/8271-automated-trending-cryptocurrency-updates-from-coingecko-to-telegram/"
+  },
+  {
+    "id": "8270",
+    "title": "Generate Ai Viral Videos With Nanobanana And Veo3 Shared On Socials Via Blotato",
+    "url": "https://n8n.io/workflows/8270-generate-ai-viral-videos-with-nanobanana-and-veo3-shared-on-socials-via-blotato/"
+  },
+  {
+    "id": "8269",
+    "title": "Automate B2B Lead Generation And Email Campaigns With Google Maps Sendgrid And Ai",
+    "url": "https://n8n.io/workflows/8269-automate-b2b-lead-generation-and-email-campaigns-with-google-maps-sendgrid-and-ai/"
+  },
+  {
+    "id": "8268",
+    "title": "Expense Logging With Telegram And Google Sheets Weekly Summaries And Budget Alerts",
+    "url": "https://n8n.io/workflows/8268-expense-logging-with-telegram-and-google-sheets-weekly-summaries-and-budget-alerts/"
+  },
+  {
+    "id": "8267",
+    "title": "Automate Twitter Content With Trend Analysis Using Openai Gpt And Mcp",
+    "url": "https://n8n.io/workflows/8267-automate-twitter-content-with-trend-analysis-using-openai-gpt-and-mcp/"
+  },
+  {
+    "id": "8266",
+    "title": "Create Ai Intelligence Briefs From Newsletters With Gemini Slack And Notion",
+    "url": "https://n8n.io/workflows/8266-create-ai-intelligence-briefs-from-newsletters-with-gemini-slack-and-notion/"
+  },
+  {
+    "id": "8265",
+    "title": "Transform Long Content Into Bite Sized Learning Modules With Gpt 4 And Google Docs",
+    "url": "https://n8n.io/workflows/8265-transform-long-content-into-bite-sized-learning-modules-with-gpt-4-and-google-docs/"
+  },
+  {
+    "id": "8264",
+    "title": "Generate Seo Blog Posts From Google Trends To Wordpress With Gpt And Perplexity Ai",
+    "url": "https://n8n.io/workflows/8264-generate-seo-blog-posts-from-google-trends-to-wordpress-with-gpt-and-perplexity-ai/"
+  },
+  {
+    "id": "8263",
+    "title": "Generate And Publish Professional Video Ads With Veo 3 Gemini And Creatomate",
+    "url": "https://n8n.io/workflows/8263-generate-and-publish-professional-video-ads-with-veo-3-gemini-and-creatomate/"
+  },
+  {
+    "id": "8260",
+    "title": "Build A Multichannel Customer Support Ai Assistant With Chatwoot And Openrouter",
+    "url": "https://n8n.io/workflows/8260-build-a-multichannel-customer-support-ai-assistant-with-chatwoot-and-openrouter/"
+  },
+  {
+    "id": "8258",
+    "title": "Learn Secure Webhook Apis With Authentication And Supabase Integration",
+    "url": "https://n8n.io/workflows/8258-learn-secure-webhook-apis-with-authentication-and-supabase-integration/"
+  },
+  {
+    "id": "8257",
+    "title": "Automate Instagram Reel Downloads With Google Drive Storage And Telegram Alerts",
+    "url": "https://n8n.io/workflows/8257-automate-instagram-reel-downloads-with-google-drive-storage-and-telegram-alerts/"
+  },
+  {
+    "id": "8256",
+    "title": "English Vocabulary Bot For Telegram With Gemini And Random Word Api",
+    "url": "https://n8n.io/workflows/8256-english-vocabulary-bot-for-telegram-with-gemini-and-random-word-api/"
+  },
+  {
+    "id": "8254",
+    "title": "Auto Generate Blog Posts With Gpt Leonardo Ai And Wordpress Publishing",
+    "url": "https://n8n.io/workflows/8254-auto-generate-blog-posts-with-gpt-leonardo-ai-and-wordpress-publishing/"
+  },
+  {
+    "id": "8253",
+    "title": "Wordpress Seo Content Publisher With Anthropic Ai Google Docs And Media Automation",
+    "url": "https://n8n.io/workflows/8253-wordpress-seo-content-publisher-with-anthropic-ai-google-docs-and-media-automation/"
+  },
+  {
+    "id": "8252",
+    "title": "Crypto Market Analysis With Chart Img Browserai And Gpt Insights To Telegram",
+    "url": "https://n8n.io/workflows/8252-crypto-market-analysis-with-chart-img-browserai-and-gpt-insights-to-telegram/"
+  },
+  {
+    "id": "8251",
+    "title": "Whatsapp And Google Gemini Key Technologies Highlighting Multimodal Capabilities",
+    "url": "https://n8n.io/workflows/8251-whatsapp-and-google-gemini-key-technologies-highlighting-multimodal-capabilities/"
+  },
+  {
+    "id": "8250",
+    "title": "Scrape Jobs From Indeed Linkedin And More With Rapidapi To Google Sheets",
+    "url": "https://n8n.io/workflows/8250-scrape-jobs-from-indeed-linkedin-and-more-with-rapidapi-to-google-sheets/"
+  },
+  {
+    "id": "8249",
+    "title": "Check Domain Authority Metrics In Bulk And Log To Google Sheets With Rapidapi",
+    "url": "https://n8n.io/workflows/8249-check-domain-authority-metrics-in-bulk-and-log-to-google-sheets-with-rapidapi/"
+  },
+  {
+    "id": "8247",
+    "title": "Automate Markerio Issues To Servicenow Incidents With Full Technical Context",
+    "url": "https://n8n.io/workflows/8247-automate-markerio-issues-to-servicenow-incidents-with-full-technical-context/"
+  },
+  {
+    "id": "8245",
+    "title": "Build A Rag Knowledge Chatbot With Openai Google Drive And Supabase",
+    "url": "https://n8n.io/workflows/8245-build-a-rag-knowledge-chatbot-with-openai-google-drive-and-supabase/"
+  },
+  {
+    "id": "8244",
+    "title": "Log E Commerce Orders In Google Sheets With Monthly Tabs And Status Tracking",
+    "url": "https://n8n.io/workflows/8244-log-e-commerce-orders-in-google-sheets-with-monthly-tabs-and-status-tracking/"
+  },
+  {
+    "id": "8242",
+    "title": "Seo Competitor Analysis With Rapidapi And Google Sheets Logging",
+    "url": "https://n8n.io/workflows/8242-seo-competitor-analysis-with-rapidapi-and-google-sheets-logging/"
+  },
+  {
+    "id": "8240",
+    "title": "Qualify High Budget Leads Typeform To Hubspot Google Sheets And Slack Alerts",
+    "url": "https://n8n.io/workflows/8240-qualify-high-budget-leads-typeform-to-hubspot-google-sheets-and-slack-alerts/"
+  },
+  {
+    "id": "8239",
+    "title": "Automated Request To Quote System With Openai Google Sheets And Craftmypdf Email Delivery",
+    "url": "https://n8n.io/workflows/8239-automated-request-to-quote-system-with-openai-google-sheets-and-craftmypdf-email-delivery/"
+  },
+  {
+    "id": "8238",
+    "title": "Implement Intelligent Message Buffering For Ai Chats With Redis And Gpt 4 Mini",
+    "url": "https://n8n.io/workflows/8238-implement-intelligent-message-buffering-for-ai-chats-with-redis-and-gpt-4-mini/"
+  },
+  {
+    "id": "8237",
+    "title": "Personal Life Manager With Telegram Google Services And Voice Enabled Ai",
+    "url": "https://n8n.io/workflows/8237-personal-life-manager-with-telegram-google-services-and-voice-enabled-ai/"
+  },
+  {
+    "id": "8236",
+    "title": "Crypto Exchange Listing And Delisting Alerts To Telegram X And Discord",
+    "url": "https://n8n.io/workflows/8236-crypto-exchange-listing-and-delisting-alerts-to-telegram-x-and-discord/"
+  },
+  {
+    "id": "8235",
+    "title": "Compare Linkedin Profiles Against Job Descriptions With Groq Ai And Ghostgenius",
+    "url": "https://n8n.io/workflows/8235-compare-linkedin-profiles-against-job-descriptions-with-groq-ai-and-ghostgenius/"
+  },
+  {
+    "id": "8234",
+    "title": "Ai Powered Gmail And Calendar Assistant With Gemini Chat Interface",
+    "url": "https://n8n.io/workflows/8234-ai-powered-gmail-and-calendar-assistant-with-gemini-chat-interface/"
+  },
+  {
+    "id": "8231",
+    "title": "Create Mondaycom Board Items From Jotform Submissions With Field Mapping",
+    "url": "https://n8n.io/workflows/8231-create-mondaycom-board-items-from-jotform-submissions-with-field-mapping/"
+  },
+  {
+    "id": "8230",
+    "title": "Generate And Split Sample Data Records Using Javascript And Python",
+    "url": "https://n8n.io/workflows/8230-generate-and-split-sample-data-records-using-javascript-and-python/"
+  },
+  {
+    "id": "8229",
+    "title": "Research Business Leads With Perplexity Ai And Save To Google Sheets Using Openai",
+    "url": "https://n8n.io/workflows/8229-research-business-leads-with-perplexity-ai-and-save-to-google-sheets-using-openai/"
+  },
+  {
+    "id": "8228",
+    "title": "Supabase Storage Tutorial Upload Fetch Sign And List Files",
+    "url": "https://n8n.io/workflows/8228-supabase-storage-tutorial-upload-fetch-sign-and-list-files/"
+  },
+  {
+    "id": "8227",
+    "title": "Learn Evaluate Tool Tutorial For Beginners With Gemini And Google Sheets",
+    "url": "https://n8n.io/workflows/8227-learn-evaluate-tool-tutorial-for-beginners-with-gemini-and-google-sheets/"
+  },
+  {
+    "id": "8226",
+    "title": "Generate Unlimited E Commerce Ad Creative With Nano Banana Image Generator",
+    "url": "https://n8n.io/workflows/8226-generate-unlimited-e-commerce-ad-creative-with-nano-banana-image-generator/"
+  },
+  {
+    "id": "8224",
+    "title": "Automate Linkedin Invitations With Browserflow And Google Sheets Tracking",
+    "url": "https://n8n.io/workflows/8224-automate-linkedin-invitations-with-browserflow-and-google-sheets-tracking/"
+  },
+  {
+    "id": "8223",
+    "title": "Auto Post Platform Optimized Content To X And Threads With Late Api And Google Sheets",
+    "url": "https://n8n.io/workflows/8223-auto-post-platform-optimized-content-to-x-and-threads-with-late-api-and-google-sheets/"
+  },
+  {
+    "id": "8222",
+    "title": "Turn Ideas Into Movies With Deepseek Runwayml Elevenlabs And Creatomate",
+    "url": "https://n8n.io/workflows/8222-turn-ideas-into-movies-with-deepseek-runwayml-elevenlabs-and-creatomate/"
+  },
+  {
+    "id": "8221",
+    "title": "Generate Custom Recipes And Restaurant Style Food Images With Telegram Bot",
+    "url": "https://n8n.io/workflows/8221-generate-custom-recipes-and-restaurant-style-food-images-with-telegram-bot/"
+  },
+  {
+    "id": "8220",
+    "title": "Answer Questions About Documentation With Bigquery Rag And Openai",
+    "url": "https://n8n.io/workflows/8220-answer-questions-about-documentation-with-bigquery-rag-and-openai/"
+  },
+  {
+    "id": "8219",
+    "title": "Scrape Linkedin Jobs With Gemini Ai And Store In Google Sheets Using Rss",
+    "url": "https://n8n.io/workflows/8219-scrape-linkedin-jobs-with-gemini-ai-and-store-in-google-sheets-using-rss/"
+  },
+  {
+    "id": "8218",
+    "title": "Web Research Assistant Automated Search And Scraping With Gemini Ai And Spreadsheet Reports",
+    "url": "https://n8n.io/workflows/8218-web-research-assistant-automated-search-and-scraping-with-gemini-ai-and-spreadsheet-reports/"
+  },
+  {
+    "id": "8216",
+    "title": "Classify And Convert Github Issues To Jira Tickets With Openai",
+    "url": "https://n8n.io/workflows/8216-classify-and-convert-github-issues-to-jira-tickets-with-openai/"
+  },
+  {
+    "id": "8215",
+    "title": "Connect Pipedrive Deal Outcomes To Ga4 And Google Ads Via Measurement Protocol",
+    "url": "https://n8n.io/workflows/8215-connect-pipedrive-deal-outcomes-to-ga4-and-google-ads-via-measurement-protocol/"
+  },
+  {
+    "id": "8214",
+    "title": "Generate Diverse Names For Uxui Mockups With Openai",
+    "url": "https://n8n.io/workflows/8214-generate-diverse-names-for-uxui-mockups-with-openai/"
+  },
+  {
+    "id": "8213",
+    "title": "Generate Ai Videos From Text Or Images With Veo 3 Api And Vietvidcom",
+    "url": "https://n8n.io/workflows/8213-generate-ai-videos-from-text-or-images-with-veo-3-api-and-vietvidcom/"
+  },
+  {
+    "id": "8212",
+    "title": "Automatic Email Categorization And Labeling In Zoho Mail With Gpt 4O Mini",
+    "url": "https://n8n.io/workflows/8212-automatic-email-categorization-and-labeling-in-zoho-mail-with-gpt-4o-mini/"
+  },
+  {
+    "id": "8211",
+    "title": "Extract Youtube Transcripts Via Google Sheets Or Api Webhook",
+    "url": "https://n8n.io/workflows/8211-extract-youtube-transcripts-via-google-sheets-or-api-webhook/"
+  },
+  {
+    "id": "8210",
+    "title": "Summarize Content From Urls Text And Pdfs Using Openai",
+    "url": "https://n8n.io/workflows/8210-summarize-content-from-urls-text-and-pdfs-using-openai/"
+  },
+  {
+    "id": "8209",
+    "title": "Build A Smart Chatbot With Gpt 5 Nano Web Search And Conversational Memory",
+    "url": "https://n8n.io/workflows/8209-build-a-smart-chatbot-with-gpt-5-nano-web-search-and-conversational-memory/"
+  },
+  {
+    "id": "8206",
+    "title": "Organizing Ui Toolbar Icons Apple Hig Standards And Gemini Ai",
+    "url": "https://n8n.io/workflows/8206-organizing-ui-toolbar-icons-apple-hig-standards-and-gemini-ai/"
+  },
+  {
+    "id": "8201",
+    "title": "Automate User Creation And Access Group Assignment In Curseduca",
+    "url": "https://n8n.io/workflows/8201-automate-user-creation-and-access-group-assignment-in-curseduca/"
+  },
+  {
+    "id": "8198",
+    "title": "Automated Email Validation With Google Sheets Hunterio And Emailvalidationio",
+    "url": "https://n8n.io/workflows/8198-automated-email-validation-with-google-sheets-hunterio-and-emailvalidationio/"
+  },
+  {
+    "id": "8197",
+    "title": "Personal Assistant For Calendar And Tasks With Gpt 4O Mini And Telegram",
+    "url": "https://n8n.io/workflows/8197-personal-assistant-for-calendar-and-tasks-with-gpt-4o-mini-and-telegram/"
+  },
+  {
+    "id": "8192",
+    "title": "Generate Seo Blog Posts From Web Searches With Mistral Ai And Google Drive",
+    "url": "https://n8n.io/workflows/8192-generate-seo-blog-posts-from-web-searches-with-mistral-ai-and-google-drive/"
+  },
+  {
+    "id": "8189",
+    "title": "Generate Ai Videos From Telegram Messages With Nano Banana And Veo 3",
+    "url": "https://n8n.io/workflows/8189-generate-ai-videos-from-telegram-messages-with-nano-banana-and-veo-3/"
+  },
+  {
+    "id": "8178",
+    "title": "Whatsapp Support Bot With Keyword Routing And Gpt 41 Mini Responses",
+    "url": "https://n8n.io/workflows/8178-whatsapp-support-bot-with-keyword-routing-and-gpt-41-mini-responses/"
+  },
+  {
+    "id": "8177",
+    "title": "Generate Sales Reports From Google Sheets With Azure Openai And Telegram",
+    "url": "https://n8n.io/workflows/8177-generate-sales-reports-from-google-sheets-with-azure-openai-and-telegram/"
+  },
+  {
+    "id": "8175",
+    "title": "Auto Track Amazon Prices With Google Gemini And Send Alerts To Telegram",
+    "url": "https://n8n.io/workflows/8175-auto-track-amazon-prices-with-google-gemini-and-send-alerts-to-telegram/"
+  },
+  {
+    "id": "8165",
+    "title": "Automate Facebook Group Posting With Telegram Messages And Google Sheets",
+    "url": "https://n8n.io/workflows/8165-automate-facebook-group-posting-with-telegram-messages-and-google-sheets/"
+  },
+  {
+    "id": "8162",
+    "title": "Daily Weather Reports With Openweathermap And Telegram Bot",
+    "url": "https://n8n.io/workflows/8162-daily-weather-reports-with-openweathermap-and-telegram-bot/"
+  },
+  {
+    "id": "8157",
+    "title": "Transform Websites Into A Conversational Knowledge Base With Openai Rag And Supabase",
+    "url": "https://n8n.io/workflows/8157-transform-websites-into-a-conversational-knowledge-base-with-openai-rag-and-supabase/"
+  },
+  {
+    "id": "8156",
+    "title": "Create Jira Tickets From Streamlit Forms With Webhook And Rest Api",
+    "url": "https://n8n.io/workflows/8156-create-jira-tickets-from-streamlit-forms-with-webhook-and-rest-api/"
+  },
+  {
+    "id": "8134",
+    "title": "Automatically Collect And Process Google News Articles To Google Sheets",
+    "url": "https://n8n.io/workflows/8134-automatically-collect-and-process-google-news-articles-to-google-sheets/"
+  },
+  {
+    "id": "8109",
+    "title": "Daily Email And Calendar Summaries To Slack Using Gemini Ai And Google Workspace",
+    "url": "https://n8n.io/workflows/8109-daily-email-and-calendar-summaries-to-slack-using-gemini-ai-and-google-workspace/"
+  },
+  {
+    "id": "8072",
+    "title": "Automated Google Drive To Ftp Transfer With Json Logging And Reports",
+    "url": "https://n8n.io/workflows/8072-automated-google-drive-to-ftp-transfer-with-json-logging-and-reports/"
+  },
+  {
+    "id": "8016",
+    "title": "Protect Telegram Groups With Math Captcha Verification And Google Sheets",
+    "url": "https://n8n.io/workflows/8016-protect-telegram-groups-with-math-captcha-verification-and-google-sheets/"
+  },
+  {
+    "id": "8006",
+    "title": "Create Digital Checks With Onlinecheckwriter Using Forms",
+    "url": "https://n8n.io/workflows/8006-create-digital-checks-with-onlinecheckwriter-using-forms/"
+  },
+  {
+    "id": "7927",
+    "title": "Scrapingbee And Google Sheets Integration Template",
+    "url": "https://n8n.io/workflows/7927-scrapingbee-and-google-sheets-integration-template/"
+  },
+  {
+    "id": "7326",
+    "title": "Send Multi Channel Medication Reminders To Patients",
+    "url": "https://n8n.io/workflows/7326-send-multi-channel-medication-reminders-to-patients/"
+  },
+  {
+    "id": "7325",
+    "title": "Automate Prescription Delivery Via Google Sheets To Email And Whatsapp",
+    "url": "https://n8n.io/workflows/7325-automate-prescription-delivery-via-google-sheets-to-email-and-whatsapp/"
+  },
+  {
+    "id": "7317",
+    "title": "Automated Patient Vitals Monitoring And Alerts With Philips Intellivue And Google Sheets",
+    "url": "https://n8n.io/workflows/7317-automated-patient-vitals-monitoring-and-alerts-with-philips-intellivue-and-google-sheets/"
+  },
+  {
+    "id": "7253",
+    "title": "Monitor Blood Bank Stock And Send Low Level Alerts With Google Sheets And Whatsapp",
+    "url": "https://n8n.io/workflows/7253-monitor-blood-bank-stock-and-send-low-level-alerts-with-google-sheets-and-whatsapp/"
+  },
+  {
+    "id": "7252",
+    "title": "Daily Mlb Pitcher Vs Batter Matchup Analysis With Google Sheets And Telegram",
+    "url": "https://n8n.io/workflows/7252-daily-mlb-pitcher-vs-batter-matchup-analysis-with-google-sheets-and-telegram/"
+  },
+  {
+    "id": "7247",
+    "title": "Send Patient Condition Updates With Google Sheets Email And Whatsapp Alerts",
+    "url": "https://n8n.io/workflows/7247-send-patient-condition-updates-with-google-sheets-email-and-whatsapp-alerts/"
+  },
+  {
+    "id": "7185",
+    "title": "Automate Contract Employee Lifecycle With Google Docs Docusign And Airtable",
+    "url": "https://n8n.io/workflows/7185-automate-contract-employee-lifecycle-with-google-docs-docusign-and-airtable/"
+  },
+  {
+    "id": "7184",
+    "title": "Automated Tiktok Video Downloader Bot No Watermark Using N8N And Telegram",
+    "url": "https://n8n.io/workflows/7184-automated-tiktok-video-downloader-bot-no-watermark-using-n8n-and-telegram/"
+  },
+  {
+    "id": "7044",
+    "title": "Track Student Arrival With Ios Automation Google Sheets And Email Alerts",
+    "url": "https://n8n.io/workflows/7044-track-student-arrival-with-ios-automation-google-sheets-and-email-alerts/"
+  },
+  {
+    "id": "7043",
+    "title": "Track Student Attendance With Mobile App Google Sheets And Email Alerts",
+    "url": "https://n8n.io/workflows/7043-track-student-attendance-with-mobile-app-google-sheets-and-email-alerts/"
+  },
+  {
+    "id": "7042",
+    "title": "Student Absence Alerts Via Email And Whatsapp With Attendance Tracking",
+    "url": "https://n8n.io/workflows/7042-student-absence-alerts-via-email-and-whatsapp-with-attendance-tracking/"
+  },
+  {
+    "id": "7035",
+    "title": "Automate School Notice Distribution Via Whatsapp Email And Excel",
+    "url": "https://n8n.io/workflows/7035-automate-school-notice-distribution-via-whatsapp-email-and-excel/"
+  },
+  {
+    "id": "6996",
+    "title": "Automate Student Admission Process With Excel Validation And Email Notifications",
+    "url": "https://n8n.io/workflows/6996-automate-student-admission-process-with-excel-validation-and-email-notifications/"
+  },
+  {
+    "id": "6650",
+    "title": "Track Shipments With Dhldelhivery Apis And Send Google Sheets Updates To Customers Via Whatsappemail",
+    "url": "https://n8n.io/workflows/6650-track-shipments-with-dhldelhivery-apis-and-send-google-sheets-updates-to-customers-via-whatsappemail/"
+  },
+  {
+    "id": "6642",
+    "title": "Copyright Infringement Detector With Scrapegraphai And Automated Legal Response",
+    "url": "https://n8n.io/workflows/6642-copyright-infringement-detector-with-scrapegraphai-and-automated-legal-response/"
+  },
+  {
+    "id": "6636",
+    "title": "Monitor Construction Stock And Send Low Inventory Alerts With Google Sheets",
+    "url": "https://n8n.io/workflows/6636-monitor-construction-stock-and-send-low-inventory-alerts-with-google-sheets/"
+  },
+  {
+    "id": "6567",
+    "title": "Automate Regulatory Compliance Monitoring With Scrapegraphai And Email Alerts",
+    "url": "https://n8n.io/workflows/6567-automate-regulatory-compliance-monitoring-with-scrapegraphai-and-email-alerts/"
+  },
+  {
+    "id": "6471",
+    "title": "Magento 2 Low Stock Alert Via Slack And Gmail Msi Compatible",
+    "url": "https://n8n.io/workflows/6471-magento-2-low-stock-alert-via-slack-and-gmail-msi-compatible/"
+  },
+  {
+    "id": "6436",
+    "title": "Automate Workflow And Credentials Backup To S3 With Retention Management",
+    "url": "https://n8n.io/workflows/6436-automate-workflow-and-credentials-backup-to-s3-with-retention-management/"
+  },
+  {
+    "id": "6407",
+    "title": "Automate Property Link Shortening And Qr Code Generation With Google Sheets And Bitly",
+    "url": "https://n8n.io/workflows/6407-automate-property-link-shortening-and-qr-code-generation-with-google-sheets-and-bitly/"
+  },
+  {
+    "id": "6306",
+    "title": "Bin Code Lookup With Apilayer Api",
+    "url": "https://n8n.io/workflows/6306-bin-code-lookup-with-apilayer-api/"
+  },
+  {
+    "id": "6292",
+    "title": "Master Data Transformation With The Complete Set Node Guide",
+    "url": "https://n8n.io/workflows/6292-master-data-transformation-with-the-complete-set-node-guide/"
+  },
+  {
+    "id": "6284",
+    "title": "Automate Multi Bank Transaction Sync And Reporting With Gocardless And Maybe Finance",
+    "url": "https://n8n.io/workflows/6284-automate-multi-bank-transaction-sync-and-reporting-with-gocardless-and-maybe-finance/"
+  },
+  {
+    "id": "6235",
+    "title": "Live Flight Fare Tracker With Aviation Stack Api Alerts Via Gmail And Telegram",
+    "url": "https://n8n.io/workflows/6235-live-flight-fare-tracker-with-aviation-stack-api-alerts-via-gmail-and-telegram/"
+  },
+  {
+    "id": "6232",
+    "title": "Test Your Json Skills With Interactive Challenges And Instant Feedback",
+    "url": "https://n8n.io/workflows/6232-test-your-json-skills-with-interactive-challenges-and-instant-feedback/"
+  },
+  {
+    "id": "6227",
+    "title": "Real Time Flight Tracking With Aviation Api Slack And Sendgridtwilio Alerts",
+    "url": "https://n8n.io/workflows/6227-real-time-flight-tracking-with-aviation-api-slack-and-sendgridtwilio-alerts/"
+  },
+  {
+    "id": "6149",
+    "title": "Learn N8N Interactively Lesson 1 Data Flow Execution And Debugging",
+    "url": "https://n8n.io/workflows/6149-learn-n8n-interactively-lesson-1-data-flow-execution-and-debugging/"
+  },
+  {
+    "id": "6110",
+    "title": "Monitor Shopify Inventory And Send Low Stock Alerts To Slack",
+    "url": "https://n8n.io/workflows/6110-monitor-shopify-inventory-and-send-low-stock-alerts-to-slack/"
+  },
+  {
+    "id": "6107",
+    "title": "Telegram Bot For Finding Top Rated Restaurants With Google Maps Via Serpapi",
+    "url": "https://n8n.io/workflows/6107-telegram-bot-for-finding-top-rated-restaurants-with-google-maps-via-serpapi/"
+  },
+  {
+    "id": "6074",
+    "title": "Automate Supplier Risk Scoring With Dandb Newsapi And Alerts To Gmail",
+    "url": "https://n8n.io/workflows/6074-automate-supplier-risk-scoring-with-dandb-newsapi-and-alerts-to-gmail/"
+  },
+  {
+    "id": "6061",
+    "title": "Ai Powered Tarot Readings Via Imessage With Gpt And Blooio",
+    "url": "https://n8n.io/workflows/6061-ai-powered-tarot-readings-via-imessage-with-gpt-and-blooio/"
+  },
+  {
+    "id": "5911",
+    "title": "Preventing Google Sheets Quota Errors During Batch Processing",
+    "url": "https://n8n.io/workflows/5911-preventing-google-sheets-quota-errors-during-batch-processing/"
+  },
+  {
+    "id": "5758",
+    "title": "Meetup Registration System With Postgresql Database And Interactive Giveaway Tool",
+    "url": "https://n8n.io/workflows/5758-meetup-registration-system-with-postgresql-database-and-interactive-giveaway-tool/"
+  },
+  {
+    "id": "5709",
+    "title": "Create And Manage Short Urls With Telegram Bot Mongodb And Nginx Redirects",
+    "url": "https://n8n.io/workflows/5709-create-and-manage-short-urls-with-telegram-bot-mongodb-and-nginx-redirects/"
+  },
+  {
+    "id": "5708",
+    "title": "Create A Self Contained Crud App With Redis Storage And Html Frontend",
+    "url": "https://n8n.io/workflows/5708-create-a-self-contained-crud-app-with-redis-storage-and-html-frontend/"
+  },
+  {
+    "id": "5705",
+    "title": "Record Payout From Stripe In Wave Accounting",
+    "url": "https://n8n.io/workflows/5705-record-payout-from-stripe-in-wave-accounting/"
+  },
+  {
+    "id": "5661",
+    "title": "Ai Image Nudity Detection Tool With Image Moderation Api",
+    "url": "https://n8n.io/workflows/5661-ai-image-nudity-detection-tool-with-image-moderation-api/"
+  },
+  {
+    "id": "5638",
+    "title": "Star Wars Language Translation Api For Ai Agents 6 Languages",
+    "url": "https://n8n.io/workflows/5638-star-wars-language-translation-api-for-ai-agents-6-languages/"
+  },
+  {
+    "id": "5624",
+    "title": "Connect Ai Agents To Epa Clean Air Act Data With Mcp Integration",
+    "url": "https://n8n.io/workflows/5624-connect-ai-agents-to-epa-clean-air-act-data-with-mcp-integration/"
+  },
+  {
+    "id": "5575",
+    "title": "Create Ebay Listing Drafts With Ai Agents Via Mcp Server",
+    "url": "https://n8n.io/workflows/5575-create-ebay-listing-drafts-with-ai-agents-via-mcp-server/"
+  },
+  {
+    "id": "5459",
+    "title": "Ai Powered Telegram Trivia Bot With Auto Question Generation And User Management",
+    "url": "https://n8n.io/workflows/5459-ai-powered-telegram-trivia-bot-with-auto-question-generation-and-user-management/"
+  },
+  {
+    "id": "5407",
+    "title": "Learn Code Node Javascript With An Interactive Hands On Tutorial",
+    "url": "https://n8n.io/workflows/5407-learn-code-node-javascript-with-an-interactive-hands-on-tutorial/"
+  },
+  {
+    "id": "5363",
+    "title": "Strava Tool Mcp Server All 9 Operations",
+    "url": "https://n8n.io/workflows/5363-strava-tool-mcp-server-all-9-operations/"
+  },
+  {
+    "id": "5360",
+    "title": "Spotify Tool Mcp Server All 30 Operations",
+    "url": "https://n8n.io/workflows/5360-spotify-tool-mcp-server-all-30-operations/"
+  },
+  {
+    "id": "5344",
+    "title": "One Simple Api Tool Mcp Server All 10 Operations",
+    "url": "https://n8n.io/workflows/5344-one-simple-api-tool-mcp-server-all-10-operations/"
+  },
+  {
+    "id": "5279",
+    "title": "Expose Get Tracking Details To Ai Agents Via Dhl Tool Mcp Server",
+    "url": "https://n8n.io/workflows/5279-expose-get-tracking-details-to-ai-agents-via-dhl-tool-mcp-server/"
+  },
+  {
+    "id": "5270",
+    "title": "Learn N8N Keyboard Shortcuts With An Interactive Hands On Tutorial Workflow",
+    "url": "https://n8n.io/workflows/5270-learn-n8n-keyboard-shortcuts-with-an-interactive-hands-on-tutorial-workflow/"
+  },
+  {
+    "id": "5200",
+    "title": "Ai Powered One Click Virtual Fitting Room For Woocommerce Shopify Prestashop",
+    "url": "https://n8n.io/workflows/5200-ai-powered-one-click-virtual-fitting-room-for-woocommerce-shopify-prestashop/"
+  },
+  {
+    "id": "5186",
+    "title": "Mattermost Tool Mcp Server All 19 Operations",
+    "url": "https://n8n.io/workflows/5186-mattermost-tool-mcp-server-all-19-operations/"
+  },
+  {
+    "id": "5171",
+    "title": "Learn Api Fundamentals With An Interactive Hands On Tutorial Workflow",
+    "url": "https://n8n.io/workflows/5171-learn-api-fundamentals-with-an-interactive-hands-on-tutorial-workflow/"
+  },
+  {
+    "id": "5114",
+    "title": "Onfleet Tool Mcp Server All 37 Operations",
+    "url": "https://n8n.io/workflows/5114-onfleet-tool-mcp-server-all-37-operations/"
+  },
+  {
+    "id": "5102",
+    "title": "Google Sheets Ui For N8N Workflow",
+    "url": "https://n8n.io/workflows/5102-google-sheets-ui-for-n8n-workflow/"
+  },
+  {
+    "id": "5095",
+    "title": "Philips Hue Tool Mcp Server All 4 Operations",
+    "url": "https://n8n.io/workflows/5095-philips-hue-tool-mcp-server-all-4-operations/"
+  },
+  {
+    "id": "5094",
+    "title": "Plivo Tool Mcp Server All 3 Operations",
+    "url": "https://n8n.io/workflows/5094-plivo-tool-mcp-server-all-3-operations/"
+  },
+  {
+    "id": "5088",
+    "title": "Seven Tool Mcp Server With Both Available Operations",
+    "url": "https://n8n.io/workflows/5088-seven-tool-mcp-server-with-both-available-operations/"
+  },
+  {
+    "id": "4976",
+    "title": "Batch Delete Posts And Featured Images In Wordpress",
+    "url": "https://n8n.io/workflows/4976-batch-delete-posts-and-featured-images-in-wordpress/"
+  },
+  {
+    "id": "4948",
+    "title": "Bulk Delete Slack Messages With Smart Filtering And Confirmations",
+    "url": "https://n8n.io/workflows/4948-bulk-delete-slack-messages-with-smart-filtering-and-confirmations/"
+  },
+  {
+    "id": "4753",
+    "title": "Ai Multi Stop Planner For Circular Logistics With Gpt 4O And Open Route Api",
+    "url": "https://n8n.io/workflows/4753-ai-multi-stop-planner-for-circular-logistics-with-gpt-4o-and-open-route-api/"
+  },
+  {
+    "id": "4710",
+    "title": "Generate Customizable Random Strings With Interactive Forms",
+    "url": "https://n8n.io/workflows/4710-generate-customizable-random-strings-with-interactive-forms/"
+  },
+  {
+    "id": "4595",
+    "title": "Tinyurl Shortener Via Webhook",
+    "url": "https://n8n.io/workflows/4595-tinyurl-shortener-via-webhook/"
+  },
+  {
+    "id": "4571",
+    "title": "Retrieve Deadlock Game Match Statistics And Send To Telegram",
+    "url": "https://n8n.io/workflows/4571-retrieve-deadlock-game-match-statistics-and-send-to-telegram/"
+  },
+  {
+    "id": "4563",
+    "title": "Monitor Elderly Health Vitals And Send Alerts With Apple Health Twilio And Gmail",
+    "url": "https://n8n.io/workflows/4563-monitor-elderly-health-vitals-and-send-alerts-with-apple-health-twilio-and-gmail/"
+  },
+  {
+    "id": "4438",
+    "title": "Goodreads Quote Extraction With Bright Data And Gemini",
+    "url": "https://n8n.io/workflows/4438-goodreads-quote-extraction-with-bright-data-and-gemini/"
+  },
+  {
+    "id": "4155",
+    "title": "Real Time Gaming Strategy Coach With Telegram And Gpt 4O Vision",
+    "url": "https://n8n.io/workflows/4155-real-time-gaming-strategy-coach-with-telegram-and-gpt-4o-vision/"
+  },
+  {
+    "id": "4065",
+    "title": "Serve Inspirational Quotes On Demand Via Webhook Using Zenquotes Api",
+    "url": "https://n8n.io/workflows/4065-serve-inspirational-quotes-on-demand-via-webhook-using-zenquotes-api/"
+  },
+  {
+    "id": "3979",
+    "title": "Raw Materials Inventory Management With Google Sheets Supabase And Approvals",
+    "url": "https://n8n.io/workflows/3979-raw-materials-inventory-management-with-google-sheets-supabase-and-approvals/"
+  },
+  {
+    "id": "3891",
+    "title": "Explore N8N Nodes In A Visual Reference Library",
+    "url": "https://n8n.io/workflows/3891-explore-n8n-nodes-in-a-visual-reference-library/"
+  },
+  {
+    "id": "3829",
+    "title": "Ai Agent Web Search Using Searchapi And Llm",
+    "url": "https://n8n.io/workflows/3829-ai-agent-web-search-using-searchapi-and-llm/"
+  },
+  {
+    "id": "3779",
+    "title": "Enhance Chat Responses With Real Time Search Via Bright Data Mcp And Gemini Ai",
+    "url": "https://n8n.io/workflows/3779-enhance-chat-responses-with-real-time-search-via-bright-data-mcp-and-gemini-ai/"
+  },
+  {
+    "id": "3704",
+    "title": "Generate Pix Payment Qr Codes For Any Brazilian Bank Key",
+    "url": "https://n8n.io/workflows/3704-generate-pix-payment-qr-codes-for-any-brazilian-bank-key/"
+  },
+  {
+    "id": "3695",
+    "title": "Meta Ads Low Balance Alert Auto Notification Via Whatsapp Or Email",
+    "url": "https://n8n.io/workflows/3695-meta-ads-low-balance-alert-auto-notification-via-whatsapp-or-email/"
+  },
+  {
+    "id": "3456",
+    "title": "Automated Discord Chatbot For Chat Interaction In Channel Using Gemini 20 Flash",
+    "url": "https://n8n.io/workflows/3456-automated-discord-chatbot-for-chat-interaction-in-channel-using-gemini-20-flash/"
+  },
+  {
+    "id": "3351",
+    "title": "Automated Discord Spam Moderation With Ai And Human In The Loop",
+    "url": "https://n8n.io/workflows/3351-automated-discord-spam-moderation-with-ai-and-human-in-the-loop/"
+  },
+  {
+    "id": "3326",
+    "title": "Build Custom Ai Agent With Langchain And Gemini Self Hosted",
+    "url": "https://n8n.io/workflows/3326-build-custom-ai-agent-with-langchain-and-gemini-self-hosted/"
+  },
+  {
+    "id": "3282",
+    "title": "Create Notes And Comments On Any Odoo Model Record",
+    "url": "https://n8n.io/workflows/3282-create-notes-and-comments-on-any-odoo-model-record/"
+  },
+  {
+    "id": "3204",
+    "title": "Automate Delivery Confirmation With Telegram Bot Google Drive And Gmail",
+    "url": "https://n8n.io/workflows/3204-automate-delivery-confirmation-with-telegram-bot-google-drive-and-gmail/"
+  },
+  {
+    "id": "3150",
+    "title": "Extract And Decode Google News Rss Urls To Clean Article Links",
+    "url": "https://n8n.io/workflows/3150-extract-and-decode-google-news-rss-urls-to-clean-article-links/"
+  },
+  {
+    "id": "3098",
+    "title": "Fetch Squarespace Blog And Event Collections To Google Sheets",
+    "url": "https://n8n.io/workflows/3098-fetch-squarespace-blog-and-event-collections-to-google-sheets/"
+  },
+  {
+    "id": "2980",
+    "title": "Nightly Discord Channel Cleanup",
+    "url": "https://n8n.io/workflows/2980-nightly-discord-channel-cleanup/"
+  },
+  {
+    "id": "2936",
+    "title": "Get Notified When Meta Ads Balance Is Low",
+    "url": "https://n8n.io/workflows/2936-get-notified-when-meta-ads-balance-is-low/"
+  },
+  {
+    "id": "2843",
+    "title": "Automate Sports Betting Data With The Odds Api",
+    "url": "https://n8n.io/workflows/2843-automate-sports-betting-data-with-the-odds-api/"
+  },
+  {
+    "id": "2716",
+    "title": "Store Form Submission In Airtable",
+    "url": "https://n8n.io/workflows/2716-store-form-submission-in-airtable/"
+  },
+  {
+    "id": "2712",
+    "title": "Form With Dynamic Dropdown Field",
+    "url": "https://n8n.io/workflows/2712-form-with-dynamic-dropdown-field/"
+  },
+  {
+    "id": "2587",
+    "title": "Sync Entra User To Zammad User",
+    "url": "https://n8n.io/workflows/2587-sync-entra-user-to-zammad-user/"
+  },
+  {
+    "id": "2408",
+    "title": "User Verification And Login Using Auth0",
+    "url": "https://n8n.io/workflows/2408-user-verification-and-login-using-auth0/"
+  },
+  {
+    "id": "2383",
+    "title": "Iot Button Remote Spotify Control Integration With Mqtt",
+    "url": "https://n8n.io/workflows/2383-iot-button-remote-spotify-control-integration-with-mqtt/"
+  },
+  {
+    "id": "2333",
+    "title": "Recipe Recommendations With Qdrant And Mistral",
+    "url": "https://n8n.io/workflows/2333-recipe-recommendations-with-qdrant-and-mistral/"
+  },
+  {
+    "id": "2235",
+    "title": "Automated Ai Image Analysis And Response Via Telegram",
+    "url": "https://n8n.io/workflows/2235-automated-ai-image-analysis-and-response-via-telegram/"
+  },
+  {
+    "id": "2223",
+    "title": "Set Credentials Dynamically Using Expressions",
+    "url": "https://n8n.io/workflows/2223-set-credentials-dynamically-using-expressions/"
+  },
+  {
+    "id": "2221",
+    "title": "Youtube Advanced Rss Generator With Telegram Formation",
+    "url": "https://n8n.io/workflows/2221-youtube-advanced-rss-generator-with-telegram-formation/"
+  },
+  {
+    "id": "2214",
+    "title": "Grist On Row Confirmed Create Row In Other Table",
+    "url": "https://n8n.io/workflows/2214-grist-on-row-confirmed-create-row-in-other-table/"
+  },
+  {
+    "id": "2192",
+    "title": "Streamline Your Zoom Meetings With Secure Automated Stripe Payments",
+    "url": "https://n8n.io/workflows/2192-streamline-your-zoom-meetings-with-secure-automated-stripe-payments/"
+  },
+  {
+    "id": "2097",
+    "title": "Import Multiple Manufacturers From Google Sheets To Shopware 6",
+    "url": "https://n8n.io/workflows/2097-import-multiple-manufacturers-from-google-sheets-to-shopware-6/"
+  },
+  {
+    "id": "2068",
+    "title": "Dubco Url Shortener",
+    "url": "https://n8n.io/workflows/2068-dubco-url-shortener/"
+  },
+  {
+    "id": "2064",
+    "title": "N8N Advanced Url Parsing And Shortening Workflow Switchyio Integration",
+    "url": "https://n8n.io/workflows/2064-n8n-advanced-url-parsing-and-shortening-workflow-switchyio-integration/"
+  },
+  {
+    "id": "2056",
+    "title": "Send Webflow Form Submissions To Discord Dynamically",
+    "url": "https://n8n.io/workflows/2056-send-webflow-form-submissions-to-discord-dynamically/"
+  },
+  {
+    "id": "2027",
+    "title": "Low Stock And Sold Out Watcher For Shopify",
+    "url": "https://n8n.io/workflows/2027-low-stock-and-sold-out-watcher-for-shopify/"
+  },
+  {
+    "id": "1954",
+    "title": "Ai Agent Chat",
+    "url": "https://n8n.io/workflows/1954-ai-agent-chat/"
+  },
+  {
+    "id": "1951",
+    "title": "Scrape And Summarize Webpages With Ai",
+    "url": "https://n8n.io/workflows/1951-scrape-and-summarize-webpages-with-ai/"
+  },
+  {
+    "id": "1934",
+    "title": "Telegram Ai Chatbot",
+    "url": "https://n8n.io/workflows/1934-telegram-ai-chatbot/"
+  },
+  {
+    "id": "1862",
+    "title": "Openai Gpt 3 Company Enrichment From Website Content",
+    "url": "https://n8n.io/workflows/1862-openai-gpt-3-company-enrichment-from-website-content/"
+  },
+  {
+    "id": "1799",
+    "title": "Rss Feed For Ard Audiothek Podcasts",
+    "url": "https://n8n.io/workflows/1799-rss-feed-for-ard-audiothek-podcasts/"
+  },
+  {
+    "id": "1765",
+    "title": "Get Slack Notifications When New Product Published On Woocommerce",
+    "url": "https://n8n.io/workflows/1765-get-slack-notifications-when-new-product-published-on-woocommerce/"
+  },
+  {
+    "id": "1750",
+    "title": "Creating An Api Endpoint",
+    "url": "https://n8n.io/workflows/1750-creating-an-api-endpoint/"
+  },
+  {
+    "id": "1748",
+    "title": "Pulling Data From Services That N8N Doesnt Have A Pre Built Integration For",
+    "url": "https://n8n.io/workflows/1748-pulling-data-from-services-that-n8n-doesnt-have-a-pre-built-integration-for/"
+  },
+  {
+    "id": "1747",
+    "title": "Joining Different Datasets",
+    "url": "https://n8n.io/workflows/1747-joining-different-datasets/"
+  },
+  {
+    "id": "1700",
+    "title": "Very Quick Quickstart",
+    "url": "https://n8n.io/workflows/1700-very-quick-quickstart/"
+  },
+  {
+    "id": "1583",
+    "title": "Multilanguage Telegram Bot",
+    "url": "https://n8n.io/workflows/1583-multilanguage-telegram-bot/"
+  },
+  {
+    "id": "1547",
+    "title": "Create An Onfleet Task When A File In Google Drive Is Updated",
+    "url": "https://n8n.io/workflows/1547-create-an-onfleet-task-when-a-file-in-google-drive-is-updated/"
+  },
+  {
+    "id": "1534",
+    "title": "Back Up Your N8N Workflows To Github",
+    "url": "https://n8n.io/workflows/1534-back-up-your-n8n-workflows-to-github/"
+  },
+  {
+    "id": "1532",
+    "title": "Send Onfleet Driver Signup Messages In Slack",
+    "url": "https://n8n.io/workflows/1532-send-onfleet-driver-signup-messages-in-slack/"
+  },
+  {
+    "id": "1531",
+    "title": "Create A Onfleet Task For A New Shopify Fulfilment",
+    "url": "https://n8n.io/workflows/1531-create-a-onfleet-task-for-a-new-shopify-fulfilment/"
+  },
+  {
+    "id": "1528",
+    "title": "Send A Discord Message When A Certain Onfleet Event Happens",
+    "url": "https://n8n.io/workflows/1528-send-a-discord-message-when-a-certain-onfleet-event-happens/"
+  },
+  {
+    "id": "1524",
+    "title": "Create A Onfleet Task For A New Added Row In Airtable",
+    "url": "https://n8n.io/workflows/1524-create-a-onfleet-task-for-a-new-added-row-in-airtable/"
+  },
+  {
+    "id": "1458",
+    "title": "Notify On Slack When New Product Is Added In Woocommerce",
+    "url": "https://n8n.io/workflows/1458-notify-on-slack-when-new-product-is-added-in-woocommerce/"
+  },
+  {
+    "id": "1455",
+    "title": "Handle Gdpr Data Deletion Requests With Slack",
+    "url": "https://n8n.io/workflows/1455-handle-gdpr-data-deletion-requests-with-slack/"
+  },
+  {
+    "id": "1435",
+    "title": "Convert Json To An Excel File",
+    "url": "https://n8n.io/workflows/1435-convert-json-to-an-excel-file/"
+  },
+  {
+    "id": "1415",
+    "title": "Plex Automatic Qbittorent Throttler",
+    "url": "https://n8n.io/workflows/1415-plex-automatic-qbittorent-throttler/"
+  },
+  {
+    "id": "1373",
+    "title": "Create A New User In Notion Based On The Signup Form Submission",
+    "url": "https://n8n.io/workflows/1373-create-a-new-user-in-notion-based-on-the-signup-form-submission/"
+  },
+  {
+    "id": "1330",
+    "title": "Demonstrates The Use Of The Dollaritemindex Method",
+    "url": "https://n8n.io/workflows/1330-demonstrates-the-use-of-the-dollaritemindex-method/"
+  },
+  {
+    "id": "1216",
+    "title": "Detect Toxic Language In Telegram Messages",
+    "url": "https://n8n.io/workflows/1216-detect-toxic-language-in-telegram-messages/"
+  },
+  {
+    "id": "1093",
+    "title": "Build A Self Hosted Url Shortener With A Dashboard",
+    "url": "https://n8n.io/workflows/1093-build-a-self-hosted-url-shortener-with-a-dashboard/"
+  },
+  {
+    "id": "1041",
+    "title": "Create Update And Get An Object From Bubble",
+    "url": "https://n8n.io/workflows/1041-create-update-and-get-an-object-from-bubble/"
+  },
+  {
+    "id": "996",
+    "title": "Split In Batches Node Currentrunindex Example",
+    "url": "https://n8n.io/workflows/996-split-in-batches-node-currentrunindex-example/"
+  },
+  {
+    "id": "993",
+    "title": "Receive Transfer Updates From Wise And Add To Airtable",
+    "url": "https://n8n.io/workflows/993-receive-transfer-updates-from-wise-and-add-to-airtable/"
+  },
+  {
+    "id": "992",
+    "title": "Manage Transfers Automatically In Wise",
+    "url": "https://n8n.io/workflows/992-manage-transfers-automatically-in-wise/"
+  },
+  {
+    "id": "982",
+    "title": "Gender Inclusive Language Bot For Mattermost",
+    "url": "https://n8n.io/workflows/982-gender-inclusive-language-bot-for-mattermost/"
+  },
+  {
+    "id": "966",
+    "title": "Send Weather Alerts To Your Mobile Phone With Openweathermap And Signl4",
+    "url": "https://n8n.io/workflows/966-send-weather-alerts-to-your-mobile-phone-with-openweathermap-and-signl4/"
+  },
+  {
+    "id": "960",
+    "title": "Create Update And Get A Webinar In Gotowebinar",
+    "url": "https://n8n.io/workflows/960-create-update-and-get-a-webinar-in-gotowebinar/"
+  },
+  {
+    "id": "935",
+    "title": "Check For Preview For A Link",
+    "url": "https://n8n.io/workflows/935-check-for-preview-for-a-link/"
+  },
+  {
+    "id": "934",
+    "title": "Insert And Retrieve Data From A Table In Stackby",
+    "url": "https://n8n.io/workflows/934-insert-and-retrieve-data-from-a-table-in-stackby/"
+  },
+  {
+    "id": "916",
+    "title": "Store Responses From Typeform Into Airtable",
+    "url": "https://n8n.io/workflows/916-store-responses-from-typeform-into-airtable/"
+  },
+  {
+    "id": "878",
+    "title": "N8N Espanol Bot Multi Idioma Nocode",
+    "url": "https://n8n.io/workflows/878-n8n-espanol-bot-multi-idioma-nocode/"
+  },
+  {
+    "id": "871",
+    "title": "N8N Espanol Tratamiento De Textos",
+    "url": "https://n8n.io/workflows/871-n8n-espanol-tratamiento-de-textos/"
+  },
+  {
+    "id": "848",
+    "title": "Send A Message On Mattermost When An Order Is Created In Woocommerce",
+    "url": "https://n8n.io/workflows/848-send-a-message-on-mattermost-when-an-order-is-created-in-woocommerce/"
+  },
+  {
+    "id": "832",
+    "title": "Create A Channel Add A Member And Post A Message To The Channel On Mattermost",
+    "url": "https://n8n.io/workflows/832-create-a-channel-add-a-member-and-post-a-message-to-the-channel-on-mattermost/"
+  },
+  {
+    "id": "818",
+    "title": "Insert And Update Data In Airtable",
+    "url": "https://n8n.io/workflows/818-insert-and-update-data-in-airtable/"
+  },
+  {
+    "id": "815",
+    "title": "Create A Short Url And Get The Statistics Of The Url",
+    "url": "https://n8n.io/workflows/815-create-a-short-url-and-get-the-statistics-of-the-url/"
+  },
+  {
+    "id": "779",
+    "title": "Create Update And Get An Entry In Strapi",
+    "url": "https://n8n.io/workflows/779-create-update-and-get-an-entry-in-strapi/"
+  },
+  {
+    "id": "766",
+    "title": "Create Multiple Json Items From An Array",
+    "url": "https://n8n.io/workflows/766-create-multiple-json-items-from-an-array/"
+  },
+  {
+    "id": "724",
+    "title": "Manage Room Members In Matrix",
+    "url": "https://n8n.io/workflows/724-manage-room-members-in-matrix/"
+  },
+  {
+    "id": "710",
+    "title": "Manage Users Using The G Suite Admin Node",
+    "url": "https://n8n.io/workflows/710-manage-users-using-the-g-suite-admin-node/"
+  },
+  {
+    "id": "688",
+    "title": "Execute Set Node Based On Function Output",
+    "url": "https://n8n.io/workflows/688-execute-set-node-based-on-function-output/"
+  },
+  {
+    "id": "687",
+    "title": "Read Rss Feed From Two Different Sources",
+    "url": "https://n8n.io/workflows/687-read-rss-feed-from-two-different-sources/"
+  },
+  {
+    "id": "600",
+    "title": "Insert And Read Data From Google Sheets",
+    "url": "https://n8n.io/workflows/600-insert-and-read-data-from-google-sheets/"
+  },
+  {
+    "id": "595",
+    "title": "Send A Message To A Channel On Twake",
+    "url": "https://n8n.io/workflows/595-send-a-message-to-a-channel-on-twake/"
+  },
+  {
+    "id": "588",
+    "title": "Execute Another Workflow",
+    "url": "https://n8n.io/workflows/588-execute-another-workflow/"
+  },
+  {
+    "id": "583",
+    "title": "Read An Rss Feed",
+    "url": "https://n8n.io/workflows/583-read-an-rss-feed/"
+  },
+  {
+    "id": "581",
+    "title": "Execute Set Node Based On Function Output",
+    "url": "https://n8n.io/workflows/581-execute-set-node-based-on-function-output/"
+  },
+  {
+    "id": "546",
+    "title": "Get All Posts From Wordpress",
+    "url": "https://n8n.io/workflows/546-get-all-posts-from-wordpress/"
+  },
+  {
+    "id": "541",
+    "title": "Receive Updates On Events In Jotform",
+    "url": "https://n8n.io/workflows/541-receive-updates-on-events-in-jotform/"
+  },
+  {
+    "id": "538",
+    "title": "Receive Updates For Eventbrite Events",
+    "url": "https://n8n.io/workflows/538-receive-updates-for-eventbrite-events/"
+  },
+  {
+    "id": "526",
+    "title": "Assign Values To Variables Using The Set Node",
+    "url": "https://n8n.io/workflows/526-assign-values-to-variables-using-the-set-node/"
+  },
+  {
+    "id": "524",
+    "title": "Get Todays Date And Day Using The Function Node",
+    "url": "https://n8n.io/workflows/524-get-todays-date-and-day-using-the-function-node/"
+  },
+  {
+    "id": "511",
+    "title": "Send An Sms Using Msg91",
+    "url": "https://n8n.io/workflows/511-send-an-sms-using-msg91/"
+  },
+  {
+    "id": "482",
+    "title": "Insert Data Into A New Row For A Table In Coda",
+    "url": "https://n8n.io/workflows/482-insert-data-into-a-new-row-for-a-table-in-coda/"
+  },
+  {
+    "id": "442",
+    "title": "Create A Url On Bitly",
+    "url": "https://n8n.io/workflows/442-create-a-url-on-bitly/"
+  },
+  {
+    "id": "438",
+    "title": "Create A Paypal Batch Payout",
+    "url": "https://n8n.io/workflows/438-create-a-paypal-batch-payout/"
+  },
+  {
+    "id": "351",
+    "title": "Webhooks With Mattermost",
+    "url": "https://n8n.io/workflows/351-webhooks-with-mattermost/"
+  },
+  {
+    "id": "159",
+    "title": "Send Rss Feed Data To Webhook",
+    "url": "https://n8n.io/workflows/159-send-rss-feed-data-to-webhook/"
+  },
+  {
+    "id": "19",
+    "title": "N8N Nodemation Basic Creating Your First Simple Workflow 23",
+    "url": "https://n8n.io/workflows/19-n8n-nodemation-basic-creating-your-first-simple-workflow-23/"
+  },
+  {
+    "id": "18",
+    "title": "N8N Nodemation Basic Getting Started On The Workflow Canvas 13",
+    "url": "https://n8n.io/workflows/18-n8n-nodemation-basic-getting-started-on-the-workflow-canvas-13/"
+  }
+]

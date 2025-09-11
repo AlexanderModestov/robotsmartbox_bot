@@ -1,6 +1,8 @@
 import logging
 import os
 import json
+import csv
+import math
 from aiogram import Router, types
 from aiogram.filters import CommandStart, Command
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
@@ -76,38 +78,44 @@ async def about(message: types.Message):
         parse_mode="Markdown"
     )
 
-@content_router.message(Command('automatizations'))
-async def list_automatizations(message: types.Message, supabase_client):
-    """Show automatization examples with categories from Supabase"""
+@content_router.message(Command('marketplace'))
+async def list_marketplace(message: types.Message, supabase_client):
+    """Show marketplace with workflow categories from local folders"""
     try:
-        # Fetch categories from categories table
-        response = supabase_client.client.table('categories').select('id, name').order('name').execute()
-        
+        # Get workflow categories from local folders
+        workflows_path = os.path.join(os.getcwd(), 'workflows')
         categories = []
-        if response.data:
-            categories = response.data[:8]  # Limit to 8 categories to avoid keyboard size issues
+        
+        if os.path.exists(workflows_path):
+            # Get all directories in workflows folder
+            for item in os.listdir(workflows_path):
+                item_path = os.path.join(workflows_path, item)
+                if os.path.isdir(item_path):
+                    categories.append({
+                        'name': item.replace('_', ' ').replace('-', ' ').title(),
+                        'folder': item
+                    })
+        
+        # Sort categories alphabetically
+        categories.sort(key=lambda x: x['name'])
         
         # Create keyboard with categories
         keyboard_buttons = []
         
-        # Add "All automatizations" button first
+        # Add category buttons
         user_language = get_user_language(message)
         messages_class = get_messages_class(user_language)
-        keyboard_buttons.append([
-            InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["all_automations_button"], callback_data="automations_all")
-        ])
         
-        # Add category buttons
         for category in categories:
             keyboard_buttons.append([
-                InlineKeyboardButton(text=f"⚙️ {category['name']}", callback_data=f"automation_cat_{category['id']}")
+                InlineKeyboardButton(text=f"📁 {category['name']}", callback_data=f"marketplace_cat_{category['folder']}")
             ])
         
         keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
         
         # Log the command access
-        print(f"🤖 Automatizations command: User {message.from_user.id} ({message.from_user.username}) accessing automatization examples")
-        logging.info(f"Automatizations command: User {message.from_user.id} accessing automatization examples")
+        print(f"🛒 Marketplace command: User {message.from_user.id} ({message.from_user.username}) accessing marketplace")
+        logging.info(f"Marketplace command: User {message.from_user.id} accessing marketplace")
         
         # Get appropriate welcome text from messages
         automation_text = messages_class.AUTOMATIONS_CMD["welcome"]
@@ -119,10 +127,10 @@ async def list_automatizations(message: types.Message, supabase_client):
         )
         
     except Exception as e:
-        logging.error(f"Error in list_automatizations: {e}")
+        logging.error(f"Error in list_marketplace: {e}")
         user_language = get_user_language(message)
         messages_class = get_messages_class(user_language)
-        await message.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
+        await message.answer("Error loading marketplace. Please try again later.")
 
 @content_router.message(Command('booking'))
 async def schedule_command(message: types.Message):
@@ -507,6 +515,457 @@ async def handle_materials_podcasts(callback_query: types.CallbackQuery):
     except Exception as e:
         logging.error(f"Error in materials_podcasts: {e}")
         await callback_query.answer("Ошибка при загрузке подкастов")
+
+@content_router.callback_query(lambda c: c.data.startswith('marketplace_cat_'))
+async def handle_marketplace_category(callback_query: types.CallbackQuery):
+    """Handle marketplace category selection - show subcategories (subfolders)"""
+    try:
+        category_folder = callback_query.data.replace('marketplace_cat_', '')
+        
+        # Get subcategories from local folders
+        category_path = os.path.join(os.getcwd(), 'workflows', category_folder)
+        subcategories = []
+        
+        if os.path.exists(category_path):
+            # Get all directories in the category folder
+            for item in os.listdir(category_path):
+                item_path = os.path.join(category_path, item)
+                if os.path.isdir(item_path):
+                    subcategories.append({
+                        'name': item.replace('_', ' ').replace('-', ' ').title(),
+                        'folder': item
+                    })
+        
+        # Sort subcategories alphabetically
+        subcategories.sort(key=lambda x: x['name'])
+        
+        # Create keyboard with subcategories
+        keyboard_buttons = []
+        
+        # Add subcategory buttons
+        messages_class = get_messages_class('en')  # Default to English for callbacks
+        
+        for subcategory in subcategories:
+            keyboard_buttons.append([
+                InlineKeyboardButton(
+                    text=f"⚙️ {subcategory['name']}", 
+                    callback_data=f"marketplace_subcat_{category_folder}_{subcategory['folder']}"
+                )
+            ])
+        
+        # Add back to main marketplace button
+        keyboard_buttons.append([
+            InlineKeyboardButton(text="⬅️ Back to Marketplace", callback_data="back_to_marketplace")
+        ])
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+        
+        category_display_name = category_folder.replace('_', ' ').replace('-', ' ').title()
+        message_text = f"📁 <b>{category_display_name}</b>\n\nChoose a workflow:"
+        
+        await callback_query.message.edit_text(
+            message_text,
+            reply_markup=keyboard,
+            parse_mode="HTML"
+        )
+        
+    except Exception as e:
+        logging.error(f"Error in handle_marketplace_category: {e}")
+        await callback_query.answer("Error loading category. Please try again.")
+
+@content_router.callback_query(lambda c: c.data == 'back_to_marketplace')
+async def handle_back_to_marketplace(callback_query: types.CallbackQuery):
+    """Handle back to marketplace menu"""
+    try:
+        # Get workflow categories from local folders
+        workflows_path = os.path.join(os.getcwd(), 'workflows')
+        categories = []
+        
+        if os.path.exists(workflows_path):
+            # Get all directories in workflows folder
+            for item in os.listdir(workflows_path):
+                item_path = os.path.join(workflows_path, item)
+                if os.path.isdir(item_path):
+                    categories.append({
+                        'name': item.replace('_', ' ').replace('-', ' ').title(),
+                        'folder': item
+                    })
+        
+        # Sort categories alphabetically
+        categories.sort(key=lambda x: x['name'])
+        
+        # Create keyboard with categories
+        keyboard_buttons = []
+        
+        # Add category buttons
+        messages_class = get_messages_class('en')  # Default to English for callbacks
+        
+        for category in categories:
+            keyboard_buttons.append([
+                InlineKeyboardButton(text=f"📁 {category['name']}", callback_data=f"marketplace_cat_{category['folder']}")
+            ])
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+        
+        # Get appropriate welcome text from messages
+        automation_text = messages_class.AUTOMATIONS_CMD["welcome"]
+        
+        await callback_query.message.edit_text(
+            automation_text,
+            reply_markup=keyboard,
+            parse_mode="Markdown"
+        )
+        
+    except Exception as e:
+        logging.error(f"Error in handle_back_to_marketplace: {e}")
+        await callback_query.answer("Error loading marketplace. Please try again.")
+
+@content_router.callback_query(lambda c: c.data.startswith('marketplace_subcat_'))
+async def handle_marketplace_subcategory(callback_query: types.CallbackQuery):
+    """Handle marketplace subcategory selection - show workflows from CSV with pagination"""
+    try:
+        # Parse callback data: marketplace_subcat_category_subcategory or marketplace_subcat_category_subcategory_page_N
+        callback_data = callback_query.data.replace('marketplace_subcat_', '')
+        
+        # Check if this includes page information
+        page = 1
+        if '_page_' in callback_data:
+            parts = callback_data.split('_page_')
+            callback_data = parts[0]
+            page = int(parts[1])
+        
+        callback_parts = callback_data.split('_', 1)
+        if len(callback_parts) != 2:
+            await callback_query.answer("Invalid workflow selection")
+            return
+            
+        category_folder, subcategory_folder = callback_parts
+        
+        # Read workflows from CSV file
+        csv_path = os.path.join(os.getcwd(), 'workflows', category_folder, subcategory_folder, 'workflows.csv')
+        workflows = []
+        
+        if os.path.exists(csv_path):
+            try:
+                with open(csv_path, 'r', encoding='utf-8') as csvfile:
+                    csv_reader = csv.DictReader(csvfile)
+                    workflows = list(csv_reader)
+            except Exception as csv_error:
+                logging.error(f"Error reading CSV file {csv_path}: {csv_error}")
+        
+        # Pagination settings
+        items_per_page = 6
+        total_items = len(workflows)
+        total_pages = math.ceil(total_items / items_per_page) if total_items > 0 else 1
+        
+        # Ensure page is within valid range
+        page = max(1, min(page, total_pages))
+        
+        # Get items for current page
+        start_idx = (page - 1) * items_per_page
+        end_idx = start_idx + items_per_page
+        current_workflows = workflows[start_idx:end_idx]
+        
+        # Create message
+        workflow_name = subcategory_folder.replace('_', ' ').replace('-', ' ').title()
+        category_name = category_folder.replace('_', ' ').replace('-', ' ').title()
+        
+        message_text = f"⚙️ <b>{workflow_name}</b>\n"
+        message_text += f"📂 <b>Category:</b> {category_name}\n\n"
+        
+        if current_workflows:
+            message_text += f"📋 <b>Available Workflows</b> (Page {page}/{total_pages}):\n\n"
+        else:
+            message_text += "📋 <b>No workflows available in this category yet.</b>\n\n"
+        
+        # Create keyboard with workflow buttons
+        keyboard_buttons = []
+        
+        # Add workflow buttons (6 per page)
+        for workflow in current_workflows:
+            title = workflow.get('title', 'Untitled Workflow')
+            workflow_id = workflow.get('id', '')
+            
+            # Truncate title if too long for button
+            button_text = title[:65] + "..." if len(title) > 65 else title
+            
+            keyboard_buttons.append([
+                InlineKeyboardButton(
+                    text=f"🔧 {button_text}", 
+                    callback_data=f"workflow_detail_{category_folder}_{subcategory_folder}_{workflow_id}"
+                )
+            ])
+        
+        # Add pagination buttons if needed
+        if total_pages > 1:
+            pagination_row = []
+            
+            # Previous page button
+            if page > 1:
+                pagination_row.append(
+                    InlineKeyboardButton(
+                        text="⬅️ Previous", 
+                        callback_data=f"marketplace_subcat_{category_folder}_{subcategory_folder}_page_{page-1}"
+                    )
+                )
+            
+            # Page indicator
+            pagination_row.append(
+                InlineKeyboardButton(
+                    text=f"📄 {page}/{total_pages}", 
+                    callback_data="page_info"
+                )
+            )
+            
+            # Next page button
+            if page < total_pages:
+                pagination_row.append(
+                    InlineKeyboardButton(
+                        text="Next ➡️", 
+                        callback_data=f"marketplace_subcat_{category_folder}_{subcategory_folder}_page_{page+1}"
+                    )
+                )
+            
+            keyboard_buttons.append(pagination_row)
+        
+        # Back navigation buttons
+        keyboard_buttons.append([
+            InlineKeyboardButton(
+                text=f"⬅️ Back to {category_name}", 
+                callback_data=f"marketplace_cat_{category_folder}"
+            )
+        ])
+        
+        keyboard_buttons.append([
+            InlineKeyboardButton(text="🏠 Back to Marketplace", callback_data="back_to_marketplace")
+        ])
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+        
+        await callback_query.message.edit_text(
+            message_text,
+            reply_markup=keyboard,
+            parse_mode="HTML"
+        )
+        
+    except Exception as e:
+        logging.error(f"Error in handle_marketplace_subcategory: {e}")
+        await callback_query.answer("Error loading workflows. Please try again.")
+
+@content_router.callback_query(lambda c: c.data == 'page_info')
+async def handle_page_info(callback_query: types.CallbackQuery):
+    """Handle page info button click (just acknowledge)"""
+    await callback_query.answer("Page information")
+
+@content_router.callback_query(lambda c: c.data.startswith('workflow_detail_'))
+async def handle_workflow_detail(callback_query: types.CallbackQuery):
+    """Handle individual workflow detail view from CSV - show description and request options"""
+    try:
+        # Parse callback data: workflow_detail_category_subcategory_workflow_id
+        callback_data = callback_query.data.replace('workflow_detail_', '')
+        parts = callback_data.split('_')
+        
+        if len(parts) < 3:
+            await callback_query.answer("Invalid workflow selection")
+            return
+        
+        # Extract category, subcategory, and workflow_id
+        category_folder = parts[0]
+        subcategory_folder = parts[1]
+        workflow_id = '_'.join(parts[2:])  # In case ID contains underscores
+        
+        # Read workflow details from CSV
+        csv_path = os.path.join(os.getcwd(), 'workflows', category_folder, subcategory_folder, 'workflows.csv')
+        workflow_data = None
+        
+        if os.path.exists(csv_path):
+            try:
+                with open(csv_path, 'r', encoding='utf-8') as csvfile:
+                    csv_reader = csv.DictReader(csvfile)
+                    for row in csv_reader:
+                        if row.get('id') == workflow_id:
+                            workflow_data = row
+                            break
+            except Exception as csv_error:
+                logging.error(f"Error reading CSV file {csv_path}: {csv_error}")
+        
+        if not workflow_data:
+            await callback_query.answer("Workflow not found")
+            return
+        
+        # Create workflow detail message
+        workflow_title = workflow_data.get('title', 'Untitled Workflow')
+        category_name = category_folder.replace('_', ' ').replace('-', ' ').title()
+        subcategory_name = subcategory_folder.replace('_', ' ').replace('-', ' ').title()
+        
+        message_text = f"🔧 <b>Automation Details</b>\n\n"
+        message_text += f"📋 <b>Name:</b> {workflow_title}\n\n"
+        message_text += f"📂 <b>Category:</b> {category_name} → {subcategory_name}\n"
+        message_text += f"🆔 <b>ID:</b> {workflow_id}\n\n"
+        message_text += "💡 This automation can help streamline your workflow processes. "
+        message_text += "Contact us to get access to this automation template."
+        
+        # Create keyboard with action options
+        keyboard_buttons = []
+        
+        # Request this automation button
+        keyboard_buttons.append([
+            InlineKeyboardButton(
+                text="✅ Request this automation", 
+                callback_data=f"request_csv_workflow_{category_folder}_{subcategory_folder}_{workflow_id}"
+            )
+        ])
+        
+        # Back to workflow list button
+        keyboard_buttons.append([
+            InlineKeyboardButton(
+                text=f"⬅️ Back to {subcategory_name} List", 
+                callback_data=f"marketplace_subcat_{category_folder}_{subcategory_folder}"
+            )
+        ])
+        
+        # Back to category button
+        keyboard_buttons.append([
+            InlineKeyboardButton(
+                text=f"📁 Back to {category_name}", 
+                callback_data=f"marketplace_cat_{category_folder}"
+            )
+        ])
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+        
+        await callback_query.message.edit_text(
+            message_text,
+            reply_markup=keyboard,
+            parse_mode="HTML"
+        )
+        
+    except Exception as e:
+        logging.error(f"Error in handle_workflow_detail: {e}")
+        await callback_query.answer("Error loading workflow details. Please try again.")
+
+@content_router.callback_query(lambda c: c.data.startswith('request_csv_workflow_'))
+async def handle_request_csv_workflow(callback_query: types.CallbackQuery):
+    """Handle workflow request from CSV listing"""
+    try:
+        # Parse callback data: request_csv_workflow_category_subcategory_workflow_id
+        callback_data = callback_query.data.replace('request_csv_workflow_', '')
+        parts = callback_data.split('_')
+        
+        if len(parts) < 3:
+            await callback_query.answer("Invalid workflow request")
+            return
+        
+        # Extract category, subcategory, and workflow_id
+        category_folder = parts[0]
+        subcategory_folder = parts[1]
+        workflow_id = '_'.join(parts[2:])  # In case ID contains underscores
+        
+        # Read workflow details from CSV to get the title
+        csv_path = os.path.join(os.getcwd(), 'workflows', category_folder, subcategory_folder, 'workflows.csv')
+        workflow_title = "Unknown Workflow"
+        
+        if os.path.exists(csv_path):
+            try:
+                with open(csv_path, 'r', encoding='utf-8') as csvfile:
+                    csv_reader = csv.DictReader(csvfile)
+                    for row in csv_reader:
+                        if row.get('id') == workflow_id:
+                            workflow_title = row.get('title', 'Unknown Workflow')
+                            break
+            except Exception as csv_error:
+                logging.error(f"Error reading CSV file {csv_path}: {csv_error}")
+        
+        category_name = category_folder.replace('_', ' ').replace('-', ' ').title()
+        subcategory_name = subcategory_folder.replace('_', ' ').replace('-', ' ').title()
+        
+        # Log the workflow request
+        user_id = callback_query.from_user.id
+        username = callback_query.from_user.username or "Unknown"
+        
+        logging.info(f"User {user_id} ({username}) requested workflow: {category_name} / {subcategory_name} / {workflow_title} (ID: {workflow_id})")
+        print(f"🎯 Workflow Request: User {user_id} ({username}) wants workflow: {category_name} / {subcategory_name} / {workflow_title} (ID: {workflow_id})")
+        
+        # Send notification to admin if configured
+        try:
+            from bot.config import Config
+            if hasattr(Config, 'TELEGRAM_ADMIN_ID') and Config.TELEGRAM_ADMIN_ID:
+                admin_message = f"""🎯 **New Workflow Request**
+                
+👤 **User:** @{username} ({user_id})
+📁 **Category:** {category_name} → {subcategory_name}
+⚙️ **Workflow:** {workflow_title}
+🆔 **ID:** {workflow_id}
+📅 **Time:** {callback_query.message.date}
+
+Please contact this user to provide the workflow."""
+                
+                await callback_query.bot.send_message(
+                    chat_id=Config.TELEGRAM_ADMIN_ID,
+                    text=admin_message,
+                    parse_mode="Markdown"
+                )
+                
+        except Exception as admin_error:
+            logging.error(f"Failed to notify admin: {admin_error}")
+        
+        # Acknowledge the request to the user
+        short_title = workflow_title[:50] + "..." if len(workflow_title) > 50 else workflow_title
+        await callback_query.answer(f"✅ Request received! We'll contact you soon with details for '{short_title}'.", show_alert=True)
+        
+    except Exception as e:
+        logging.error(f"Error in handle_request_csv_workflow: {e}")
+        await callback_query.answer("❌ Error processing your request. Please try again.")
+
+@content_router.callback_query(lambda c: c.data.startswith('request_workflow_'))
+async def handle_request_workflow(callback_query: types.CallbackQuery):
+    """Handle workflow request"""
+    try:
+        # Parse callback data: request_workflow_category_subcategory
+        callback_parts = callback_query.data.replace('request_workflow_', '').split('_', 1)
+        if len(callback_parts) != 2:
+            await callback_query.answer("Invalid workflow request")
+            return
+            
+        category_folder, subcategory_folder = callback_parts
+        workflow_name = subcategory_folder.replace('_', ' ').replace('-', ' ').title()
+        category_name = category_folder.replace('_', ' ').replace('-', ' ').title()
+        
+        # Log the workflow request
+        user_id = callback_query.from_user.id
+        username = callback_query.from_user.username or "Unknown"
+        
+        logging.info(f"User {user_id} ({username}) requested workflow: {category_name} / {workflow_name}")
+        print(f"🎯 Workflow Request: User {user_id} ({username}) wants workflow: {category_name} / {workflow_name}")
+        
+        # Send notification to admin if configured
+        try:
+            from bot.config import Config
+            if hasattr(Config, 'TELEGRAM_ADMIN_ID') and Config.TELEGRAM_ADMIN_ID:
+                admin_message = f"""🎯 **New Workflow Request**
+                
+👤 **User:** @{username} ({user_id})
+📁 **Category:** {category_name}
+⚙️ **Workflow:** {workflow_name}
+📅 **Time:** {callback_query.message.date}
+
+Please contact this user to provide the workflow."""
+                
+                await callback_query.bot.send_message(
+                    chat_id=Config.TELEGRAM_ADMIN_ID,
+                    text=admin_message,
+                    parse_mode="Markdown"
+                )
+                
+        except Exception as admin_error:
+            logging.error(f"Failed to notify admin: {admin_error}")
+        
+        # Acknowledge the request to the user
+        await callback_query.answer(f"✅ Request received! We'll contact you soon with details for '{workflow_name}' workflow.", show_alert=True)
+        
+    except Exception as e:
+        logging.error(f"Error in handle_request_workflow: {e}")
+        await callback_query.answer("❌ Error processing your request. Please try again.")
 
 @content_router.callback_query(lambda c: c.data == 'automations_all')
 async def handle_automations_all(callback_query: types.CallbackQuery, supabase_client):

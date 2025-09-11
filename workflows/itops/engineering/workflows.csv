@@ -1,0 +1,402 @@
+id,title,url
+8362,Automate Daily Signup Stats From Postgresql To Slack Teams And Telegram,https://n8n.io/workflows/8362-automate-daily-signup-stats-from-postgresql-to-slack-teams-and-telegram/
+8258,Learn Secure Webhook Apis With Authentication And Supabase Integration,https://n8n.io/workflows/8258-learn-secure-webhook-apis-with-authentication-and-supabase-integration/
+8230,Generate And Split Sample Data Records Using Javascript And Python,https://n8n.io/workflows/8230-generate-and-split-sample-data-records-using-javascript-and-python/
+8112,Sync Android Drawable Assets From Figma To Github Via Pr Multi Density Png,https://n8n.io/workflows/8112-sync-android-drawable-assets-from-figma-to-github-via-pr-multi-density-png/
+8085,Create A Crud Rest Api With Google Sheets Database,https://n8n.io/workflows/8085-create-a-crud-rest-api-with-google-sheets-database/
+7784,Unify Multiple Triggers Into A Single Workflow,https://n8n.io/workflows/7784-unify-multiple-triggers-into-a-single-workflow/
+7696,Generate Ai System Prompts For Llms With Unlidev,https://n8n.io/workflows/7696-generate-ai-system-prompts-for-llms-with-unlidev/
+7674,Create A Secure Mongodb Data Retrieval Api With Input Validation And Http Responses,https://n8n.io/workflows/7674-create-a-secure-mongodb-data-retrieval-api-with-input-validation-and-http-responses/
+7654,Etl Extract And Parse Revit Model Data To Structured Excel,https://n8n.io/workflows/7654-etl-extract-and-parse-revit-model-data-to-structured-excel/
+7649,Convert Revit Projects To Database With Drawings And Specifications Using Ddc,https://n8n.io/workflows/7649-convert-revit-projects-to-database-with-drawings-and-specifications-using-ddc/
+7609,Convert Poml To Ai Ready Prompts And Chat Messages With Zero Dependencies,https://n8n.io/workflows/7609-convert-poml-to-ai-ready-prompts-and-chat-messages-with-zero-dependencies/
+7577,Syncing Ios Localization Gaps With Google Sheets And Github Pr Placeholders,https://n8n.io/workflows/7577-syncing-ios-localization-gaps-with-google-sheets-and-github-pr-placeholders/
+7569,Automatic Google Cloud Run Auth With Jwt Token Management Sub Workflow,https://n8n.io/workflows/7569-automatic-google-cloud-run-auth-with-jwt-token-management-sub-workflow/
+7430,Extract Context From Voice Notes With Openrouter Ai And Milvus For Rag Systems,https://n8n.io/workflows/7430-extract-context-from-voice-notes-with-openrouter-ai-and-milvus-for-rag-systems/
+7413,Ipl Cricket Rules Qanda Chat Bot Using Rag And Google Gemini Api,https://n8n.io/workflows/7413-ipl-cricket-rules-qanda-chat-bot-using-rag-and-google-gemini-api/
+7409,Delete Dialogflow Intents Via Telegram Commands,https://n8n.io/workflows/7409-delete-dialogflow-intents-via-telegram-commands/
+7398,Comprehensive Llm Usage Tracker And Cost Monitor With Node Level Analytics,https://n8n.io/workflows/7398-comprehensive-llm-usage-tracker-and-cost-monitor-with-node-level-analytics/
+7394,Automate Github Trending Data Collection With Firecrawl Gpt And Supabase,https://n8n.io/workflows/7394-automate-github-trending-data-collection-with-firecrawl-gpt-and-supabase/
+7336,Automate Power Bi Dataset Refreshes With History Monitoring,https://n8n.io/workflows/7336-automate-power-bi-dataset-refreshes-with-history-monitoring/
+7299,Create Personal Data Vector Store From Google Sheets With Openai And Gemini Ai,https://n8n.io/workflows/7299-create-personal-data-vector-store-from-google-sheets-with-openai-and-gemini-ai/
+7265,Track And Monitor Ai Token Usage Metrics For Openai And Gemini Models,https://n8n.io/workflows/7265-track-and-monitor-ai-token-usage-metrics-for-openai-and-gemini-models/
+7248,Clean And Log Iot Sensor Data To Influxdb Webhook Or Function Or Http,https://n8n.io/workflows/7248-clean-and-log-iot-sensor-data-to-influxdb-webhook-or-function-or-http/
+7231,Track Openai Token Usage And Ai Agent Metrics With Google Sheets Dashboard,https://n8n.io/workflows/7231-track-openai-token-usage-and-ai-agent-metrics-with-google-sheets-dashboard/
+7158,Beginner Manager Agent With Sub Agent Tools,https://n8n.io/workflows/7158-beginner-manager-agent-with-sub-agent-tools/
+7151,Bypass Cloudflare Turnstile For Web Scraping With 2Captcha,https://n8n.io/workflows/7151-bypass-cloudflare-turnstile-for-web-scraping-with-2captcha/
+7125,Monitor Solar Energy Production And Send Alerts With Gmail Google Sheets And Slack,https://n8n.io/workflows/7125-monitor-solar-energy-production-and-send-alerts-with-gmail-google-sheets-and-slack/
+7067,Ai Powered Prompt Enhancement Assistant,https://n8n.io/workflows/7067-ai-powered-prompt-enhancement-assistant/
+7066,Create Multi Step Reasoning Ai Agents With Gpt 4 And Reusable Thinking Tools,https://n8n.io/workflows/7066-create-multi-step-reasoning-ai-agents-with-gpt-4-and-reusable-thinking-tools/
+7004,Ai Orchestrator Dynamically Selects Models Based On Input Type,https://n8n.io/workflows/7004-ai-orchestrator-dynamically-selects-models-based-on-input-type/
+6912,Data Analytics Department With Ai Team Cdo And Specialists Using Openai O3,https://n8n.io/workflows/6912-data-analytics-department-with-ai-team-cdo-and-specialists-using-openai-o3/
+6911,Create A Complete Ai Engineering Department With Openai O3 And Specialized Agents,https://n8n.io/workflows/6911-create-a-complete-ai-engineering-department-with-openai-o3-and-specialized-agents/
+6829,Build Persistent Chat Memory With Gpt 4O Mini And Qdrant Vector Database,https://n8n.io/workflows/6829-build-persistent-chat-memory-with-gpt-4o-mini-and-qdrant-vector-database/
+6828,Prevent Duplicate Processing With Redis Item State Tracking,https://n8n.io/workflows/6828-prevent-duplicate-processing-with-redis-item-state-tracking/
+6821,Create Structured Xml System Messages For Ai Agents With Claude 4 Sonnet,https://n8n.io/workflows/6821-create-structured-xml-system-messages-for-ai-agents-with-claude-4-sonnet/
+6819,Document Qanda System With Voyage Context 3 Embeddings And Mongodb Atlas,https://n8n.io/workflows/6819-document-qanda-system-with-voyage-context-3-embeddings-and-mongodb-atlas/
+6816,Create Custom Reasoning Patterns For Ai Agents With Graphrag And Knowledge Ontology,https://n8n.io/workflows/6816-create-custom-reasoning-patterns-for-ai-agents-with-graphrag-and-knowledge-ontology/
+6746,Chat With Uncensored Dolphin Mixtral 8X22B Using Novita Ai,https://n8n.io/workflows/6746-chat-with-uncensored-dolphin-mixtral-8x22b-using-novita-ai/
+6710,Automated Web Browsing And Extraction With Airtop And Ai Prompted Queries,https://n8n.io/workflows/6710-automated-web-browsing-and-extraction-with-airtop-and-ai-prompted-queries/
+6691,Multi Source Rag System With Gpt 4 Turbo News And Academic Papers Integration,https://n8n.io/workflows/6691-multi-source-rag-system-with-gpt-4-turbo-news-and-academic-papers-integration/
+6648,Live Airport Delay Dashboard With Flightstats Google Sheets And Slack Alerts,https://n8n.io/workflows/6648-live-airport-delay-dashboard-with-flightstats-google-sheets-and-slack-alerts/
+6615,Json Data Utility Extract Key Value Pairs By Index,https://n8n.io/workflows/6615-json-data-utility-extract-key-value-pairs-by-index/
+6602,Daily Sync Of Nfl Players From Sleeper Api To Airtable For Fantasy Football,https://n8n.io/workflows/6602-daily-sync-of-nfl-players-from-sleeper-api-to-airtable-for-fantasy-football/
+6597,Monetize Your Private Llm Models With X402 And Ollama,https://n8n.io/workflows/6597-monetize-your-private-llm-models-with-x402-and-ollama/
+6583,Generate And Test Sql Code With Gptopenrouter Ai And Postgresql Sandbox,https://n8n.io/workflows/6583-generate-and-test-sql-code-with-gptopenrouter-ai-and-postgresql-sandbox/
+6554,Sync Quickbooks Chart Of Accounts To Google Bigquery,https://n8n.io/workflows/6554-sync-quickbooks-chart-of-accounts-to-google-bigquery/
+6543,Vectorize Medical Procedures For Semantic Search With Tuss Gemini And Pgvector,https://n8n.io/workflows/6543-vectorize-medical-procedures-for-semantic-search-with-tuss-gemini-and-pgvector/
+6493,Weekly Etl Pipeline Quickbooks Financial Data To Google Bigquery,https://n8n.io/workflows/6493-weekly-etl-pipeline-quickbooks-financial-data-to-google-bigquery/
+6368,Validate N8N Json Workflows With Gpt 4 And Langchain Google Drive To Sheets,https://n8n.io/workflows/6368-validate-n8n-json-workflows-with-gpt-4-and-langchain-google-drive-to-sheets/
+6291,Query Mysql Database With Natural Language Using Gpt Ai,https://n8n.io/workflows/6291-query-mysql-database-with-natural-language-using-gpt-ai/
+6269,State Management System For Long Running Workflows With Wait Nodes,https://n8n.io/workflows/6269-state-management-system-for-long-running-workflows-with-wait-nodes/
+6261,Automated Mysql To Google Sheets Sync With Duplicate Prevention,https://n8n.io/workflows/6261-automated-mysql-to-google-sheets-sync-with-duplicate-prevention/
+6253,Oauth Token Management System With Airtable Storage,https://n8n.io/workflows/6253-oauth-token-management-system-with-airtable-storage/
+6247,Optimize Speed Critical Workflows Using Parallel Processing Fan Outfan In,https://n8n.io/workflows/6247-optimize-speed-critical-workflows-using-parallel-processing-fan-outfan-in/
+6236,Test Your Data Access Techniques With Progressive Expression Challenges,https://n8n.io/workflows/6236-test-your-data-access-techniques-with-progressive-expression-challenges/
+6208,Automate Iso 26262 Compliance With Gpt 4 For Automotive Safety Analysis,https://n8n.io/workflows/6208-automate-iso-26262-compliance-with-gpt-4-for-automotive-safety-analysis/
+6196,Sequential Google Sheets Data Processing With Execution Control,https://n8n.io/workflows/6196-sequential-google-sheets-data-processing-with-execution-control/
+6190,Postgres Data Freshness Monitoring With Email Alerts,https://n8n.io/workflows/6190-postgres-data-freshness-monitoring-with-email-alerts/
+6184,Validate Api Requests With Bearer Token Authentication And Airtable,https://n8n.io/workflows/6184-validate-api-requests-with-bearer-token-authentication-and-airtable/
+6041,Automate Llm Testing With Gpt 4 Judge And Google Sheets Tracking,https://n8n.io/workflows/6041-automate-llm-testing-with-gpt-4-judge-and-google-sheets-tracking/
+5999,Learn Data Synchronization Warehouse Inventory Audit Tutorial,https://n8n.io/workflows/5999-learn-data-synchronization-warehouse-inventory-audit-tutorial/
+5998,Chat With Ai Models Via Openrouter Using Mistral,https://n8n.io/workflows/5998-chat-with-ai-models-via-openrouter-using-mistral/
+5996,Learn Workflow Logic With Merge If And Switch Operations,https://n8n.io/workflows/5996-learn-workflow-logic-with-merge-if-and-switch-operations/
+5960,Automated Amazon Stock Level Tracker With Bright Data Mcp And Openai,https://n8n.io/workflows/5960-automated-amazon-stock-level-tracker-with-bright-data-mcp-and-openai/
+5905,Get Any Image Standard Fetch With Brightdata Web Unblocker Failover,https://n8n.io/workflows/5905-get-any-image-standard-fetch-with-brightdata-web-unblocker-failover/
+5869,Generate Interactive Quantity Reports From Revit And Ifc Projects To Html,https://n8n.io/workflows/5869-generate-interactive-quantity-reports-from-revit-and-ifc-projects-to-html/
+5868,Validate Cad And Bim Files Against Excel Standards Revit Ifc Autocad Dgn,https://n8n.io/workflows/5868-validate-cad-and-bim-files-against-excel-standards-revit-ifc-autocad-dgn/
+5867,Convert Cad And Bim Revit Ifc Autocad In Database Dataframe,https://n8n.io/workflows/5867-convert-cad-and-bim-revit-ifc-autocad-in-database-dataframe/
+5862,Dynamic Ai Model Selector With Gdpr Compliance Via Requesty And Google Sheets,https://n8n.io/workflows/5862-dynamic-ai-model-selector-with-gdpr-compliance-via-requesty-and-google-sheets/
+5836,Create An Offline Digipin Microservice Api For Precise Location Mapping In India,https://n8n.io/workflows/5836-create-an-offline-digipin-microservice-api-for-precise-location-mapping-in-india/
+5829,Generate Dynamic Json Output Formats For Ai Agents With Mistral,https://n8n.io/workflows/5829-generate-dynamic-json-output-formats-for-ai-agents-with-mistral/
+5814,Track Github Node Definitions And Export To Google Sheets,https://n8n.io/workflows/5814-track-github-node-definitions-and-export-to-google-sheets/
+5771,Track Jura Coffee Machine Data With Webhook Api And Google Sheets,https://n8n.io/workflows/5771-track-jura-coffee-machine-data-with-webhook-api-and-google-sheets/
+5750,Fetch Hierarchical Data Records From Airtable With Multi Level Relationships,https://n8n.io/workflows/5750-fetch-hierarchical-data-records-from-airtable-with-multi-level-relationships/
+5740,Generate Data Pipeline Blueprints With Claude 35 Slack And Tavily Search,https://n8n.io/workflows/5740-generate-data-pipeline-blueprints-with-claude-35-slack-and-tavily-search/
+5731,Learn Javascript Coding With An Interactive Rpg Style Tutorial Game,https://n8n.io/workflows/5731-learn-javascript-coding-with-an-interactive-rpg-style-tutorial-game/
+5730,Deduplicate Data Records Using Javascript Array Methods,https://n8n.io/workflows/5730-deduplicate-data-records-using-javascript-array-methods/
+5729,Learn Javascript Data Processing With Code Node Filtering Analysis And Export Examples,https://n8n.io/workflows/5729-learn-javascript-data-processing-with-code-node-filtering-analysis-and-export-examples/
+5682,Simulate Debates Between Ai Agents Using Mistral To Optimize Answers,https://n8n.io/workflows/5682-simulate-debates-between-ai-agents-using-mistral-to-optimize-answers/
+5663,Paginate Shopify Products With Graphql Cursor Based Navigation,https://n8n.io/workflows/5663-paginate-shopify-products-with-graphql-cursor-based-navigation/
+5655,Notion Api Mcp Server,https://n8n.io/workflows/5655-notion-api-mcp-server/
+5654,Npr Station Finder Service Mcp Server,https://n8n.io/workflows/5654-npr-station-finder-service-mcp-server/
+5651,Mobility Api Mcp Server,https://n8n.io/workflows/5651-mobility-api-mcp-server/
+5650,Npr Listening Service Mcp Server,https://n8n.io/workflows/5650-npr-listening-service-mcp-server/
+5649,New York Times Article Search Api Mcp Server,https://n8n.io/workflows/5649-new-york-times-article-search-api-mcp-server/
+5646,Swagger2Openapi Converter Mcp Server,https://n8n.io/workflows/5646-swagger2openapi-converter-mcp-server/
+5644,Transportation Laws And Incentives Mcp Server,https://n8n.io/workflows/5644-transportation-laws-and-incentives-mcp-server/
+5642,Pinecone Api Mcp Server,https://n8n.io/workflows/5642-pinecone-api-mcp-server/
+5641,Topupsapi Mcp Server,https://n8n.io/workflows/5641-topupsapi-mcp-server/
+5636,Epa Environmental Compliance Data Api For Ai Agents With Mcp Server,https://n8n.io/workflows/5636-epa-environmental-compliance-data-api-for-ai-agents-with-mcp-server/
+5623,Epa Clean Water Act Data Access And Compliance Monitoring Api Integration,https://n8n.io/workflows/5623-epa-clean-water-act-data-access-and-compliance-monitoring-api-integration/
+5606,Complete Lyft Api Integration For Ai Agents With 16 Operations Using Mcp,https://n8n.io/workflows/5606-complete-lyft-api-integration-for-ai-agents-with-16-operations-using-mcp/
+5602,Add Typescript Intellisense Support To Code Nodes With Jsdoc,https://n8n.io/workflows/5602-add-typescript-intellisense-support-to-code-nodes-with-jsdoc/
+5594,Automated Hazard Analysis For Iso 26262 Compliance Using Gpt 4,https://n8n.io/workflows/5594-automated-hazard-analysis-for-iso-26262-compliance-using-gpt-4/
+5584,Ipqualityscore Api Mcp Server,https://n8n.io/workflows/5584-ipqualityscore-api-mcp-server/
+5583,Ip2Whois Domain Lookup Mcp Server,https://n8n.io/workflows/5583-ip2whois-domain-lookup-mcp-server/
+5579,Ebay Metadata Api Mcp Server,https://n8n.io/workflows/5579-ebay-metadata-api-mcp-server/
+5578,Complete Ebay Feed Api Integration For Ai Agents With Mcp Server,https://n8n.io/workflows/5578-complete-ebay-feed-api-integration-for-ai-agents-with-mcp-server/
+5577,Ebay Recommendation Api Mcp Server,https://n8n.io/workflows/5577-ebay-recommendation-api-mcp-server/
+5574,Ai Agent Integration For Ebay Logistics Api With Mcp Server,https://n8n.io/workflows/5574-ai-agent-integration-for-ebay-logistics-api-with-mcp-server/
+5573,Connect Ai Agents To Ebay Compliance Api For Listing Violation Management,https://n8n.io/workflows/5573-connect-ai-agents-to-ebay-compliance-api-for-listing-violation-management/
+5572,Connect Ai Agents To Ebay Seller Metrics Api Via Mcp Server,https://n8n.io/workflows/5572-connect-ai-agents-to-ebay-seller-metrics-api-via-mcp-server/
+5570,Ebay Analytics Api Rate Limit Monitoring For Ai Agents,https://n8n.io/workflows/5570-ebay-analytics-api-rate-limit-monitoring-for-ai-agents/
+5568,Create An Ebay Item Feed Service Api Gateway For Ai Agents,https://n8n.io/workflows/5568-create-an-ebay-item-feed-service-api-gateway-for-ai-agents/
+5567,Ai Agent Integration With Ebay Buy Marketing Api,https://n8n.io/workflows/5567-ai-agent-integration-with-ebay-buy-marketing-api/
+5566,Search And Retrieve Ebay Product Data With Catalog Api For Ai Agents,https://n8n.io/workflows/5566-search-and-retrieve-ebay-product-data-with-catalog-api-for-ai-agents/
+5565,Expose Ebay Taxonomy Api To Ai Agents For Category Management,https://n8n.io/workflows/5565-expose-ebay-taxonomy-api-to-ai-agents-for-category-management/
+5564,Connect Ai Agents To Ebay Deal Api With Mcp Server,https://n8n.io/workflows/5564-connect-ai-agents-to-ebay-deal-api-with-mcp-server/
+5563,Expose Ebay Browse Api For Ai Agents With Mcp Server,https://n8n.io/workflows/5563-expose-ebay-browse-api-for-ai-agents-with-mcp-server/
+5557,Audio And Video Data Search And Analysis With Clarify Api And Ai Agent Integration,https://n8n.io/workflows/5557-audio-and-video-data-search-and-analysis-with-clarify-api-and-ai-agent-integration/
+5550,Access Co2 Measurement Data With Carbondoomsday Api For Ai Agents,https://n8n.io/workflows/5550-access-co2-measurement-data-with-carbondoomsday-api-for-ai-agents/
+5542,Bin Card Information Lookup Api Connector For Ai Agents With Balance Check,https://n8n.io/workflows/5542-bin-card-information-lookup-api-connector-for-ai-agents-with-balance-check/
+5541,Track Ai Agent Token Usage And Estimate Costs In Google Sheets,https://n8n.io/workflows/5541-track-ai-agent-token-usage-and-estimate-costs-in-google-sheets/
+5540,Query Bicycle Incident Data With Bikewise Api Through Mcp Server,https://n8n.io/workflows/5540-query-bicycle-incident-data-with-bikewise-api-through-mcp-server/
+5539,Ip Geolocation Lookup With Bigdatacloud Api For Ai Agents,https://n8n.io/workflows/5539-ip-geolocation-lookup-with-bigdatacloud-api-for-ai-agents/
+5536,Internet Archive Wayback Machine Api For Ai Assistants,https://n8n.io/workflows/5536-internet-archive-wayback-machine-api-for-ai-assistants/
+5535,Internet Archive Search Api Integration For Ai Agents 3 Operations,https://n8n.io/workflows/5535-internet-archive-search-api-integration-for-ai-agents-3-operations/
+5534,Ebay Finances Data Access For Ai Agents With Mcp Server Integration,https://n8n.io/workflows/5534-ebay-finances-data-access-for-ai-agents-with-mcp-server-integration/
+5523,Evaluate Tool Usage Accuracy In Multi Agent Ai Workflows Using Evaluation Nodes,https://n8n.io/workflows/5523-evaluate-tool-usage-accuracy-in-multi-agent-ai-workflows-using-evaluation-nodes/
+5495,Create A Domains Index Api Server With Full Operation Access For Ai Agents,https://n8n.io/workflows/5495-create-a-domains-index-api-server-with-full-operation-access-for-ai-agents/
+5490,Create Debug Breakpoints And Logs With Slack Interactive Messages,https://n8n.io/workflows/5490-create-debug-breakpoints-and-logs-with-slack-interactive-messages/
+5447,Advanced Retry And Delay Logic,https://n8n.io/workflows/5447-advanced-retry-and-delay-logic/
+5403,Build An Mcp Server Which Answers Questions With Retrieval Augmented Generation,https://n8n.io/workflows/5403-build-an-mcp-server-which-answers-questions-with-retrieval-augmented-generation/
+5362,Strapi Tool Mcp Server 5 Operations,https://n8n.io/workflows/5362-strapi-tool-mcp-server-5-operations/
+5361,Storyblok Tool Mcp Server All 7 Operations,https://n8n.io/workflows/5361-storyblok-tool-mcp-server-all-7-operations/
+5353,Quick Base Tool Mcp Server All 10 Operations,https://n8n.io/workflows/5353-quick-base-tool-mcp-server-all-10-operations/
+5351,Postbin Tool Mcp Server 6 Operations,https://n8n.io/workflows/5351-postbin-tool-mcp-server-6-operations/
+5341,Npm Tool Mcp Server All 5 Operations,https://n8n.io/workflows/5341-npm-tool-mcp-server-all-5-operations/
+5334,Airtop Tool Mcp Server All 20 Operations,https://n8n.io/workflows/5334-airtop-tool-mcp-server-all-20-operations/
+5330,Aws Transcribe Tool Mcp Server All Operations,https://n8n.io/workflows/5330-aws-transcribe-tool-mcp-server-all-operations/
+5328,Baserow Tool Mcp Server 5 Operations,https://n8n.io/workflows/5328-baserow-tool-mcp-server-5-operations/
+5323,Webex By Cisco Tool Mcp Server All 10 Operations,https://n8n.io/workflows/5323-webex-by-cisco-tool-mcp-server-all-10-operations/
+5319,Ai Agent Managed Tables And Views With Coda Tool Mcp Server 18 Operations,https://n8n.io/workflows/5319-ai-agent-managed-tables-and-views-with-coda-tool-mcp-server-18-operations/
+5317,Ai Agents Can Retrieve Assetts With Contentful Tool Mcp Server,https://n8n.io/workflows/5317-ai-agents-can-retrieve-assetts-with-contentful-tool-mcp-server/
+5313,Expose Translate A Language Endpoint To Ai Agents With Deepl Tool Mcp Server,https://n8n.io/workflows/5313-expose-translate-a-language-endpoint-to-ai-agents-with-deepl-tool-mcp-server/
+5289,Ai Prompt Maker,https://n8n.io/workflows/5289-ai-prompt-maker/
+5280,Demio Tool Mcp Server,https://n8n.io/workflows/5280-demio-tool-mcp-server/
+5278,Discourse Tool Mcp Server All 16 Operations,https://n8n.io/workflows/5278-discourse-tool-mcp-server-all-16-operations/
+5271,Learn N8N Expressions With An Interactive Step By Step Tutorial For Beginners,https://n8n.io/workflows/5271-learn-n8n-expressions-with-an-interactive-step-by-step-tutorial-for-beginners/
+5260,Google Books Tool Mcp Server All 9 Operations,https://n8n.io/workflows/5260-google-books-tool-mcp-server-all-9-operations/
+5257,Google Cloud Natural Language Tool Mcp Server,https://n8n.io/workflows/5257-google-cloud-natural-language-tool-mcp-server/
+5252,Google Cloud Firestore Tool Mcp Server All 7 Operations,https://n8n.io/workflows/5252-google-cloud-firestore-tool-mcp-server-all-7-operations/
+5248,Expose Translate Endpoint To Ai Agents Via Google Translate Tool Mcp Server,https://n8n.io/workflows/5248-expose-translate-endpoint-to-ai-agents-via-google-translate-tool-mcp-server/
+5244,Hacker News Tool Mcp Server,https://n8n.io/workflows/5244-hacker-news-tool-mcp-server/
+5240,Get Create Upadte Profiles Humantic Ai Tool Mcp Server,https://n8n.io/workflows/5240-get-create-upadte-profiles-humantic-ai-tool-mcp-server/
+5238,Jina Ai Tool Mcp Server All 3 Operations,https://n8n.io/workflows/5238-jina-ai-tool-mcp-server-all-3-operations/
+5235,Expose File Form And Hook Operations To Ai Agents Kobotoolbox Tool Mcp Server,https://n8n.io/workflows/5235-expose-file-form-and-hook-operations-to-ai-agents-kobotoolbox-tool-mcp-server/
+5226,Automated Weather Reports With Bright Data And N8N,https://n8n.io/workflows/5226-automated-weather-reports-with-bright-data-and-n8n/
+5208,Check Email Via Ai Agent With Mailcheck Tool Mcp Server,https://n8n.io/workflows/5208-check-email-via-ai-agent-with-mailcheck-tool-mcp-server/
+5185,Matrix Tool Mcp Server All 11 Operations,https://n8n.io/workflows/5185-matrix-tool-mcp-server-all-11-operations/
+5183,Metabase Tool Mcp Server All 10 Operations,https://n8n.io/workflows/5183-metabase-tool-mcp-server-all-10-operations/
+5178,Microsoft Sharepoint Tool Mcp Server All 11 Operations,https://n8n.io/workflows/5178-microsoft-sharepoint-tool-mcp-server-all-11-operations/
+5173,Serve Custom Websites Html Webpages With Webhooks,https://n8n.io/workflows/5173-serve-custom-websites-html-webpages-with-webhooks/
+5170,Learn Json Basics With An Interactive Step By Step Tutorial For Beginners,https://n8n.io/workflows/5170-learn-json-basics-with-an-interactive-step-by-step-tutorial-for-beginners/
+5160,Build Resilient Ai Workflows With Automatic Gpt And Gemini Failover Chain,https://n8n.io/workflows/5160-build-resilient-ai-workflows-with-automatic-gpt-and-gemini-failover-chain/
+5146,Process Ai Output To Structured Json With Robust Json Parser,https://n8n.io/workflows/5146-process-ai-output-to-structured-json-with-robust-json-parser/
+5144,Transform Json To Xml For Enhanced Ai Prompt Formatting,https://n8n.io/workflows/5144-transform-json-to-xml-for-enhanced-ai-prompt-formatting/
+5118,Nasa Tool Mcp Server All 15 Operations,https://n8n.io/workflows/5118-nasa-tool-mcp-server-all-15-operations/
+5115,Nocodb Tool Mcp Server All 5 Operations,https://n8n.io/workflows/5115-nocodb-tool-mcp-server-all-5-operations/
+5113,Oura Tool Mcp Server All 4 Operations,https://n8n.io/workflows/5113-oura-tool-mcp-server-all-4-operations/
+5066,Benchmark Llm Performance On Legal Documents With Google Sheets And Openrouter,https://n8n.io/workflows/5066-benchmark-llm-performance-on-legal-documents-with-google-sheets-and-openrouter/
+5045,Ai Prompt Generator Workflow,https://n8n.io/workflows/5045-ai-prompt-generator-workflow/
+5033,Compare Lists And Identify Common Items And Differences Using Custom Keys,https://n8n.io/workflows/5033-compare-lists-and-identify-common-items-and-differences-using-custom-keys/
+5032,Reusable And Independently Testable Sub Workflow,https://n8n.io/workflows/5032-reusable-and-independently-testable-sub-workflow/
+5025,Xor Encryption And Decryption With Base64 Encoding For Workflow Data,https://n8n.io/workflows/5025-xor-encryption-and-decryption-with-base64-encoding-for-workflow-data/
+5024,Build Custom Workflows Automatically With Gpt 4O Rag And Web Search,https://n8n.io/workflows/5024-build-custom-workflows-automatically-with-gpt-4o-rag-and-web-search/
+5013,Track N8N Workflow Changes Over Time With Compare Dataset And Google Sheets,https://n8n.io/workflows/5013-track-n8n-workflow-changes-over-time-with-compare-dataset-and-google-sheets/
+5012,Natural Language Database Queries With Dual Agent Ai And Postgresql Integration,https://n8n.io/workflows/5012-natural-language-database-queries-with-dual-agent-ai-and-postgresql-integration/
+4978,Generate Ai Responses With Perplexity Sonar Models Reusable Module,https://n8n.io/workflows/4978-generate-ai-responses-with-perplexity-sonar-models-reusable-module/
+4972,Monitor Ai Chat Interactions With Gemini 25 And Langfuse Tracing,https://n8n.io/workflows/4972-monitor-ai-chat-interactions-with-gemini-25-and-langfuse-tracing/
+4952,Ai Agent Integration For Bubble Apps With Mcp Protocol Data Access,https://n8n.io/workflows/4952-ai-agent-integration-for-bubble-apps-with-mcp-protocol-data-access/
+4932,Sap Service Layer Login,https://n8n.io/workflows/4932-sap-service-layer-login/
+4931,Flexible Currency Rate Uploads For Sap B1 With Ai Validation And Multiple Sources,https://n8n.io/workflows/4931-flexible-currency-rate-uploads-for-sap-b1-with-ai-validation-and-multiple-sources/
+4853,Automate Gpt 4O Fine Tuning With Google Sheets Or Airtable Data,https://n8n.io/workflows/4853-automate-gpt-4o-fine-tuning-with-google-sheets-or-airtable-data/
+4772,Automated Airtable To Postgres Migration With N8N,https://n8n.io/workflows/4772-automated-airtable-to-postgres-migration-with-n8n/
+4712,Simple Eval For Legal Benchmarking,https://n8n.io/workflows/4712-simple-eval-for-legal-benchmarking/
+4704,Json String Validator Via Webhook,https://n8n.io/workflows/4704-json-string-validator-via-webhook/
+4694,Ai Agent That Updates Its Own Rules To Modify Behavior,https://n8n.io/workflows/4694-ai-agent-that-updates-its-own-rules-to-modify-behavior/
+4627,Discover Hidden Website Api Endpoints Using Regex And Ai,https://n8n.io/workflows/4627-discover-hidden-website-api-endpoints-using-regex-and-ai/
+4623,Unix Timestamp To Iso Date Converter,https://n8n.io/workflows/4623-unix-timestamp-to-iso-date-converter/
+4599,Lookup Ip Geolocation Details With Ip Apicom Via Webhook,https://n8n.io/workflows/4599-lookup-ip-geolocation-details-with-ip-apicom-via-webhook/
+4593,Geocoding For Logistics With Open Route Api And Google Sheets,https://n8n.io/workflows/4593-geocoding-for-logistics-with-open-route-api-and-google-sheets/
+4564,Estimate Driving Time And Distance For Logistics With Open Route Api,https://n8n.io/workflows/4564-estimate-driving-time-and-distance-for-logistics-with-open-route-api/
+4559,Intelligent Web And Local Search With Brave Search Api And Google Gemini Mcp Server,https://n8n.io/workflows/4559-intelligent-web-and-local-search-with-brave-search-api-and-google-gemini-mcp-server/
+4548,Manage User Authentication With Telegram Redis Cache And Google Sheets,https://n8n.io/workflows/4548-manage-user-authentication-with-telegram-redis-cache-and-google-sheets/
+4477,Ai Powered Knowledge Assistant Using Google Sheets Openai And Supabase Vector Search,https://n8n.io/workflows/4477-ai-powered-knowledge-assistant-using-google-sheets-openai-and-supabase-vector-search/
+4444,Build Production Ready User Authentication With Airtable And Jwt,https://n8n.io/workflows/4444-build-production-ready-user-authentication-with-airtable-and-jwt/
+4428,Evaluation Metric Summarization,https://n8n.io/workflows/4428-evaluation-metric-summarization/
+4426,Evaluate Rag Response Accuracy With Openai Document Groundedness Metric,https://n8n.io/workflows/4426-evaluate-rag-response-accuracy-with-openai-document-groundedness-metric/
+4425,Evaluate Ai Agent Response Relevance Using Openai And Cosine Similarity,https://n8n.io/workflows/4425-evaluate-ai-agent-response-relevance-using-openai-and-cosine-similarity/
+4424,Evaluate Ai Agent Response Correctness With Openai And Ragas Methodology,https://n8n.io/workflows/4424-evaluate-ai-agent-response-correctness-with-openai-and-ragas-methodology/
+4423,Evaluations Metric Answer Similarity,https://n8n.io/workflows/4423-evaluations-metric-answer-similarity/
+4399,Anthropic Ai Agent Claude Sonnet 4 And Opus 4 With Think And Web Search Tool,https://n8n.io/workflows/4399-anthropic-ai-agent-claude-sonnet-4-and-opus-4-with-think-and-web-search-tool/
+4347,Validate Auth0 Jwt Tokens Using Jwks Or Signing Cert,https://n8n.io/workflows/4347-validate-auth0-jwt-tokens-using-jwks-or-signing-cert/
+4316,Reliable Ai Agent Output Without Structured Output Parser W Openai And Switch,https://n8n.io/workflows/4316-reliable-ai-agent-output-without-structured-output-parser-w-openai-and-switch/
+4274,Evaluation Metric Example String Similarity,https://n8n.io/workflows/4274-evaluation-metric-example-string-similarity/
+4273,Evaluation Metric Example Rag Document Relevance,https://n8n.io/workflows/4273-evaluation-metric-example-rag-document-relevance/
+4271,Evaluation Metric Example Correctness Judged By Ai,https://n8n.io/workflows/4271-evaluation-metric-example-correctness-judged-by-ai/
+4269,Evaluation Metric Example Categorization,https://n8n.io/workflows/4269-evaluation-metric-example-categorization/
+4268,Evaluation Metric Example Check If Tool Was Called,https://n8n.io/workflows/4268-evaluation-metric-example-check-if-tool-was-called/
+4252,Web Site Scraper For Llms With Airtop,https://n8n.io/workflows/4252-web-site-scraper-for-llms-with-airtop/
+4237,Dynamic Ai Model Router For Query Optimization With Openrouter,https://n8n.io/workflows/4237-dynamic-ai-model-router-for-query-optimization-with-openrouter/
+4222,Control Your 3D Printer With Gpt 4O And Octoprint Api Conversations,https://n8n.io/workflows/4222-control-your-3d-printer-with-gpt-4o-and-octoprint-api-conversations/
+4218,Openai Responses Api Adapter For Llm And Ai Agent Workflows,https://n8n.io/workflows/4218-openai-responses-api-adapter-for-llm-and-ai-agent-workflows/
+4217,Create Openai Compatible Api Using Github Models For Free Ai Access,https://n8n.io/workflows/4217-create-openai-compatible-api-using-github-models-for-free-ai-access/
+4211,Iot Device Control With Mqtt And Webhook,https://n8n.io/workflows/4211-iot-device-control-with-mqtt-and-webhook/
+4197,Improve Ai Agent System Prompts With Gpt 4O Feedback Analysis And Email Delivery,https://n8n.io/workflows/4197-improve-ai-agent-system-prompts-with-gpt-4o-feedback-analysis-and-email-delivery/
+4077,Query To Action Automation With Bright Data Mcp And Openai Gpt,https://n8n.io/workflows/4077-query-to-action-automation-with-bright-data-mcp-and-openai-gpt/
+4070,Linking Nocodb Records Via Api,https://n8n.io/workflows/4070-linking-nocodb-records-via-api/
+4066,Track Hourly Weather Conditions With Openweathermap And Google Sheets,https://n8n.io/workflows/4066-track-hourly-weather-conditions-with-openweathermap-and-google-sheets/
+4013,Automatic Jest Test Generation For Github Prs With Dual Ai Review,https://n8n.io/workflows/4013-automatic-jest-test-generation-for-github-prs-with-dual-ai-review/
+4004,Remote Iot Sensor Monitoring Via Mqtt And Influxdb,https://n8n.io/workflows/4004-remote-iot-sensor-monitoring-via-mqtt-and-influxdb/
+3988,Access Control For Ai Agents Rbac Using Airtable And Telegram,https://n8n.io/workflows/3988-access-control-for-ai-agents-rbac-using-airtable-and-telegram/
+3976,Prevent Concurrent Workflow Runs Using Redis,https://n8n.io/workflows/3976-prevent-concurrent-workflow-runs-using-redis/
+3970,Secure Api Endpoint With Bearer Token Authentication And Field Validation,https://n8n.io/workflows/3970-secure-api-endpoint-with-bearer-token-authentication-and-field-validation/
+3967,Build An On Premises Ai Kaggle Competition Assistant With Qdrant Rag And Ollama,https://n8n.io/workflows/3967-build-an-on-premises-ai-kaggle-competition-assistant-with-qdrant-rag-and-ollama/
+3963,Ai Token Tracker For Whatsapp And Telegram Save Ai Usage To Google Sheets,https://n8n.io/workflows/3963-ai-token-tracker-for-whatsapp-and-telegram-save-ai-usage-to-google-sheets/
+3961,Convert Llm Output Into Rich Telegram Messages Auto Media And Smart Chunking,https://n8n.io/workflows/3961-convert-llm-output-into-rich-telegram-messages-auto-media-and-smart-chunking/
+3903,Conversational Postgresql Agent With Visuals Multi Kpi And Data Editing Mcp,https://n8n.io/workflows/3903-conversational-postgresql-agent-with-visuals-multi-kpi-and-data-editing-mcp/
+3892,Postgresql Conversational Agent With Claude And Deepseek Multi Kpi Secure,https://n8n.io/workflows/3892-postgresql-conversational-agent-with-claude-and-deepseek-multi-kpi-secure/
+3879,Build An Mcp Server With Airtable,https://n8n.io/workflows/3879-build-an-mcp-server-with-airtable/
+3834,Retrieve Nasa Space Weather And Asteroid Data With Gpt 4O Mini And Telegram,https://n8n.io/workflows/3834-retrieve-nasa-space-weather-and-asteroid-data-with-gpt-4o-mini-and-telegram/
+3812,Standardize Us Phone Numbers With Multiple Format Options And Validation,https://n8n.io/workflows/3812-standardize-us-phone-numbers-with-multiple-format-options-and-validation/
+3770,Build Your Own N8N Workflows Mcp Server,https://n8n.io/workflows/3770-build-your-own-n8n-workflows-mcp-server/
+3761,Email Assistant Convert Natural Language To Sql Queries With Phi4 Mini And Postgresql,https://n8n.io/workflows/3761-email-assistant-convert-natural-language-to-sql-queries-with-phi4-mini-and-postgresql/
+3718,Check Which Ai Models Are Used In Your Workflows,https://n8n.io/workflows/3718-check-which-ai-models-are-used-in-your-workflows/
+3711,Compare Different Llm Responses Side By Side With Google Sheets,https://n8n.io/workflows/3711-compare-different-llm-responses-side-by-side-with-google-sheets/
+3641,Mcp Supabase Agent Manage Your Database With Ai,https://n8n.io/workflows/3641-mcp-supabase-agent-manage-your-database-with-ai/
+3636,Build Your Own Qdrant Vector Store Mcp Server,https://n8n.io/workflows/3636-build-your-own-qdrant-vector-store-mcp-server/
+3632,Build Your Own Sqlite Mcp Server,https://n8n.io/workflows/3632-build-your-own-sqlite-mcp-server/
+3631,Build Your Own Postgresql Mcp Server,https://n8n.io/workflows/3631-build-your-own-postgresql-mcp-server/
+3592,Automate Web Interactions With Claude 35 Haiku And Airtop Browser Agent,https://n8n.io/workflows/3592-automate-web-interactions-with-claude-35-haiku-and-airtop-browser-agent/
+3576,Paul Graham Essay Search And Chat With Milvus Vector Database,https://n8n.io/workflows/3576-paul-graham-essay-search-and-chat-with-milvus-vector-database/
+3574,Create A Paul Graham Essay Qanda System With Openai And Milvus Vector Database,https://n8n.io/workflows/3574-create-a-paul-graham-essay-qanda-system-with-openai-and-milvus-vector-database/
+3569,Build An Mcp Server With Google Calendar,https://n8n.io/workflows/3569-build-an-mcp-server-with-google-calendar/
+3557,Export Wordpress To Pinecone Vector Store,https://n8n.io/workflows/3557-export-wordpress-to-pinecone-vector-store/
+3542,Create Ai Ready Vector Datasets For Llms With Bright Data Gemini And Pinecone,https://n8n.io/workflows/3542-create-ai-ready-vector-datasets-for-llms-with-bright-data-gemini-and-pinecone/
+3537,Process Multiple Prompts In Parallel With Azure Openai Batch Api,https://n8n.io/workflows/3537-process-multiple-prompts-in-parallel-with-azure-openai-batch-api/
+3529,Token Estim8R Ui Visualize Token Usage Analytics Dashboard In N8N,https://n8n.io/workflows/3529-token-estim8r-ui-visualize-token-usage-analytics-dashboard-in-n8n/
+3527,Compare Sequential Agent Based And Parallel Llm Processing With Claude 37,https://n8n.io/workflows/3527-compare-sequential-agent-based-and-parallel-llm-processing-with-claude-37/
+3514,Build An Mcp Server With Google Calendar And Custom Functions,https://n8n.io/workflows/3514-build-an-mcp-server-with-google-calendar-and-custom-functions/
+3513,Token Estim8R Sub Workflow To Track Ai Model Token Usage And Cost With Jinaai,https://n8n.io/workflows/3513-token-estim8r-sub-workflow-to-track-ai-model-token-usage-and-cost-with-jinaai/
+3497,Conversing With Data Transforming Text Into Sql Queries And Visual Curves,https://n8n.io/workflows/3497-conversing-with-data-transforming-text-into-sql-queries-and-visual-curves/
+3496,Enhance Ai Prompts With Gpt 4O Mini And Telegram Delivery,https://n8n.io/workflows/3496-enhance-ai-prompts-with-gpt-4o-mini-and-telegram-delivery/
+3495,Loading Json Via Ftp To Qdrant Vector Database Embedding Pipeline,https://n8n.io/workflows/3495-loading-json-via-ftp-to-qdrant-vector-database-embedding-pipeline/
+3489,Build Ai Agents With Think Plan Act Architecture Using Llama 4 Reasoning,https://n8n.io/workflows/3489-build-ai-agents-with-think-plan-act-architecture-using-llama-4-reasoning/
+3473,Scalable Multi Agent Chat Using Mentions,https://n8n.io/workflows/3473-scalable-multi-agent-chat-using-mentions/
+3440,Track Llm Token Costs Per Customer Using The Langchain Code Node,https://n8n.io/workflows/3440-track-llm-token-costs-per-customer-using-the-langchain-code-node/
+3439,Validate Seatable Webhooks With Hmac Sha256 Authentication,https://n8n.io/workflows/3439-validate-seatable-webhooks-with-hmac-sha256-authentication/
+3409,Batch Process Prompts With Anthropic Claude Api,https://n8n.io/workflows/3409-batch-process-prompts-with-anthropic-claude-api/
+3394,Airtable Batch Update Insert Rows Send Faster Save Api Call Requests,https://n8n.io/workflows/3394-airtable-batch-update-insert-rows-send-faster-save-api-call-requests/
+3365,Convert Parquet Feather Orc And Avro Files With Parquetreader,https://n8n.io/workflows/3365-convert-parquet-feather-orc-and-avro-files-with-parquetreader/
+3279,Oauth2 Settings Finder With Openrouter Chat Model And Llama 33,https://n8n.io/workflows/3279-oauth2-settings-finder-with-openrouter-chat-model-and-llama-33/
+3139,Private And Local Ollama Self Hosted Dynamic Llm Router,https://n8n.io/workflows/3139-private-and-local-ollama-self-hosted-dynamic-llm-router/
+3027,Generate Ai Prompts With Google Gemini And Store Them In Airtable,https://n8n.io/workflows/3027-generate-ai-prompts-with-google-gemini-and-store-them-in-airtable/
+3026,Run Apache Airflow Dag And Retrieve Xcom Value,https://n8n.io/workflows/3026-run-apache-airflow-dag-and-retrieve-xcom-value/
+3009,New Claude 37 Extended Thinking Ai Agent Unlock Ultimate Intelligence,https://n8n.io/workflows/3009-new-claude-37-extended-thinking-ai-agent-unlock-ultimate-intelligence/
+3002,Dynamically Run Suiteql Queries In Netsuite Via Http Webhook In N8N,https://n8n.io/workflows/3002-dynamically-run-suiteql-queries-in-netsuite-via-http-webhook-in-n8n/
+2992,Split Test Different Agent Prompts With Supabase And Openai,https://n8n.io/workflows/2992-split-test-different-agent-prompts-with-supabase-and-openai/
+2939,N8N Subworkflow Dependency Graph And Auto Tagging,https://n8n.io/workflows/2939-n8n-subworkflow-dependency-graph-and-auto-tagging/
+2932,Appsheet Intelligent Query Orchestrator Query Any Data,https://n8n.io/workflows/2932-appsheet-intelligent-query-orchestrator-query-any-data/
+2926,Import Csv Files From Filesystem Into Postgres,https://n8n.io/workflows/2926-import-csv-files-from-filesystem-into-postgres/
+2897,Use Openrouter In N8N Versions Less178,https://n8n.io/workflows/2897-use-openrouter-in-n8n-versions-less178/
+2896,N8N For Beginners Looping Over Items,https://n8n.io/workflows/2896-n8n-for-beginners-looping-over-items/
+2893,Fetch Dynamic Prompts From Github And Auto Populate N8N Expressions In Prompt,https://n8n.io/workflows/2893-fetch-dynamic-prompts-from-github-and-auto-populate-n8n-expressions-in-prompt/
+2871,Ragcontext Aware Chunking Or Google Drive To Pinecone Via Openrouter And Gemini,https://n8n.io/workflows/2871-ragcontext-aware-chunking-or-google-drive-to-pinecone-via-openrouter-and-gemini/
+2869,Test Webhooks In N8N Without Changing Webhookurl Postbin And Bamboohr Example,https://n8n.io/workflows/2869-test-webhooks-in-n8n-without-changing-webhookurl-postbin-and-bamboohr-example/
+2857,Pattern For Multiple Triggers Combined To Continue Workflow,https://n8n.io/workflows/2857-pattern-for-multiple-triggers-combined-to-continue-workflow/
+2839,Calculate The Centroid Of A Set Of Vectors,https://n8n.io/workflows/2839-calculate-the-centroid-of-a-set-of-vectors/
+2831,Batch Airtable Requests To Send Data 9X Faster,https://n8n.io/workflows/2831-batch-airtable-requests-to-send-data-9x-faster/
+2824,Query Perplexity Ai From Your N8N Workflows,https://n8n.io/workflows/2824-query-perplexity-ai-from-your-n8n-workflows/
+2818,Fetch Scriptures Dynamically From Get Bible Api,https://n8n.io/workflows/2818-fetch-scriptures-dynamically-from-get-bible-api/
+2812,Scrape Any Web Page Into Structured Json Data With Scrapeninja And Ai,https://n8n.io/workflows/2812-scrape-any-web-page-into-structured-json-data-with-scrapeninja-and-ai/
+2781,Automated End To End Fine Tuning Of Openai Models With Google Drive Integration,https://n8n.io/workflows/2781-automated-end-to-end-fine-tuning-of-openai-models-with-google-drive-integration/
+2777,Deepseek V3 Chat And R1 Reasoning Quick Start,https://n8n.io/workflows/2777-deepseek-v3-chat-and-r1-reasoning-quick-start/
+2730,Get Daily Weather And Save It In Airtable,https://n8n.io/workflows/2730-get-daily-weather-and-save-it-in-airtable/
+2719,Retry On Fail Except For Known Error,https://n8n.io/workflows/2719-retry-on-fail-except-for-known-error/
+2713,Using External Workflows As Tools In N8N,https://n8n.io/workflows/2713-using-external-workflows-as-tools-in-n8n/
+2693,Make Openai Citation For File Retrieval Rag,https://n8n.io/workflows/2693-make-openai-citation-for-file-retrieval-rag/
+2692,Integrating Ai With Open Meteo Api For Enhanced Weather Forecasting,https://n8n.io/workflows/2692-integrating-ai-with-open-meteo-api-for-enhanced-weather-forecasting/
+2667,Auto Workflow Positioning,https://n8n.io/workflows/2667-auto-workflow-positioning/
+2658,Api Schema Extractor,https://n8n.io/workflows/2658-api-schema-extractor/
+2657,Vector Database As A Big Data Analysis Tool For Ai Agents 22 Knn,https://n8n.io/workflows/2657-vector-database-as-a-big-data-analysis-tool-for-ai-agents-22-knn/
+2656,Vector Database As A Big Data Analysis Tool For Ai Agents 33 Anomaly,https://n8n.io/workflows/2656-vector-database-as-a-big-data-analysis-tool-for-ai-agents-33-anomaly/
+2655,Vector Database As A Big Data Analysis Tool For Ai Agents 23 Anomaly,https://n8n.io/workflows/2655-vector-database-as-a-big-data-analysis-tool-for-ai-agents-23-anomaly/
+2654,Vector Database As A Big Data Analysis Tool For Ai Agents 13 Anomaly12 Knn,https://n8n.io/workflows/2654-vector-database-as-a-big-data-analysis-tool-for-ai-agents-13-anomaly12-knn/
+2649,Prompt Based Object Detection With Gemini 20,https://n8n.io/workflows/2649-prompt-based-object-detection-with-gemini-20/
+2612,Ai Agent To Chat With Supabasepostgresql Db,https://n8n.io/workflows/2612-ai-agent-to-chat-with-supabasepostgresql-db/
+2603,Generate N8N Forms From Airtable And Baserow Tables,https://n8n.io/workflows/2603-generate-n8n-forms-from-airtable-and-baserow-tables/
+2576,Import Productboard Notes Companies And Features Into Snowflake,https://n8n.io/workflows/2576-import-productboard-notes-companies-and-features-into-snowflake/
+2559,Visualize Your Sql Agent Queries With Openai And Quickchartio,https://n8n.io/workflows/2559-visualize-your-sql-agent-queries-with-openai-and-quickchartio/
+2556,Exponential Backoff For Google Apis,https://n8n.io/workflows/2556-exponential-backoff-for-google-apis/
+2554,Mongodb Ai Agent Intelligent Movie Recommendations,https://n8n.io/workflows/2554-mongodb-ai-agent-intelligent-movie-recommendations/
+2538,Demo Workflow How To Use Workflowstaticdata,https://n8n.io/workflows/2538-demo-workflow-how-to-use-workflowstaticdata/
+2536,Pattern For Parallel Sub Workflow Execution Followed By Wait For All Loop,https://n8n.io/workflows/2536-pattern-for-parallel-sub-workflow-execution-followed-by-wait-for-all-loop/
+2535,Get Long Lived Facebook User Or Page Access Token,https://n8n.io/workflows/2535-get-long-lived-facebook-user-or-page-access-token/
+2508,Generate Sql Queries From Schema Only Ai Powered,https://n8n.io/workflows/2508-generate-sql-queries-from-schema-only-ai-powered/
+2490,Build An Endpoint To Perform Crud Operations With Multiple Http Methods,https://n8n.io/workflows/2490-build-an-endpoint-to-perform-crud-operations-with-multiple-http-methods/
+2442,Local Multi Llm Testing And Performance Tracker,https://n8n.io/workflows/2442-local-multi-llm-testing-and-performance-tracker/
+2440,Building Rag Chatbot For Movie Recommendations With Qdrant And Open Ai,https://n8n.io/workflows/2440-building-rag-chatbot-for-movie-recommendations-with-qdrant-and-open-ai/
+2419,Visual Regression Testing With Apify And Ai Vision Model,https://n8n.io/workflows/2419-visual-regression-testing-with-apify-and-ai-vision-model/
+2400,Ai Agent With Charts Capabilities Using Openai Structured Output And Quickchart,https://n8n.io/workflows/2400-ai-agent-with-charts-capabilities-using-openai-structured-output-and-quickchart/
+2384,Chat With Local Llms Using N8N And Ollama,https://n8n.io/workflows/2384-chat-with-local-llms-using-n8n-and-ollama/
+2378,Visualize Your N8N Workflows With Mermaidjs,https://n8n.io/workflows/2378-visualize-your-n8n-workflows-with-mermaidjs/
+2368,Preconfigured Nodes For Systemeio Api Requests,https://n8n.io/workflows/2368-preconfigured-nodes-for-systemeio-api-requests/
+2344,Generating Image Embeddings Via Textual Summarisation,https://n8n.io/workflows/2344-generating-image-embeddings-via-textual-summarisation/
+2343,Introduction To The Http Tool,https://n8n.io/workflows/2343-introduction-to-the-http-tool/
+2331,Build Your Own Image Search Using Ai Object Detection Cdn And Elasticsearch,https://n8n.io/workflows/2331-build-your-own-image-search-using-ai-object-detection-cdn-and-elasticsearch/
+2319,Better Oauth20 Workflow For Pipedrive Crm With Supabase,https://n8n.io/workflows/2319-better-oauth20-workflow-for-pipedrive-crm-with-supabase/
+2284,Provide Real Time Updates For Notion Databases Via Webhooks With Supabase,https://n8n.io/workflows/2284-provide-real-time-updates-for-notion-databases-via-webhooks-with-supabase/
+2274,Low Code Api For Flutterflow Apps,https://n8n.io/workflows/2274-low-code-api-for-flutterflow-apps/
+2167,Chatgpt Automatic Code Review In Gitlab Mr,https://n8n.io/workflows/2167-chatgpt-automatic-code-review-in-gitlab-mr/
+2094,Allow Your Ai To Call An Api To Fetch Data,https://n8n.io/workflows/2094-allow-your-ai-to-call-an-api-to-fetch-data/
+2082,Use Any Langchain Module In N8N With The Langchain Code Node,https://n8n.io/workflows/2082-use-any-langchain-module-in-n8n-with-the-langchain-code-node/
+2081,Synchronize Your Google Sheets With Postgres,https://n8n.io/workflows/2081-synchronize-your-google-sheets-with-postgres/
+2025,Openai Assistant With Custom Tools,https://n8n.io/workflows/2025-openai-assistant-with-custom-tools/
+2007,Telegram Echo Bot,https://n8n.io/workflows/2007-telegram-echo-bot/
+2006,Ai Agent That Can Scrape Webpages,https://n8n.io/workflows/2006-ai-agent-that-can-scrape-webpages/
+1997,Authenticate A User In A Workflow With Openid Connect,https://n8n.io/workflows/1997-authenticate-a-user-in-a-workflow-with-openid-connect/
+1980,Use An Open Source Llm Via Huggingface,https://n8n.io/workflows/1980-use-an-open-source-llm-via-huggingface/
+1966,Itemmatching Usage Example,https://n8n.io/workflows/1966-itemmatching-usage-example/
+1964,Sync Google Sheets Data With Mysql,https://n8n.io/workflows/1964-sync-google-sheets-data-with-mysql/
+1963,Ai Conversational Agent With Custom Tool Written In Javascript,https://n8n.io/workflows/1963-ai-conversational-agent-with-custom-tool-written-in-javascript/
+1957,Force Ai To Use A Specific Output Format,https://n8n.io/workflows/1957-force-ai-to-use-a-specific-output-format/
+1955,Custom Langchain Agent Written In Javascript,https://n8n.io/workflows/1955-custom-langchain-agent-written-in-javascript/
+1954,Ai Agent Chat,https://n8n.io/workflows/1954-ai-agent-chat/
+1951,Scrape And Summarize Webpages With Ai,https://n8n.io/workflows/1951-scrape-and-summarize-webpages-with-ai/
+1948,Xml To Sql Database Import,https://n8n.io/workflows/1948-xml-to-sql-database-import/
+1944,Compare Sql Datasets,https://n8n.io/workflows/1944-compare-sql-datasets/
+1934,Telegram Ai Chatbot,https://n8n.io/workflows/1934-telegram-ai-chatbot/
+1929,V1 Helper Find Params With Affected Expressions,https://n8n.io/workflows/1929-v1-helper-find-params-with-affected-expressions/
+1918,Load Data Into Snowflake,https://n8n.io/workflows/1918-load-data-into-snowflake/
+1913,Count The Items Returned By A Node,https://n8n.io/workflows/1913-count-the-items-returned-by-a-node/
+1900,Openai Examples Chatgpt Dalle 2 Whisper 1 5 In 1,https://n8n.io/workflows/1900-openai-examples-chatgpt-dalle-2-whisper-1-5-in-1/
+1862,Openai Gpt 3 Company Enrichment From Website Content,https://n8n.io/workflows/1862-openai-gpt-3-company-enrichment-from-website-content/
+1839,Import Csv Into Mysql,https://n8n.io/workflows/1839-import-csv-into-mysql/
+1814,Merge Multiple Runs Into One,https://n8n.io/workflows/1814-merge-multiple-runs-into-one/
+1753,Import Data From Mysql Into Google Sheets,https://n8n.io/workflows/1753-import-data-from-mysql-into-google-sheets/
+1752,Import Data From Google Sheets Into Mysql,https://n8n.io/workflows/1752-import-data-from-google-sheets-into-mysql/
+1751,Preparing Data To Be Sent To A Service,https://n8n.io/workflows/1751-preparing-data-to-be-sent-to-a-service/
+1750,Creating An Api Endpoint,https://n8n.io/workflows/1750-creating-an-api-endpoint/
+1749,Rate Limiting And Waiting For External Events,https://n8n.io/workflows/1749-rate-limiting-and-waiting-for-external-events/
+1748,Pulling Data From Services That N8N Doesnt Have A Pre Built Integration For,https://n8n.io/workflows/1748-pulling-data-from-services-that-n8n-doesnt-have-a-pre-built-integration-for/
+1747,Joining Different Datasets,https://n8n.io/workflows/1747-joining-different-datasets/
+1746,Filtering And Branching Data,https://n8n.io/workflows/1746-filtering-and-branching-data/
+1744,Working With Dates And Times,https://n8n.io/workflows/1744-working-with-dates-and-times/
+1700,Very Quick Quickstart,https://n8n.io/workflows/1700-very-quick-quickstart/
+1534,Back Up Your N8N Workflows To Github,https://n8n.io/workflows/1534-back-up-your-n8n-workflows-to-github/
+1497,Sum Or Aggregate A Column Of Spreadsheet Or Table Data,https://n8n.io/workflows/1497-sum-or-aggregate-a-column-of-spreadsheet-or-table-data/
+1440,Handle Verification For Twitter Webhook,https://n8n.io/workflows/1440-handle-verification-for-twitter-webhook/
+1435,Convert Json To An Excel File,https://n8n.io/workflows/1435-convert-json-to-an-excel-file/
+1401,Collect And Label Images And Send To Google Sheets,https://n8n.io/workflows/1401-collect-and-label-images-and-send-to-google-sheets/
+1363,Join Data From Postgres And Mysql,https://n8n.io/workflows/1363-join-data-from-postgres-and-mysql/
+1306,Serve A Static Html Page When A Link Is Accessed,https://n8n.io/workflows/1306-serve-a-static-html-page-when-a-link-is-accessed/
+1243,Avoid Rate Limiting By Batching Http Requests,https://n8n.io/workflows/1243-avoid-rate-limiting-by-batching-http-requests/
+1169,Handle Pagination In Http Requests,https://n8n.io/workflows/1169-handle-pagination-in-http-requests/
+1160,Merge Data For Multiple Executions,https://n8n.io/workflows/1160-merge-data-for-multiple-executions/
+1073,Scrape And Store Data From Multiple Website Pages,https://n8n.io/workflows/1073-scrape-and-store-data-from-multiple-website-pages/
+1069,Send Location Updates Of The Iss To A Topic In Mqtt,https://n8n.io/workflows/1069-send-location-updates-of-the-iss-to-a-topic-in-mqtt/
+1049,Send Location Updates Of The Iss Every Minute To A Table In Google Bigquery,https://n8n.io/workflows/1049-send-location-updates-of-the-iss-every-minute-to-a-table-in-google-bigquery/
+1047,Send Location Updates Of The Iss Every Minute To A Queue In Aws Sqs,https://n8n.io/workflows/1047-send-location-updates-of-the-iss-every-minute-to-a-queue-in-aws-sqs/
+995,Split In Batches Node Noitemsleft Example,https://n8n.io/workflows/995-split-in-batches-node-noitemsleft-example/
+980,Load Data Into Spreadsheet Or Database,https://n8n.io/workflows/980-load-data-into-spreadsheet-or-database/
+917,Receive Updates Of The Position Of The Iss And Add It To A Table In Timescaledb,https://n8n.io/workflows/917-receive-updates-of-the-position-of-the-iss-and-add-it-to-a-table-in-timescaledb/
+879,Access Data From Bubble Application,https://n8n.io/workflows/879-access-data-from-bubble-application/
+844,Send Updates About The Position Of The Iss Every Minute To A Topic In Rabbitmq,https://n8n.io/workflows/844-send-updates-about-the-position-of-the-iss-every-minute-to-a-topic-in-rabbitmq/
+839,Create Update And Get A Document In Google Cloud Firestore,https://n8n.io/workflows/839-create-update-and-get-a-document-in-google-cloud-firestore/
+824,Create A Table And Insert And Update Data In The Table In Snowflake,https://n8n.io/workflows/824-create-a-table-and-insert-and-update-data-in-the-table-in-snowflake/
+787,Receive Updates For The Position Of The Iss And Push It To A Firbase,https://n8n.io/workflows/787-receive-updates-for-the-position-of-the-iss-and-push-it-to-a-firbase/
+767,Create An Array Of Objects,https://n8n.io/workflows/767-create-an-array-of-objects/
+763,Convert An Array Into An Array Of Objects,https://n8n.io/workflows/763-convert-an-array-into-an-array-of-objects/
+762,Send Updates About The Position Of The Iss Every Minute To A Topic In Activemq,https://n8n.io/workflows/762-send-updates-about-the-position-of-the-iss-every-minute-to-a-topic-in-activemq/
+750,Send Updates About The Position Of The Iss Every Minute To A Topic In Kafka,https://n8n.io/workflows/750-send-updates-about-the-position-of-the-iss-every-minute-to-a-topic-in-kafka/
+695,Get Local Datetime Into Function Node Using Momentjs,https://n8n.io/workflows/695-get-local-datetime-into-function-node-using-momentjs/
+657,Receive Messages For A Mqtt Queue,https://n8n.io/workflows/657-receive-messages-for-a-mqtt-queue/
+655,Merge Greetings With The Users Based On The Language,https://n8n.io/workflows/655-merge-greetings-with-the-users-based-on-the-language/
+639,Receive Server Sent Events,https://n8n.io/workflows/639-receive-server-sent-events/
+609,Manage Incident Reporting In Pagerduty And Cratedb,https://n8n.io/workflows/609-manage-incident-reporting-in-pagerduty-and-cratedb/
+608,Generate And Queue Factory Sensor Data In Amqp,https://n8n.io/workflows/608-generate-and-queue-factory-sensor-data-in-amqp/
+602,Manage Users Automatically In Reqresin,https://n8n.io/workflows/602-manage-users-automatically-in-reqresin/
+599,Create A Table In Postgres And Insert Data,https://n8n.io/workflows/599-create-a-table-in-postgres-and-insert-data/
+598,Create A Table In Mysql And Insert Data,https://n8n.io/workflows/598-create-a-table-in-mysql-and-insert-data/
+597,Create A Table In Cratedb And Insert Data,https://n8n.io/workflows/597-create-a-table-in-cratedb-and-insert-data/
+592,Create A Table In Quest Db And Insert Data,https://n8n.io/workflows/592-create-a-table-in-quest-db-and-insert-data/
+582,Rename A Key In N8N,https://n8n.io/workflows/582-rename-a-key-in-n8n/
+575,Convert A Date From One Format To Another,https://n8n.io/workflows/575-convert-a-date-from-one-format-to-another/
+563,Get Contributors Information From Github In Slack,https://n8n.io/workflows/563-get-contributors-information-from-github-in-slack/
+558,Get The Last Five Spacex Launches From The Spacexland Api Using Graphql,https://n8n.io/workflows/558-get-the-last-five-spacex-launches-from-the-spacexland-api-using-graphql/
+557,Get The Value Of A Key From Redis,https://n8n.io/workflows/557-get-the-value-of-a-key-from-redis/
+518,Get Entries From A Cockpit Collection,https://n8n.io/workflows/518-get-entries-from-a-cockpit-collection/
+513,Receive Messages For An Activemq Queue,https://n8n.io/workflows/513-receive-messages-for-an-activemq-queue/
+503,Insert A Document In Mongodb,https://n8n.io/workflows/503-insert-a-document-in-mongodb/
+495,Track An Event In Segment,https://n8n.io/workflows/495-track-an-event-in-segment/
+479,Execute An Sql Query In Microsoft Sql,https://n8n.io/workflows/479-execute-an-sql-query-in-microsoft-sql/
+458,Run A Sql Query On Postgres,https://n8n.io/workflows/458-run-a-sql-query-on-postgres/
+450,Get The Community Profile Of A Repository,https://n8n.io/workflows/450-get-the-community-profile-of-a-repository/
+356,Generate And Insert Data Into A Postgres Database,https://n8n.io/workflows/356-generate-and-insert-data-into-a-postgres-database/
+216,Api Queries Data From Graphql,https://n8n.io/workflows/216-api-queries-data-from-graphql/
+156,Get Execute Command Data And Transfer To Json,https://n8n.io/workflows/156-get-execute-command-data-and-transfer-to-json/
+119,Webhook Returning Xml,https://n8n.io/workflows/119-webhook-returning-xml/
+100,Using The Merge Node Merge By Key,https://n8n.io/workflows/100-using-the-merge-node-merge-by-key/
+1,Insert Excel Data To Postgres,https://n8n.io/workflows/1-insert-excel-data-to-postgres/
