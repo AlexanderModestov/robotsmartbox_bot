@@ -9,6 +9,8 @@ from aiogram.fsm.context import FSMContext
 from bot.services.elevenlabs import TextToSpeechService
 from bot.config import Config
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo, FSInputFile
+from bot.messages_en import Messages as MessagesEn
+from bot.messages import Messages as MessagesRu
 import openai
 
 # Create router for question handling
@@ -90,8 +92,7 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
         user_text = message.text
     elif message.voice or message.audio:
         # Show processing message for voice
-        from bot.messages_en import MessagesEn
-        processing_voice_message = await message.answer(MessagesEn.QUESTION_CMD["voice_processing"])
+        processing_voice_message = await message.answer(Messages.QUESTION_CMD["voice_processing"])
         
         try:
             user_text = await transcribe_voice_cloud(message)
@@ -109,26 +110,31 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
         await message.answer("Please send a text or voice message with your request.")
         return
     
-    # Show processing message
-    processing_message = await message.answer(MessagesEn.QUESTION_CMD["processing"])
-
-        # Send typing action
-    await message.bot.send_chat_action(
-        chat_id=message.from_user.id, 
-        action=ChatAction.TYPING
-    )
-    
     try:
-        # Get user from database
+        # Get user from database to determine language
         user = await supabase_client.get_user_by_telegram_id(message.from_user.id)
         if not user:
-            await processing_message.edit_text("Ошибка: пользователь не найден. Попробуйте команду /start")
+            await message.answer("Ошибка: пользователь не найден. Попробуйте команду /start")
             return
-        
-        # STEP 1: ChatGPT Recommendations
+
+        # Determine user language and get appropriate messages
+        user_language = user.language if user and hasattr(user, 'language') and user.language else 'en'
+        messages_class = MessagesRu if user_language == 'ru' else MessagesEn
+
+        # Show processing message in user's language
+        processing_message = await message.answer(messages_class.RAG_RESPONSES["processing"])
+
+        # Send typing action
+        await message.bot.send_chat_action(
+            chat_id=message.from_user.id,
+            action=ChatAction.TYPING
+        )
+
+        # STEP 1: ChatGPT Recommendations with localized prompt
         client = openai.AsyncOpenAI()
-        
-        chatgpt_prompt = """You are an n8n automation expert. Answer ONLY automation-related questions.
+
+        # Use localized prompt based on user language
+        chatgpt_prompt = messages_class.RAG_PROMPT
 
 IMPORTANT: If the question is NOT related to task automation, processes, or workflows, respond EXACTLY:
 "I can only answer automation-related questions. Maybe you’d like to know how automation could support this?"
@@ -270,7 +276,7 @@ Maximum 150 words total"""
         
     except Exception as e:
         logging.error(f"❌ RAG Pipeline: Fatal error processing question for user {message.from_user.id}: {e}")
-        await processing_message.edit_text(MessagesEn.QUESTION_CMD["error"])
+        await processing_message.edit_text(Messages.QUESTION_CMD["error"])
 
 
 

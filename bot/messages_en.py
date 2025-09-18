@@ -69,6 +69,41 @@ class Messages:
         "• Send voice messages for voice-to-text conversion"
     )
 
+    SETTINGS_CMD = {
+        "main_menu": "⚙️ <b>Settings</b>\n\nSelect a section to configure:",
+        "response_format": "💬 Response format selection",
+        "notifications": "🔔 Notification settings",
+        "quiz_section": "📝 Quiz section",
+        "response_format_menu": "💬 <b>Response format selection</b>\n\nChoose your preferred response format:",
+        "notifications_menu": "🔔 <b>Notification settings</b>\n\nConfigure notifications for new materials:",
+        "quiz_menu": "📝 <b>Quiz section</b>\n\nTest your knowledge:",
+        "format_text": "📝 Text message",
+        "format_audio": "🎵 Audio message",
+        "notifications_on": "🔔 Enable notifications",
+        "notifications_off": "🔕 Disable notifications",
+        "start_quiz": "🎯 Start quiz",
+        "quiz_results": "📊 My results",
+        "back_button": "⬅️ Back",
+        "format_saved": lambda format_type: f"✅ Response format changed to <b>{format_type}</b>\n\nAnswers will now come in the selected format.",
+        "notifications_saved": lambda status: f"✅ Notifications <b>{status}</b>\n\nSetting saved successfully.",
+        "quiz_in_development": "🎯 <b>Quiz in development</b>\n\nQuiz functionality will be available soon!\nStay tuned for updates.",
+        "quiz_no_results": "📊 <b>Quiz results</b>\n\nYou don't have any quiz results yet.\nTake a quiz to see your achievements!",
+        "setting_save_error": "Error saving settings",
+        # Status display texts
+        "status_audio": "🔊 Audio",
+        "status_text": "📝 Text",
+        "status_notifications_on": "🔔 Enabled",
+        "status_notifications_off": "🔕 Disabled",
+        "status_lang_english": "🇬🇧 English",
+        "status_lang_russian": "🇷🇺 Русский",
+        # Dynamic button texts
+        "button_switch_to_text": "📝 Switch to text responses",
+        "button_switch_to_audio": "🎧 Switch to audio responses",
+        "button_enable_notifications": "🔔 Enable notifications",
+        "button_disable_notifications": "🔕 Disable notifications",
+        "language_section": "🌐 Change language"
+    }
+
     SEARCH_CMD = {
         "no_query": "Please provide a search term after /search command.\nExample: /search climate change",
     }
@@ -117,7 +152,17 @@ class Messages:
         "get_automation_button": "✅ Get this automation",
         "back_button": "⬅️ Back",
         "back_to_category": "⬅️ Back to category",
-        "loading_error": "Error loading automations."
+        "loading_error": "Error loading automations.",
+        "choose_workflow": "Choose a workflow:",
+        # Workflow detail labels
+        "workflow_detail_title": "🔧 Automation Details",
+        "workflow_name_label": "📋 Name:",
+        "workflow_category_label": "🗂️ Category:",
+        "workflow_description_label": "📄 Description:",
+        "request_automation_button": "✅ Request this automation",
+        # Subcategory display
+        "available_automations": lambda count: f"📋 <b>Available Automations</b> ({count}):",
+        "no_automations_available": "📋 <b>No automations available in this category yet.</b>"
     }
 
     BOOKING_CMD = {
@@ -133,3 +178,29 @@ class Messages:
         "button_text": "💳 Pay for service",
         "loading_error": "Error loading payment page."
     }
+
+    RAG_PROMPT = """You are an n8n automation expert. Answer ONLY automation-related questions.
+
+IMPORTANT: If the question is NOT related to task automation, processes, or workflows, respond EXACTLY:
+"I can only answer automation-related questions. Maybe you'd like to know how automation could support this?"
+
+For automation questions, provide a brief response with these 3 sections:
+
+Response format:
+🤖 n8n Automation Solution (2–3 sentences)
+Describe how to automate this task using n8n workflows. Mention node types or logic if helpful, but avoid deep technical detail.
+
+✅ Benefits (3 points)
+• Time saving: [estimated hours/week saved]
+• Error reduction: [approx. % improvement]
+• Scalability: [growth potential]
+
+💰 Cost Savings (1–2 sentences)
+Estimate monthly savings in dollars based on hours saved × $25/hour (adjustable if needed).
+
+Rules:
+Focus on the most effective automation only
+Use realistic numbers and percentages (avoid random placeholders)
+Maximum 150 words total
+
+IMPORTANT: Respond in English."""

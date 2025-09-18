@@ -6,11 +6,21 @@ class User(BaseModel):
     id: Optional[int] = None
     telegram_id: int
     username: Optional[str] = None
+    language: Optional[str] = 'en'
     isAudio: Optional[bool] = False
     notification: Optional[bool] = False
-    payment_status: Optional[bool] = False
-    payment_amount: Optional[float] = None
-    payment_currency: Optional[str] = None
-    payment_date: Optional[datetime] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+
+class Document(BaseModel):
+    id: Optional[int] = None
+    name: Optional[str] = None
+    category_id: Optional[str] = None
+    subdirectory_id: Optional[str] = None
+    url: str
+    short_description: str
+    description: str
+    tags: Optional[List[str]] = None
+    embedding: Optional[List[float]] = None
     created_at: Optional[datetime] = None
     updated_at: Optional[datetime] = None

@@ -10,7 +10,10 @@ class SupabaseClient:
     
     async def get_user_by_telegram_id(self, telegram_id: int) -> Optional[User]:
         try:
-            response = self.client.table('users').select('*').eq('telegram_id', telegram_id).execute()
+            # Use asyncio.to_thread to run the synchronous operation in a thread
+            response = await asyncio.to_thread(
+                lambda: self.client.table('users').select('*').eq('telegram_id', telegram_id).execute()
+            )
             if response.data:
                 return User(**response.data[0])
             return None
@@ -23,9 +26,13 @@ class SupabaseClient:
             existing_user = await self.get_user_by_telegram_id(user_data['telegram_id'])
             
             if existing_user:
-                response = self.client.table('users').update(user_data).eq('telegram_id', user_data['telegram_id']).execute()
+                response = await asyncio.to_thread(
+                    lambda: self.client.table('users').update(user_data).eq('telegram_id', user_data['telegram_id']).execute()
+                )
             else:
-                response = self.client.table('users').insert(user_data).execute()
+                response = await asyncio.to_thread(
+                    lambda: self.client.table('users').insert(user_data).execute()
+                )
             
             if response.data:
                 return User(**response.data[0])
@@ -53,15 +60,13 @@ class SupabaseClient:
         try:
             print(f"🔍 Searching for similar automations with threshold={threshold}, limit={limit}")
             
-            # Get all documents with embeddings from the current automation database
-            # Let's try without the null filter first to see what we get
-            response = self.client.table('documents').select('''
-                id, url, short_description, description, filename,
-                embedding,
-                automations!inner(
-                    categories!inner(name)
-                )
-            ''').execute()
+            # Get all documents with embeddings from the documents table
+            response = await asyncio.to_thread(
+                lambda: self.client.table('documents').select('''
+                    id, url, short_description, description, name,
+                    embedding, category, subcategory, tags
+                ''').not_.is_('embedding', 'null').execute()
+            )
             
             print(f"🔍 Raw response data count: {len(response.data) if response.data else 0}")
             if response.data and len(response.data) > 0:
@@ -124,19 +129,15 @@ class SupabaseClient:
                     cosine_sim = dot_product / (query_norm * doc_norm)
                     
                     if cosine_sim > threshold:
-                        # Get category name
-                        category_name = 'Uncategorized'
-                        if doc.get('automations') and len(doc['automations']) > 0:
-                            category_info = doc['automations'][0].get('categories')
-                            if category_info:
-                                category_name = category_info.get('name', 'Uncategorized')
-                        
-                        # Format filename as title
-                        title = doc.get('filename', 'Unnamed')
+                        # Get category name from the new schema
+                        category_name = doc.get('category', 'Uncategorized')
+
+                        # Format name as title
+                        title = doc.get('name', 'Unnamed')
                         if title.endswith('.json'):
                             title = title[:-5]  # Remove .json extension
                         title = title.replace('-', ' ').replace('_', ' ').title()
-                        
+
                         doc_similarities.append({
                             'id': doc['id'],
                             'title': title,
@@ -144,6 +145,8 @@ class SupabaseClient:
                             'description': doc.get('description', ''),
                             'url': doc.get('url', ''),
                             'category': category_name,
+                            'subcategory': doc.get('subcategory', ''),
+                            'tags': doc.get('tags', []),
                             'similarity': float(cosine_sim)
                         })
             
@@ -169,7 +172,7 @@ class SupabaseClient:
         existing_user = await self.get_user_by_telegram_id(telegram_id)
         if existing_user:
             return existing_user  # Don't update, just return existing user
-            
+
         # Only create new user if doesn't exist
         user_data = {
             'telegram_id': telegram_id,
@@ -179,7 +182,9 @@ class SupabaseClient:
         user_data = {k: v for k, v in user_data.items() if v is not None}
         
         try:
-            response = self.client.table('users').insert(user_data).execute()
+            response = await asyncio.to_thread(
+                lambda: self.client.table('users').insert(user_data).execute()
+            )
             if response.data:
                 return response.data[0]
             return None
@@ -202,7 +207,9 @@ class SupabaseClient:
             if payment_currency is not None:
                 update_data['payment_currency'] = payment_currency
             
-            response = self.client.table('users').update(update_data).eq('telegram_id', telegram_id).execute()
+            response = await asyncio.to_thread(
+                lambda: self.client.table('users').update(update_data).eq('telegram_id', telegram_id).execute()
+            )
             
             if response.data:
                 print(f"✅ Updated payment status for user {telegram_id}: {payment_status}")
@@ -232,7 +239,9 @@ class SupabaseClient:
             
             # Note: This assumes you have an email field in users table
             # You might need to add email field to users table first
-            response = self.client.table('users').update(update_data).eq('email', email).execute()
+            response = await asyncio.to_thread(
+                lambda: self.client.table('users').update(update_data).eq('email', email).execute()
+            )
             
             if response.data:
                 print(f"✅ Updated payment status for user with email {email}: {payment_status}")
