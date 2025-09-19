@@ -136,31 +136,6 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
         # Use localized prompt based on user language
         chatgpt_prompt = messages_class.RAG_PROMPT
 
-IMPORTANT: If the question is NOT related to task automation, processes, or workflows, respond EXACTLY:
-"I can only answer automation-related questions. Maybe you’d like to know how automation could support this?"
-
-For automation questions, provide a brief response with these 3 sections:
-
-Response format:
-🤖 n8n Automation Solution (2–3 sentences)
-Describe how to automate this task using n8n workflows. Mention node types or logic if helpful, but avoid deep technical detail.
-
-✅ Benefits (3 points)
-• Time saving: [estimated hours/week saved]
-• Error reduction: [approx. % improvement]
-• Scalability: [growth potential]
-
-💰 Cost Savings (1–2 sentences)
-Estimate monthly savings in dollars based on hours saved × $25/hour (adjustable if needed).
-
-Rules:
-
-Focus on the most effective automation only
-
-Use realistic numbers and percentages (avoid random placeholders)
-
-Maximum 150 words total"""
-
         chatgpt_response = await client.chat.completions.create(
             model="gpt-4",
             messages=[
