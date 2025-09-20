@@ -172,6 +172,11 @@ class Messages:
         "loading_error": "Error loading booking calendar."
     }
 
+    HELP_CMD = {
+        "ask_question": "Please write your question in free form and in <b>one message</b>!",
+        "message_received": "Your message has been received. Expect a response within 24 hours. Thank you for being with us."
+    }
+
     PAY_CMD = {
         "title": "💳 *Service Payment*\n\n",
         "description": "Click the button below for secure payment through Stripe:",

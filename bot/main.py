@@ -6,6 +6,9 @@ from bot.config import Config
 from bot.supabase_client import SupabaseClient
 from bot.commands.commands import start_router, content_router
 from bot.handlers.handlers import question_router
+from bot.callbacks.language_callbacks import language_router
+from bot.callbacks.settings_callbacks import settings_router
+from bot.callbacks.marketplace_callbacks import marketplace_router
 
 # Configure logging
 logging.basicConfig(
@@ -55,6 +58,9 @@ async def main():
         dp.include_router(start_router)
         dp.include_router(content_router)
         dp.include_router(question_router)
+        dp.include_router(language_router)
+        dp.include_router(settings_router)
+        dp.include_router(marketplace_router)
         
         # Add middleware to inject supabase client
         @dp.message.outer_middleware()
