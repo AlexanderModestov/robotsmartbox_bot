@@ -330,17 +330,7 @@ async def handle_workflow_detail(callback_query: types.CallbackQuery, supabase_c
         subcategory_name = workflow_data.get('subcategory', '').replace('_', ' ').replace('-', ' ').title()
         description = workflow_data.get('description', '')
 
-        # Translate description if user language is Russian
-        if description and user_language == 'ru':
-            try:
-                from bot.services.translation_service import TranslationService
-                translation_service = TranslationService()
-                translated_description = translation_service.translate_text(description, 'ru', 'en')
-                if translated_description:
-                    description = translated_description
-            except Exception as e:
-                logging.warning(f"Translation error: {e}")
-                # Keep original description if translation fails
+        # Note: Translation service removed - using description as-is
 
         # Build clean message with only name, category, and description
         message_text = f"{messages_class.AUTOMATIONS_CMD['workflow_detail_title']}\n\n"

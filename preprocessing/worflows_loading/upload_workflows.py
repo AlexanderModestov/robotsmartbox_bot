@@ -14,7 +14,6 @@ from typing import List, Dict, Any
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 
 from bot.supabase_client.client import SupabaseClient
-from bot.supabase_client.models import Document
 
 class WorkflowUploader:
     def __init__(self, supabase_url: str, supabase_key: str):

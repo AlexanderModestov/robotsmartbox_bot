@@ -253,3 +253,34 @@ class SupabaseClient:
         except Exception as e:
             print(f"Error updating payment status by email: {e}")
             return False
+
+    async def update_user_subscription(self, subscription_data: Dict[str, Any]) -> bool:
+        """
+        Update user subscription status
+
+        Args:
+            subscription_data: Dictionary containing subscription fields to update
+
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            telegram_id = subscription_data.get('telegram_id')
+            if not telegram_id:
+                print("Error: telegram_id is required for subscription update")
+                return False
+
+            response = await asyncio.to_thread(
+                lambda: self.client.table('users').update(subscription_data).eq('telegram_id', telegram_id).execute()
+            )
+
+            if response.data:
+                print(f"✅ Updated subscription for user {telegram_id}: {subscription_data.get('subscription_status', 'unknown')}")
+                return True
+            else:
+                print(f"❌ Failed to update subscription for user {telegram_id}")
+                return False
+
+        except Exception as e:
+            print(f"Error updating user subscription: {e}")
+            return False

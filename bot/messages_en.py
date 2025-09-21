@@ -177,6 +177,23 @@ class Messages:
         "message_received": "Your message has been received. Expect a response within 24 hours. Thank you for being with us."
     }
 
+    SUBSCRIBE_CMD = {
+        "title": "🔥 <b>Premium Subscription</b>\n\n",
+        "description": (
+            "Get full access to all automation capabilities:\n\n"
+            "🔍 <b>Unlimited Search</b> - unlimited queries in automation database\n"
+            "⚙️ <b>More Workflows & Agents</b> - access to exclusive solutions\n"
+            "💡 <b>Most Current Insights</b> - be first to know about new trends\n"
+            "🎯 <b>Priority Support</b> - fast responses to your questions\n\n"
+            "Price: <b>$29/month</b>\n\n"
+            "Click the button below to subscribe:"
+        ),
+        "button_text": "💳 Subscribe Now",
+        "loading_error": "Error loading payment page.",
+        "payment_success": "✅ <b>Subscription successful!</b>\n\nYou now have access to all premium features. Welcome to the automation club! 🚀",
+        "payment_error": "❌ Payment processing error occurred. Please try again or contact support."
+    }
+
     PAY_CMD = {
         "title": "💳 *Service Payment*\n\n",
         "description": "Click the button below for secure payment through Stripe:",
@@ -208,4 +225,4 @@ Focus on the most effective automation only
 Use realistic numbers and percentages (avoid random placeholders)
 Maximum 150 words total
 
-IMPORTANT: Respond in English."""
+IMPORTANT: Respond in the same language as the user's question."""

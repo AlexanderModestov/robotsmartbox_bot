@@ -9,7 +9,6 @@ from aiogram.fsm.state import State, StatesGroup
 from bot.messages import Messages
 from bot.messages_en import Messages as MessagesEn
 from bot.config import Config
-from bot.services.translation_service import TranslationService
 
 async def get_user_language_async(message, supabase_client):
     """Async version: Detect user language from database settings, message or user settings"""
@@ -214,48 +213,40 @@ async def schedule_command(message: types.Message):
         messages_class = get_messages_class(user_language)
         await message.answer(messages_class.BOOKING_CMD["loading_error"])
 
-@content_router.message(Command('pay'))
-async def pay_command(message: types.Message, supabase_client):
-    """Handle payment command with Stripe webapp"""
+
+@content_router.message(Command('subscribe'))
+async def subscribe_command(message: types.Message, supabase_client):
+    """Handle subscription command with Stripe payment"""
     try:
-        # Get messages based on user language (defaults to English)
+        # Get messages based on user language
         user_language = await get_user_language_async(message, supabase_client)
         messages_class = get_messages_class(user_language)
-        
+
         # Create Stripe payment webapp button
         stripe_button = InlineKeyboardButton(
-            text=messages_class.PAY_CMD["button_text"],
+            text=messages_class.SUBSCRIBE_CMD["button_text"],
             web_app=WebAppInfo(url=Config.STRIPE_PAYMENT_LINK)
         )
-        
+
         keyboard = InlineKeyboardMarkup(inline_keyboard=[[stripe_button]])
-        
-        # Log the payment access
-        print(f"💳 Pay command: User {message.from_user.id} ({message.from_user.username}) accessing payment webapp")
-        logging.info(f"Pay command: User {message.from_user.id} accessing payment webapp")
-        
-        message_text = messages_class.PAY_CMD["title"] + messages_class.PAY_CMD["description"]
-        
+
+        # Log the subscription access
+        print(f"🔥 Subscribe command: User {message.from_user.id} ({message.from_user.username}) accessing subscription")
+        logging.info(f"Subscribe command: User {message.from_user.id} accessing subscription")
+
+        message_text = messages_class.SUBSCRIBE_CMD["title"] + messages_class.SUBSCRIBE_CMD["description"]
+
         await message.answer(
             message_text,
             reply_markup=keyboard,
-            parse_mode="Markdown"
+            parse_mode="HTML"
         )
-        
+
     except Exception as e:
-        logging.error(f"Error in pay_command: {e}")
+        logging.error(f"Error in subscribe_command: {e}")
         user_language = get_user_language(message)
         messages_class = get_messages_class(user_language)
-        await message.answer(messages_class.PAY_CMD["loading_error"])
-
-@content_router.message(Command('subscribe'))
-async def subscribe_command(message: types.Message):
-    """Handle subscription command"""
-    await message.answer(
-        "⚙️ Функционал подписки в разработке и скоро будет доступен!\n\n"
-        "В будущем оформив подписку, Вы получите безлимитный доступ к материалам.", 
-        parse_mode="HTML"
-    )
+        await message.answer(messages_class.SUBSCRIBE_CMD["loading_error"])
 
 @content_router.message(Command('settings'))
 async def settings_command(message: types.Message, supabase_client):
@@ -332,11 +323,6 @@ async def settings_command(message: types.Message, supabase_client):
     except Exception as e:
         logging.error(f"Error in settings command: {e}")
         await message.answer(messages_class.SETTINGS_CMD["setting_save_error"] if 'messages_class' in locals() else "Error loading settings")
-
-
-
-
-
 
 
 @content_router.message(Command('help'))
