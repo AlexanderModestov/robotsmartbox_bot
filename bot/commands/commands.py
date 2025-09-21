@@ -1,5 +1,4 @@
 import logging
-import math
 import asyncio
 from aiogram import Router, types
 from aiogram.filters import CommandStart, Command
@@ -222,10 +221,12 @@ async def subscribe_command(message: types.Message, supabase_client):
         user_language = await get_user_language_async(message, supabase_client)
         messages_class = get_messages_class(user_language)
 
-        # Create Stripe payment webapp button
+        # Create Stripe payment URL button with user ID (opens in external browser)
+        payment_url_with_user_id = f"{Config.STRIPE_PAYMENT_LINK}?client_reference_id={message.from_user.id}"
+        print(f"🔗 Using payment link: {payment_url_with_user_id}")
         stripe_button = InlineKeyboardButton(
             text=messages_class.SUBSCRIBE_CMD["button_text"],
-            web_app=WebAppInfo(url=Config.STRIPE_PAYMENT_LINK)
+            url=payment_url_with_user_id
         )
 
         keyboard = InlineKeyboardMarkup(inline_keyboard=[[stripe_button]])

@@ -44,15 +44,21 @@ class Messages:
 
     ABOUT_MESSAGE = (
         "🤖 *Automation Assistant Bot*\n\n"
-        "I am your personal AI assistant for automating daily tasks and improving efficiency. "
-        "I can help you:\n\n"
+        "I am your personal AI assistant for automating daily tasks and improving efficiency.\n\n"
+        "**💬 Ask me about your automation challenges!**\n"
+        "Simply describe your current problem or need in a message, and I'll help you find the best automation solution.\n\n"
+        "**I can help you:**\n"
         "• 🤖 Analyze problems and suggest automation solutions\n"
         "• 💼 Optimize work and business processes\n"
         "• 📱 Recommend digital automation tools\n"
         "• 🎯 Improve personal productivity\n"
         "• 📚 Provide automation knowledge base\n"
         "• 📅 Schedule automation consultations\n\n"
-        "Use /help to ask questions directly."
+        "**💡 Examples of questions you can ask:**\n"
+        "• \"How can I automate my email responses?\"\n"
+        "• \"I need to sync data between Google Sheets and CRM\"\n"
+        "• \"Help me automate social media posting\"\n\n"
+        "*Just type your question as a regular message!*"
     )
 
     HELP_MESSAGE = (
@@ -153,7 +159,7 @@ class Messages:
         "back_button": "⬅️ Back",
         "back_to_category": "⬅️ Back to category",
         "loading_error": "Error loading automations.",
-        "choose_workflow": "Choose a workflow:",
+        "choose_workflow": "Choose an Automation:",
         # Workflow detail labels
         "workflow_detail_title": "🔧 Automation Details",
         "workflow_name_label": "📋 Name:",
@@ -163,6 +169,14 @@ class Messages:
         # Subcategory display
         "available_automations": lambda count: f"📋 <b>Available Automations</b> ({count}):",
         "no_automations_available": "📋 <b>No automations available in this category yet.</b>"
+    }
+
+    RAG_RESPONSES = {
+        "processing": "🤔 Processing your question...",
+        "voice_processing": "🎤 Processing voice message...",
+        "sources_found": lambda count: f"Sources found: {count}",
+        "no_sources": "No sources found for your query, but I'll try to help based on general knowledge.",
+        "error": "An error occurred while processing your question. Please try again or contact the administrator."
     }
 
     BOOKING_CMD = {
@@ -185,7 +199,7 @@ class Messages:
             "⚙️ <b>More Workflows & Agents</b> - access to exclusive solutions\n"
             "💡 <b>Most Current Insights</b> - be first to know about new trends\n"
             "🎯 <b>Priority Support</b> - fast responses to your questions\n\n"
-            "Price: <b>$29/month</b>\n\n"
+            "Price: <b>€20/month</b>\n\n"
             "Click the button below to subscribe:"
         ),
         "button_text": "💳 Subscribe Now",

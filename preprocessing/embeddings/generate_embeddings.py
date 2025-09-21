@@ -51,23 +51,52 @@ class EmbeddingGenerator:
         self.supabase_client = SupabaseClient(self.supabase_url, self.supabase_key)
         self.openai_client = OpenAI(api_key=self.openai_key)
 
+        # Initialize failed documents list
+        self.failed_documents = []
+
         logger.info(f"Initialized Embedding Generator with model: {self.embedding_model}")
 
     async def get_documents_without_embeddings(self) -> List[Dict[str, Any]]:
         """Get all documents where description is not null but embedding is null"""
         try:
-            response = await asyncio.to_thread(
-                lambda: self.supabase_client.client.table('documents')\
-                    .select('id, name, description')\
-                    .is_('embedding', 'null')\
-                    .not_.is_('description', 'null')\
-                    .neq('description', '')\
-                    .execute()
-            )
+            all_documents = []
+            page_size = 1000
+            start = 0
 
-            documents = response.data if response.data else []
-            logger.info(f"Found {len(documents)} documents without embeddings")
-            return documents
+            logger.info("Fetching all documents without embeddings using pagination...")
+
+            while True:
+                end = start + page_size - 1
+                logger.info(f"Fetching documents {start} to {end}...")
+
+                response = await asyncio.to_thread(
+                    lambda: self.supabase_client.client.table('documents')\
+                        .select('id, name, description')\
+                        .is_('embedding', 'null')\
+                        .not_.is_('description', 'null')\
+                        .neq('description', '')\
+                        .range(start, end)\
+                        .execute()
+                )
+
+                documents = response.data if response.data else []
+
+                if not documents:
+                    logger.info("No more documents found, pagination complete")
+                    break
+
+                all_documents.extend(documents)
+                logger.info(f"Fetched {len(documents)} documents (total so far: {len(all_documents)})")
+
+                # If we got fewer documents than page_size, we've reached the end
+                if len(documents) < page_size:
+                    logger.info("Reached end of documents (partial page)")
+                    break
+
+                start += page_size
+
+            logger.info(f"Found {len(all_documents)} total documents without embeddings")
+            return all_documents
 
         except Exception as e:
             logger.error(f"Error fetching documents: {e}")
@@ -121,16 +150,37 @@ class EmbeddingGenerator:
             embedding = await self.generate_embedding(description)
 
             if embedding is None:
-                logger.error(f"Failed to generate embedding for document {doc_id}")
+                error_msg = f"Failed to generate embedding for document {doc_id}: {name}"
+                logger.error(error_msg)
+                self.failed_documents.append({
+                    'id': doc_id,
+                    'name': name,
+                    'error': 'Embedding generation failed'
+                })
                 return False
 
             # Update document with embedding
             success = await self.update_document_embedding(doc_id, embedding)
 
+            if not success:
+                error_msg = f"Failed to update document {doc_id} in database: {name}"
+                logger.error(error_msg)
+                self.failed_documents.append({
+                    'id': doc_id,
+                    'name': name,
+                    'error': 'Database update failed'
+                })
+
             return success
 
         except Exception as e:
-            logger.error(f"Error processing document {doc_id}: {e}")
+            error_msg = f"Exception processing document {doc_id}: {e}"
+            logger.error(error_msg)
+            self.failed_documents.append({
+                'id': doc_id,
+                'name': name,
+                'error': str(e)
+            })
             return False
 
     async def generate_all_embeddings(self, batch_size: int = 10):
@@ -180,6 +230,23 @@ class EmbeddingGenerator:
             logger.info(f"Total processed: {processed}")
             logger.info(f"Successful: {successful}")
             logger.info(f"Failed: {failed}")
+
+            # Save failed documents to file
+            if self.failed_documents:
+                from datetime import datetime
+                failed_file_path = "failed_embeddings.txt"
+                with open(failed_file_path, 'w', encoding='utf-8') as f:
+                    f.write(f"Failed Embedding Generation Report\n")
+                    f.write(f"Total failed: {len(self.failed_documents)}\n")
+                    f.write(f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+
+                    for doc in self.failed_documents:
+                        f.write(f"ID: {doc['id']}\n")
+                        f.write(f"Name: {doc['name']}\n")
+                        f.write(f"Error: {doc['error']}\n")
+                        f.write("-" * 50 + "\n")
+
+                logger.info(f"Saved {len(self.failed_documents)} failed document details to {failed_file_path}")
 
         except Exception as e:
             logger.error(f"Error during embedding generation: {e}")

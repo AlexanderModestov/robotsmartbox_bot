@@ -171,22 +171,33 @@ async def handle_marketplace_subcategory(callback_query: types.CallbackQuery, su
 
         category_folder, subcategory_folder = callback_parts
 
+        # Get user language for localization first
+        user_language = await get_user_language_async(callback_query, supabase_client)
+
         # Get workflows from database for this category and subcategory
-        # Only include automations that have short_description (not null)
-        response = await asyncio.to_thread(
-            lambda: supabase_client.client.table('documents')
-            .select('id, name, short_description, description, url')
-            .eq('category', category_folder)
-            .eq('subcategory', subcategory_folder)
-            .not_.is_('short_description', 'null')
-            .neq('short_description', '')
-            .execute()
-        )
+        # Include Russian fields and filter based on user language
+        if user_language == 'ru':
+            response = await asyncio.to_thread(
+                lambda: supabase_client.client.table('documents')
+                .select('id, name, name_ru, short_description, short_description_ru, description, description_ru, url')
+                .eq('category', category_folder)
+                .eq('subcategory', subcategory_folder)
+                .not_.is_('short_description_ru', 'null')
+                .neq('short_description_ru', '')
+                .execute()
+            )
+        else:
+            response = await asyncio.to_thread(
+                lambda: supabase_client.client.table('documents')
+                .select('id, name, name_ru, short_description, short_description_ru, description, description_ru, url')
+                .eq('category', category_folder)
+                .eq('subcategory', subcategory_folder)
+                .not_.is_('short_description', 'null')
+                .neq('short_description', '')
+                .execute()
+            )
 
         workflows = response.data if response.data else []
-
-        # Get user language for localization
-        user_language = await get_user_language_async(callback_query, supabase_client)
         messages_class = get_messages_class(user_language)
 
         # Pagination settings
@@ -219,8 +230,12 @@ async def handle_marketplace_subcategory(callback_query: types.CallbackQuery, su
 
         # Add workflow buttons (6 per page)
         for workflow in current_workflows:
-            # Use short_description as button text (since we filtered for non-null short_description)
-            button_text = workflow.get('short_description', 'Automation')
+            # Use localized short_description as button text
+            if user_language == 'ru':
+                button_text = workflow.get('short_description_ru') or workflow.get('short_description', 'Automation')
+            else:
+                button_text = workflow.get('short_description', 'Automation')
+
             workflow_id = workflow.get('id', '')
 
             # Truncate button text if too long for Telegram button limit
@@ -302,33 +317,52 @@ async def handle_workflow_detail(callback_query: types.CallbackQuery, supabase_c
         # Parse callback data: workflow_detail_workflow_id
         workflow_id = callback_query.data.replace('workflow_detail_', '')
 
-        # Get workflow details from database
-        response = await asyncio.to_thread(
-            lambda: supabase_client.client.table('documents')
-            .select('id, name, short_description, description, url, category, subcategory')
-            .eq('id', workflow_id)
-            .execute()
-        )
+        # Get user language first to determine which fields to require
+        user_language = await get_user_language_async(callback_query, supabase_client)
+
+        # Get workflow details from database (including Russian fields)
+        # Only show if it has content in the user's language
+        if user_language == 'ru':
+            response = await asyncio.to_thread(
+                lambda: supabase_client.client.table('documents')
+                .select('id, name, name_ru, short_description, short_description_ru, description, description_ru, url, category, subcategory')
+                .eq('id', workflow_id)
+                .not_.is_('description_ru', 'null')
+                .neq('description_ru', '')
+                .execute()
+            )
+        else:
+            response = await asyncio.to_thread(
+                lambda: supabase_client.client.table('documents')
+                .select('id, name, name_ru, short_description, short_description_ru, description, description_ru, url, category, subcategory')
+                .eq('id', workflow_id)
+                .not_.is_('description', 'null')
+                .neq('description', '')
+                .execute()
+            )
 
         if not response.data:
             await callback_query.answer("Workflow not found")
             return
 
         workflow_data = response.data[0]
-
-        # Get user language for localization (async version to check database)
-        user_language = await get_user_language_async(callback_query, supabase_client)
         messages_class = get_messages_class(user_language)
 
         # Create workflow detail message with localized labels
-        name = workflow_data.get('name', 'Untitled Workflow')
+        # Use Russian fields if user language is Russian and they exist
+        if user_language == 'ru':
+            name = workflow_data.get('name_ru') or workflow_data.get('name', 'Untitled Workflow')
+            description = workflow_data.get('description_ru') or workflow_data.get('description', '')
+        else:
+            name = workflow_data.get('name', 'Untitled Workflow')
+            description = workflow_data.get('description', '')
+
         if name.endswith('.json'):
             name = name[:-5]  # Remove .json extension
         workflow_title = name.replace('-', ' ').replace('_', ' ').title()
 
         category_name = workflow_data.get('category', '').replace('_', ' ').replace('-', ' ').title()
         subcategory_name = workflow_data.get('subcategory', '').replace('_', ' ').replace('-', ' ').title()
-        description = workflow_data.get('description', '')
 
         # Note: Translation service removed - using description as-is
 
@@ -469,21 +503,34 @@ async def handle_automation_category(callback_query: types.CallbackQuery, supaba
         # Use category_id as category name (since we don't have a separate categories table)
         category_name = category_id.replace('_', ' ').title()
 
-        # Fetch automation documents for this category using proper joins
-        response = supabase_client.client.table('documents').select('''
-            id, url, short_description, name, category, subcategory, tags
-        ''').eq('category', category_id).not_.is_('short_description', 'null').neq('short_description', '').limit(10).execute()
+        # Get user language
+        user_language = await get_user_language_async(callback_query, supabase_client)
+        messages_class = get_messages_class(user_language)
 
-        # Default to English for callbacks
-        messages_class = get_messages_class('en')
+        # Fetch automation documents for this category (including Russian fields)
+        # Filter based on user language to show only automations with descriptions in that language
+        if user_language == 'ru':
+            response = supabase_client.client.table('documents').select('''
+                id, url, short_description, short_description_ru, name, name_ru, category, subcategory, tags
+            ''').eq('category', category_id).not_.is_('short_description_ru', 'null').neq('short_description_ru', '').limit(10).execute()
+        else:
+            response = supabase_client.client.table('documents').select('''
+                id, url, short_description, short_description_ru, name, name_ru, category, subcategory, tags
+            ''').eq('category', category_id).not_.is_('short_description', 'null').neq('short_description', '').limit(10).execute()
+
         message_text = messages_class.AUTOMATIONS_CMD["category_header"](category_name)
 
-        # Create buttons for each automation using short_description as button text
+        # Create buttons for each automation using localized short_description as button text
         keyboard_buttons = []
         if response.data:
             for doc in response.data:
                 doc_id = doc.get('id')
-                short_desc = doc.get('short_description', 'Automation')
+
+                # Use Russian short description if user language is Russian and it exists
+                if user_language == 'ru':
+                    short_desc = doc.get('short_description_ru') or doc.get('short_description', 'Automation')
+                else:
+                    short_desc = doc.get('short_description', 'Automation')
 
                 # Truncate button text if too long (Telegram limit)
                 button_text = short_desc[:60] + "..." if len(short_desc) > 60 else short_desc

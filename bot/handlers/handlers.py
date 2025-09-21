@@ -110,6 +110,8 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
         await message.answer("Please send a text or voice message with your request.")
         return
     
+    processing_message = None
+
     try:
         # Get user from database to determine language
         user = await supabase_client.get_user_by_telegram_id(message.from_user.id)

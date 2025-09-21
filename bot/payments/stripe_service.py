@@ -61,6 +61,7 @@ class StripeService:
                     'payment_intent': data.get('payment_intent'),
                     'amount_total': data.get('amount_total', 0) / 100,  # Convert from cents
                     'metadata': data.get('metadata', {}),
+                    'client_reference_id': data.get('client_reference_id'),  # Added this field
                     'subscription_id': data.get('subscription')
                 }
             elif event_type == 'payment_intent.succeeded':
@@ -87,8 +88,14 @@ class StripeService:
             return None
 
     def get_telegram_user_id(self, customer_info: Dict[str, Any]) -> Optional[int]:
-        """Extract Telegram user ID from customer metadata"""
+        """Extract Telegram user ID from customer metadata or client_reference_id"""
         try:
+            # First try client_reference_id (used in payment links)
+            client_ref_id = customer_info.get('client_reference_id')
+            if client_ref_id:
+                return int(client_ref_id)
+
+            # Fallback to metadata (used in other payment methods)
             metadata = customer_info.get('metadata', {})
             telegram_id = metadata.get('telegram_id') or metadata.get('telegram_user_id')
 
