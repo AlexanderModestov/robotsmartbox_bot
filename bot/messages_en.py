@@ -168,7 +168,12 @@ class Messages:
         "request_automation_button": "✅ Request this automation",
         # Subcategory display
         "available_automations": lambda count: f"📋 <b>Available Automations</b> ({count}):",
-        "no_automations_available": "📋 <b>No automations available in this category yet.</b>"
+        "no_automations_available": "📋 <b>No automations available in this category yet.</b>",
+        # Navigation buttons
+        "back_to_marketplace_button": "🏠 Back to Marketplace",
+        "back_to_marketplace_short_button": "⬅️ Back to Marketplace",
+        "previous_page_button": "⬅️ Previous",
+        "next_page_button": "Next ➡️"
     }
 
     RAG_RESPONSES = {

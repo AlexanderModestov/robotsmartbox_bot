@@ -80,7 +80,7 @@ async def handle_marketplace_category(callback_query: types.CallbackQuery, supab
 
         # Add back to main marketplace button
         keyboard_buttons.append([
-            InlineKeyboardButton(text="⬅️ Back to Marketplace", callback_data="back_to_marketplace")
+            InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["back_to_marketplace_short_button"], callback_data="back_to_marketplace")
         ])
 
         keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
@@ -127,8 +127,9 @@ async def handle_back_to_marketplace(callback_query: types.CallbackQuery, supaba
         # Create keyboard with categories
         keyboard_buttons = []
 
-        # Add category buttons
-        messages_class = get_messages_class('en')  # Default to English for callbacks
+        # Get user language for localization
+        user_language = await get_user_language_async(callback_query, supabase_client)
+        messages_class = get_messages_class(user_language)
 
         for category in categories:
             keyboard_buttons.append([
@@ -257,7 +258,7 @@ async def handle_marketplace_subcategory(callback_query: types.CallbackQuery, su
             if page > 1:
                 pagination_row.append(
                     InlineKeyboardButton(
-                        text="⬅️ Previous",
+                        text=messages_class.AUTOMATIONS_CMD["previous_page_button"],
                         callback_data=f"marketplace_subcat_{category_folder}_{subcategory_folder}_page_{page-1}"
                     )
                 )
@@ -274,7 +275,7 @@ async def handle_marketplace_subcategory(callback_query: types.CallbackQuery, su
             if page < total_pages:
                 pagination_row.append(
                     InlineKeyboardButton(
-                        text="Next ➡️",
+                        text=messages_class.AUTOMATIONS_CMD["next_page_button"],
                         callback_data=f"marketplace_subcat_{category_folder}_{subcategory_folder}_page_{page+1}"
                     )
                 )
@@ -290,7 +291,7 @@ async def handle_marketplace_subcategory(callback_query: types.CallbackQuery, su
         ])
 
         keyboard_buttons.append([
-            InlineKeyboardButton(text="🏠 Back to Marketplace", callback_data="back_to_marketplace")
+            InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["back_to_marketplace_button"], callback_data="back_to_marketplace")
         ])
 
         keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
@@ -409,7 +410,7 @@ async def handle_workflow_detail(callback_query: types.CallbackQuery, supabase_c
         # Always include back to marketplace
         keyboard_buttons.append([
             InlineKeyboardButton(
-                text="🏠 Back to Marketplace",
+                text=messages_class.AUTOMATIONS_CMD["back_to_marketplace_button"],
                 callback_data="back_to_marketplace"
             )
         ])
@@ -555,7 +556,8 @@ async def handle_automation_category(callback_query: types.CallbackQuery, supaba
 
     except Exception as e:
         logging.error(f"Error in handle_automation_category: {e}")
-        messages_class = get_messages_class('en')
+        user_language = get_user_language(callback_query)
+        messages_class = get_messages_class(user_language)
         await callback_query.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
 
 @marketplace_router.callback_query(lambda c: c.data == 'back_to_automations')
@@ -575,8 +577,11 @@ async def handle_back_to_automations(callback_query: types.CallbackQuery, supaba
         # Create keyboard with categories
         keyboard_buttons = []
 
+        # Get user language for localization
+        user_language = await get_user_language_async(callback_query, supabase_client)
+        messages_class = get_messages_class(user_language)
+
         # Add "All automatizations" button first
-        messages_class = get_messages_class('en')  # Default to English for callbacks
         keyboard_buttons.append([
             InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["all_automations_button"], callback_data="automations_all")
         ])
@@ -600,7 +605,8 @@ async def handle_back_to_automations(callback_query: types.CallbackQuery, supaba
 
     except Exception as e:
         logging.error(f"Error in handle_back_to_automations: {e}")
-        messages_class = get_messages_class('en')
+        user_language = get_user_language(callback_query)
+        messages_class = get_messages_class(user_language)
         await callback_query.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
 
 @marketplace_router.callback_query(lambda c: c.data.startswith('automation_detail_'))
@@ -614,8 +620,9 @@ async def handle_automation_detail(callback_query: types.CallbackQuery, supabase
             id, url, short_description, description, name, category, subcategory, tags
         ''').eq('id', automation_id).execute()
 
-        # Default to English for callbacks
-        messages_class = get_messages_class('en')
+        # Get user language for localization
+        user_language = get_user_language(callback_query)
+        messages_class = get_messages_class(user_language)
 
         if response.data and len(response.data) > 0:
             doc = response.data[0]
@@ -670,7 +677,8 @@ async def handle_automation_detail(callback_query: types.CallbackQuery, supabase
 
     except Exception as e:
         logging.error(f"Error in handle_automation_detail: {e}")
-        messages_class = get_messages_class('en')
+        user_language = get_user_language(callback_query)
+        messages_class = get_messages_class(user_language)
         await callback_query.answer(messages_class.AUTOMATIONS_CMD["loading_error"])
 
 @marketplace_router.callback_query(lambda c: c.data.startswith('get_automation_'))

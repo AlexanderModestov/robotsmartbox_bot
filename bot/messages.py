@@ -225,7 +225,12 @@ class Messages:
       "request_automation_button": "✅ Запросить эту автоматизацию",
       # Subcategory display
       "available_automations": lambda count: f"📋 <b>Доступные автоматизации</b> ({count}):",
-      "no_automations_available": "📋 <b>В этой категории пока нет доступных автоматизаций.</b>"
+      "no_automations_available": "📋 <b>В этой категории пока нет доступных автоматизаций.</b>",
+      # Navigation buttons
+      "back_to_marketplace_button": "🏠 Вернуться к Маркетплейсу",
+      "back_to_marketplace_short_button": "⬅️ Назад к Маркетплейсу",
+      "previous_page_button": "⬅️ Предыдущая",
+      "next_page_button": "Следующая ➡️"
   }
 
   BOOKING_CMD = {
