@@ -67,7 +67,7 @@ async def handle_marketplace_category(callback_query: types.CallbackQuery, supab
         keyboard_buttons = []
 
         # Get user language for localization
-        user_language = get_user_language(callback_query)
+        user_language = await get_user_language_async(callback_query, supabase_client)
         messages_class = get_messages_class(user_language)
 
         for subcategory in subcategories:
@@ -581,10 +581,6 @@ async def handle_back_to_automations(callback_query: types.CallbackQuery, supaba
         user_language = await get_user_language_async(callback_query, supabase_client)
         messages_class = get_messages_class(user_language)
 
-        # Add "All automatizations" button first
-        keyboard_buttons.append([
-            InlineKeyboardButton(text=messages_class.AUTOMATIONS_CMD["all_automations_button"], callback_data="automations_all")
-        ])
 
         # Add category buttons
         for category in categories:
@@ -615,22 +611,34 @@ async def handle_automation_detail(callback_query: types.CallbackQuery, supabase
     try:
         automation_id = callback_query.data.replace('automation_detail_', '')
 
-        # Fetch specific automation document with full description
-        response = supabase_client.client.table('documents').select('''
-            id, url, short_description, description, name, category, subcategory, tags
-        ''').eq('id', automation_id).execute()
-
-        # Get user language for localization
-        user_language = get_user_language(callback_query)
+        # Get user language for localization first
+        user_language = await get_user_language_async(callback_query, supabase_client)
         messages_class = get_messages_class(user_language)
+
+        # Fetch specific automation document with full description including Russian fields
+        response = await asyncio.to_thread(
+            lambda: supabase_client.client.table('documents').select('''
+                id, url, short_description, short_description_ru, description, description_ru,
+                name, name_ru, category, subcategory, tags
+            ''').eq('id', automation_id).execute()
+        )
 
         if response.data and len(response.data) > 0:
             doc = response.data[0]
 
-            # Get document details
-            name = doc.get('name', 'Unnamed').replace('.json', '').replace('-', ' ').title()
+            # Get document details with localization
+            if user_language == 'ru':
+                name = doc.get('name_ru') or doc.get('name', 'Unnamed')
+                description = doc.get('description_ru') or doc.get('description', doc.get('short_description_ru', doc.get('short_description', 'No description available')))
+            else:
+                name = doc.get('name', 'Unnamed')
+                description = doc.get('description', doc.get('short_description', 'No description available'))
+
+            # Clean name formatting
+            if name.endswith('.json'):
+                name = name[:-5]  # Remove .json extension
+            name = name.replace('-', ' ').replace('_', ' ').title()
             url = doc.get('url', '#')
-            description = doc.get('description', doc.get('short_description', 'No description available'))
 
             # Get category info from the new schema
             category_name = doc.get('category', 'Uncategorized')

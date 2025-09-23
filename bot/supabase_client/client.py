@@ -41,127 +41,84 @@ class SupabaseClient:
             print(f"Error creating/updating user: {e}")
             return None
     
-    async def search_automations_by_similarity(self, query_embedding: List[float], limit: int = 3, threshold: float = None) -> List[Dict[str, Any]]:
+    async def search_automations_by_similarity(self, query_embedding: List[float], limit: int = 3, threshold: float = None, user_language: str = 'en') -> List[Dict[str, Any]]:
         """
-        Search for similar automation documents using vector similarity
-        
+        Search for similar automation documents using Supabase pgvector similarity
+
         Args:
             query_embedding: Query vector embedding from OpenAI (3072 dimensions)
             limit: Maximum number of results to return
             threshold: Minimum similarity threshold (0.0 to 1.0)
-            
+            user_language: User's language ('ru' or 'en') for localized results
+
         Returns:
             List of automation documents ranked by vector similarity
         """
         # Get threshold from environment variable if not provided
         if threshold is None:
-            threshold = float(os.getenv('SIMILARITY_THRESHOLD', '0.7'))
-            
+            threshold = float(os.getenv('SIMILARITY_THRESHOLD', '0.3'))
+
         try:
             print(f"🔍 Searching for similar automations with threshold={threshold}, limit={limit}")
-            
-            # Get all documents with embeddings from the documents table
+
+            # Use pgvector cosine similarity with proper SQL
+            # Convert similarity threshold to cosine distance (1 - similarity)
+            max_distance = 1.0 - threshold
+
+            # Create a PostgreSQL function call or use direct SQL
             response = await asyncio.to_thread(
-                lambda: self.client.table('documents').select('''
-                    id, url, short_description, description, name,
-                    embedding, category, subcategory, tags
-                ''').not_.is_('embedding', 'null').execute()
+                lambda: self.client.rpc('search_similar_documents', {
+                    'query_embedding': query_embedding,
+                    'similarity_threshold': threshold,
+                    'result_limit': limit
+                }).execute()
             )
-            
-            print(f"🔍 Raw response data count: {len(response.data) if response.data else 0}")
-            if response.data and len(response.data) > 0:
-                first_doc = response.data[0]
-                print(f"🔍 First document structure: {list(first_doc.keys())}")
-                print(f"🔍 Has embedding: {first_doc.get('embedding') is not None}")
-                if first_doc.get('embedding'):
-                    embedding_sample = first_doc.get('embedding')
-                    print(f"🔍 Embedding type: {type(embedding_sample)}, length: {len(embedding_sample) if embedding_sample else 0}")
-                    print(f"🔍 Embedding preview (first 100 chars): {str(embedding_sample)[:100]}...")
-            
-            # Filter out documents without embeddings manually
-            if response.data:
-                response.data = [doc for doc in response.data if doc.get('embedding') is not None]
-                print(f"🔍 Documents with embeddings after filtering: {len(response.data)}")
-            
+
             if not response.data:
-                print("🔍 No documents with embeddings found")
+                print("🔍 No similar automations found above threshold")
                 return []
-            
-            print(f"🔍 Retrieved {len(response.data)} automation documents with embeddings")
-            
-            # Calculate similarities manually
-            import numpy as np
-            import json
-            query_vector = np.array(query_embedding)
-            
-            doc_similarities = []
-            
+
+            # Format results with localization
+            results = []
             for doc in response.data:
-                if doc.get('embedding'):
-                    try:
-                        # Parse embedding from string format (stored as JSON string)
-                        embedding_str = doc['embedding']
-                        if isinstance(embedding_str, str):
-                            # Try to parse as JSON array
-                            try:
-                                embedding_data = json.loads(embedding_str)
-                            except json.JSONDecodeError:
-                                # If not JSON, try to evaluate as Python literal
-                                embedding_data = eval(embedding_str)
-                        else:
-                            embedding_data = embedding_str
-                        
-                        doc_vector = np.array(embedding_data)
-                        
-                        if doc_vector.shape != query_vector.shape:
-                            print(f"🔍 Dimension mismatch for doc {doc.get('id')}: query={query_vector.shape}, doc={doc_vector.shape}")
-                            continue
-                            
-                    except Exception as parse_error:
-                        print(f"🔍 Failed to parse embedding for doc {doc.get('id')}: {parse_error}")
-                        continue
-                    
-                    # Cosine similarity calculation
-                    dot_product = np.dot(query_vector, doc_vector)
-                    query_norm = np.linalg.norm(query_vector)
-                    doc_norm = np.linalg.norm(doc_vector)
-                    
-                    cosine_sim = dot_product / (query_norm * doc_norm)
-                    
-                    if cosine_sim > threshold:
-                        # Get category name from the new schema
-                        category_name = doc.get('category', 'Uncategorized')
+                # Use localized fields based on user language
+                if user_language == 'ru':
+                    title = doc.get('name_ru') or doc.get('name', 'Unnamed')
+                    short_description = doc.get('short_description_ru') or doc.get('short_description', '')
+                    description = doc.get('description_ru') or doc.get('description', '')
+                else:
+                    title = doc.get('name', 'Unnamed')
+                    short_description = doc.get('short_description', '')
+                    description = doc.get('description', '')
 
-                        # Format name as title
-                        title = doc.get('name', 'Unnamed')
-                        if title.endswith('.json'):
-                            title = title[:-5]  # Remove .json extension
-                        title = title.replace('-', ' ').replace('_', ' ').title()
+                # Format title
+                if title and title.endswith('.json'):
+                    title = title[:-5]  # Remove .json extension
+                if title:
+                    title = title.replace('-', ' ').replace('_', ' ').title()
+                else:
+                    title = 'Unnamed Automation' if user_language == 'en' else 'Безымянная автоматизация'
 
-                        doc_similarities.append({
-                            'id': doc['id'],
-                            'title': title,
-                            'short_description': doc.get('short_description', ''),
-                            'description': doc.get('description', ''),
-                            'url': doc.get('url', ''),
-                            'category': category_name,
-                            'subcategory': doc.get('subcategory', ''),
-                            'tags': doc.get('tags', []),
-                            'similarity': float(cosine_sim)
-                        })
-            
-            # Sort by similarity (highest first) and limit
-            doc_similarities.sort(key=lambda x: x['similarity'], reverse=True)
-            results = doc_similarities[:limit]
-            
+                results.append({
+                    'id': doc['id'],
+                    'title': title,
+                    'short_description': short_description,
+                    'description': description,
+                    'url': doc.get('url', ''),
+                    'category': doc.get('category', 'Uncategorized'),
+                    'subcategory': doc.get('subcategory', ''),
+                    'tags': doc.get('tags', []),
+                    'similarity': doc.get('similarity', 0.0)
+                })
+
             print(f"🔍 Found {len(results)} similar automations above threshold {threshold}")
             for i, doc in enumerate(results):
-                print(f"🔍 Rank {i+1}: {doc['title']} (similarity: {doc['similarity']:.4f})")
-            
+                print(f"🔍 Rank {i+1}: {doc['title']} (similarity: {doc.get('similarity', 'N/A')})")
+
             return results
-            
+
         except Exception as e:
-            print(f"Error in automation similarity search: {e}")
+            print(f"Error in pgvector similarity search: {e}")
             return []
     
     

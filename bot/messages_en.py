@@ -146,8 +146,6 @@ class Messages:
             "You can find here real workflows for automate the routine that you can use immediately\n\n"
             "Choose a category:"
         ),
-        "all_automations_button": "🤖 All Automations",
-        "all_automations_header": "🤖 <b>All Automations</b>\n\nChoose an automation:",
         "category_header": lambda category_name: f"⚙️ <b>Automations: {category_name}</b>\n\nChoose an automation:",
         "category_label": lambda category_name: f"📂 Category: {category_name}\n",
         "open_link": lambda url: f"🔗 <a href='{url}'>Open on n8n.io</a>\n",
@@ -181,7 +179,9 @@ class Messages:
         "voice_processing": "🎤 Processing voice message...",
         "sources_found": lambda count: f"Sources found: {count}",
         "no_sources": "No sources found for your query, but I'll try to help based on general knowledge.",
-        "error": "An error occurred while processing your question. Please try again or contact the administrator."
+        "error": "An error occurred while processing your question. Please try again or contact the administrator.",
+        "similar_automations_found": lambda count: f"🔍 **Found {count} similar automations in our database**",
+        "explore_examples": "Click the buttons below to explore specific examples:"
     }
 
     BOOKING_CMD = {

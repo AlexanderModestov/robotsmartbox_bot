@@ -165,7 +165,8 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
             # Search for similar automations in the database
             search_results = await supabase_client.search_automations_by_similarity(
                 query_embedding=query_embedding,
-                limit=3
+                limit=3,
+                user_language=user_language
             )
             
             if search_results:
@@ -191,8 +192,8 @@ async def handle_user_question(message: types.Message, state: FSMContext, supaba
         response_text = final_response = chatgpt_text
         
         if similar_automations:
-            final_response += f"\n\n🔍 **Found {len(similar_automations)} similar automations in our database**\n"
-            final_response += "Click the buttons below to explore specific examples:"
+            final_response += f"\n\n{messages_class.RAG_RESPONSES['similar_automations_found'](len(similar_automations))}\n"
+            final_response += messages_class.RAG_RESPONSES["explore_examples"]
             response_text = final_response
         
         # Check if user prefers audio responses
